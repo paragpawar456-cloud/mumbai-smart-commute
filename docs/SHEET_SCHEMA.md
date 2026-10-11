@@ -95,6 +95,22 @@ Access: public read; admin write. Primary key: `from_station_id`.
 | walk_minutes | int | yes | 1-30 |
 | source_id | id | yes |  |
 
+## Places
+
+Access: public read; admin write. Primary key: `place_id`.
+
+| Column | Type | Required | Notes |
+|---|---|---|---|
+| place_id | id | yes | e.g. P-YOGIDHAM |
+| name_en | string | yes |  |
+| name_mr | string |  |  |
+| name_hi | string |  |  |
+| kind | string | yes | housing, suburb, landmark, ... |
+| lat | number | yes |  |
+| lng | number | yes |  |
+| near_station_id | id |  | FK Stations; default station for the finder |
+| source_id | id | yes |  |
+
 ## BusRoutes
 
 Access: public read; admin write. Primary key: `bus_route_id`.
@@ -157,6 +173,7 @@ Access: public read; admin write. Primary key: `provider_id`.
 | android_package | string |  |  |
 | link_template | string |  | with {plat},{plng},{dlat},{dlng} |
 | active | bool | yes |  |
+| source_id | id |  | where the link format is documented |
 
 ## FareRules
 
@@ -194,7 +211,9 @@ Access: signed-in users create; public read of approved/pending (no uid); modera
 | created_at | datetime | yes |  |
 | expires_at | datetime | yes | per type, e.g. queue 30 min |
 | corroborations | int | yes |  |
+| corroborated_by | string |  | uid hashes, server only; one per user |
 | moderated_by | id |  |  |
+| moderated_at | datetime |  |  |
 
 ## ServiceAlerts
 

@@ -2,6 +2,8 @@
 /// Everything here is static or scheduled data; nothing is live.
 library;
 
+import '../../lastmile/domain/lastmile_models.dart';
+
 enum TransitMode { suburban, metro, mono }
 
 TransitMode _mode(String s) => TransitMode.values.firstWhere(
@@ -219,6 +221,7 @@ class DataPack {
     required this.trips,
     required this.stopTimes,
     required this.sources,
+    this.lastMile = const LastMileData(),
   }) : stationById = {for (final s in stations) s.id: s};
 
   factory DataPack.fromJson(Map<String, dynamic> j) {
@@ -237,6 +240,7 @@ class DataPack {
           .map((r) => StopTime.fromRow(r as List))
           .toList(),
       sources: list('sources', DataSourceInfo.fromJson),
+      lastMile: LastMileData.fromPackJson(j),
     );
   }
 
@@ -249,6 +253,7 @@ class DataPack {
   final List<StopTime> stopTimes;
   final List<DataSourceInfo> sources;
   final Map<String, Station> stationById;
+  final LastMileData lastMile;
 
   bool get hasTimetable => trips.isNotEmpty && stopTimes.isNotEmpty;
 }

@@ -705,6 +705,390 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Lines'**
   String get linesAtStation;
+
+  /// No description provided for @lastMileTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Station to doorstep'**
+  String get lastMileTitle;
+
+  /// No description provided for @lastMileHomeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk, auto, shared auto, bus or cab from the station to where you are going'**
+  String get lastMileHomeBody;
+
+  /// No description provided for @lastMileFromStation.
+  ///
+  /// In en, this message translates to:
+  /// **'From station'**
+  String get lastMileFromStation;
+
+  /// No description provided for @lastMileTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Going to'**
+  String get lastMileTo;
+
+  /// No description provided for @lastMileToHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a place or pick on the map'**
+  String get lastMileToHint;
+
+  /// No description provided for @lastMilePickOnMap.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick on the map'**
+  String get lastMilePickOnMap;
+
+  /// No description provided for @lastMileUseThisPoint.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this point'**
+  String get lastMileUseThisPoint;
+
+  /// No description provided for @lastMileDroppedPin.
+  ///
+  /// In en, this message translates to:
+  /// **'Point on the map'**
+  String get lastMileDroppedPin;
+
+  /// No description provided for @lastMileChooseDestination.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose where you are going to see your options.'**
+  String get lastMileChooseDestination;
+
+  /// No description provided for @lastMileFromHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Last mile from here'**
+  String get lastMileFromHere;
+
+  /// No description provided for @searchPlaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Search places'**
+  String get searchPlaces;
+
+  /// No description provided for @noPlaceFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching place yet. Try picking the point on the map.'**
+  String get noPlaceFound;
+
+  /// No description provided for @sortCheapest.
+  ///
+  /// In en, this message translates to:
+  /// **'Cheapest'**
+  String get sortCheapest;
+
+  /// No description provided for @sortFastest.
+  ///
+  /// In en, this message translates to:
+  /// **'Fastest'**
+  String get sortFastest;
+
+  /// No description provided for @sortLeastWalking.
+  ///
+  /// In en, this message translates to:
+  /// **'Least walking'**
+  String get sortLeastWalking;
+
+  /// No description provided for @distanceStraight.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km in a straight line'**
+  String distanceStraight(String km);
+
+  /// No description provided for @distanceRoadEstimate.
+  ///
+  /// In en, this message translates to:
+  /// **'About {km} km by road (estimated)'**
+  String distanceRoadEstimate(String km);
+
+  /// No description provided for @distanceRoad.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km by road'**
+  String distanceRoad(String km);
+
+  /// No description provided for @optWalk.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk'**
+  String get optWalk;
+
+  /// No description provided for @optAutoMeter.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto (by meter)'**
+  String get optAutoMeter;
+
+  /// No description provided for @optTaxiMeter.
+  ///
+  /// In en, this message translates to:
+  /// **'Kaali-peeli taxi (by meter)'**
+  String get optTaxiMeter;
+
+  /// No description provided for @optSharedAuto.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared auto'**
+  String get optSharedAuto;
+
+  /// No description provided for @optBus.
+  ///
+  /// In en, this message translates to:
+  /// **'{operator} bus {number}'**
+  String optBus(String operator, String number);
+
+  /// No description provided for @fareFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'from ₹{amount}'**
+  String fareFrom(int amount);
+
+  /// No description provided for @fareAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'≈ ₹{amount}'**
+  String fareAbout(int amount);
+
+  /// No description provided for @fareShared.
+  ///
+  /// In en, this message translates to:
+  /// **'₹{amount} per seat'**
+  String fareShared(int amount);
+
+  /// No description provided for @fareUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Fare not known'**
+  String get fareUnknown;
+
+  /// No description provided for @fareInApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Price in their app'**
+  String get fareInApp;
+
+  /// No description provided for @minutesAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'About {minutes} min without traffic'**
+  String minutesAbout(int minutes);
+
+  /// No description provided for @walkMeters.
+  ///
+  /// In en, this message translates to:
+  /// **'{meters} m walk'**
+  String walkMeters(int meters);
+
+  /// No description provided for @nightFareApplied.
+  ///
+  /// In en, this message translates to:
+  /// **'Includes the night charge'**
+  String get nightFareApplied;
+
+  /// No description provided for @nearestStand.
+  ///
+  /// In en, this message translates to:
+  /// **'Nearest stand: {name}, {meters} m'**
+  String nearestStand(String name, int meters);
+
+  /// No description provided for @noStandKnown.
+  ///
+  /// In en, this message translates to:
+  /// **'No stand mapped near the station yet'**
+  String get noStandKnown;
+
+  /// No description provided for @busBoardAlight.
+  ///
+  /// In en, this message translates to:
+  /// **'Board at {board}, get off at {alight}'**
+  String busBoardAlight(String board, String alight);
+
+  /// No description provided for @availabilityUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'We cannot see whether a vehicle is there right now.'**
+  String get availabilityUnknown;
+
+  /// No description provided for @openApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open {name}'**
+  String openApp(String name);
+
+  /// No description provided for @couldNotOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the app.'**
+  String get couldNotOpen;
+
+  /// No description provided for @howWeEstimate.
+  ///
+  /// In en, this message translates to:
+  /// **'How these numbers are worked out'**
+  String get howWeEstimate;
+
+  /// No description provided for @assumptionsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Road distance is the straight line × 1.3 unless a road route is available. Times assume walking at 4.5 km/h, autos at 18 km/h and taxis at 20 km/h, with no traffic or waiting. Meter fares use the published rate; the meter decides the real fare.'**
+  String get assumptionsBody;
+
+  /// No description provided for @fareRuleSource.
+  ///
+  /// In en, this message translates to:
+  /// **'{mode}: rates from {source}, effective {date}'**
+  String fareRuleSource(String mode, String source, String date);
+
+  /// No description provided for @noFareRules.
+  ///
+  /// In en, this message translates to:
+  /// **'No fare rates entered yet, so meter fares cannot be estimated.'**
+  String get noFareRules;
+
+  /// No description provided for @nearbyPickups.
+  ///
+  /// In en, this message translates to:
+  /// **'Stands near the station'**
+  String get nearbyPickups;
+
+  /// No description provided for @nearbyPickupsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No stands recorded near this station yet.'**
+  String get nearbyPickupsEmpty;
+
+  /// No description provided for @verificationAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked by us'**
+  String get verificationAdmin;
+
+  /// No description provided for @verificationOsm.
+  ///
+  /// In en, this message translates to:
+  /// **'From OpenStreetMap'**
+  String get verificationOsm;
+
+  /// No description provided for @verificationCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported by commuters'**
+  String get verificationCommunity;
+
+  /// No description provided for @communityReports.
+  ///
+  /// In en, this message translates to:
+  /// **'Commuter reports'**
+  String get communityReports;
+
+  /// No description provided for @communityReportsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No reports near this station right now.'**
+  String get communityReportsEmpty;
+
+  /// No description provided for @communityReportsOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports need the server, which is not set up yet.'**
+  String get communityReportsOffline;
+
+  /// No description provided for @reportSomething.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get reportSomething;
+
+  /// No description provided for @reportWhere.
+  ///
+  /// In en, this message translates to:
+  /// **'Where'**
+  String get reportWhere;
+
+  /// No description provided for @reportTypeQueue.
+  ///
+  /// In en, this message translates to:
+  /// **'Long queue'**
+  String get reportTypeQueue;
+
+  /// No description provided for @reportTypeNoVehicles.
+  ///
+  /// In en, this message translates to:
+  /// **'No autos or taxis'**
+  String get reportTypeNoVehicles;
+
+  /// No description provided for @reportTypeStandMoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Stand has moved'**
+  String get reportTypeStandMoved;
+
+  /// No description provided for @reportTypeStopIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'Bus stop problem'**
+  String get reportTypeStopIssue;
+
+  /// No description provided for @reportTypeClosure.
+  ///
+  /// In en, this message translates to:
+  /// **'Road closed'**
+  String get reportTypeClosure;
+
+  /// No description provided for @reportTypeDisruption.
+  ///
+  /// In en, this message translates to:
+  /// **'Disruption'**
+  String get reportTypeDisruption;
+
+  /// No description provided for @reportNoteHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Short note (optional)'**
+  String get reportNoteHint;
+
+  /// No description provided for @reportPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Others see the report and its place, never your name or account.'**
+  String get reportPrivacy;
+
+  /// No description provided for @reportSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Send report'**
+  String get reportSubmit;
+
+  /// No description provided for @reportSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks. Others will see your report until it expires.'**
+  String get reportSent;
+
+  /// No description provided for @reportConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Still true'**
+  String get reportConfirm;
+
+  /// No description provided for @reportConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmed by {count}'**
+  String reportConfirmed(int count);
+
+  /// No description provided for @reportAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} min ago'**
+  String reportAgo(int minutes);
 }
 
 class _AppLocalizationsDelegate

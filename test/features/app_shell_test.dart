@@ -47,6 +47,8 @@ void main() {
 
     await tester.tap(find.text('Home').last);
     await tester.pumpAndSettle();
+    await tester.drag(find.byType(ListView).first, const Offset(0, -400));
+    await tester.pumpAndSettle();
     expect(find.text('Kalyan → Andheri'), findsOneWidget);
   });
 

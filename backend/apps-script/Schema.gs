@@ -85,6 +85,20 @@ var SCHEMA = {
       ['source_id', 'id', true, ''],
     ],
   },
+  Places: {
+    access: 'public read; admin write',
+    columns: [
+      ['place_id', 'id', true, 'e.g. P-YOGIDHAM'],
+      ['name_en', 'string', true, ''],
+      ['name_mr', 'string', false, ''],
+      ['name_hi', 'string', false, ''],
+      ['kind', 'string', true, 'housing, suburb, landmark, ...'],
+      ['lat', 'number', true, ''],
+      ['lng', 'number', true, ''],
+      ['near_station_id', 'id', false, 'FK Stations; default station for the finder'],
+      ['source_id', 'id', true, ''],
+    ],
+  },
   BusRoutes: {
     access: 'public read; admin write',
     columns: [
@@ -138,6 +152,7 @@ var SCHEMA = {
       ['android_package', 'string', false, ''],
       ['link_template', 'string', false, 'with {plat},{plng},{dlat},{dlng}'],
       ['active', 'bool', true, ''],
+      ['source_id', 'id', false, 'where the link format is documented'],
     ],
   },
   FareRules: {
@@ -171,7 +186,9 @@ var SCHEMA = {
       ['created_at', 'datetime', true, ''],
       ['expires_at', 'datetime', true, 'per type, e.g. queue 30 min'],
       ['corroborations', 'int', true, ''],
+      ['corroborated_by', 'string', false, 'uid hashes, server only; one per user'],
       ['moderated_by', 'id', false, ''],
+      ['moderated_at', 'datetime', false, ''],
     ],
   },
   ServiceAlerts: {

@@ -1,0 +1,4 @@
+provider_id,name,categories,integration,android_package,link_template,active,source_id
+uber,Uber,"auto,bike,cab",deep_link,com.ubercab,https://m.uber.com/ul/?action=setPickup&pickup%5Blatitude%5D={plat}&pickup%5Blongitude%5D={plng}&dropoff%5Blatitude%5D={dlat}&dropoff%5Blongitude%5D={dlng}&dropoff%5Bnickname%5D={dname},TRUE,uber-universal-link
+ola,Ola,"auto,bike,cab",open_app,com.olacabs.customer,,TRUE,
+rapido,Rapido,"auto,bike,cab",open_app,com.rapido.passenger,,TRUE,

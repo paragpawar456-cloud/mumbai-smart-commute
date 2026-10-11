@@ -25,7 +25,8 @@ function parseCsv(text) {
   return body.map((r) => Object.fromEntries((header || []).map((h, j) => [h, r[j] ?? ''])));
 }
 
-const TABLES = ['Stations', 'TrainRoutes', 'Interchanges', 'TrainTrips', 'TripStopTimes', 'DataSources'];
+const TABLES = ['Stations', 'TrainRoutes', 'Interchanges', 'TrainTrips', 'TripStopTimes', 'DataSources',
+  'Places', 'PickupPoints', 'BusStops', 'BusRoutes', 'FareRules', 'TransportProviders'];
 
 function loadCsvTables(dir) {
   const out = {};

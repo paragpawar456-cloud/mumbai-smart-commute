@@ -106,3 +106,24 @@ test('large packs are cached in chunks under the 100 KB cache limit', () => {
   const again = call({ action: 'getDataPack', payload: { haveVersion: 0 } });
   assert.strictEqual(JSON.stringify(again), JSON.stringify(first));
 });
+
+test('last-mile tables are packed and validated', () => {
+  const { ctx } = load();
+  const t = loadCsvTables(TEMPLATES);
+  ctx.__t = t;
+  const pack = vm.runInContext("tablesToPack_(__t, 1, 'x')", ctx);
+  assert.ok(pack.places.some((p) => p.name_en === 'Yogidham'));
+  assert.strictEqual(typeof pack.fare_rules[0].min_fare_inr, 'number');
+  assert.strictEqual(pack.providers.length, 3);
+
+  t.PickupPoints = [...t.PickupPoints, { ...t.PickupPoints[0], kind: 'helicopter', shared_fare_inr: '20', fare_source: '' }];
+  t.FareRules = [{ ...t.FareRules[0], fare_rule_id: 'X', night_multiplier: '3', source_id: '' }];
+  t.TransportProviders = [{ ...t.TransportProviders[0], link_template: 'http://evil' }];
+  t.BusStops = [{ stop_id: 'S1', name_en: 'A', lat: '19.2', lng: '73.1', source_id: 'x' }];
+  t.BusRoutes = [{ bus_route_id: 'KDMT:1', operator: 'KDMT', route_number: '1', name_en: 'x', stop_sequence: 'S1,S9', source_id: 'x' }];
+  const errors = Array.from(vm.runInContext("validatePack_(tablesToPack_(__t, 1, 'x'))", ctx)).join('\n');
+  for (const want of ['Duplicate pickup_id', 'invalid kind', 'no fare_source', 'night_multiplier',
+                      'has no source_id (official', 'deep link must be https', 'unknown stop S9']) {
+    assert.ok(errors.includes(want), `missing "${want}" in:\n${errors}`);
+  }
+});

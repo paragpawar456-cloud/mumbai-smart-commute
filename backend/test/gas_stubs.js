@@ -48,14 +48,14 @@ function makeCache() {
   };
 }
 
-function makeGlobals({ lookup } = {}) {
+function makeGlobals({ lookup, ors, props: extraProps } = {}) {
   const ss = makeSpreadsheet();
   const cache = makeCache();
   const fetches = [];
-  const props = { FIREBASE_WEB_API_KEY: 'test-key' };
+  const props = { FIREBASE_WEB_API_KEY: 'test-key', ...extraProps };
   return {
     console,
-    JSON, Date, Math, Number, String, Object, Array, Error,
+    JSON, Date, Math, Number, String, Object, Array, Error, isFinite,
     SpreadsheetApp: { getActiveSpreadsheet: () => ss },
     CacheService: { getScriptCache: () => cache },
     LockService: { getScriptLock: () => ({ tryLock: () => true, releaseLock: () => {} }) },
@@ -68,6 +68,10 @@ function makeGlobals({ lookup } = {}) {
     UrlFetchApp: {
       fetch: (url, opts) => {
         fetches.push({ url, opts });
+        if (url.includes('openrouteservice')) {
+          const { code, body } = ors(JSON.parse(opts.payload), opts.headers);
+          return { getResponseCode: () => code, getContentText: () => JSON.stringify(body) };
+        }
         const { code, body } = lookup(JSON.parse(opts.payload).idToken);
         return { getResponseCode: () => code, getContentText: () => JSON.stringify(body) };
       },

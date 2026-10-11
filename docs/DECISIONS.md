@@ -19,3 +19,8 @@
 | D15 | Route planner runs on the phone (stops + change penalty); scheduled times added only when trips exist | Works offline; no routing API cost | 2026-10-11 |
 | D16 | Anonymous rate limits are global per action (600/min), not per device | Apps Script can't see client IPs; per-user limits apply once signed in | 2026-10-11 |
 | D17 | Map lines drawn straight between stations, labelled as such | Exact track geometry not needed for the pilot; never implies more precision than we have | 2026-10-11 |
+| D18 | Last-mile engine runs on the phone from the data pack; straight line × 1.3 for road distance unless openrouteservice returns one | Works offline and at ₹0; every estimate shows its assumptions | 2026-10-11 |
+| D19 | Seeded auto/taxi fares labelled "as reported" by two news outlets until the official MMRTA card is entered; all meter fares shown as Estimate | Official card wasn't reachable; never present an estimate as exact | 2026-10-11 |
+| D20 | Uber via its universal link (trip prefilled); Ola and Rapido open their Play Store page | No documented public deep link for Ola/Rapido; no prices from any provider | 2026-10-11 |
+| D21 | Community reports: signed-in only, 5 live per user, location rounded to ~11 m, uid never public, one "still true" per user (hashed), expiry per type | Useful, abuse-resistant, and keeps reporters private | 2026-10-11 |
+| D22 | A pickup point is a place where vehicles are usually found; the app always says it can't see vehicles there now | No live vehicle data exists; avoids implied availability | 2026-10-11 |

@@ -36,3 +36,18 @@ node backend/tool/check_csv.js path/to/folder   # same checks the server runs
 ## Refreshing station coordinates
 
 Station coordinates come from OpenStreetMap. To refresh them, run the **OSM data extract** workflow in GitHub Actions, then `python3 tool/pack/build_seed_pack.py`, which rewrites `assets/data/seed_pack.json` and the CSV templates.
+
+## Last-mile data (Phase 5)
+
+| Tab | What | Template |
+|---|---|---|
+| Places | Destinations people search for (housing societies, areas, landmarks) | `Places.csv` (7 around Kalyan from OpenStreetMap, incl. Yogidham) |
+| PickupPoints | Auto stands, shared-auto points, taxi stands | `PickupPoints.csv` (2 OSM auto stands) |
+| BusStops / BusRoutes | Bus stops and the stop order of each route | header only |
+| FareRules | Auto and taxi meter rates | `FareRules.csv` (MMRTA rates from 1 Sep 2026, as reported) |
+| TransportProviders | Ride-hailing apps and how to open them | `TransportProviders.csv` (Uber, Ola, Rapido) |
+
+- **Shared autos:** add a `PickupPoints` row with `kind` = `shared_auto`, the areas it serves in `destinations` (e.g. "Yogidham, Gauripada"), and the per-seat fare in `shared_fare_inr` only if you have checked it, with how in `fare_source` (e.g. "asked drivers, 12 Oct 2026"). Set `verification` = `admin_verified` and `verified_at`.
+- **Fares:** when the official MMRTA tariff card is available, add a `DataSources` row for it and point the `FareRules` rows' `source_id` at it. Leave `per_km_inr` empty if you only know the minimum fare; the app then shows "from ₹X".
+- **Buses:** enter stops first (with coordinates), then a `BusRoutes` row listing `stop_id`s in order in `stop_sequence`. `frequency_note` is free text from the operator's published information.
+- Publish as usual. "Check data for problems" also checks these tabs (coordinates in the Mumbai region, unknown stops, fares without a source, https-only booking links).

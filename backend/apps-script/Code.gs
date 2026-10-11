@@ -28,6 +28,12 @@ function routes_() {
   getProfile:      { auth: true,  rate: [30, 60],  handler: handleGetProfile },
   updateProfile:   { auth: true,  rate: [10, 60],  write: true, handler: handleUpdateProfile },
   deleteMyData:    { auth: true,  rate: [3, 3600], write: true, handler: handleDeleteMyData },
+  submitReport:    { auth: true,  rate: [5, 600],  write: true, handler: handleSubmitReport },
+  listReports:     { auth: false, rate: [600, 60], handler: handleListReports },
+  corroborateReport: { auth: true, rate: [30, 600], write: true, handler: handleCorroborateReport },
+  roadDistance:    { auth: true,  rate: [30, 600], handler: handleRoadDistance },
+  modListReports:  { auth: true,  roles: ['moderator', 'admin'], rate: [60, 60], handler: handleModListReports },
+  moderateReport:  { auth: true,  roles: ['moderator', 'admin'], rate: [60, 60], write: true, handler: handleModerateReport },
   adminListUsers:  { auth: true,  roles: ['admin'], rate: [60, 60], handler: handleAdminListUsers },
   adminSetUserStatus: { auth: true, roles: ['admin'], rate: [30, 60], write: true, handler: handleAdminSetUserStatus },
   };
