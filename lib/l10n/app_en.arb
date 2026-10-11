@@ -1,0 +1,80 @@
+{
+  "@@locale": "en",
+  "appTitle": "Mumbai Smart Commute",
+  "navHome": "Home",
+  "navRoutes": "Routes",
+  "navMap": "Live Map",
+  "navSaved": "Saved",
+  "navProfile": "Profile",
+  "homeGreeting": "Where are you going?",
+  "fromLabel": "From",
+  "toLabel": "To",
+  "fromHint": "Current location or station",
+  "toHint": "Destination, e.g. Yogidham, Kalyan West",
+  "findRoutes": "Find routes",
+  "nearbyTransport": "Nearby transport",
+  "nearbyTransportBody": "Stations, bus stops and auto stands near you",
+  "savedJourneys": "Saved journeys",
+  "noSavedJourneys": "No saved journeys yet. Search a route and tap the star to save it.",
+  "routesTitle": "Plan a journey",
+  "routesComingSoon": "Train, metro and bus timetables arrive in the next update.",
+  "mapTitle": "Map",
+  "mapComingSoon": "The map arrives in the next update. Vehicles are only shown as live when a genuine live feed exists.",
+  "savedTitle": "Saved",
+  "profileTitle": "Profile",
+  "language": "Language",
+  "theme": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "reducedMotion": "Reduce motion",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "register": "Create account",
+  "email": "Email",
+  "password": "Password",
+  "displayName": "Name",
+  "forgotPassword": "Forgot password?",
+  "resetEmailSent": "If an account exists for that email, a reset link has been sent.",
+  "verifyEmailSent": "We sent a verification link to your email.",
+  "continueWithGoogle": "Continue with Google",
+  "continueAsGuest": "Continue without an account",
+  "guestNote": "You can use timetables and the map without an account. Sign in to save routes and report updates.",
+  "signedInAs": "Signed in as {email}",
+  "@signedInAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "notSignedIn": "Not signed in",
+  "authUnavailable": "Sign-in is not configured in this build.",
+  "deleteAccount": "Delete account",
+  "deleteAccountConfirm": "This permanently deletes your account and saved data. Continue?",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "retry": "Retry",
+  "offline": "You are offline. Showing saved information.",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorNetwork": "Could not reach the server. Check your connection.",
+  "backendStatus": "Server status",
+  "backendOk": "Connected",
+  "backendNotConfigured": "Server not configured in this build",
+  "sourceLive": "Live",
+  "sourceScheduled": "Scheduled",
+  "sourceEstimate": "Estimate",
+  "sourceOfficial": "Official",
+  "sourceCommunity": "Community reported",
+  "sourceUnknown": "Unknown",
+  "updatedAt": "Updated {time}",
+  "@updatedAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "about": "About and data sources",
+  "aboutBody": "Map data © OpenStreetMap contributors. Fares marked Estimate are calculated from official tariffs and are not live quotes. This app is not an emergency service."
+}

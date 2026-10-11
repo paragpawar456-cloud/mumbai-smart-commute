@@ -1,0 +1,9 @@
+{
+  "name": "mumbai-smart-commute-backend",
+  "private": true,
+  "description": "Apps Script backend tests (run locally with stubs, no Google account needed)",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "schema-doc": "node tool/gen_schema_doc.js > ../docs/SHEET_SCHEMA.md"
+  }
+}

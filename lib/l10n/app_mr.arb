@@ -1,0 +1,80 @@
+{
+  "@@locale": "mr",
+  "appTitle": "मुंबई स्मार्ट कम्यूट",
+  "navHome": "होम",
+  "navRoutes": "मार्ग",
+  "navMap": "नकाशा",
+  "navSaved": "जतन",
+  "navProfile": "प्रोफाइल",
+  "homeGreeting": "तुम्ही कुठे जात आहात?",
+  "fromLabel": "कुठून",
+  "toLabel": "कुठे",
+  "fromHint": "सध्याचे ठिकाण किंवा स्टेशन",
+  "toHint": "गंतव्य, उदा. योगीधाम, कल्याण पश्चिम",
+  "findRoutes": "मार्ग शोधा",
+  "nearbyTransport": "जवळची वाहतूक",
+  "nearbyTransportBody": "तुमच्या जवळची स्टेशने, बस थांबे आणि रिक्षा स्टँड",
+  "savedJourneys": "जतन केलेले प्रवास",
+  "noSavedJourneys": "अजून कोणताही प्रवास जतन केलेला नाही. मार्ग शोधा आणि जतन करण्यासाठी तारा दाबा.",
+  "routesTitle": "प्रवासाचे नियोजन",
+  "routesComingSoon": "लोकल, मेट्रो आणि बसचे वेळापत्रक पुढील अपडेटमध्ये येईल.",
+  "mapTitle": "नकाशा",
+  "mapComingSoon": "नकाशा पुढील अपडेटमध्ये येईल. खरी लाइव्ह माहिती असेल तेव्हाच वाहने लाइव्ह दाखवली जातील.",
+  "savedTitle": "जतन",
+  "profileTitle": "प्रोफाइल",
+  "language": "भाषा",
+  "theme": "थीम",
+  "themeSystem": "सिस्टम",
+  "themeLight": "लाइट",
+  "themeDark": "डार्क",
+  "reducedMotion": "अ‍ॅनिमेशन कमी करा",
+  "signIn": "साइन इन",
+  "signOut": "साइन आउट",
+  "register": "खाते तयार करा",
+  "email": "ईमेल",
+  "password": "पासवर्ड",
+  "displayName": "नाव",
+  "forgotPassword": "पासवर्ड विसरलात?",
+  "resetEmailSent": "त्या ईमेलचे खाते असल्यास, रीसेट लिंक पाठवली आहे.",
+  "verifyEmailSent": "तुमच्या ईमेलवर पडताळणी लिंक पाठवली आहे.",
+  "continueWithGoogle": "Google ने पुढे चला",
+  "continueAsGuest": "खात्याशिवाय पुढे चला",
+  "guestNote": "खात्याशिवायही वेळापत्रक आणि नकाशा वापरता येतो. मार्ग जतन करण्यासाठी आणि माहिती कळवण्यासाठी साइन इन करा.",
+  "signedInAs": "{email} म्हणून साइन इन",
+  "@signedInAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "notSignedIn": "साइन इन केलेले नाही",
+  "authUnavailable": "या बिल्डमध्ये साइन-इन सुरू केलेले नाही.",
+  "deleteAccount": "खाते हटवा",
+  "deleteAccountConfirm": "यामुळे तुमचे खाते आणि जतन केलेली माहिती कायमची हटवली जाईल. पुढे जायचे?",
+  "cancel": "रद्द करा",
+  "confirm": "पुष्टी करा",
+  "retry": "पुन्हा प्रयत्न करा",
+  "offline": "तुम्ही ऑफलाइन आहात. जतन केलेली माहिती दाखवत आहोत.",
+  "errorGeneric": "काहीतरी चुकले. कृपया पुन्हा प्रयत्न करा.",
+  "errorNetwork": "सर्व्हरशी संपर्क झाला नाही. तुमचे कनेक्शन तपासा.",
+  "backendStatus": "सर्व्हर स्थिती",
+  "backendOk": "जोडलेले",
+  "backendNotConfigured": "या बिल्डमध्ये सर्व्हर सेट केलेला नाही",
+  "sourceLive": "लाइव्ह",
+  "sourceScheduled": "वेळापत्रकानुसार",
+  "sourceEstimate": "अंदाज",
+  "sourceOfficial": "अधिकृत",
+  "sourceCommunity": "प्रवाशांनी कळवलेले",
+  "sourceUnknown": "अज्ञात",
+  "updatedAt": "{time} ला अपडेट",
+  "@updatedAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "about": "माहिती आणि डेटा स्रोत",
+  "aboutBody": "नकाशा डेटा © OpenStreetMap योगदानकर्ते. 'अंदाज' असे लिहिलेले भाडे अधिकृत दरांवरून काढलेले आहे, ते लाइव्ह दर नाहीत. हे अ‍ॅप आपत्कालीन सेवा नाही."
+}

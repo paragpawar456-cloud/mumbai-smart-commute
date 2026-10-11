@@ -1,0 +1,10 @@
+{
+  "APP_ENV": "dev",
+  "BACKEND_URL": "",
+  "FIREBASE_API_KEY": "",
+  "FIREBASE_APP_ID": "",
+  "FIREBASE_PROJECT_ID": "",
+  "FIREBASE_MESSAGING_SENDER_ID": "",
+  "TILE_URL_TEMPLATE": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "USER_AGENT_PACKAGE": "com.mumbaismartcommute.mumbai_smart_commute"
+}
