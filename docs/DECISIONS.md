@@ -27,3 +27,4 @@
 | D23 | Admin dashboard lives inside the app (Profile → Admin), not an Apps Script web page; replaces D5 | Reuses the app's sign-in and role checks; Firebase sign-in inside Apps Script's sandboxed page is unreliable; one codebase. The Sheet stays the owner's bulk-editing tool | 2026-10-11 |
 | D24 | Service alerts must link to the official announcement (https) and are shown as Official | Never publish disruptions without a checkable source | 2026-10-11 |
 | D25 | Privacy consent is recorded per notice version; the app asks again when the notice changes. Not enforced on the server | Honest record without locking people out of public data | 2026-10-11 |
+| D26 | No sign-in shown anywhere until both Firebase and the server are configured; the app is guest-only until then | Owner asked to remove sign-in for now and set it up later; turns on by itself once configured | 2026-10-11 |

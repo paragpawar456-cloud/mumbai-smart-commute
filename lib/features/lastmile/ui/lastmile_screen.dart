@@ -457,6 +457,9 @@ class _CommunityReports extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final text = Theme.of(context).textTheme;
     final api = ref.watch(lastMileApiProvider);
+    // No server in this build: leave the section out rather than show a gap.
+    if (!api.available) return const SizedBox.shrink();
+    final accounts = ref.watch(accountsEnabledProvider);
     final reports = ref.watch(reportsNearProvider(station.id));
     final now = DateTime.now();
     return Column(
@@ -464,7 +467,7 @@ class _CommunityReports extends ConsumerWidget {
       children: [
         Row(children: [
           Expanded(child: Text(l.communityReports, style: text.titleMedium)),
-          if (api.available)
+          if (accounts)
             TextButton.icon(
               key: const Key('reportButton'),
               onPressed: () => _report(context, ref),
@@ -472,10 +475,7 @@ class _CommunityReports extends ConsumerWidget {
               label: Text(l.reportSomething),
             ),
         ]),
-        if (!api.available)
-          Text(l.communityReportsOffline, style: text.bodySmall)
-        else
-          reports.when(
+        reports.when(
             loading: () => const Padding(
               padding: EdgeInsets.all(8),
               child: LinearProgressIndicator(),
@@ -494,10 +494,12 @@ class _CommunityReports extends ConsumerWidget {
                           if (r.corroborations > 0) l.reportConfirmed(r.corroborations),
                           if (r.note.isNotEmpty) r.note,
                         ].join(' · ')),
-                        trailing: TextButton(
-                          onPressed: () => _confirm(context, ref, r.id),
-                          child: Text(l.reportConfirm),
-                        ),
+                        trailing: accounts
+                            ? TextButton(
+                                onPressed: () => _confirm(context, ref, r.id),
+                                child: Text(l.reportConfirm),
+                              )
+                            : null,
                       ),
                   ]),
           ),
