@@ -1,0 +1,21 @@
+[
+ {
+  "osm": "node/14098734284",
+  "lat": 19.2532299,
+  "lon": 73.1333845,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Wayle Nagar Auto Stand",
+   "taxi_vehicle": "auto_rickshaw"
+  }
+ },
+ {
+  "osm": "node/14108265297",
+  "lat": 19.2578758,
+  "lon": 73.1335092,
+  "tags": {
+   "amenity": "taxi",
+   "taxi_vehicle": "auto_rickshaw"
+  }
+ }
+]

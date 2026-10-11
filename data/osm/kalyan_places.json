@@ -1,0 +1,103 @@
+[
+ {
+  "osm": "node/1600720971",
+  "lat": 19.2396742,
+  "lon": 73.1366482,
+  "tags": {
+   "name": "Kalyan",
+   "name:hi": "कल्याण",
+   "place": "borough",
+   "wikidata": "Q366754",
+   "wikimedia_commons": "Category:Kalyan",
+   "wikipedia": "en:Kalyan"
+  }
+ },
+ {
+  "osm": "node/1600720972",
+  "lat": 19.2391602,
+  "lon": 73.1293186,
+  "tags": {
+   "name": "Kalyan-Dombivli",
+   "name:ar": "كاليان دومبيفلي",
+   "name:en": "Kalyan-Dombivli",
+   "name:fa": "کالیان-دومبیولی",
+   "name:hi": "कल्याण-डोंबिवली",
+   "name:kn": "ಕಲ್ಯಾಣ-ದೊಂಬಿವಿಲಿ",
+   "name:ml": "കല്യാൺ-ഡോംബിവ്ലി",
+   "name:mr": "कल्याण-डोंबिवली",
+   "name:pl": "Kalyan-Dombivali",
+   "name:ru": "Кальян-Домбивли",
+   "name:sat": "ᱠᱚᱞᱭᱟᱱ ᱰᱚᱢᱵᱤᱣᱤᱞᱤ",
+   "place": "city",
+   "population": "1247327",
+   "postal_code": "421301",
+   "wikidata": "Q581999",
+   "wikipedia": "en:Kalyan-Dombivli"
+  }
+ },
+ {
+  "osm": "node/1682314548",
+  "lat": 19.231469,
+  "lon": 73.1512624,
+  "tags": {
+   "name": "Vitthalwadi",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/2629924559",
+  "lat": 19.2474452,
+  "lon": 73.1226227,
+  "tags": {
+   "name": "Aadharwadi",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/2629924562",
+  "lat": 19.2525044,
+  "lon": 73.1373763,
+  "tags": {
+   "name": "Khadakpada",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/10247312858",
+  "lat": 19.2278526,
+  "lon": 73.1322955,
+  "tags": {
+   "name": "Kalyan East",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/10247312859",
+  "lat": 19.240353,
+  "lon": 73.1252789,
+  "tags": {
+   "name": "Kalyan West",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "way/1411150860",
+  "lat": 19.2480763,
+  "lon": 73.1520523,
+  "tags": {
+   "landuse": "residential",
+   "name": "Yogidham Phase 3",
+   "residential": "apartments"
+  }
+ },
+ {
+  "osm": "way/1413460408",
+  "lat": 19.247338,
+  "lon": 73.1530386,
+  "tags": {
+   "landuse": "residential",
+   "name": "Yogidham",
+   "residential": "apartments"
+  }
+ }
+]
