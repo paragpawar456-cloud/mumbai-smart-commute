@@ -523,5 +523,211 @@
         "type": "String"
       }
     }
-  }
+  },
+  "autoStand": "Auto stand",
+  "bookInApp": "Book a ride",
+  "bookInAppNote": "Opens the app; the app shows the real price and whether a vehicle is free.",
+  "departingNow": "Leaving now",
+  "fareTrainTicketOnly": "Train ticket only",
+  "noBusData": "No bus stops for this area are in the app yet.",
+  "noLiveAutos": "Autos have no live tracking anywhere, so the app shows the stands where autos usually wait, not moving vehicles.",
+  "noLiveBuses": "Local buses here share no live location, so the app shows the stops and how often buses come, not moving buses.",
+  "optionAuto": "Auto all the way",
+  "optionBus": "Bus",
+  "optionCab": "Taxi or cab",
+  "optionTrain": "Train",
+  "optionTrainAuto": "Train + auto",
+  "optionsTimeNote": "Times are estimates without traffic or waiting. Fares use the official meter rate; the meter decides the real fare.",
+  "scheduledNotLive": "Position from the timetable, not live GPS. Trains can run late.",
+  "seeDetails": "See details",
+  "tagCheapest": "Cheapest",
+  "tagEstimate": "Estimate",
+  "tagFastest": "Fastest",
+  "tagScheduled": "Timetable",
+  "whereIsMyAuto": "Where is my auto",
+  "whereIsMyBus": "Where is my bus",
+  "whereIsMyTrain": "Where is my train",
+  "whereShort": "Where",
+  "youBoardHere": "You board here",
+  "youGetOffHere": "You get off here",
+  "farePlusTicket": "≈ ₹{amount} + train ticket",
+  "@farePlusTicket": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "inMinutes": "in {minutes} min",
+  "@inMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "minutesBig": "{minutes} min",
+  "@minutesBig": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "reachesAt": "reaches at {time}",
+  "@reachesAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "standsNear": "Auto stands near {place}",
+  "@standsNear": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "stopsNear": "Bus stops near {place}",
+  "@stopsNear": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "stepAutoTo": "Auto to {place}",
+  "@stepAutoTo": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "stepWalkTo": "Walk to {place}",
+  "@stepWalkTo": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "timetableComingFor": "Train times aren't loaded yet. Once the official Central Railway timetable is added, trains from {from} to {to} appear here, each with \"Where is my train\".",
+  "@timetableComingFor": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "trainArrivingNow": "Arriving at {station} now",
+  "@trainArrivingNow": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "trainAtNow": "At {station} now",
+  "@trainAtNow": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "trainFinished": "Reached {station}, journey over",
+  "@trainFinished": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "trainLeftAgo": "Left {station} {minutes} min ago",
+  "@trainLeftAgo": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "trainNowAt": "Now at {station}",
+  "@trainNowAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "trainNowBetween": "Between {a} and {b}",
+  "@trainNowBetween": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "trainReached": "Reached {station}",
+  "@trainReached": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "trainReachesIn": "Reaches {station} in {minutes} min",
+  "@trainReachesIn": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "trainStartsAt": "Starts from {station} at {time}",
+  "@trainStartsAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "trainsBetween": "Trains {from} → {to}",
+  "@trainsBetween": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "waysToGo": "{count, plural, =1{1 way to go} other{{count} ways to go}}",
+  "@waysToGo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "boardAtLabel": "Board at:",
+  "getOffAtLabel": "Get off at:"
 }

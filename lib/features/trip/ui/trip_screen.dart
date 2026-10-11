@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import '../../../shared/widgets/info_state.dart';
 import '../../lastmile/data/lastmile_providers.dart';
-import '../../lastmile/domain/lastmile_engine.dart';
-import '../../lastmile/ui/option_card.dart';
 import '../../transit/data/transit_providers.dart';
-import '../../transit/domain/models.dart';
-import '../../transit/ui/journey_card.dart';
+import '../domain/trip_options.dart';
 import '../domain/trip_planner.dart';
 import '../domain/trip_point.dart';
 import 'location_search.dart';
+import 'road_option_screen.dart';
+import 'train_option_screen.dart';
+import 'trip_option_tile.dart';
 
-/// Door to door between any two points: the train with the road legs at each
-/// end, and the direct road options, side by side.
+/// Door to door between any two points: every way to go, side by side.
 class TripScreen extends ConsumerStatefulWidget {
   const TripScreen({super.key, required this.from, required this.to});
 
@@ -35,6 +35,14 @@ class _TripScreenState extends ConsumerState<TripScreen> {
     if (p != null) setState(() => isFrom ? _from = p : _to = p);
   }
 
+  void _open(TripPlan plan, TripOption o) {
+    Navigator.of(context).push(MaterialPageRoute<void>(
+      builder: (_) => o.kind == TripOptionKind.train
+          ? TrainOptionScreen(plan: plan, option: o)
+          : RoadOptionScreen(plan: plan, option: o),
+    ));
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -42,6 +50,7 @@ class _TripScreenState extends ConsumerState<TripScreen> {
     final pack = loaded.value?.pack;
     final rail = ref.watch(routePlannerProvider);
     final road = ref.watch(lastMileEngineProvider);
+    final tt = ref.watch(timetableProvider);
     if (pack == null || rail == null || road == null) {
       return Scaffold(
         appBar: AppBar(title: Text(l.tripTitle)),
@@ -50,9 +59,11 @@ class _TripScreenState extends ConsumerState<TripScreen> {
             : const Center(child: CircularProgressIndicator()),
       );
     }
-    final plan = TripPlanner(pack, rail, road).plan(_from, _to, DateTime.now());
-    final train = _TrainSection(plan: plan, pack: pack);
-    final byRoad = _RoadSection(plan: plan);
+    final now = ref.watch(clockProvider)();
+    final plan = TripPlanner(pack, rail, road).plan(_from, _to, now);
+    final options = buildTripOptions(plan, pack, tt, now);
+    final fastest = fastestOption(options);
+    final cheapest = cheapestOption(options);
     final text = Theme.of(context).textTheme;
 
     return Scaffold(
@@ -60,154 +71,122 @@ class _TripScreenState extends ConsumerState<TripScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Card(
-            child: Column(children: [
-              ListTile(
-                key: const Key('tripFrom'),
-                leading: const Icon(Icons.trip_origin, color: AppColors.brand),
-                title: Text(_from.name),
-                subtitle: Text(l.fromLabel),
-                trailing: const Icon(Icons.edit_outlined),
-                onTap: () => _change(true),
-              ),
-              const Divider(height: 1),
-              ListTile(
-                key: const Key('tripTo'),
-                leading: const Icon(Icons.place, color: AppColors.bus),
-                title: Text(_to.name),
-                subtitle: Text(l.toLabel),
-                trailing: const Icon(Icons.edit_outlined),
-                onTap: () => _change(false),
-              ),
-            ]),
+          _RouteHeader(
+            from: _from,
+            to: _to,
+            km: plan.direct.km,
+            onFrom: () => _change(true),
+            onTo: () => _change(false),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 20),
+          Text(l.waysToGo(options.length),
+              style: text.titleLarge?.copyWith(fontWeight: FontWeight.w700)),
+          const SizedBox(height: 4),
           if (plan.noTrainReason != null)
             Padding(
-              padding: const EdgeInsets.only(bottom: 12),
+              padding: const EdgeInsets.only(bottom: 8),
               child: Text(
                 switch (plan.noTrainReason!) {
-                  NoTrainReason.close => l.tripRoadOnlyClose,
-                  NoTrainReason.sameStation => l.tripRoadOnlyClose,
+                  NoTrainReason.close || NoTrainReason.sameStation =>
+                    l.tripRoadOnlyClose,
                   NoTrainReason.noStationNear => l.tripNoStationNear,
                   NoTrainReason.noRoute => l.noRouteFound,
                 },
                 style: text.bodyMedium,
               ),
             ),
-          if (plan.trainFirst) ...[train, const SizedBox(height: 24), byRoad]
-          else ...[
-            byRoad,
-            if (plan.hasTrain) ...[const SizedBox(height: 24), train],
-          ],
-          const SizedBox(height: 16),
+          const SizedBox(height: 8),
+          for (final o in options)
+            TripOptionTile(
+              key: Key('option-${o.kind.name}'),
+              option: o,
+              fastest: identical(o, fastest) && options.length > 1,
+              cheapest: identical(o, cheapest) && options.length > 1,
+              onTap: () => _open(plan, o),
+            ),
+          const SizedBox(height: 8),
           if (_from.source == TripPointSource.osm ||
               _to.source == TripPointSource.osm)
             Text(l.osmSearchCredit, style: text.bodySmall),
           const SizedBox(height: 4),
-          Text(l.assumptionsBody, style: text.bodySmall),
+          Text(l.optionsTimeNote, style: text.bodySmall),
         ],
       ),
     );
   }
 }
 
-class _SectionTitle extends StatelessWidget {
-  const _SectionTitle(this.icon, this.title);
-  final IconData icon;
-  final String title;
+class _RouteHeader extends StatelessWidget {
+  const _RouteHeader({
+    required this.from,
+    required this.to,
+    required this.km,
+    required this.onFrom,
+    required this.onTo,
+  });
 
-  @override
-  Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.only(bottom: 8),
-        child: Row(children: [
-          Icon(icon),
-          const SizedBox(width: 8),
-          Text(title, style: Theme.of(context).textTheme.titleLarge),
-        ]),
-      );
-}
-
-class _RoadSection extends StatelessWidget {
-  const _RoadSection({required this.plan});
-  final TripPlan plan;
+  final TripPoint from;
+  final TripPoint to;
+  final double km;
+  final VoidCallback onFrom;
+  final VoidCallback onTo;
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    return Column(
-      key: const Key('roadSection'),
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _SectionTitle(Icons.local_taxi_outlined, l.tripByRoad),
-        DistanceLine(result: plan.direct, road: null),
-        const SizedBox(height: 8),
-        for (final o in LastMileEngine.sort(plan.direct.options, SortBy.cheapest))
-          LastMileOptionCard(option: o),
-      ],
-    );
-  }
-}
-
-class _TrainSection extends StatelessWidget {
-  const _TrainSection({required this.plan, required this.pack});
-  final TripPlan plan;
-  final DataPack pack;
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
-    final first = plan.firstMile!, last = plan.lastMile!;
-    return Column(
-      key: const Key('trainSection'),
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _SectionTitle(Icons.train, l.tripByTrain),
-        if (first.result != null)
-          _LegTile(
-            title: l.tripLegToStation(first.station.name(lang)),
-            result: first.result!,
+    const white = Colors.white;
+    final text = Theme.of(context).textTheme;
+    Widget end(Key key, IconData icon, String label, String name, VoidCallback onTap) =>
+        InkWell(
+          key: key,
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: Row(children: [
+              Icon(icon, color: white),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(label,
+                        style: text.labelSmall?.copyWith(color: white.withValues(alpha: 0.8))),
+                    Text(name,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: text.titleMedium?.copyWith(
+                            color: white, fontWeight: FontWeight.w600)),
+                  ],
+                ),
+              ),
+              Icon(Icons.edit_outlined, size: 18, color: white.withValues(alpha: 0.8)),
+            ]),
           ),
-        JourneyCard(journey: plan.rail!, pack: pack),
-        if (last.result != null)
-          _LegTile(
-            title: l.tripLegFromStation(last.station.name(lang), plan.to.name),
-            result: last.result!,
-          ),
-      ],
-    );
-  }
-}
+        );
 
-/// A road leg to or from a station, collapsed to one line until opened.
-class _LegTile extends StatelessWidget {
-  const _LegTile({required this.title, required this.result});
-  final String title;
-  final LastMileResult result;
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final km = result.km.toStringAsFixed(1);
-    final walk = result.options.where((o) => o.kind == OptionKind.walk).firstOrNull;
-    final auto =
-        result.options.where((o) => o.kind == OptionKind.autoMeter).firstOrNull;
-    final summary = [
-      l.distanceRoadEstimate(km),
-      if (walk != null) '${l.optWalk} ${l.minutesShort(walk.minutes!)}',
-      if (auto?.fare != null)
-        '${l.optAutoMeter} ${auto!.fare!.minimumOnly ? l.fareFrom(auto.fare!.amount) : l.fareAbout(auto.fare!.amount)}',
-    ].join(' · ');
-    return Card(
-      child: ExpansionTile(
-        leading: const Icon(Icons.electric_rickshaw, color: AppColors.auto),
-        title: Text(title),
-        subtitle: Text(summary),
-        childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+    return Container(
+      padding: const EdgeInsets.fromLTRB(16, 8, 12, 12),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        gradient: const LinearGradient(
+          colors: [AppColors.brand, Color(0xFF1E88E5)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          for (final o in LastMileEngine.sort(result.options, SortBy.cheapest))
-            LastMileOptionCard(option: o),
+          end(const Key('tripFrom'), Icons.trip_origin, l.fromLabel, from.name, onFrom),
+          Padding(
+            padding: const EdgeInsets.only(left: 11),
+            child: Container(width: 2, height: 14, color: white.withValues(alpha: 0.5)),
+          ),
+          end(const Key('tripTo'), Icons.place, l.toLabel, to.name, onTo),
+          const SizedBox(height: 4),
+          Text(l.distanceRoadEstimate(km.toStringAsFixed(1)),
+              style: text.bodySmall?.copyWith(color: white.withValues(alpha: 0.9))),
         ],
       ),
     );

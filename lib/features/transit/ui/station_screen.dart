@@ -8,7 +8,9 @@ import '../../alerts/alerts.dart';
 import '../../../shared/widgets/info_state.dart';
 import '../../../shared/widgets/source_badge.dart';
 import '../data/transit_providers.dart';
+import '../../trip/ui/where_is_my_train_screen.dart';
 import '../domain/models.dart';
+import '../domain/timetable.dart';
 import 'line_badge.dart';
 
 class StationScreen extends ConsumerWidget {
@@ -78,6 +80,18 @@ class StationScreen extends ConsumerWidget {
             for (final d in departures)
               ListTile(
                 contentPadding: EdgeInsets.zero,
+                trailing: const Icon(Icons.gps_fixed),
+                onTap: () {
+                  final stops = tt!.stopsOf(d.trip.id);
+                  final i = stops.indexWhere(
+                      (s) => s.stationId == stationId && s.departure == d.departure);
+                  if (i == -1) return;
+                  Navigator.of(context).push(MaterialPageRoute<void>(
+                    builder: (_) => WhereIsMyTrainScreen(
+                        run: TrainRun(d.trip, stops, i, stops.length - 1),
+                        pack: pack),
+                  ));
+                },
                 leading: Text(formatMinutes(d.departure),
                     style: Theme.of(context).textTheme.titleLarge),
                 title: Text(l.towards(
