@@ -2001,6 +2001,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'from {place}'**
   String fromPlace(String place);
+
+  /// No description provided for @addedByYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Added by you'**
+  String get addedByYou;
+
+  /// No description provided for @remove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get remove;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// No description provided for @addAutoStand.
+  ///
+  /// In en, this message translates to:
+  /// **'Add an auto stand you know'**
+  String get addAutoStand;
+
+  /// No description provided for @addTaxiStand.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a taxi stand you know'**
+  String get addTaxiStand;
+
+  /// No description provided for @addStandNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved on this phone, so next time it shows right here.'**
+  String get addStandNote;
+
+  /// No description provided for @standNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Name, e.g. Station Road stand'**
+  String get standNameLabel;
+
+  /// No description provided for @taxiStand.
+  ///
+  /// In en, this message translates to:
+  /// **'Taxi stand'**
+  String get taxiStand;
+
+  /// No description provided for @openShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get openShort;
 }
 
 class _AppLocalizationsDelegate

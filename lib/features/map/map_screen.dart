@@ -4,7 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
 
-import '../../core/providers.dart';
+import '../../shared/widgets/app_map_tiles.dart';
+
 import '../../core/theme/app_colors.dart';
 import '../../l10n/gen/app_localizations.dart';
 import '../../shared/widgets/info_state.dart';
@@ -107,7 +108,6 @@ class _MapScreenState extends ConsumerState<MapScreen> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final config = ref.watch(appConfigProvider);
     final reducedMotion = ref.watch(settingsProvider).reducedMotion;
     final loaded = ref.watch(dataPackProvider);
     final pack = loaded.value?.pack;
@@ -173,10 +173,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
               ),
             ),
             children: [
-              TileLayer(
-                urlTemplate: config.tileUrlTemplate,
-                userAgentPackageName: config.userAgentPackage,
-              ),
+              const AppMapTiles(),
               PolylineLayer(polylines: [
                 for (final ln in visibleLines)
                   Polyline(
@@ -224,13 +221,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                     ),
                   ),
               ]),
-              RichAttributionWidget(
-                alignment: AttributionAlignment.bottomLeft,
-                attributions: [
-                  const TextSourceAttribution('OpenStreetMap contributors'),
-                  TextSourceAttribution(l.lineGeometryNote, prependCopyright: false),
-                ],
-              ),
+              AppMapAttribution(extra: [TextSourceAttribution(l.lineGeometryNote, prependCopyright: false)]),
             ],
           ),
         ],

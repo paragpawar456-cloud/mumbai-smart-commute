@@ -807,5 +807,14 @@
         "type": "String"
       }
     }
-  }
+  },
+  "addedByYou": "Added by you",
+  "remove": "Remove",
+  "save": "Save",
+  "addAutoStand": "Add an auto stand you know",
+  "addTaxiStand": "Add a taxi stand you know",
+  "addStandNote": "Saved on this phone, so next time it shows right here.",
+  "standNameLabel": "Name, e.g. Station Road stand",
+  "taxiStand": "Taxi stand",
+  "openShort": "Open"
 }

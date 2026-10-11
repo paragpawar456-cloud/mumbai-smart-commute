@@ -140,4 +140,38 @@ void main() {
     expect(find.text('Uber'), findsOneWidget);
     expect(find.text('Taxi stands near Khadakpada'), findsOneWidget);
   });
+
+  testWidgets('Where is my auto: a stand the user adds shows up as theirs',
+      (tester) async {
+    await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('whereAuto')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).last, 'Khadakpada');
+    await tester.pumpAndSettle();
+    await tester.tap(find.widgetWithText(ListTile, 'Khadakpada'));
+    for (var i = 0; i < 5; i++) {
+      await tester.pump(const Duration(milliseconds: 200));
+    }
+    await tester.ensureVisible(find.byKey(const Key('addStand')));
+    // Lift it clear of the bottom navigation bar.
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+    await tester.pump(const Duration(milliseconds: 300));
+    await tester.tap(find.byKey(const Key('addStand')));
+    for (var i = 0; i < 5; i++) {
+      await tester.pump(const Duration(milliseconds: 200));
+    }
+    await tester.tap(find.byKey(const Key('usePointButton')));
+    for (var i = 0; i < 5; i++) {
+      await tester.pump(const Duration(milliseconds: 200));
+    }
+    await tester.enterText(find.byKey(const Key('standName')), 'Gandhi Chowk stand');
+    await tester.tap(find.text('Save'));
+    for (var i = 0; i < 5; i++) {
+      await tester.pump(const Duration(milliseconds: 200));
+    }
+    await tester.scrollUntilVisible(find.text('Gandhi Chowk stand'), 200,
+        scrollable: find.byType(Scrollable).first);
+    expect(find.textContaining('Added by you'), findsOneWidget);
+  });
 }

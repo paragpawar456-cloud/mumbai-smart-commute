@@ -28,7 +28,8 @@ class AppConfig {
             String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
         tileUrlTemplate: String.fromEnvironment(
           'TILE_URL_TEMPLATE',
-          defaultValue: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+          defaultValue:
+              'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
         ),
         userAgentPackage: String.fromEnvironment(
           'USER_AGENT_PACKAGE',

@@ -1142,4 +1142,31 @@ class AppLocalizationsMr extends AppLocalizations {
   String fromPlace(String place) {
     return '$place हून';
   }
+
+  @override
+  String get addedByYou => 'तुम्ही जोडले';
+
+  @override
+  String get remove => 'काढा';
+
+  @override
+  String get save => 'जतन करा';
+
+  @override
+  String get addAutoStand => 'तुम्हाला माहीत असलेला रिक्षा स्टँड जोडा';
+
+  @override
+  String get addTaxiStand => 'तुम्हाला माहीत असलेला टॅक्सी स्टँड जोडा';
+
+  @override
+  String get addStandNote => 'या फोनवर जतन होते, पुढच्या वेळी इथेच दिसेल.';
+
+  @override
+  String get standNameLabel => 'नाव, उदा. स्टेशन रोड स्टँड';
+
+  @override
+  String get taxiStand => 'टॅक्सी स्टँड';
+
+  @override
+  String get openShort => 'उघडा';
 }

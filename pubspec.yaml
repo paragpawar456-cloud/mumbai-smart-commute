@@ -74,6 +74,7 @@ flutter:
   generate: true
   assets:
     - assets/data/seed_pack.json
+    - assets/brand/logo.png
   # Poppins (SIL Open Font License, assets/fonts/OFL.txt); covers Latin and
   # Devanagari, so English, Marathi and Hindi share one look.
   fonts:
