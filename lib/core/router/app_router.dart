@@ -7,6 +7,7 @@ import '../../features/map/map_screen.dart';
 import '../../features/profile/profile_screen.dart';
 import '../../features/routes/routes_screen.dart';
 import '../../features/saved/saved_screen.dart';
+import '../../features/transit/ui/station_screen.dart';
 import '../../shared/widgets/app_shell.dart';
 
 GoRouter buildRouter() => GoRouter(
@@ -23,13 +24,20 @@ GoRouter buildRouter() => GoRouter(
               GoRoute(
                 path: '/routes',
                 builder: (_, state) => RoutesScreen(
+                  key: ValueKey(state.uri.query),
                   from: state.uri.queryParameters['from'],
                   to: state.uri.queryParameters['to'],
+                  fromId: state.uri.queryParameters['fromId'],
+                  toId: state.uri.queryParameters['toId'],
                 ),
               ),
             ]),
             StatefulShellBranch(routes: [
-              GoRoute(path: '/map', builder: (_, _) => const MapScreen()),
+              GoRoute(
+                path: '/map',
+                builder: (_, state) => MapScreen(
+                    focusStationId: state.uri.queryParameters['station']),
+              ),
             ]),
             StatefulShellBranch(routes: [
               GoRoute(path: '/saved', builder: (_, _) => const SavedScreen()),
@@ -39,6 +47,11 @@ GoRouter buildRouter() => GoRouter(
                   path: '/profile', builder: (_, _) => const ProfileScreen()),
             ]),
           ],
+        ),
+        GoRoute(
+          path: '/station/:id',
+          builder: (_, state) =>
+              StationScreen(stationId: state.pathParameters['id']!),
         ),
         GoRoute(
           path: '/sign-in',

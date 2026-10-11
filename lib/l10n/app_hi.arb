@@ -76,5 +76,122 @@
     }
   },
   "about": "जानकारी और डेटा स्रोत",
-  "aboutBody": "मैप डेटा © OpenStreetMap योगदानकर्ता। 'अनुमान' वाले किराए आधिकारिक दरों से निकाले गए हैं, ये लाइव दर नहीं हैं। यह ऐप आपातकालीन सेवा नहीं है।"
+  "aboutBody": "मैप डेटा © OpenStreetMap योगदानकर्ता। 'अनुमान' वाले किराए आधिकारिक दरों से निकाले गए हैं, ये लाइव दर नहीं हैं। यह ऐप आपातकालीन सेवा नहीं है।",
+  "selectStation": "स्टेशन चुनें",
+  "searchStations": "स्टेशन खोजें",
+  "noStationFound": "स्टेशन नहीं मिला। दूसरी स्पेलिंग आज़माएँ।",
+  "planJourney": "यात्रा खोजें",
+  "noRouteFound": "इन स्टेशनों के बीच रूट नहीं मिला।",
+  "chooseBothStations": "शुरुआत और मंज़िल का स्टेशन चुनें।",
+  "rideLeg": "{line}",
+  "@rideLeg": {
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "boardAt": "{station} पर चढ़ें",
+  "@boardAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "alightAt": "{station} पर उतरें",
+  "@alightAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "stopsCount": "{count, plural, =1{1 स्टॉप} other{{count} स्टॉप}}",
+  "@stopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changesCount": "{count, plural, =0{सीधा} =1{1 बदलाव} other{{count} बदलाव}}",
+  "@changesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTo": "{station} तक पैदल (लगभग {minutes} मि.)",
+  "@walkTo": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timetableNotLoaded": "समय-सारणी अभी जोड़ी नहीं गई है। आधिकारिक समय-सारणी जुड़ने पर ट्रेन के समय दिखेंगे। हम कभी अंदाज़े से समय नहीं दिखाते।",
+  "nextTrain": "अगली ट्रेन {dep} → पहुँचेगी {arr}",
+  "@nextTrain": {
+    "placeholders": {
+      "dep": {
+        "type": "String"
+      },
+      "arr": {
+        "type": "String"
+      }
+    }
+  },
+  "noMoreTrainsToday": "इस यात्रा के लिए आज और कोई निर्धारित ट्रेन नहीं है।",
+  "departures": "प्रस्थान",
+  "towards": "{station} की ओर",
+  "@towards": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "platformShort": "PF {platform}",
+  "@platformShort": {
+    "placeholders": {
+      "platform": {
+        "type": "String"
+      }
+    }
+  },
+  "fastTrain": "फ़ास्ट",
+  "slowTrain": "स्लो",
+  "acTrain": "एसी",
+  "ladiesTrain": "महिला",
+  "saveJourney": "यात्रा सेव करें",
+  "removeJourney": "सेव से हटाएँ",
+  "recentSearches": "हाल की खोजें",
+  "dataVersion": "डेटा संस्करण {version} · {origin}",
+  "@dataVersion": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      },
+      "origin": {
+        "type": "String"
+      }
+    }
+  },
+  "originBundled": "ऐप में शामिल",
+  "originCached": "पहले डाउनलोड किया",
+  "originServer": "अभी अपडेट हुआ",
+  "showOnMap": "मैप पर दिखाएँ",
+  "myLocation": "मेरी जगह",
+  "layers": "परतें",
+  "layerSuburban": "लोकल ट्रेन",
+  "layerMetro": "मेट्रो",
+  "locationDenied": "लोकेशन अनुमति बंद है। मैप फिर भी चलेगा; अपनी जगह देखने के लिए सेटिंग्स में चालू करें।",
+  "locationServiceOff": "इस फ़ोन पर लोकेशन बंद है।",
+  "lineGeometryNote": "लाइनें स्टेशनों के बीच सीधी दिखाई गई हैं, सटीक पटरी पर नहीं।",
+  "linesAtStation": "लाइनें"
 }

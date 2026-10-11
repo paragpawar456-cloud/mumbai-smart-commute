@@ -76,5 +76,122 @@
     }
   },
   "about": "About and data sources",
-  "aboutBody": "Map data © OpenStreetMap contributors. Fares marked Estimate are calculated from official tariffs and are not live quotes. This app is not an emergency service."
+  "aboutBody": "Map data © OpenStreetMap contributors. Fares marked Estimate are calculated from official tariffs and are not live quotes. This app is not an emergency service.",
+  "selectStation": "Select station",
+  "searchStations": "Search stations",
+  "noStationFound": "No station found. Try another spelling.",
+  "planJourney": "Plan journey",
+  "noRouteFound": "No route found between these stations.",
+  "chooseBothStations": "Choose a start and destination station.",
+  "rideLeg": "{line}",
+  "@rideLeg": {
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "boardAt": "Board at {station}",
+  "@boardAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "alightAt": "Get off at {station}",
+  "@alightAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "stopsCount": "{count, plural, =1{1 stop} other{{count} stops}}",
+  "@stopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changesCount": "{count, plural, =0{Direct} =1{1 change} other{{count} changes}}",
+  "@changesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTo": "Walk to {station} (about {minutes} min)",
+  "@walkTo": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timetableNotLoaded": "Timetable not loaded yet. Train times will appear once the official timetable is added. We never guess train times.",
+  "nextTrain": "Next train {dep} → arrives {arr}",
+  "@nextTrain": {
+    "placeholders": {
+      "dep": {
+        "type": "String"
+      },
+      "arr": {
+        "type": "String"
+      }
+    }
+  },
+  "noMoreTrainsToday": "No more scheduled trains today for this journey.",
+  "departures": "Departures",
+  "towards": "to {station}",
+  "@towards": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "platformShort": "PF {platform}",
+  "@platformShort": {
+    "placeholders": {
+      "platform": {
+        "type": "String"
+      }
+    }
+  },
+  "fastTrain": "Fast",
+  "slowTrain": "Slow",
+  "acTrain": "AC",
+  "ladiesTrain": "Ladies",
+  "saveJourney": "Save journey",
+  "removeJourney": "Remove from saved",
+  "recentSearches": "Recent searches",
+  "dataVersion": "Data version {version} · {origin}",
+  "@dataVersion": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      },
+      "origin": {
+        "type": "String"
+      }
+    }
+  },
+  "originBundled": "built into the app",
+  "originCached": "downloaded earlier",
+  "originServer": "just updated",
+  "showOnMap": "Show on map",
+  "myLocation": "My location",
+  "layers": "Layers",
+  "layerSuburban": "Local trains",
+  "layerMetro": "Metro",
+  "locationDenied": "Location permission is off. The map still works; turn it on in settings to see where you are.",
+  "locationServiceOff": "Location is switched off on this phone.",
+  "lineGeometryNote": "Lines are drawn straight between stations, not along the exact track.",
+  "linesAtStation": "Lines"
 }

@@ -76,5 +76,122 @@
     }
   },
   "about": "माहिती आणि डेटा स्रोत",
-  "aboutBody": "नकाशा डेटा © OpenStreetMap योगदानकर्ते. 'अंदाज' असे लिहिलेले भाडे अधिकृत दरांवरून काढलेले आहे, ते लाइव्ह दर नाहीत. हे अ‍ॅप आपत्कालीन सेवा नाही."
+  "aboutBody": "नकाशा डेटा © OpenStreetMap योगदानकर्ते. 'अंदाज' असे लिहिलेले भाडे अधिकृत दरांवरून काढलेले आहे, ते लाइव्ह दर नाहीत. हे अ‍ॅप आपत्कालीन सेवा नाही.",
+  "selectStation": "स्टेशन निवडा",
+  "searchStations": "स्टेशन शोधा",
+  "noStationFound": "स्टेशन सापडले नाही. दुसरे स्पेलिंग वापरून पाहा.",
+  "planJourney": "प्रवास शोधा",
+  "noRouteFound": "या स्टेशनांदरम्यान मार्ग सापडला नाही.",
+  "chooseBothStations": "सुरुवातीचे आणि गंतव्य स्टेशन निवडा.",
+  "rideLeg": "{line}",
+  "@rideLeg": {
+    "placeholders": {
+      "line": {
+        "type": "String"
+      }
+    }
+  },
+  "boardAt": "{station} येथे चढा",
+  "@boardAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "alightAt": "{station} येथे उतरा",
+  "@alightAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "stopsCount": "{count, plural, =1{1 थांबा} other{{count} थांबे}}",
+  "@stopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "changesCount": "{count, plural, =0{थेट} =1{1 बदल} other{{count} बदल}}",
+  "@changesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walkTo": "{station} पर्यंत चाला (सुमारे {minutes} मि.)",
+  "@walkTo": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "timetableNotLoaded": "वेळापत्रक अजून जोडलेले नाही. अधिकृत वेळापत्रक जोडल्यावर गाड्यांच्या वेळा दिसतील. आम्ही कधीही अंदाजे वेळा दाखवत नाही.",
+  "nextTrain": "पुढची गाडी {dep} → पोहोचेल {arr}",
+  "@nextTrain": {
+    "placeholders": {
+      "dep": {
+        "type": "String"
+      },
+      "arr": {
+        "type": "String"
+      }
+    }
+  },
+  "noMoreTrainsToday": "या प्रवासासाठी आज आणखी नियोजित गाड्या नाहीत.",
+  "departures": "सुटणाऱ्या गाड्या",
+  "towards": "{station} कडे",
+  "@towards": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "platformShort": "फलाट {platform}",
+  "@platformShort": {
+    "placeholders": {
+      "platform": {
+        "type": "String"
+      }
+    }
+  },
+  "fastTrain": "जलद",
+  "slowTrain": "धीमी",
+  "acTrain": "एसी",
+  "ladiesTrain": "महिला",
+  "saveJourney": "प्रवास जतन करा",
+  "removeJourney": "जतन यादीतून काढा",
+  "recentSearches": "अलीकडील शोध",
+  "dataVersion": "डेटा आवृत्ती {version} · {origin}",
+  "@dataVersion": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      },
+      "origin": {
+        "type": "String"
+      }
+    }
+  },
+  "originBundled": "अ‍ॅपमध्ये समाविष्ट",
+  "originCached": "आधी डाउनलोड केलेले",
+  "originServer": "आत्ताच अपडेट केलेले",
+  "showOnMap": "नकाशावर दाखवा",
+  "myLocation": "माझे ठिकाण",
+  "layers": "स्तर",
+  "layerSuburban": "लोकल",
+  "layerMetro": "मेट्रो",
+  "locationDenied": "लोकेशन परवानगी बंद आहे. नकाशा तरीही चालेल; तुमचे ठिकाण पाहण्यासाठी सेटिंग्जमध्ये चालू करा.",
+  "locationServiceOff": "या फोनवर लोकेशन बंद आहे.",
+  "lineGeometryNote": "मार्ग स्टेशनांदरम्यान सरळ रेषेत दाखवले आहेत, अचूक रुळांवर नाहीत.",
+  "linesAtStation": "मार्ग"
 }

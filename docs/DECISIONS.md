@@ -14,3 +14,8 @@
 | D10 | Single POST endpoint `{action, payload, idToken, requestId}` with structured `{ok, data|error}` | Apps Script web apps only expose doGet/doPost and always return HTTP 200 | 2026-10-11 |
 | D11 | Schema changes vs brief: `TrainSchedules` → `TrainTrips` + `TripStopTimes` (GTFS-shaped); `MetroRoutes` merged into `TrainRoutes` (mode column); `AutoStands` → `PickupPoints` (auto/shared/taxi/ride pickup) | Easier later migration to GTFS/Postgres; one place for all last-mile pickup points | 2026-10-11 |
 | D12 | Riverpod 3 + go_router; Firebase options passed via `--dart-define-from-file`, not google-services.json | No Gradle plugin needed; app still builds and runs without Firebase | 2026-10-11 |
+| D13 | OpenStreetMap extract runs in GitHub Actions (`osm-extract.yml`) and is committed to `data/osm` | Reproducible, free, and works where the build machine can't reach Overpass | 2026-10-11 |
+| D14 | App ships stations and lines but **no timetable**; times only after an official timetable is entered and published | No open timetable feed exists; never invent times | 2026-10-11 |
+| D15 | Route planner runs on the phone (stops + change penalty); scheduled times added only when trips exist | Works offline; no routing API cost | 2026-10-11 |
+| D16 | Anonymous rate limits are global per action (600/min), not per device | Apps Script can't see client IPs; per-user limits apply once signed in | 2026-10-11 |
+| D17 | Map lines drawn straight between stations, labelled as such | Exact track geometry not needed for the pilot; never implies more precision than we have | 2026-10-11 |

@@ -210,4 +210,155 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get aboutBody =>
       'मैप डेटा © OpenStreetMap योगदानकर्ता। \'अनुमान\' वाले किराए आधिकारिक दरों से निकाले गए हैं, ये लाइव दर नहीं हैं। यह ऐप आपातकालीन सेवा नहीं है।';
+
+  @override
+  String get selectStation => 'स्टेशन चुनें';
+
+  @override
+  String get searchStations => 'स्टेशन खोजें';
+
+  @override
+  String get noStationFound => 'स्टेशन नहीं मिला। दूसरी स्पेलिंग आज़माएँ।';
+
+  @override
+  String get planJourney => 'यात्रा खोजें';
+
+  @override
+  String get noRouteFound => 'इन स्टेशनों के बीच रूट नहीं मिला।';
+
+  @override
+  String get chooseBothStations => 'शुरुआत और मंज़िल का स्टेशन चुनें।';
+
+  @override
+  String rideLeg(String line) {
+    return '$line';
+  }
+
+  @override
+  String boardAt(String station) {
+    return '$station पर चढ़ें';
+  }
+
+  @override
+  String alightAt(String station) {
+    return '$station पर उतरें';
+  }
+
+  @override
+  String stopsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count स्टॉप',
+      one: '1 स्टॉप',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String changesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count बदलाव',
+      one: '1 बदलाव',
+      zero: 'सीधा',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String walkTo(String station, int minutes) {
+    return '$station तक पैदल (लगभग $minutes मि.)';
+  }
+
+  @override
+  String get timetableNotLoaded =>
+      'समय-सारणी अभी जोड़ी नहीं गई है। आधिकारिक समय-सारणी जुड़ने पर ट्रेन के समय दिखेंगे। हम कभी अंदाज़े से समय नहीं दिखाते।';
+
+  @override
+  String nextTrain(String dep, String arr) {
+    return 'अगली ट्रेन $dep → पहुँचेगी $arr';
+  }
+
+  @override
+  String get noMoreTrainsToday =>
+      'इस यात्रा के लिए आज और कोई निर्धारित ट्रेन नहीं है।';
+
+  @override
+  String get departures => 'प्रस्थान';
+
+  @override
+  String towards(String station) {
+    return '$station की ओर';
+  }
+
+  @override
+  String platformShort(String platform) {
+    return 'PF $platform';
+  }
+
+  @override
+  String get fastTrain => 'फ़ास्ट';
+
+  @override
+  String get slowTrain => 'स्लो';
+
+  @override
+  String get acTrain => 'एसी';
+
+  @override
+  String get ladiesTrain => 'महिला';
+
+  @override
+  String get saveJourney => 'यात्रा सेव करें';
+
+  @override
+  String get removeJourney => 'सेव से हटाएँ';
+
+  @override
+  String get recentSearches => 'हाल की खोजें';
+
+  @override
+  String dataVersion(int version, String origin) {
+    return 'डेटा संस्करण $version · $origin';
+  }
+
+  @override
+  String get originBundled => 'ऐप में शामिल';
+
+  @override
+  String get originCached => 'पहले डाउनलोड किया';
+
+  @override
+  String get originServer => 'अभी अपडेट हुआ';
+
+  @override
+  String get showOnMap => 'मैप पर दिखाएँ';
+
+  @override
+  String get myLocation => 'मेरी जगह';
+
+  @override
+  String get layers => 'परतें';
+
+  @override
+  String get layerSuburban => 'लोकल ट्रेन';
+
+  @override
+  String get layerMetro => 'मेट्रो';
+
+  @override
+  String get locationDenied =>
+      'लोकेशन अनुमति बंद है। मैप फिर भी चलेगा; अपनी जगह देखने के लिए सेटिंग्स में चालू करें।';
+
+  @override
+  String get locationServiceOff => 'इस फ़ोन पर लोकेशन बंद है।';
+
+  @override
+  String get lineGeometryNote =>
+      'लाइनें स्टेशनों के बीच सीधी दिखाई गई हैं, सटीक पटरी पर नहीं।';
+
+  @override
+  String get linesAtStation => 'लाइनें';
 }

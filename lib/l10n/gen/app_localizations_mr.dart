@@ -209,4 +209,156 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get aboutBody =>
       'नकाशा डेटा © OpenStreetMap योगदानकर्ते. \'अंदाज\' असे लिहिलेले भाडे अधिकृत दरांवरून काढलेले आहे, ते लाइव्ह दर नाहीत. हे अ‍ॅप आपत्कालीन सेवा नाही.';
+
+  @override
+  String get selectStation => 'स्टेशन निवडा';
+
+  @override
+  String get searchStations => 'स्टेशन शोधा';
+
+  @override
+  String get noStationFound =>
+      'स्टेशन सापडले नाही. दुसरे स्पेलिंग वापरून पाहा.';
+
+  @override
+  String get planJourney => 'प्रवास शोधा';
+
+  @override
+  String get noRouteFound => 'या स्टेशनांदरम्यान मार्ग सापडला नाही.';
+
+  @override
+  String get chooseBothStations => 'सुरुवातीचे आणि गंतव्य स्टेशन निवडा.';
+
+  @override
+  String rideLeg(String line) {
+    return '$line';
+  }
+
+  @override
+  String boardAt(String station) {
+    return '$station येथे चढा';
+  }
+
+  @override
+  String alightAt(String station) {
+    return '$station येथे उतरा';
+  }
+
+  @override
+  String stopsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count थांबे',
+      one: '1 थांबा',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String changesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count बदल',
+      one: '1 बदल',
+      zero: 'थेट',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String walkTo(String station, int minutes) {
+    return '$station पर्यंत चाला (सुमारे $minutes मि.)';
+  }
+
+  @override
+  String get timetableNotLoaded =>
+      'वेळापत्रक अजून जोडलेले नाही. अधिकृत वेळापत्रक जोडल्यावर गाड्यांच्या वेळा दिसतील. आम्ही कधीही अंदाजे वेळा दाखवत नाही.';
+
+  @override
+  String nextTrain(String dep, String arr) {
+    return 'पुढची गाडी $dep → पोहोचेल $arr';
+  }
+
+  @override
+  String get noMoreTrainsToday =>
+      'या प्रवासासाठी आज आणखी नियोजित गाड्या नाहीत.';
+
+  @override
+  String get departures => 'सुटणाऱ्या गाड्या';
+
+  @override
+  String towards(String station) {
+    return '$station कडे';
+  }
+
+  @override
+  String platformShort(String platform) {
+    return 'फलाट $platform';
+  }
+
+  @override
+  String get fastTrain => 'जलद';
+
+  @override
+  String get slowTrain => 'धीमी';
+
+  @override
+  String get acTrain => 'एसी';
+
+  @override
+  String get ladiesTrain => 'महिला';
+
+  @override
+  String get saveJourney => 'प्रवास जतन करा';
+
+  @override
+  String get removeJourney => 'जतन यादीतून काढा';
+
+  @override
+  String get recentSearches => 'अलीकडील शोध';
+
+  @override
+  String dataVersion(int version, String origin) {
+    return 'डेटा आवृत्ती $version · $origin';
+  }
+
+  @override
+  String get originBundled => 'अ‍ॅपमध्ये समाविष्ट';
+
+  @override
+  String get originCached => 'आधी डाउनलोड केलेले';
+
+  @override
+  String get originServer => 'आत्ताच अपडेट केलेले';
+
+  @override
+  String get showOnMap => 'नकाशावर दाखवा';
+
+  @override
+  String get myLocation => 'माझे ठिकाण';
+
+  @override
+  String get layers => 'स्तर';
+
+  @override
+  String get layerSuburban => 'लोकल';
+
+  @override
+  String get layerMetro => 'मेट्रो';
+
+  @override
+  String get locationDenied =>
+      'लोकेशन परवानगी बंद आहे. नकाशा तरीही चालेल; तुमचे ठिकाण पाहण्यासाठी सेटिंग्जमध्ये चालू करा.';
+
+  @override
+  String get locationServiceOff => 'या फोनवर लोकेशन बंद आहे.';
+
+  @override
+  String get lineGeometryNote =>
+      'मार्ग स्टेशनांदरम्यान सरळ रेषेत दाखवले आहेत, अचूक रुळांवर नाहीत.';
+
+  @override
+  String get linesAtStation => 'मार्ग';
 }

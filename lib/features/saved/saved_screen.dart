@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../l10n/gen/app_localizations.dart';
-import '../../shared/widgets/info_state.dart';
+import 'saved_journeys_list.dart';
 
 class SavedScreen extends StatelessWidget {
   const SavedScreen({super.key});
@@ -11,7 +11,10 @@ class SavedScreen extends StatelessWidget {
     final l = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(l.savedTitle)),
-      body: InfoState(icon: Icons.star_outline, message: l.noSavedJourneys),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: const [SavedJourneysList()],
+      ),
     );
   }
 }

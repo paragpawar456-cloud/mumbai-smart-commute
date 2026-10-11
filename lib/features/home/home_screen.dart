@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_colors.dart';
 import '../../l10n/gen/app_localizations.dart';
+import '../saved/saved_journeys_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -114,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 24),
           Text(l.savedJourneys, style: text.titleMedium),
           const SizedBox(height: 8),
-          Text(l.noSavedJourneys, style: text.bodyMedium),
+          const SavedJourneysList(limit: 3),
         ],
       ),
     );
