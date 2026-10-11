@@ -122,4 +122,22 @@ void main() {
     expect(find.text('Bus stops near Khadakpada'), findsOneWidget);
     expect(find.textContaining('no live location'), findsOneWidget);
   });
+
+  testWidgets('Home shortcut: where is my cab points to live cars in the apps',
+      (tester) async {
+    await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('whereCab')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).last, 'Khadakpada');
+    await tester.pumpAndSettle();
+    await tester.tap(find.widgetWithText(ListTile, 'Khadakpada'));
+    for (var i = 0; i < 5; i++) {
+      await tester.pump(const Duration(milliseconds: 200));
+    }
+    expect(find.text('Where is my cab'), findsOneWidget);
+    expect(find.byKey(const Key('liveInAppsCard')), findsOneWidget);
+    expect(find.text('Uber'), findsOneWidget);
+    expect(find.text('Taxi stands near Khadakpada'), findsOneWidget);
+  });
 }

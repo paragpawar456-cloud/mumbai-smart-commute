@@ -4,15 +4,22 @@
 //   node tool/osm/extract.mjs
 // Runs in GitHub Actions (.github/workflows/osm-extract.yml) so results are
 // reproducible; it is not called by the app at runtime.
-import { writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
-const ENDPOINT = process.env.OVERPASS_URL || 'https://overpass-api.de/api/interpreter';
+// Public Overpass servers, tried in turn when one is busy.
+const ENDPOINTS = process.env.OVERPASS_URL
+  ? [process.env.OVERPASS_URL]
+  : ['https://overpass-api.de/api/interpreter',
+     'https://overpass.private.coffee/api/interpreter',
+     'https://overpass.kumi.systems/api/interpreter'];
+const ENDPOINT = ENDPOINTS[0];
 const UA = 'mumbai-smart-commute-data-extract/1.0 (+https://github.com/paragpawar456-cloud/mumbai-smart-commute)';
 
 // Mumbai Metropolitan Region rail corridor, south Mumbai to Kalyan/Badlapur.
 const RAIL_BBOX = '18.89,72.79,19.30,73.25';
-// ~2.5 km around Kalyan station for the last-mile pilot.
-const KALYAN_BBOX = '19.215,73.105,19.265,73.155';
+// Last-mile area: Thane to Kalyan and Dombivli, including Manpada and Yogidham.
+// (The files keep their kalyan_* names so older tools still find them.)
+const KALYAN_BBOX = '19.16,72.94,19.30,73.18';
 
 const QUERIES = {
   rail_stations: `
@@ -31,8 +38,10 @@ const QUERIES = {
     (
       node["highway"="bus_stop"](${KALYAN_BBOX});
       node["public_transport"="platform"]["bus"="yes"](${KALYAN_BBOX});
+      node["amenity"="bus_station"](${KALYAN_BBOX});
+      way["amenity"="bus_station"](${KALYAN_BBOX});
     );
-    out tags;`,
+    out tags center;`,
   kalyan_pickup_points: `
     [out:json][timeout:120];
     (
@@ -54,16 +63,22 @@ const QUERIES = {
 
 async function run(name, query) {
   for (let attempt = 1; attempt <= 3; attempt++) {
-    const res = await fetch(ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': UA },
-      body: 'data=' + encodeURIComponent(query),
-    });
-    if (res.ok) return res.json();
-    console.error(`${name}: HTTP ${res.status} (attempt ${attempt})`);
-    await new Promise((r) => setTimeout(r, 15000 * attempt));
+    for (const endpoint of ENDPOINTS) {
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': UA },
+          body: 'data=' + encodeURIComponent(query),
+        });
+        if (res.ok) return res.json();
+        console.error(`${name}: HTTP ${res.status} from ${endpoint} (attempt ${attempt})`);
+      } catch (e) {
+        console.error(`${name}: ${e.message} from ${endpoint} (attempt ${attempt})`);
+      }
+    }
+    await new Promise((r) => setTimeout(r, 20000 * attempt));
   }
-  throw new Error(`${name}: Overpass failed`);
+  return null;
 }
 
 function simplify(el) {
@@ -76,8 +91,18 @@ await mkdir('data/osm', { recursive: true });
 const meta = { source: 'OpenStreetMap via Overpass API', licence: 'ODbL 1.0',
                attribution: '© OpenStreetMap contributors', endpoint: ENDPOINT,
                extracted_at: new Date().toISOString(), files: {} };
+try {
+  meta.files = JSON.parse(await readFile('data/osm/_meta.json', 'utf8')).files ?? {};
+} catch { /* first run */ }
+let failed = 0;
 for (const [name, q] of Object.entries(QUERIES)) {
   const json = await run(name, q);
+  if (json == null) {
+    // Keep the previous file rather than failing the whole refresh.
+    console.error(`${name}: all Overpass servers failed; keeping the old file`);
+    failed++;
+    continue;
+  }
   const rows = json.elements.map(simplify).filter((r) => r.lat != null);
   await writeFile(`data/osm/${name}.json`, JSON.stringify(rows, null, 1) + '\n');
   meta.files[name] = { count: rows.length, osm_base: json.osm3s?.timestamp_osm_base };

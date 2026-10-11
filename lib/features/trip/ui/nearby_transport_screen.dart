@@ -12,7 +12,7 @@ import '../../lastmile/domain/lastmile_models.dart';
 import '../../settings/settings_controller.dart';
 import '../../transit/data/transit_providers.dart';
 
-enum NearbyMode { auto, bus }
+enum NearbyMode { auto, bus, cab }
 
 /// "Where is my auto / bus". No live position exists for autos or local
 /// buses, so this shows where they are usually found, never a fake vehicle.
@@ -68,22 +68,46 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final text = Theme.of(context).textTheme;
+    final scheme = Theme.of(context).colorScheme;
     final pack = ref.watch(dataPackProvider).value!.pack;
     final config = ref.watch(appConfigProvider);
     final data = pack.lastMile;
-    final auto = widget.mode == NearbyMode.auto;
-    final color = auto ? AppColors.auto : AppColors.bus;
+    final mode = widget.mode;
+    final (color, icon, title) = switch (mode) {
+      NearbyMode.auto => (AppColors.auto, Icons.electric_rickshaw_rounded, l.whereIsMyAuto),
+      NearbyMode.bus => (AppColors.bus, Icons.directions_bus_rounded, l.whereIsMyBus),
+      NearbyMode.cab => (AppColors.taxi, Icons.local_taxi_rounded, l.whereIsMyCab),
+    };
     final here = widget.point;
 
-    final spots = <(String, GeoPoint, double, String?)>[];
-    if (auto) {
+    // Every known spot of this kind, nearest first. Within [near] they are
+    // "near"; otherwise the three nearest are shown, marked as farther away.
+    final all = <_Spot>[];
+    if (mode == NearbyMode.bus) {
+      for (final s in data.busStops) {
+        final routes = data.busRoutes.where((r) => r.stopIds.contains(s.id));
+        all.add(_Spot(
+          s.nameEn,
+          s.point,
+          distanceMeters(here, s.point),
+          routes.isEmpty
+              ? null
+              : routes
+                  .map((r) => [
+                        '${r.operator} ${r.number}',
+                        if (r.frequencyNote != null) r.frequencyNote!,
+                      ].join(' '))
+                  .join(' · '),
+        ));
+      }
+    } else {
       for (final p in data.pickupPoints) {
-        final m = distanceMeters(here, p.point);
-        if (m > 1500) continue;
-        spots.add((
+        final taxi = p.kind == PickupKind.taxiStand;
+        if ((mode == NearbyMode.cab) != taxi) continue;
+        all.add(_Spot(
           p.nameEn,
           p.point,
-          m,
+          distanceMeters(here, p.point),
           [
             switch (p.kind) {
               PickupKind.sharedAuto => l.optSharedAuto,
@@ -99,52 +123,47 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
           ].join(' · '),
         ));
       }
-    } else {
-      for (final s in data.busStops) {
-        final m = distanceMeters(here, s.point);
-        if (m > 800) continue;
-        final routes = data.busRoutes.where((r) => r.stopIds.contains(s.id));
-        spots.add((
-          s.nameEn,
-          s.point,
-          m,
-          routes.isEmpty
-              ? null
-              : routes
-                  .map((r) => [
-                        '${r.operator} ${r.number}',
-                        if (r.frequencyNote != null) r.frequencyNote!,
-                      ].join(' '))
-                  .join(' · '),
-        ));
-      }
     }
-    spots.sort((a, b) => a.$3.compareTo(b.$3));
+    all.sort((a, b) => a.meters.compareTo(b.meters));
+    final near = mode == NearbyMode.bus ? 1000.0 : 2000.0;
+    var spots = all.where((s) => s.meters <= near).toList();
+    final farther = spots.isEmpty && all.isNotEmpty;
+    if (farther) spots = all.where((s) => s.meters <= 8000).take(3).toList();
 
     final dest = widget.destination ?? here;
-    final providers = auto
-        ? [
+    final providers = mode == NearbyMode.bus
+        ? const []
+        : [
             for (final pr in data.providers)
               if (pr.bookingUri(here, dest,
                       fromName: widget.placeName,
                       toName: widget.destinationName) !=
                   null)
                 pr,
-          ]
-        : const [];
+          ];
+
+    final points = [here, for (final s in spots) s.point];
+    final bounds = LatLngBounds.fromPoints(
+        [for (final p in points) LatLng(p.lat, p.lng)]);
 
     return Scaffold(
-      appBar: AppBar(title: Text(auto ? l.whereIsMyAuto : l.whereIsMyBus)),
+      appBar: AppBar(title: Text(title)),
       body: ListView(
         padding: EdgeInsets.zero,
         children: [
           SizedBox(
-            height: 280,
+            height: 300,
             child: FlutterMap(
               options: MapOptions(
                 initialCenter: LatLng(here.lat, here.lng),
-                initialZoom: 15.5,
-                minZoom: 11,
+                initialZoom: 15,
+                initialCameraFit: points.length > 1
+                    ? CameraFit.bounds(
+                        bounds: bounds,
+                        padding: const EdgeInsets.all(48),
+                        maxZoom: 16.5)
+                    : null,
+                minZoom: 10,
                 maxZoom: 18,
               ),
               children: [
@@ -155,14 +174,10 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
                 MarkerLayer(markers: [
                   for (final s in spots)
                     Marker(
-                      point: LatLng(s.$2.lat, s.$2.lng),
+                      point: LatLng(s.point.lat, s.point.lng),
                       width: 56,
                       height: 56,
-                      child: _PulsingSpot(
-                        pulse: _pulse,
-                        color: color,
-                        icon: auto ? Icons.electric_rickshaw : Icons.directions_bus,
-                      ),
+                      child: _PulsingSpot(pulse: _pulse, color: color, icon: icon),
                     ),
                   Marker(
                     point: LatLng(here.lat, here.lng),
@@ -190,65 +205,106 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
           Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Card(
-                  color: color.withValues(alpha: 0.08),
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Row(children: [
-                      Icon(Icons.info_outline, color: color),
-                      const SizedBox(width: 12),
-                      Expanded(
-                          child: Text(auto ? l.noLiveAutos : l.noLiveBuses)),
-                    ]),
+                if (providers.isNotEmpty) ...[
+                  Card(
+                    key: const Key('liveInAppsCard'),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(children: [
+                            Icon(Icons.bolt_rounded, color: color),
+                            const SizedBox(width: 8),
+                            Expanded(
+                                child: Text(l.seeLiveInApp, style: text.titleMedium)),
+                          ]),
+                          const SizedBox(height: 6),
+                          Text(l.liveCabsInApps,
+                              style: text.bodySmall
+                                  ?.copyWith(color: scheme.onSurfaceVariant)),
+                          const SizedBox(height: 12),
+                          Row(children: [
+                            for (final (i, pr) in providers.indexed) ...[
+                              if (i > 0) const SizedBox(width: 8),
+                              Expanded(
+                                child: FilledButton.tonal(
+                                  style: FilledButton.styleFrom(
+                                      minimumSize: const Size.fromHeight(46)),
+                                  onPressed: () => _open(pr.bookingUri(here, dest,
+                                      fromName: widget.placeName,
+                                      toName: widget.destinationName)!),
+                                  child: Text(pr.name),
+                                ),
+                              ),
+                            ],
+                          ]),
+                        ],
+                      ),
+                    ),
                   ),
-                ),
-                const SizedBox(height: 12),
+                  const SizedBox(height: 16),
+                ],
                 Text(
-                  auto
-                      ? l.standsNear(widget.placeName)
-                      : l.stopsNear(widget.placeName),
+                  switch (mode) {
+                    NearbyMode.auto => l.standsNear(widget.placeName),
+                    NearbyMode.bus => l.stopsNear(widget.placeName),
+                    NearbyMode.cab => l.taxiStandsNear(widget.placeName),
+                  },
                   style: text.titleMedium?.copyWith(fontWeight: FontWeight.w700),
                 ),
+                if (farther)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Text(l.nearestFarAway,
+                        style: text.bodySmall
+                            ?.copyWith(color: scheme.onSurfaceVariant)),
+                  ),
+                const SizedBox(height: 8),
                 if (spots.isEmpty)
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
-                    child: Text(auto ? l.nearbyPickupsEmpty : l.noBusData),
+                    child: Text(switch (mode) {
+                      NearbyMode.auto => l.nearbyPickupsEmpty,
+                      NearbyMode.bus => l.noBusData,
+                      NearbyMode.cab => l.noTaxiStands,
+                    }),
+                  )
+                else
+                  Card(
+                    clipBehavior: Clip.antiAlias,
+                    child: Column(children: [
+                      for (final (i, s) in spots.indexed) ...[
+                        if (i > 0) const Divider(indent: 72),
+                        ListTile(
+                          leading: CircleAvatar(
+                            backgroundColor: color.withValues(alpha: 0.14),
+                            child: Icon(icon, color: color),
+                          ),
+                          title: Text(s.name),
+                          subtitle: Text([
+                            s.meters < 1000
+                                ? l.walkMeters(s.meters.round())
+                                : l.kmAway((s.meters / 1000).toStringAsFixed(1)),
+                            ?s.detail,
+                          ].join(' · ')),
+                        ),
+                      ],
+                    ]),
                   ),
-                for (final s in spots)
-                  ListTile(
-                    contentPadding: EdgeInsets.zero,
-                    leading: CircleAvatar(
-                      backgroundColor: color.withValues(alpha: 0.14),
-                      child: Icon(
-                          auto ? Icons.electric_rickshaw : Icons.directions_bus,
-                          color: color),
+                const SizedBox(height: 16),
+                Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Icon(Icons.info_outline, size: 18, color: scheme.onSurfaceVariant),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      mode == NearbyMode.bus ? l.noLiveBuses : l.noLiveAutos,
+                      style: text.bodySmall?.copyWith(color: scheme.onSurfaceVariant),
                     ),
-                    title: Text(s.$1),
-                    subtitle: Text([
-                      l.walkMeters(s.$3.round()),
-                      if (s.$4 != null) s.$4!,
-                    ].join(' · ')),
                   ),
-                if (providers.isNotEmpty) ...[
-                  const SizedBox(height: 12),
-                  Text(l.bookInApp,
-                      style: text.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
-                  const SizedBox(height: 4),
-                  Text(l.bookInAppNote, style: text.bodySmall),
-                  const SizedBox(height: 8),
-                  Wrap(spacing: 8, runSpacing: 8, children: [
-                    for (final pr in providers)
-                      OutlinedButton.icon(
-                        onPressed: () => _open(pr.bookingUri(here, dest,
-                            fromName: widget.placeName,
-                            toName: widget.destinationName)!),
-                        icon: const Icon(Icons.open_in_new, size: 18),
-                        label: Text(pr.name),
-                      ),
-                  ]),
-                ],
+                ]),
               ],
             ),
           ),
@@ -256,6 +312,15 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
       ),
     );
   }
+}
+
+class _Spot {
+  const _Spot(this.name, this.point, this.meters, this.detail);
+
+  final String name;
+  final GeoPoint point;
+  final double meters;
+  final String? detail;
 }
 
 class _PulsingSpot extends StatelessWidget {

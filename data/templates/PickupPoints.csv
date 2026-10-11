@@ -1,3 +1,14 @@
 pickup_id,kind,name_en,lat,lng,near_station_id,destinations,shared_fare_inr,fare_source,verification,verified_at,source_id
+OSM-node-6413765596,taxi_stand,Suni Nagar Rikshaw Stand,19.206724,73.086841,,,,,osm,,osm
+OSM-node-6802059752,taxi_stand,Rickshaw Stand,19.172192,72.956059,,,,,osm,,osm
+OSM-node-10259279462,taxi_stand,Rickshaw Stand,19.17298,72.957118,,,,,osm,,osm
+OSM-node-11271586495,taxi_stand,Auto Stand,19.171802,72.955178,,,,,osm,,osm
+OSM-node-11271696469,taxi_stand,Nahur Gaon Auto Stand,19.162512,72.948037,,,,,osm,,osm
+OSM-node-11563437818,taxi_stand,Auto Stand,19.171726,72.957006,,,,,osm,,osm
+OSM-node-12855213091,taxi_stand,Rickshaw Stand,19.180497,72.966043,,,,,osm,,osm
+OSM-node-12880832885,taxi_stand,Share Rickshaw To Amar Nagar,19.173391,72.956489,,,,,osm,,osm
 OSM-node-14098734284,auto_stand,Wayle Nagar Auto Stand,19.25323,73.133385,,,,,osm,,osm
 OSM-node-14108265297,auto_stand,Auto stand,19.257876,73.133509,,,,,osm,,osm
+OSM-way-151866567,taxi_stand,Taxi stand,19.186911,72.975913,,,,,osm,,osm
+OSM-way-1314173803,taxi_stand,Rickshaw Stand,19.194361,72.994765,,,,,osm,,osm
+OSM-way-1391181626,taxi_stand,Taxi stand,19.189675,73.023013,,,,,osm,,osm

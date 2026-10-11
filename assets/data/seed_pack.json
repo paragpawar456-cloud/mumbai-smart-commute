@@ -1,6 +1,6 @@
 {
  "version": 3,
- "generated_at": "2026-10-11T11:05:26Z",
+ "generated_at": "2026-10-11T12:04:23Z",
  "sources": [
   {
    "source_id": "osm",
@@ -115527,6 +115527,118 @@
  ],
  "pickup_points": [
   {
+   "pickup_id": "OSM-node-6413765596",
+   "kind": "taxi_stand",
+   "name_en": "Suni Nagar Rikshaw Stand",
+   "lat": 19.206724,
+   "lng": 73.086841,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-6802059752",
+   "kind": "taxi_stand",
+   "name_en": "Rickshaw Stand",
+   "lat": 19.172192,
+   "lng": 72.956059,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-10259279462",
+   "kind": "taxi_stand",
+   "name_en": "Rickshaw Stand",
+   "lat": 19.17298,
+   "lng": 72.957118,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-11271586495",
+   "kind": "taxi_stand",
+   "name_en": "Auto Stand",
+   "lat": 19.171802,
+   "lng": 72.955178,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-11271696469",
+   "kind": "taxi_stand",
+   "name_en": "Nahur Gaon Auto Stand",
+   "lat": 19.162512,
+   "lng": 72.948037,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-11563437818",
+   "kind": "taxi_stand",
+   "name_en": "Auto Stand",
+   "lat": 19.171726,
+   "lng": 72.957006,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-12855213091",
+   "kind": "taxi_stand",
+   "name_en": "Rickshaw Stand",
+   "lat": 19.180497,
+   "lng": 72.966043,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-12880832885",
+   "kind": "taxi_stand",
+   "name_en": "Share Rickshaw To Amar Nagar",
+   "lat": 19.173391,
+   "lng": 72.956489,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
    "pickup_id": "OSM-node-14098734284",
    "kind": "auto_stand",
    "name_en": "Wayle Nagar Auto Stand",
@@ -115553,9 +115665,7162 @@
    "verification": "osm",
    "verified_at": "",
    "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-way-151866567",
+   "kind": "taxi_stand",
+   "name_en": "Taxi stand",
+   "lat": 19.186911,
+   "lng": 72.975913,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-way-1314173803",
+   "kind": "taxi_stand",
+   "name_en": "Rickshaw Stand",
+   "lat": 19.194361,
+   "lng": 72.994765,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-way-1391181626",
+   "kind": "taxi_stand",
+   "name_en": "Taxi stand",
+   "lat": 19.189675,
+   "lng": 73.023013,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
   }
  ],
- "bus_stops": [],
+ "bus_stops": [
+  {
+   "stop_id": "OSM-node-317914119",
+   "name_en": "Talao Pali",
+   "name_mr": "",
+   "lat": 19.194384,
+   "lng": 72.976962,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-340363221",
+   "name_en": "Thane Station (W)",
+   "name_mr": "",
+   "lat": 19.187007,
+   "lng": 72.976997,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414595018",
+   "name_en": "Shishu Gyan Mandir",
+   "name_mr": "",
+   "lat": 19.1998,
+   "lng": 72.977309,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414595059",
+   "name_en": "Vandana Cinema",
+   "name_mr": "",
+   "lat": 19.194415,
+   "lng": 72.970497,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414603281",
+   "name_en": "Vaitiwadi",
+   "name_mr": "",
+   "lat": 19.20168,
+   "lng": 72.958832,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414604709",
+   "name_en": "Parmarth Niketan",
+   "name_mr": "",
+   "lat": 19.19474,
+   "lng": 72.966738,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414727658",
+   "name_en": "Holy Cross",
+   "name_mr": "",
+   "lat": 19.203056,
+   "lng": 72.978803,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414729200",
+   "name_en": "Oswal Park",
+   "name_mr": "",
+   "lat": 19.214908,
+   "lng": 72.976195,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414730041",
+   "name_en": "Khewra Circle",
+   "name_mr": "",
+   "lat": 19.232703,
+   "lng": 72.969943,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-414730701",
+   "name_en": "Patlipada",
+   "name_mr": "",
+   "lat": 19.246689,
+   "lng": 72.975616,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-443526121",
+   "name_en": "Neelkanth Heights",
+   "name_mr": "",
+   "lat": 19.22107,
+   "lng": 72.960688,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-630755945",
+   "name_en": "Kalyan",
+   "name_mr": "",
+   "lat": 19.236388,
+   "lng": 73.130362,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1027917064",
+   "name_en": "Goodluck Company",
+   "name_mr": "",
+   "lat": 19.263774,
+   "lng": 72.977779,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1078664390",
+   "name_en": "Pradeep Society",
+   "name_mr": "",
+   "lat": 19.193495,
+   "lng": 72.967287,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1078664593",
+   "name_en": "Aradhana Cinema",
+   "name_mr": "",
+   "lat": 19.192717,
+   "lng": 72.968354,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1182363540",
+   "name_en": "Dhokali Naka",
+   "name_mr": "",
+   "lat": 19.227162,
+   "lng": 72.980267,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1182363565",
+   "name_en": "Kolshet Bus Depot",
+   "name_mr": "",
+   "lat": 19.24406,
+   "lng": 72.996399,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1182363597",
+   "name_en": "Air Force",
+   "name_mr": "",
+   "lat": 19.240626,
+   "lng": 72.992142,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1184122848",
+   "name_en": "Makhamali Talaav",
+   "name_mr": "",
+   "lat": 19.198423,
+   "lng": 72.971747,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1184122902",
+   "name_en": "Khopat S.T. Terminus",
+   "name_mr": "",
+   "lat": 19.200734,
+   "lng": 72.973309,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1184124335",
+   "name_en": "Gaondevi",
+   "name_mr": "",
+   "lat": 19.188889,
+   "lng": 72.974828,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1235720534",
+   "name_en": "Dongaripada",
+   "name_mr": "",
+   "lat": 19.250734,
+   "lng": 72.973229,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1235720619",
+   "name_en": "Waghbil Naka",
+   "name_mr": "",
+   "lat": 19.252939,
+   "lng": 72.972162,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1235755695",
+   "name_en": "Brahmand Phase 1,2",
+   "name_mr": "",
+   "lat": 19.241299,
+   "lng": 72.981373,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1235755737",
+   "name_en": "Azad Nagar",
+   "name_mr": "",
+   "lat": 19.239474,
+   "lng": 72.980498,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1235755846",
+   "name_en": "Brahmand Nagar",
+   "name_mr": "",
+   "lat": 19.24755,
+   "lng": 72.986019,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1582079842",
+   "name_en": "Rutu Estate / Municipal Commissioner House",
+   "name_mr": "",
+   "lat": 19.248087,
+   "lng": 72.977988,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1643351700",
+   "name_en": "Mulund Depot",
+   "name_mr": "",
+   "lat": 19.175698,
+   "lng": 72.946488,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1643413992",
+   "name_en": "Municipal School",
+   "name_mr": "",
+   "lat": 19.228627,
+   "lng": 72.96736,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1647049234",
+   "name_en": "Civil Court",
+   "name_mr": "",
+   "lat": 19.196521,
+   "lng": 72.977291,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1647049257",
+   "name_en": "Court Naka",
+   "name_mr": "",
+   "lat": 19.197028,
+   "lng": 72.978584,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1665625974",
+   "name_en": "Civil Hospital",
+   "name_mr": "",
+   "lat": 19.199013,
+   "lng": 72.977455,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1855291431",
+   "name_en": "Vartak Nagar Naka",
+   "name_mr": "",
+   "lat": 19.209972,
+   "lng": 72.961764,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1855295815",
+   "name_en": "Devdaya Nagar",
+   "name_mr": "",
+   "lat": 19.2147,
+   "lng": 72.958209,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733138",
+   "name_en": "Vandana Cinema",
+   "name_mr": "",
+   "lat": 19.194368,
+   "lng": 72.970594,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733402",
+   "name_en": "Louis Wadi",
+   "name_mr": "",
+   "lat": 19.196296,
+   "lng": 72.962322,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733505",
+   "name_en": "Makhamali Talaav",
+   "name_mr": "",
+   "lat": 19.198344,
+   "lng": 72.971827,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733532",
+   "name_en": "Nitin Junction",
+   "name_mr": "",
+   "lat": 19.199055,
+   "lng": 72.963526,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733585",
+   "name_en": "Nitin Company",
+   "name_mr": "",
+   "lat": 19.199131,
+   "lng": 72.96315,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733587",
+   "name_en": "Civil Hospital",
+   "name_mr": "",
+   "lat": 19.199128,
+   "lng": 72.97839,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733671",
+   "name_en": "Khopat S.T. Terminus",
+   "name_mr": "",
+   "lat": 19.200377,
+   "lng": 72.973078,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960733860",
+   "name_en": "Khopat",
+   "name_mr": "",
+   "lat": 19.203426,
+   "lng": 72.971869,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734049",
+   "name_en": "Abhiruchi",
+   "name_mr": "",
+   "lat": 19.204833,
+   "lng": 72.978054,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734104",
+   "name_en": "Desai Bangla",
+   "name_mr": "",
+   "lat": 19.205611,
+   "lng": 72.978271,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734126",
+   "name_en": "Rabodi Police Station",
+   "name_mr": "",
+   "lat": 19.205964,
+   "lng": 72.982236,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734581",
+   "name_en": "Majiwada Naka",
+   "name_mr": "",
+   "lat": 19.214624,
+   "lng": 72.977454,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734585",
+   "name_en": "Majiwada Naka",
+   "name_mr": "",
+   "lat": 19.215159,
+   "lng": 72.978125,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734604",
+   "name_en": "Devdaya Nagar",
+   "name_mr": "",
+   "lat": 19.214904,
+   "lng": 72.958394,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734730",
+   "name_en": "Subhash Nagar",
+   "name_mr": "",
+   "lat": 19.216431,
+   "lng": 72.974004,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734932",
+   "name_en": "Bethany Hospital",
+   "name_mr": "",
+   "lat": 19.220364,
+   "lng": 72.961816,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734936",
+   "name_en": "Jawahar Nagar",
+   "name_mr": "",
+   "lat": 19.220475,
+   "lng": 72.97021,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960734940",
+   "name_en": "Jawahar Nagar",
+   "name_mr": "",
+   "lat": 19.220409,
+   "lng": 72.970422,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960735180",
+   "name_en": "Yeoor Gaon",
+   "name_mr": "",
+   "lat": 19.22527,
+   "lng": 72.949747,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960735183",
+   "name_en": "Lok Puram",
+   "name_mr": "",
+   "lat": 19.225755,
+   "lng": 72.970134,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-1960735560",
+   "name_en": "Patli Pada",
+   "name_mr": "",
+   "lat": 19.246448,
+   "lng": 72.975999,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2224887211",
+   "name_en": "Mavis",
+   "name_mr": "",
+   "lat": 19.22919,
+   "lng": 72.948353,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2227587632",
+   "name_en": "Runwal Garden City",
+   "name_mr": "",
+   "lat": 19.223024,
+   "lng": 72.988194,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2227589015",
+   "name_en": "Yeoor",
+   "name_mr": "",
+   "lat": 19.240191,
+   "lng": 72.943296,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2228292225",
+   "name_en": "Shreerang Society",
+   "name_mr": "",
+   "lat": 19.206069,
+   "lng": 72.980297,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2228292530",
+   "name_en": "Gokul Nagar",
+   "name_mr": "",
+   "lat": 19.208513,
+   "lng": 72.977173,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2228293285",
+   "name_en": "Oswal Park",
+   "name_mr": "",
+   "lat": 19.214738,
+   "lng": 72.976076,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2228429124",
+   "name_en": "Ramchandra Nagar 1",
+   "name_mr": "",
+   "lat": 19.20001,
+   "lng": 72.962388,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2230881380",
+   "name_en": "Namdev Wadi",
+   "name_mr": "",
+   "lat": 19.198332,
+   "lng": 72.966508,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2299204467",
+   "name_en": "Kalwa Depot",
+   "name_mr": "",
+   "lat": 19.191292,
+   "lng": 72.987798,
+   "operators": "TMT, NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2440235101",
+   "name_en": "Mulund West Check Naka",
+   "name_mr": "",
+   "lat": 19.183008,
+   "lng": 72.953629,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2440266920",
+   "name_en": "Cidco Bus Depot (Thane)",
+   "name_mr": "",
+   "lat": 19.187929,
+   "lng": 72.979748,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2898961177",
+   "name_en": "Hiranandani Meadows",
+   "name_mr": "",
+   "lat": 19.227784,
+   "lng": 72.969703,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2902100495",
+   "name_en": "Muchhala College",
+   "name_mr": "",
+   "lat": 19.262859,
+   "lng": 72.968328,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-2902101571",
+   "name_en": "Muchhala College",
+   "name_mr": "",
+   "lat": 19.262898,
+   "lng": 72.968454,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3229537290",
+   "name_en": "Gavan Pada",
+   "name_mr": "",
+   "lat": 19.172879,
+   "lng": 72.961446,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3229537297",
+   "name_en": "Mulund Station (East)",
+   "name_mr": "",
+   "lat": 19.171392,
+   "lng": 72.958214,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3263024864",
+   "name_en": "Sawarkar Nagar",
+   "name_mr": "",
+   "lat": 19.205913,
+   "lng": 72.954296,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3263030022",
+   "name_en": "Yashodham Nagar",
+   "name_mr": "",
+   "lat": 19.20826,
+   "lng": 72.954638,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3263043839",
+   "name_en": "Road Number 16",
+   "name_mr": "",
+   "lat": 19.193517,
+   "lng": 72.953557,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3263043840",
+   "name_en": "Road Number 16",
+   "name_mr": "",
+   "lat": 19.193718,
+   "lng": 72.953751,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3930284458",
+   "name_en": "Tilak Nagar Junction",
+   "name_mr": "",
+   "lat": 19.196005,
+   "lng": 72.954956,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3930284459",
+   "name_en": "Bradma Company",
+   "name_mr": "",
+   "lat": 19.196005,
+   "lng": 72.955049,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3930284460",
+   "name_en": "Ambika Nagar",
+   "name_mr": "",
+   "lat": 19.197693,
+   "lng": 72.955784,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3930284461",
+   "name_en": "Ambika Nagar",
+   "name_mr": "",
+   "lat": 19.197547,
+   "lng": 72.95575,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3930284465",
+   "name_en": "Kamgar Hospital",
+   "name_mr": "",
+   "lat": 19.20375,
+   "lng": 72.954154,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3931917826",
+   "name_en": "Sawarkar Nagar",
+   "name_mr": "",
+   "lat": 19.205937,
+   "lng": 72.954159,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3931917833",
+   "name_en": "Vaishali Nagar",
+   "name_mr": "",
+   "lat": 19.187297,
+   "lng": 72.94553,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3931917834",
+   "name_en": "Vaishali Nagar",
+   "name_mr": "",
+   "lat": 19.187069,
+   "lng": 72.945873,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3931942705",
+   "name_en": "Agriculture",
+   "name_mr": "",
+   "lat": 19.200062,
+   "lng": 72.95389,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3931942706",
+   "name_en": "Agriculture",
+   "name_mr": "",
+   "lat": 19.200168,
+   "lng": 72.954017,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-3954998295",
+   "name_en": "Passport Office / M.I.D.C.",
+   "name_mr": "",
+   "lat": 19.192209,
+   "lng": 72.955267,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4077092893",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.163093,
+   "lng": 73.073893,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4077092894",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.163598,
+   "lng": 73.074064,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4113603393",
+   "name_en": "PANCH RASTA",
+   "name_mr": "",
+   "lat": 19.176391,
+   "lng": 72.952554,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4158101551",
+   "name_en": "Manpada",
+   "name_mr": "",
+   "lat": 19.235319,
+   "lng": 72.97595,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211019628",
+   "name_en": "Teen Hath Naka",
+   "name_mr": "",
+   "lat": 19.188803,
+   "lng": 72.963314,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040735",
+   "name_en": "Municipal Hospital",
+   "name_mr": "",
+   "lat": 19.172009,
+   "lng": 72.959937,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040736",
+   "name_en": "Municipal Hospital",
+   "name_mr": "",
+   "lat": 19.171924,
+   "lng": 72.960003,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040737",
+   "name_en": "Mulund Station (East)",
+   "name_mr": "",
+   "lat": 19.171651,
+   "lng": 72.958123,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040739",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.170203,
+   "lng": 72.959067,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040740",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.170156,
+   "lng": 72.959117,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040742",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.169479,
+   "lng": 72.959176,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040743",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.169507,
+   "lng": 72.95922,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040744",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.168895,
+   "lng": 72.960101,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4211040745",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.168873,
+   "lng": 72.959981,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4233541816",
+   "name_en": "Brahmand Phase 6",
+   "name_mr": "",
+   "lat": 19.246671,
+   "lng": 72.984761,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4233856092",
+   "name_en": "Bhawani Nagar",
+   "name_mr": "",
+   "lat": 19.202132,
+   "lng": 72.953769,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4270149192",
+   "name_en": "Manpada",
+   "name_mr": "",
+   "lat": 19.235356,
+   "lng": 72.976298,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4270329891",
+   "name_en": "Kasarvadavali Naka",
+   "name_mr": "",
+   "lat": 19.269546,
+   "lng": 72.965202,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4367331982",
+   "name_en": "Neelkanth Heights",
+   "name_mr": "",
+   "lat": 19.220517,
+   "lng": 72.960515,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4367377476",
+   "name_en": "Kavyadhara",
+   "name_mr": "",
+   "lat": 19.2284,
+   "lng": 72.982328,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4367380311",
+   "name_en": "Runwal Garden City",
+   "name_mr": "",
+   "lat": 19.22294,
+   "lng": 72.988239,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4367741661",
+   "name_en": "Sainath Nagar",
+   "name_mr": "",
+   "lat": 19.266889,
+   "lng": 72.966957,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4367741685",
+   "name_en": "Hawre City / Boriwade Gaon",
+   "name_mr": "",
+   "lat": 19.259958,
+   "lng": 72.957668,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4583566290",
+   "name_en": "Agra Road",
+   "name_mr": "",
+   "lat": 19.177843,
+   "lng": 72.94342,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4583566389",
+   "name_en": "Agra Road Naka",
+   "name_mr": "",
+   "lat": 19.1779,
+   "lng": 72.944054,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4585359396",
+   "name_en": "RAMCHANDRA NAGAR VAITIVADI 3",
+   "name_mr": "",
+   "lat": 19.200698,
+   "lng": 72.961186,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4585364193",
+   "name_en": "Ramchandra Nagar 1",
+   "name_mr": "",
+   "lat": 19.20007,
+   "lng": 72.962506,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4585364196",
+   "name_en": "Aanand Bajar",
+   "name_mr": "",
+   "lat": 19.174235,
+   "lng": 72.958485,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4585386589",
+   "name_en": "Sarvodaya Nagar",
+   "name_mr": "",
+   "lat": 19.162664,
+   "lng": 72.946345,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4585386592",
+   "name_en": "Teen Petrol Pump",
+   "name_mr": "",
+   "lat": 19.19285,
+   "lng": 72.970061,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4585386789",
+   "name_en": "Mehul Talkies",
+   "name_mr": "",
+   "lat": 19.165664,
+   "lng": 72.948718,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4624037619",
+   "name_en": "Mulund-Goregaon Link Road",
+   "name_mr": "",
+   "lat": 19.160075,
+   "lng": 72.946973,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4625570690",
+   "name_en": "Mulund-Goregaon Link Road",
+   "name_mr": "",
+   "lat": 19.160068,
+   "lng": 72.946938,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4631842068",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.209027,
+   "lng": 72.973183,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4644026842",
+   "name_en": "Mulund-Goregaon Link Road",
+   "name_mr": "",
+   "lat": 19.160049,
+   "lng": 72.946841,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4644026843",
+   "name_en": "Mulund-Goregaon Link Road",
+   "name_mr": "",
+   "lat": 19.160044,
+   "lng": 72.946821,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647492104",
+   "name_en": "Airoli Naka",
+   "name_mr": "",
+   "lat": 19.166492,
+   "lng": 72.999386,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647623791",
+   "name_en": "MSEB",
+   "name_mr": "",
+   "lat": 19.168517,
+   "lng": 72.999336,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647623792",
+   "name_en": "Ganesh Pada",
+   "name_mr": "",
+   "lat": 19.184728,
+   "lng": 72.992969,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647685691",
+   "name_en": "Maharashtra Vidyut Mandal",
+   "name_mr": "",
+   "lat": 19.171902,
+   "lng": 72.999247,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647685693",
+   "name_en": "Vitava Naka",
+   "name_mr": "",
+   "lat": 19.188658,
+   "lng": 72.98876,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647685694",
+   "name_en": "Kalwa Depot",
+   "name_mr": "",
+   "lat": 19.191425,
+   "lng": 72.988302,
+   "operators": "TMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647685992",
+   "name_en": "Sathe Nagar",
+   "name_mr": "",
+   "lat": 19.180085,
+   "lng": 72.996195,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647685993",
+   "name_en": "Mukund Company",
+   "name_mr": "",
+   "lat": 19.182381,
+   "lng": 72.995209,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647713090",
+   "name_en": "Sathe Nagar",
+   "name_mr": "",
+   "lat": 19.180095,
+   "lng": 72.996423,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647714590",
+   "name_en": "Dighe Gaon",
+   "name_mr": "",
+   "lat": 19.17488,
+   "lng": 72.998322,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647714594",
+   "name_en": "Chendani Koliwada",
+   "name_mr": "",
+   "lat": 19.18949,
+   "lng": 72.979805,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647734289",
+   "name_en": "Hindustan Times Bus Stop",
+   "name_mr": "",
+   "lat": 19.173924,
+   "lng": 72.998758,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647734294",
+   "name_en": "Sha. Damodar Vitavkar Marg",
+   "name_mr": "",
+   "lat": 19.186861,
+   "lng": 72.990669,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647734295",
+   "name_en": "Kalwa Naka",
+   "name_mr": "",
+   "lat": 19.196324,
+   "lng": 72.987412,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647734296",
+   "name_en": "Kanhaji Agrh Chowk",
+   "name_mr": "",
+   "lat": 19.197394,
+   "lng": 72.983356,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647739091",
+   "name_en": "Ganesh Pada",
+   "name_mr": "",
+   "lat": 19.185159,
+   "lng": 72.99287,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647739096",
+   "name_en": "Mahagiri Koliwada",
+   "name_mr": "",
+   "lat": 19.195146,
+   "lng": 72.983178,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647739097",
+   "name_en": "Dadoji Konddev Stadium",
+   "name_mr": "",
+   "lat": 19.191701,
+   "lng": 72.980803,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647739098",
+   "name_en": "Dadoji Konddev Stadium",
+   "name_mr": "",
+   "lat": 19.191761,
+   "lng": 72.980661,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647775090",
+   "name_en": "Kanhaji Agrh Chowk",
+   "name_mr": "",
+   "lat": 19.197168,
+   "lng": 72.98334,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647829789",
+   "name_en": "Sha. Damodar Vitavkar Marg",
+   "name_mr": "",
+   "lat": 19.187261,
+   "lng": 72.990369,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647829790",
+   "name_en": "Kalwa Naka",
+   "name_mr": "",
+   "lat": 19.195442,
+   "lng": 72.987205,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647829791",
+   "name_en": "Mahagiri Koliwada",
+   "name_mr": "",
+   "lat": 19.19501,
+   "lng": 72.982976,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4647870489",
+   "name_en": "Chendani Koliwada",
+   "name_mr": "",
+   "lat": 19.189371,
+   "lng": 72.979642,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663246193",
+   "name_en": "Patni Computers",
+   "name_mr": "",
+   "lat": 19.179111,
+   "lng": 72.991074,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663250421",
+   "name_en": "Modi Hospital",
+   "name_mr": "",
+   "lat": 19.160854,
+   "lng": 72.998635,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663250623",
+   "name_en": "Power House",
+   "name_mr": "",
+   "lat": 19.168591,
+   "lng": 72.991033,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663250706",
+   "name_en": "Airoli Sector 20",
+   "name_mr": "",
+   "lat": 19.161124,
+   "lng": 72.990424,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663250818",
+   "name_en": "Tulshiram Narayan Joshi Chowk",
+   "name_mr": "",
+   "lat": 19.160946,
+   "lng": 72.993157,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663250819",
+   "name_en": "Datta Meghe College",
+   "name_mr": "",
+   "lat": 19.160666,
+   "lng": 72.994951,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663251003",
+   "name_en": "Ojas Apartment",
+   "name_mr": "",
+   "lat": 19.161105,
+   "lng": 72.991905,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663251405",
+   "name_en": "Airoli Smashan Bhoomi",
+   "name_mr": "",
+   "lat": 19.164909,
+   "lng": 72.989133,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663251406",
+   "name_en": "Airoli Village",
+   "name_mr": "",
+   "lat": 19.160881,
+   "lng": 72.993385,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4663251493",
+   "name_en": "Patni Computers",
+   "name_mr": "",
+   "lat": 19.179148,
+   "lng": 72.991308,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4784894721",
+   "name_en": "Agarwal Municipal Hospital",
+   "name_mr": "",
+   "lat": 19.178568,
+   "lng": 72.94582,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929295225",
+   "name_en": "Mulund Depot",
+   "name_mr": "",
+   "lat": 19.175675,
+   "lng": 72.94655,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929295227",
+   "name_en": "Gavan Pada",
+   "name_mr": "",
+   "lat": 19.1733,
+   "lng": 72.961941,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929295323",
+   "name_en": "Mahanagarpalika Udyan",
+   "name_mr": "",
+   "lat": 19.175889,
+   "lng": 72.948871,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929307122",
+   "name_en": "Bal Rajeshwar",
+   "name_mr": "",
+   "lat": 19.18327,
+   "lng": 72.948246,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929307123",
+   "name_en": "Big Bazaar",
+   "name_mr": "",
+   "lat": 19.183785,
+   "lng": 72.952076,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929307124",
+   "name_en": "Mulund Check Naka",
+   "name_mr": "",
+   "lat": 19.183957,
+   "lng": 72.953914,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-4929307126",
+   "name_en": "Kelker College",
+   "name_mr": "",
+   "lat": 19.162966,
+   "lng": 72.95685,
+   "operators": "TMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5355360576",
+   "name_en": "Ashapura Mandir",
+   "name_mr": "",
+   "lat": 19.216299,
+   "lng": 72.977814,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5707923421",
+   "name_en": "Mulund court",
+   "name_mr": "",
+   "lat": 19.174609,
+   "lng": 72.95811,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5707923621",
+   "name_en": "Palm Acres Society",
+   "name_mr": "",
+   "lat": 19.172992,
+   "lng": 72.961493,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5746301541",
+   "name_en": "Veena Nagar",
+   "name_mr": "",
+   "lat": 19.181717,
+   "lng": 72.946725,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5940610989",
+   "name_en": "Marind Company",
+   "name_mr": "",
+   "lat": 19.161685,
+   "lng": 72.943968,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5940610991",
+   "name_en": "Hira Nagar",
+   "name_mr": "",
+   "lat": 19.161824,
+   "lng": 72.945662,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-5940644285",
+   "name_en": "Fortis Hospital",
+   "name_mr": "",
+   "lat": 19.16229,
+   "lng": 72.942339,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6017561678",
+   "name_en": "Annabhau Sathe Chowk",
+   "name_mr": "",
+   "lat": 19.200866,
+   "lng": 72.949085,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6017561979",
+   "name_en": "Namdev Wadi",
+   "name_mr": "",
+   "lat": 19.198219,
+   "lng": 72.966495,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6017562392",
+   "name_en": "Gyaneshwar Nagar",
+   "name_mr": "",
+   "lat": 19.201983,
+   "lng": 72.957611,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6017562405",
+   "name_en": "Gyaneshwar Nagar",
+   "name_mr": "",
+   "lat": 19.201912,
+   "lng": 72.957593,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038133186",
+   "name_en": "Teen Hath Naka",
+   "name_mr": "",
+   "lat": 19.187765,
+   "lng": 72.962961,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038134585",
+   "name_en": "Muktai Nagar",
+   "name_mr": "",
+   "lat": 19.210947,
+   "lng": 72.977114,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038146487",
+   "name_en": "Flower Valley",
+   "name_mr": "",
+   "lat": 19.207727,
+   "lng": 72.972403,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038146489",
+   "name_en": "Johnson Company",
+   "name_mr": "",
+   "lat": 19.186794,
+   "lng": 72.961457,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038146490",
+   "name_en": "Kashish Park",
+   "name_mr": "",
+   "lat": 19.185698,
+   "lng": 72.958038,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038148685",
+   "name_en": "Louis Wadi",
+   "name_mr": "",
+   "lat": 19.195821,
+   "lng": 72.962624,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038148785",
+   "name_en": "Maharana Pratap Chowk",
+   "name_mr": "",
+   "lat": 19.183581,
+   "lng": 72.952533,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6038148786",
+   "name_en": "Ralli Wolf",
+   "name_mr": "",
+   "lat": 19.170963,
+   "lng": 72.940527,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6116158099",
+   "name_en": "R-Mall",
+   "name_mr": "",
+   "lat": 19.229899,
+   "lng": 72.976548,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6352848506",
+   "name_en": "Manpada NMMT Bus Stop",
+   "name_mr": "",
+   "lat": 19.186823,
+   "lng": 73.091957,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6618393200",
+   "name_en": "Sainath Nagar",
+   "name_mr": "",
+   "lat": 19.266809,
+   "lng": 72.966616,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6792582785",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.17362,
+   "lng": 72.956149,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6798701385",
+   "name_en": "Maharishi Aravind Chowk",
+   "name_mr": "",
+   "lat": 19.174806,
+   "lng": 72.951056,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6802893015",
+   "name_en": "Shahu Market",
+   "name_mr": "",
+   "lat": 19.188845,
+   "lng": 72.967729,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-6802893027",
+   "name_en": "Shahu Market",
+   "name_mr": "",
+   "lat": 19.188656,
+   "lng": 72.96757,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7090098985",
+   "name_en": "Chatrapati Shivaji Maharaj Chowk",
+   "name_mr": "",
+   "lat": 19.23997,
+   "lng": 73.129239,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7108673660",
+   "name_en": "Police Line",
+   "name_mr": "",
+   "lat": 19.201152,
+   "lng": 72.979584,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7280128605",
+   "name_en": "Municipal School",
+   "name_mr": "",
+   "lat": 19.228525,
+   "lng": 72.96732,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7280128656",
+   "name_en": "Vasant Vihar",
+   "name_mr": "",
+   "lat": 19.222378,
+   "lng": 72.969976,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7280128657",
+   "name_en": "Vasant Vihar",
+   "name_mr": "",
+   "lat": 19.222424,
+   "lng": 72.969813,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7331361903",
+   "name_en": "Air Force",
+   "name_mr": "",
+   "lat": 19.240319,
+   "lng": 72.991994,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7331361906",
+   "name_en": "Kolshet",
+   "name_mr": "",
+   "lat": 19.238743,
+   "lng": 72.990696,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7334214572",
+   "name_en": "Boringer",
+   "name_mr": "",
+   "lat": 19.236435,
+   "lng": 72.989555,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7366182530",
+   "name_en": "Brahmand Phase 1,2",
+   "name_mr": "",
+   "lat": 19.241073,
+   "lng": 72.981493,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7366287329",
+   "name_en": "Sandoz Baug",
+   "name_mr": "",
+   "lat": 19.233577,
+   "lng": 72.987984,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7366287341",
+   "name_en": "Dhokali Naka",
+   "name_mr": "",
+   "lat": 19.226939,
+   "lng": 72.9804,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7366380224",
+   "name_en": "Yashaswi Nagar",
+   "name_mr": "",
+   "lat": 19.218273,
+   "lng": 72.983627,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7366380225",
+   "name_en": "Yashaswi Nagar",
+   "name_mr": "",
+   "lat": 19.218499,
+   "lng": 72.983362,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7366380235",
+   "name_en": "Shruti Park",
+   "name_mr": "",
+   "lat": 19.225552,
+   "lng": 72.980941,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7375128770",
+   "name_en": "Gawand Baug",
+   "name_mr": "",
+   "lat": 19.221345,
+   "lng": 72.95916,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7398051783",
+   "name_en": "Subhash Nagar",
+   "name_mr": "",
+   "lat": 19.216272,
+   "lng": 72.973879,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7401301586",
+   "name_en": "Tattvagyan Vidyapeeth",
+   "name_mr": "",
+   "lat": 19.223195,
+   "lng": 72.977661,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-7944371745",
+   "name_en": "Upvan lake Voltas",
+   "name_mr": "",
+   "lat": 19.223151,
+   "lng": 72.95755,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8442026647",
+   "name_en": "Air Force Base, Kanherl Hills",
+   "name_mr": "",
+   "lat": 19.224498,
+   "lng": 72.949602,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8450022933",
+   "name_en": "Khewra Circle",
+   "name_mr": "",
+   "lat": 19.232641,
+   "lng": 72.969792,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8458629663",
+   "name_en": "Maharashtra Nagar (Thane)",
+   "name_mr": "",
+   "lat": 19.229891,
+   "lng": 72.969964,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8458629665",
+   "name_en": "Maharashtra Nagar (Thane)",
+   "name_mr": "",
+   "lat": 19.22963,
+   "lng": 72.970235,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8460008418",
+   "name_en": "Pawar Nagar",
+   "name_mr": "",
+   "lat": 19.228971,
+   "lng": 72.96638,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8489502612",
+   "name_en": "Kokanipada",
+   "name_mr": "",
+   "lat": 19.233574,
+   "lng": 72.965514,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8493462496",
+   "name_en": "R-Mall",
+   "name_mr": "",
+   "lat": 19.229919,
+   "lng": 72.976864,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8530844752",
+   "name_en": "Panchavati Society",
+   "name_mr": "",
+   "lat": 19.22147,
+   "lng": 72.966343,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8531002108",
+   "name_en": "Pawar Nagar",
+   "name_mr": "",
+   "lat": 19.229004,
+   "lng": 72.965952,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8551670545",
+   "name_en": "Ravi Estate",
+   "name_mr": "",
+   "lat": 19.218091,
+   "lng": 72.959296,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8552003572",
+   "name_en": "Hiranandani Meadows",
+   "name_mr": "",
+   "lat": 19.228375,
+   "lng": 72.96953,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8592017248",
+   "name_en": "Anunagar",
+   "name_mr": "",
+   "lat": 19.258218,
+   "lng": 72.975027,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8592367903",
+   "name_en": "Voltas Gate",
+   "name_mr": "",
+   "lat": 19.217012,
+   "lng": 72.971653,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8592800211",
+   "name_en": "Goodluck Company",
+   "name_mr": "",
+   "lat": 19.263692,
+   "lng": 72.977446,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8592846825",
+   "name_en": "Waghbil Village",
+   "name_mr": "",
+   "lat": 19.266467,
+   "lng": 72.98351,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8596222911",
+   "name_en": "Parkwoods Society",
+   "name_mr": "",
+   "lat": 19.259463,
+   "lng": 72.965846,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8614581204",
+   "name_en": "Hawre City / Boriwade Gaon",
+   "name_mr": "",
+   "lat": 19.259723,
+   "lng": 72.957414,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788678314",
+   "name_en": "Tikujini Wadi",
+   "name_mr": "",
+   "lat": 19.236989,
+   "lng": 72.966156,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788678315",
+   "name_en": "Hill Garden",
+   "name_mr": "",
+   "lat": 19.234755,
+   "lng": 72.966173,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788678316",
+   "name_en": "Garden Estate",
+   "name_mr": "",
+   "lat": 19.233298,
+   "lng": 72.967069,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708017",
+   "name_en": "Happy Valley Circle",
+   "name_mr": "",
+   "lat": 19.236609,
+   "lng": 72.970589,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708019",
+   "name_en": "Central Maidan",
+   "name_mr": "",
+   "lat": 19.19794,
+   "lng": 72.979967,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708020",
+   "name_en": "Ambika Yoga Kutir",
+   "name_mr": "",
+   "lat": 19.207231,
+   "lng": 72.977535,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708021",
+   "name_en": "Muktai Nagar",
+   "name_mr": "",
+   "lat": 19.210787,
+   "lng": 72.977275,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708022",
+   "name_en": "Ashapura Mandir",
+   "name_mr": "",
+   "lat": 19.21603,
+   "lng": 72.978291,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708023",
+   "name_en": "Kapurbawadi",
+   "name_mr": "",
+   "lat": 19.221354,
+   "lng": 72.977857,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8788708026",
+   "name_en": "Sahyog Society",
+   "name_mr": "",
+   "lat": 19.236483,
+   "lng": 72.972406,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789746256",
+   "name_en": "Thane Station (W)",
+   "name_mr": "",
+   "lat": 19.18685,
+   "lng": 72.975735,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789746257",
+   "name_en": "Talao Pali",
+   "name_mr": "",
+   "lat": 19.194171,
+   "lng": 72.976778,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789746258",
+   "name_en": "Tembhi Naka",
+   "name_mr": "",
+   "lat": 19.197019,
+   "lng": 72.977232,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789863200",
+   "name_en": "Municipal School",
+   "name_mr": "",
+   "lat": 19.201853,
+   "lng": 72.97775,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789863201",
+   "name_en": "Uthalsar Naka",
+   "name_mr": "",
+   "lat": 19.202984,
+   "lng": 72.978035,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789863202",
+   "name_en": "Ambika Yoga Kutir",
+   "name_mr": "",
+   "lat": 19.207079,
+   "lng": 72.977336,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789863204",
+   "name_en": "Kapurbawadi",
+   "name_mr": "",
+   "lat": 19.221592,
+   "lng": 72.977548,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789863205",
+   "name_en": "Tattvagyan Vidyapeeth",
+   "name_mr": "",
+   "lat": 19.22342,
+   "lng": 72.977323,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8789863207",
+   "name_en": "Happy Valley Circle",
+   "name_mr": "",
+   "lat": 19.23643,
+   "lng": 72.97063,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8790099250",
+   "name_en": "Hiranandani Meadows",
+   "name_mr": "",
+   "lat": 19.227873,
+   "lng": 72.969912,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8790099251",
+   "name_en": "Vivekananda Nagar",
+   "name_mr": "",
+   "lat": 19.222912,
+   "lng": 72.969964,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8790099253",
+   "name_en": "Gandhi Nagar",
+   "name_mr": "",
+   "lat": 19.218298,
+   "lng": 72.970202,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8790099254",
+   "name_en": "Voltas Gate",
+   "name_mr": "",
+   "lat": 19.217206,
+   "lng": 72.971639,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8790154387",
+   "name_en": "Lok Puram",
+   "name_mr": "",
+   "lat": 19.225939,
+   "lng": 72.969993,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8790154388",
+   "name_en": "Gandhi Nagar",
+   "name_mr": "",
+   "lat": 19.218184,
+   "lng": 72.970133,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8791338032",
+   "name_en": "Hyde Park",
+   "name_mr": "",
+   "lat": 19.226564,
+   "lng": 72.973975,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8791338033",
+   "name_en": "Tulsidham",
+   "name_mr": "",
+   "lat": 19.222457,
+   "lng": 72.973364,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348019",
+   "name_en": "Mulla Bagh",
+   "name_mr": "",
+   "lat": 19.239554,
+   "lng": 72.975801,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348020",
+   "name_en": "Azad Nagar Naka",
+   "name_mr": "",
+   "lat": 19.240763,
+   "lng": 72.975542,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348021",
+   "name_en": "Azad Nagar Naka",
+   "name_mr": "",
+   "lat": 19.240591,
+   "lng": 72.975825,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348022",
+   "name_en": "Vijay Garden / D-Mart",
+   "name_mr": "",
+   "lat": 19.259676,
+   "lng": 72.969855,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348023",
+   "name_en": "Vijay Garden / D-Mart",
+   "name_mr": "",
+   "lat": 19.257824,
+   "lng": 72.96875,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348024",
+   "name_en": "Panchamrit",
+   "name_mr": "",
+   "lat": 19.257257,
+   "lng": 72.970834,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348025",
+   "name_en": "Panchamrit",
+   "name_mr": "",
+   "lat": 19.257155,
+   "lng": 72.970477,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348026",
+   "name_en": "Waghbil Naka",
+   "name_mr": "",
+   "lat": 19.253008,
+   "lng": 72.972486,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348027",
+   "name_en": "Dongaripada",
+   "name_mr": "",
+   "lat": 19.250883,
+   "lng": 72.973479,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348029",
+   "name_en": "Brahmand Phase 5",
+   "name_mr": "",
+   "lat": 19.245096,
+   "lng": 72.98376,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348030",
+   "name_en": "Swastik Park",
+   "name_mr": "",
+   "lat": 19.243544,
+   "lng": 72.982813,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348031",
+   "name_en": "St Xaviers High School",
+   "name_mr": "",
+   "lat": 19.240715,
+   "lng": 72.977283,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348032",
+   "name_en": "Mulla Bagh",
+   "name_mr": "",
+   "lat": 19.239234,
+   "lng": 72.975517,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8792348033",
+   "name_en": "Police Line",
+   "name_mr": "",
+   "lat": 19.20109,
+   "lng": 72.979416,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902854",
+   "name_en": "Ice Factory",
+   "name_mr": "",
+   "lat": 19.187167,
+   "lng": 72.968864,
+   "operators": "Thane Muncipal Transport;Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902855",
+   "name_en": "A.K. Joshi Vidyalaya",
+   "name_mr": "",
+   "lat": 19.187448,
+   "lng": 72.971584,
+   "operators": "Thane Muncipal Transport;Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902856",
+   "name_en": "Kapurbawadi",
+   "name_mr": "",
+   "lat": 19.217819,
+   "lng": 72.979929,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902857",
+   "name_en": "Kapurbawadi",
+   "name_mr": "",
+   "lat": 19.217551,
+   "lng": 72.979962,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902858",
+   "name_en": "Shruti Park",
+   "name_mr": "",
+   "lat": 19.225476,
+   "lng": 72.980716,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902862",
+   "name_en": "Wellman Company",
+   "name_mr": "",
+   "lat": 19.229675,
+   "lng": 72.984361,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902863",
+   "name_en": "Kavyadhara",
+   "name_mr": "",
+   "lat": 19.228182,
+   "lng": 72.982415,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902864",
+   "name_en": "Highland Park",
+   "name_mr": "",
+   "lat": 19.222276,
+   "lng": 72.982253,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902865",
+   "name_en": "Highland Park",
+   "name_mr": "",
+   "lat": 19.222257,
+   "lng": 72.982464,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902866",
+   "name_en": "Wellman Company",
+   "name_mr": "",
+   "lat": 19.229499,
+   "lng": 72.984404,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902867",
+   "name_en": "Bayer",
+   "name_mr": "",
+   "lat": 19.230922,
+   "lng": 72.986066,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8794902868",
+   "name_en": "Swastik Park",
+   "name_mr": "",
+   "lat": 19.24356,
+   "lng": 72.982914,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208235",
+   "name_en": "Hari Niwas",
+   "name_mr": "",
+   "lat": 19.191139,
+   "lng": 72.96795,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208236",
+   "name_en": "Nitin Company",
+   "name_mr": "",
+   "lat": 19.199084,
+   "lng": 72.96492,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208237",
+   "name_en": "Kamgar Hospital",
+   "name_mr": "",
+   "lat": 19.203348,
+   "lng": 72.955568,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208239",
+   "name_en": "Wagle Bus Depot",
+   "name_mr": "",
+   "lat": 19.201451,
+   "lng": 72.945616,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208241",
+   "name_en": "Ravi Fisheries",
+   "name_mr": "",
+   "lat": 19.197391,
+   "lng": 72.945555,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208242",
+   "name_en": "Tata Motors",
+   "name_mr": "",
+   "lat": 19.197593,
+   "lng": 72.949179,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208243",
+   "name_en": "Tata Motors",
+   "name_mr": "",
+   "lat": 19.197598,
+   "lng": 72.949257,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208244",
+   "name_en": "Annabhau Sathe Chowk",
+   "name_mr": "",
+   "lat": 19.200828,
+   "lng": 72.949171,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208245",
+   "name_en": "Kamgar Hospital",
+   "name_mr": "",
+   "lat": 19.203298,
+   "lng": 72.955479,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208246",
+   "name_en": "Rajeshri Shahu Maharaj",
+   "name_mr": "",
+   "lat": 19.202897,
+   "lng": 72.956077,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208247",
+   "name_en": "Nitin Company",
+   "name_mr": "",
+   "lat": 19.198972,
+   "lng": 72.964882,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208249",
+   "name_en": "Mahapalika Bhavan",
+   "name_mr": "",
+   "lat": 19.197143,
+   "lng": 72.967457,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208250",
+   "name_en": "Hari Niwas",
+   "name_mr": "",
+   "lat": 19.191827,
+   "lng": 72.968618,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795208251",
+   "name_en": "Hari Niwas",
+   "name_mr": "",
+   "lat": 19.190476,
+   "lng": 72.967734,
+   "operators": "Thane Muncipal Transport;Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776769",
+   "name_en": "Khopat",
+   "name_mr": "",
+   "lat": 19.202824,
+   "lng": 72.972195,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776770",
+   "name_en": "Pujani Estate",
+   "name_mr": "",
+   "lat": 19.204035,
+   "lng": 72.969761,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776771",
+   "name_en": "Pujani Estate",
+   "name_mr": "",
+   "lat": 19.204296,
+   "lng": 72.969703,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776772",
+   "name_en": "Shivai Nagar",
+   "name_mr": "",
+   "lat": 19.215691,
+   "lng": 72.956278,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776773",
+   "name_en": "Khandelwal Estate",
+   "name_mr": "",
+   "lat": 19.217619,
+   "lng": 72.954002,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776774",
+   "name_en": "Khandelwal Estate",
+   "name_mr": "",
+   "lat": 19.217526,
+   "lng": 72.953842,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776775",
+   "name_en": "Bhu Kendra",
+   "name_mr": "",
+   "lat": 19.218677,
+   "lng": 72.952895,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776776",
+   "name_en": "Bhu Kendra",
+   "name_mr": "",
+   "lat": 19.21846,
+   "lng": 72.952977,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776777",
+   "name_en": "Upvan",
+   "name_mr": "",
+   "lat": 19.220426,
+   "lng": 72.953649,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776778",
+   "name_en": "Upvan",
+   "name_mr": "",
+   "lat": 19.220481,
+   "lng": 72.953585,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776779",
+   "name_en": "Gawand Baug",
+   "name_mr": "",
+   "lat": 19.221297,
+   "lng": 72.959159,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776780",
+   "name_en": "Siddhachal Society",
+   "name_mr": "",
+   "lat": 19.224703,
+   "lng": 72.964943,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776781",
+   "name_en": "Sambhaji Nagar",
+   "name_mr": "",
+   "lat": 19.200579,
+   "lng": 72.964377,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776782",
+   "name_en": "Forest Office",
+   "name_mr": "",
+   "lat": 19.188931,
+   "lng": 72.964652,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776783",
+   "name_en": "Forest Office",
+   "name_mr": "",
+   "lat": 19.189031,
+   "lng": 72.964525,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776784",
+   "name_en": "Thane RTO",
+   "name_mr": "",
+   "lat": 19.192157,
+   "lng": 72.962853,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776785",
+   "name_en": "Thane RTO",
+   "name_mr": "",
+   "lat": 19.192933,
+   "lng": 72.963007,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776790",
+   "name_en": "Sambhaji Nagar",
+   "name_mr": "",
+   "lat": 19.200351,
+   "lng": 72.964765,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776791",
+   "name_en": "Siddheshwar Lake",
+   "name_mr": "",
+   "lat": 19.202567,
+   "lng": 72.967078,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776792",
+   "name_en": "Cadbury Junction",
+   "name_mr": "",
+   "lat": 19.204024,
+   "lng": 72.968593,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776793",
+   "name_en": "Cadbury Junction",
+   "name_mr": "",
+   "lat": 19.204116,
+   "lng": 72.968092,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776794",
+   "name_en": "Cadbury Company",
+   "name_mr": "",
+   "lat": 19.205467,
+   "lng": 72.966967,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776795",
+   "name_en": "Cadbury Company",
+   "name_mr": "",
+   "lat": 19.205638,
+   "lng": 72.96711,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776796",
+   "name_en": "Raymond / J.K. Gram",
+   "name_mr": "",
+   "lat": 19.208084,
+   "lng": 72.963905,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776797",
+   "name_en": "Raymond / J.K. Gram",
+   "name_mr": "",
+   "lat": 19.207362,
+   "lng": 72.965169,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776808",
+   "name_en": "Vartak Nagar Naka",
+   "name_mr": "",
+   "lat": 19.210616,
+   "lng": 72.961634,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776809",
+   "name_en": "MRR Childrens Hospital / Building Number 3",
+   "name_mr": "",
+   "lat": 19.212111,
+   "lng": 72.960137,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776810",
+   "name_en": "MRR Childrens Hospital / Building Number 3",
+   "name_mr": "",
+   "lat": 19.212212,
+   "lng": 72.960331,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776811",
+   "name_en": "S.T. Juna Thamba",
+   "name_mr": "",
+   "lat": 19.21347,
+   "lng": 72.959027,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776812",
+   "name_en": "S.T. Juna Thamba",
+   "name_mr": "",
+   "lat": 19.213801,
+   "lng": 72.959115,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776815",
+   "name_en": "Lakshminarayan Residency",
+   "name_mr": "",
+   "lat": 19.219422,
+   "lng": 72.959775,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795776816",
+   "name_en": "Bethany Hospital",
+   "name_mr": "",
+   "lat": 19.220413,
+   "lng": 72.961844,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795838217",
+   "name_en": "Asian Cable",
+   "name_mr": "",
+   "lat": 19.219821,
+   "lng": 72.963685,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795838218",
+   "name_en": "Asian Cable",
+   "name_mr": "",
+   "lat": 19.21989,
+   "lng": 72.963723,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795838219",
+   "name_en": "Jidh School",
+   "name_mr": "",
+   "lat": 19.222694,
+   "lng": 72.964791,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795838220",
+   "name_en": "Jidh School",
+   "name_mr": "",
+   "lat": 19.222727,
+   "lng": 72.964796,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795838221",
+   "name_en": "Siddhachal Society",
+   "name_mr": "",
+   "lat": 19.224701,
+   "lng": 72.964992,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8795838222",
+   "name_en": "Upvan lake Voltas",
+   "name_mr": "",
+   "lat": 19.223233,
+   "lng": 72.957523,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796069248",
+   "name_en": "Kalwa Naka",
+   "name_mr": "",
+   "lat": 19.195865,
+   "lng": 72.987408,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796504392",
+   "name_en": "Kasarvadavali Naka",
+   "name_mr": "",
+   "lat": 19.269563,
+   "lng": 72.965635,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796504393",
+   "name_en": "Anand Nagar",
+   "name_mr": "",
+   "lat": 19.264754,
+   "lng": 72.967815,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796504394",
+   "name_en": "Anand Nagar",
+   "name_mr": "",
+   "lat": 19.264417,
+   "lng": 72.967576,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796504395",
+   "name_en": "Vijay Nagari",
+   "name_mr": "",
+   "lat": 19.25615,
+   "lng": 72.973603,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796504396",
+   "name_en": "Vijay Nagari",
+   "name_mr": "",
+   "lat": 19.256214,
+   "lng": 72.973856,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796504403",
+   "name_en": "Anunagar",
+   "name_mr": "",
+   "lat": 19.258173,
+   "lng": 72.974595,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796526607",
+   "name_en": "Novartis",
+   "name_mr": "",
+   "lat": 19.234861,
+   "lng": 72.988533,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796526608",
+   "name_en": "Novartis",
+   "name_mr": "",
+   "lat": 19.234963,
+   "lng": 72.988741,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796526609",
+   "name_en": "Boringer",
+   "name_mr": "",
+   "lat": 19.237097,
+   "lng": 72.989812,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8796526610",
+   "name_en": "Kolshet",
+   "name_mr": "",
+   "lat": 19.239073,
+   "lng": 72.990848,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8797486809",
+   "name_en": "Gawand Baug (Upvan)",
+   "name_mr": "",
+   "lat": 19.224884,
+   "lng": 72.958687,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8802032176",
+   "name_en": "New Shakti Mill / Ambedkar Road",
+   "name_mr": "",
+   "lat": 19.200673,
+   "lng": 72.975563,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8802032177",
+   "name_en": "Parmarth Niketan",
+   "name_mr": "",
+   "lat": 19.234097,
+   "lng": 72.9459,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8802032178",
+   "name_en": "Parsik Shiv Mandir",
+   "name_mr": "",
+   "lat": 19.236454,
+   "lng": 72.944748,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8929296348",
+   "name_en": "Amrut Angan",
+   "name_mr": "",
+   "lat": 19.208879,
+   "lng": 73.013101,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8989602086",
+   "name_en": "Vimal Nagar",
+   "name_mr": "",
+   "lat": 19.205668,
+   "lng": 73.008475,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-8989602087",
+   "name_en": "Vimal Nagar",
+   "name_mr": "",
+   "lat": 19.205876,
+   "lng": 73.008434,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-9925315050",
+   "name_en": "Sahyog Society",
+   "name_mr": "",
+   "lat": 19.236291,
+   "lng": 72.97242,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380631",
+   "name_en": "Rabodi",
+   "name_mr": "",
+   "lat": 19.203068,
+   "lng": 72.979962,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380632",
+   "name_en": "Holy Cross",
+   "name_mr": "",
+   "lat": 19.203053,
+   "lng": 72.979005,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380633",
+   "name_en": "Jambhali Naka",
+   "name_mr": "",
+   "lat": 19.195495,
+   "lng": 72.979213,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380636",
+   "name_en": "Prabhat Cinema",
+   "name_mr": "",
+   "lat": 19.190559,
+   "lng": 72.976999,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380644",
+   "name_en": "Shashtri Nagar",
+   "name_mr": "",
+   "lat": 19.214125,
+   "lng": 72.961328,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380665",
+   "name_en": "Teen Hath Naka",
+   "name_mr": "",
+   "lat": 19.18903,
+   "lng": 72.963748,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380666",
+   "name_en": "Income Tax Office",
+   "name_mr": "",
+   "lat": 19.188009,
+   "lng": 72.964689,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380667",
+   "name_en": "Income Tax Office",
+   "name_mr": "",
+   "lat": 19.188004,
+   "lng": 72.965051,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380668",
+   "name_en": "Malhar Cinema",
+   "name_mr": "",
+   "lat": 19.187543,
+   "lng": 72.967014,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380669",
+   "name_en": "Ice Factory",
+   "name_mr": "",
+   "lat": 19.187335,
+   "lng": 72.968785,
+   "operators": "Thane Muncipal Transport;Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054380670",
+   "name_en": "A.K. Joshi Vidyalaya",
+   "name_mr": "",
+   "lat": 19.187616,
+   "lng": 72.971537,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10054429281",
+   "name_en": "Shivai Nagar",
+   "name_mr": "",
+   "lat": 19.215893,
+   "lng": 72.956382,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041035",
+   "name_en": "Majiwada Gaon",
+   "name_mr": "",
+   "lat": 19.213958,
+   "lng": 72.981561,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041036",
+   "name_en": "Sachin Society",
+   "name_mr": "",
+   "lat": 19.214718,
+   "lng": 72.979624,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041037",
+   "name_en": "Court Naka",
+   "name_mr": "",
+   "lat": 19.197197,
+   "lng": 72.978234,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041038",
+   "name_en": "Teen Hath Naka",
+   "name_mr": "",
+   "lat": 19.188063,
+   "lng": 72.962697,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041039",
+   "name_en": "Johnson Company",
+   "name_mr": "",
+   "lat": 19.187037,
+   "lng": 72.961267,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041040",
+   "name_en": "Kashish Park",
+   "name_mr": "",
+   "lat": 19.185898,
+   "lng": 72.958,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041041",
+   "name_en": "Mulund Check Naka",
+   "name_mr": "",
+   "lat": 19.185745,
+   "lng": 72.955978,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041042",
+   "name_en": "Automatic Company",
+   "name_mr": "",
+   "lat": 19.187676,
+   "lng": 72.955474,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041043",
+   "name_en": "Kamgar Hospital",
+   "name_mr": "",
+   "lat": 19.204262,
+   "lng": 72.954299,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041044",
+   "name_en": "Lokmanya Nagar",
+   "name_mr": "",
+   "lat": 19.209372,
+   "lng": 72.952276,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041045",
+   "name_en": "Passport Office / M.I.D.C.",
+   "name_mr": "",
+   "lat": 19.191123,
+   "lng": 72.955258,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041046",
+   "name_en": "Automatic Company",
+   "name_mr": "",
+   "lat": 19.187559,
+   "lng": 72.955159,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041047",
+   "name_en": "Mulund Check Naka",
+   "name_mr": "",
+   "lat": 19.185453,
+   "lng": 72.956277,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041049",
+   "name_en": "Gurukul Society",
+   "name_mr": "",
+   "lat": 19.195665,
+   "lng": 72.964652,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10057041050",
+   "name_en": "Kajuwadi",
+   "name_mr": "",
+   "lat": 19.197481,
+   "lng": 72.960389,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370035",
+   "name_en": "Raghukul Society",
+   "name_mr": "",
+   "lat": 19.206962,
+   "lng": 73.006269,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370036",
+   "name_en": "Nadanawan Homes",
+   "name_mr": "",
+   "lat": 19.209333,
+   "lng": 73.009799,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370037",
+   "name_en": "Subhash Tower",
+   "name_mr": "",
+   "lat": 19.207824,
+   "lng": 73.011247,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370038",
+   "name_en": "Vastu Anand",
+   "name_mr": "",
+   "lat": 19.20677,
+   "lng": 73.009633,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370039",
+   "name_en": "Raj Park",
+   "name_mr": "",
+   "lat": 19.205037,
+   "lng": 73.007026,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370040",
+   "name_en": "Prem Nagar",
+   "name_mr": "",
+   "lat": 19.203771,
+   "lng": 73.006028,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370041",
+   "name_en": "Raghukul Society",
+   "name_mr": "",
+   "lat": 19.207033,
+   "lng": 73.005888,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370042",
+   "name_en": "Nadanawan Homes",
+   "name_mr": "",
+   "lat": 19.209516,
+   "lng": 73.009847,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370043",
+   "name_en": "Reliance Market",
+   "name_mr": "",
+   "lat": 19.207641,
+   "lng": 73.0115,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370044",
+   "name_en": "Vastu Anand",
+   "name_mr": "",
+   "lat": 19.206446,
+   "lng": 73.00974,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370045",
+   "name_en": "Vilas Park",
+   "name_mr": "",
+   "lat": 19.204744,
+   "lng": 73.007122,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370046",
+   "name_en": "Prem Nagar",
+   "name_mr": "",
+   "lat": 19.202986,
+   "lng": 73.004596,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370047",
+   "name_en": "Datta Wadi",
+   "name_mr": "",
+   "lat": 19.200154,
+   "lng": 72.998689,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370048",
+   "name_en": "Kharegaon Naka",
+   "name_mr": "",
+   "lat": 19.201927,
+   "lng": 73.00149,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370049",
+   "name_en": "Datta Wadi",
+   "name_mr": "",
+   "lat": 19.200498,
+   "lng": 72.998545,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370050",
+   "name_en": "Sukur Park",
+   "name_mr": "",
+   "lat": 19.198994,
+   "lng": 72.995471,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370051",
+   "name_en": "Sahyadri Society",
+   "name_mr": "",
+   "lat": 19.198168,
+   "lng": 72.993937,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370052",
+   "name_en": "Manisha Nagar",
+   "name_mr": "",
+   "lat": 19.196947,
+   "lng": 72.990847,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370053",
+   "name_en": "Teen Petrol Pump",
+   "name_mr": "",
+   "lat": 19.192778,
+   "lng": 72.970188,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370054",
+   "name_en": "Indira Nagar",
+   "name_mr": "",
+   "lat": 19.205098,
+   "lng": 72.950184,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370055",
+   "name_en": "Sawarkar Nagar",
+   "name_mr": "",
+   "lat": 19.206436,
+   "lng": 72.950581,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370056",
+   "name_en": "Kharegaon",
+   "name_mr": "",
+   "lat": 19.205129,
+   "lng": 72.999666,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370057",
+   "name_en": "Parsik Nagar",
+   "name_mr": "",
+   "lat": 19.203578,
+   "lng": 73.001296,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370058",
+   "name_en": "Kharegaon Naka",
+   "name_mr": "",
+   "lat": 19.201653,
+   "lng": 73.001618,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370059",
+   "name_en": "Sukur Park",
+   "name_mr": "",
+   "lat": 19.198695,
+   "lng": 72.995589,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370060",
+   "name_en": "Sahyadri Society",
+   "name_mr": "",
+   "lat": 19.197732,
+   "lng": 72.993615,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370061",
+   "name_en": "Manisha Nagar",
+   "name_mr": "",
+   "lat": 19.196983,
+   "lng": 72.991769,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370062",
+   "name_en": "Kalwa Naka",
+   "name_mr": "",
+   "lat": 19.196096,
+   "lng": 72.988011,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10059370063",
+   "name_en": "Mahapalika Bhavan",
+   "name_mr": "",
+   "lat": 19.19757,
+   "lng": 72.968123,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10151918348",
+   "name_en": "Vrindavan Society",
+   "name_mr": "",
+   "lat": 19.208336,
+   "lng": 72.982707,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10151918349",
+   "name_en": "Vrindavan Society Thane",
+   "name_mr": "",
+   "lat": 19.208239,
+   "lng": 72.98277,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10152063577",
+   "name_en": "Vrindavan Society",
+   "name_mr": "",
+   "lat": 19.208419,
+   "lng": 72.982752,
+   "operators": "Thane Municipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111411",
+   "name_en": "P&T Colony",
+   "name_mr": "",
+   "lat": 19.171261,
+   "lng": 72.943603,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111417",
+   "name_en": "Nahur Depot",
+   "name_mr": "",
+   "lat": 19.170664,
+   "lng": 72.944002,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111422",
+   "name_en": "Ralli Wolf",
+   "name_mr": "",
+   "lat": 19.17106,
+   "lng": 72.940569,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111427",
+   "name_en": "P&T Colony",
+   "name_mr": "",
+   "lat": 19.171283,
+   "lng": 72.943466,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111429",
+   "name_en": "Ralli Wolf",
+   "name_mr": "",
+   "lat": 19.170707,
+   "lng": 72.940159,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111438",
+   "name_en": "Ralli Wolf",
+   "name_mr": "",
+   "lat": 19.170808,
+   "lng": 72.940205,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111439",
+   "name_en": "Nahur Depot",
+   "name_mr": "",
+   "lat": 19.170726,
+   "lng": 72.944111,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111441",
+   "name_en": "Kavi Kokil Vidyapati Thakur Chowk",
+   "name_mr": "",
+   "lat": 19.165628,
+   "lng": 72.94374,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10245111442",
+   "name_en": "Kavi Kokil Vidyapati Thakur Chowk",
+   "name_mr": "",
+   "lat": 19.165722,
+   "lng": 72.943641,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10246302361",
+   "name_en": "Kelker College",
+   "name_mr": "",
+   "lat": 19.16305,
+   "lng": 72.956707,
+   "operators": "TMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247406098",
+   "name_en": "Mulund Station (W)",
+   "name_mr": "",
+   "lat": 19.172836,
+   "lng": 72.956552,
+   "operators": "TMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247406099",
+   "name_en": "Dnyan Sarita College",
+   "name_mr": "",
+   "lat": 19.178649,
+   "lng": 72.95052,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247406100",
+   "name_en": "Dhanvantri Hospital",
+   "name_mr": "",
+   "lat": 19.176125,
+   "lng": 72.953347,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247406101",
+   "name_en": "Dhanvantari Hospital",
+   "name_mr": "",
+   "lat": 19.175862,
+   "lng": 72.953632,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247406102",
+   "name_en": "Santoshi Mata Mandir",
+   "name_mr": "",
+   "lat": 19.183477,
+   "lng": 72.949313,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247406103",
+   "name_en": "Kamagar Hospital / ESIS Mulund",
+   "name_mr": "",
+   "lat": 19.179103,
+   "lng": 72.945228,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412210",
+   "name_en": "Laxmi Nagar",
+   "name_mr": "",
+   "lat": 19.20639,
+   "lng": 72.970424,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412211",
+   "name_en": "Siddhivinayak Tower",
+   "name_mr": "",
+   "lat": 19.210141,
+   "lng": 72.974255,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412212",
+   "name_en": "Flower Valley",
+   "name_mr": "",
+   "lat": 19.208037,
+   "lng": 72.972231,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412213",
+   "name_en": "Bramhala Talav / Manorpada",
+   "name_mr": "",
+   "lat": 19.202573,
+   "lng": 72.97601,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412214",
+   "name_en": "Kolbad",
+   "name_mr": "",
+   "lat": 19.204064,
+   "lng": 72.977163,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412215",
+   "name_en": "Castle Mill Naka",
+   "name_mr": "",
+   "lat": 19.205202,
+   "lng": 72.977452,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412216",
+   "name_en": "Parkwood Society",
+   "name_mr": "",
+   "lat": 19.262168,
+   "lng": 72.965552,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412217",
+   "name_en": "Sambhaji Hotel",
+   "name_mr": "",
+   "lat": 19.260412,
+   "lng": 72.971465,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412218",
+   "name_en": "Anand Nagar Depot",
+   "name_mr": "",
+   "lat": 19.264982,
+   "lng": 72.969842,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412219",
+   "name_en": "Damyanti Smruti",
+   "name_mr": "",
+   "lat": 19.264834,
+   "lng": 72.979616,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412220",
+   "name_en": "Swastik Regalia",
+   "name_mr": "",
+   "lat": 19.26254,
+   "lng": 72.977037,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412221",
+   "name_en": "Hiranandani Garden",
+   "name_mr": "",
+   "lat": 19.257377,
+   "lng": 72.97811,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412222",
+   "name_en": "Stanford Society",
+   "name_mr": "",
+   "lat": 19.256365,
+   "lng": 72.97946,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412223",
+   "name_en": "Shastri Nagar Naka",
+   "name_mr": "",
+   "lat": 19.212723,
+   "lng": 72.960258,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412224",
+   "name_en": "Ram Mandir",
+   "name_mr": "",
+   "lat": 19.235151,
+   "lng": 72.945169,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412225",
+   "name_en": "Exotica",
+   "name_mr": "",
+   "lat": 19.231545,
+   "lng": 72.948033,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412226",
+   "name_en": "Bhendi Pada",
+   "name_mr": "",
+   "lat": 19.238129,
+   "lng": 72.943917,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412227",
+   "name_en": "Saket Complex",
+   "name_mr": "",
+   "lat": 19.206208,
+   "lng": 72.992035,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412228",
+   "name_en": "Kores Nakshtra",
+   "name_mr": "",
+   "lat": 19.209327,
+   "lng": 72.961294,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412229",
+   "name_en": "Runwal Plaza",
+   "name_mr": "",
+   "lat": 19.208024,
+   "lng": 72.958247,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412230",
+   "name_en": "Aai Mata Mandir / Chowk",
+   "name_mr": "",
+   "lat": 19.207176,
+   "lng": 72.956968,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412231",
+   "name_en": "Dadlani Park",
+   "name_mr": "",
+   "lat": 19.222428,
+   "lng": 72.995942,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412232",
+   "name_en": "Ashok Nagar",
+   "name_mr": "",
+   "lat": 19.222378,
+   "lng": 72.994248,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412233",
+   "name_en": "Balkum Pada No 1",
+   "name_mr": "",
+   "lat": 19.221874,
+   "lng": 72.991214,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412234",
+   "name_en": "Balkum Pada No 2",
+   "name_mr": "",
+   "lat": 19.220038,
+   "lng": 72.989836,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412235",
+   "name_en": "Balkum Pada No 3",
+   "name_mr": "",
+   "lat": 19.215719,
+   "lng": 72.99127,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412236",
+   "name_en": "Ravi Fisheries / Road Number 27",
+   "name_mr": "",
+   "lat": 19.195087,
+   "lng": 72.945261,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412237",
+   "name_en": "Wagle Circle / Road No 22",
+   "name_mr": "",
+   "lat": 19.19453,
+   "lng": 72.94973,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412238",
+   "name_en": "Durdwani Kendra",
+   "name_mr": "",
+   "lat": 19.194306,
+   "lng": 72.951652,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412240",
+   "name_en": "ITI Circle",
+   "name_mr": "",
+   "lat": 19.195369,
+   "lng": 72.943134,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412241",
+   "name_en": "Dnyansadhna College",
+   "name_mr": "",
+   "lat": 19.184487,
+   "lng": 72.964738,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412246",
+   "name_en": "Mithagar",
+   "name_mr": "",
+   "lat": 19.165515,
+   "lng": 72.964016,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412257",
+   "name_en": "Everest World Park",
+   "name_mr": "",
+   "lat": 19.231656,
+   "lng": 72.983084,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412258",
+   "name_en": "Sandoz Baug",
+   "name_mr": "",
+   "lat": 19.233413,
+   "lng": 72.987705,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412259",
+   "name_en": "Bayer Main Gate",
+   "name_mr": "",
+   "lat": 19.231143,
+   "lng": 72.98606,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412260",
+   "name_en": "Manorama Nagar",
+   "name_mr": "",
+   "lat": 19.23195,
+   "lng": 72.98026,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412261",
+   "name_en": "Aban Park",
+   "name_mr": "",
+   "lat": 19.22922,
+   "lng": 72.9801,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412262",
+   "name_en": "Yashaswi Nagar Pipeline",
+   "name_mr": "",
+   "lat": 19.219522,
+   "lng": 72.983826,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412263",
+   "name_en": "Vardhman Garden",
+   "name_mr": "",
+   "lat": 19.219157,
+   "lng": 72.984488,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412264",
+   "name_en": "Chhabhaiya Park",
+   "name_mr": "",
+   "lat": 19.218105,
+   "lng": 72.981358,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412265",
+   "name_en": "Kasheli Toll Naka",
+   "name_mr": "",
+   "lat": 19.234786,
+   "lng": 73.012445,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412266",
+   "name_en": "Colour Chem",
+   "name_mr": "",
+   "lat": 19.220075,
+   "lng": 72.986508,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412267",
+   "name_en": "KMS / N G Regency",
+   "name_mr": "",
+   "lat": 19.226664,
+   "lng": 72.998082,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412268",
+   "name_en": "Chamunda",
+   "name_mr": "",
+   "lat": 19.232065,
+   "lng": 73.008052,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412269",
+   "name_en": "Durgesh Complex",
+   "name_mr": "",
+   "lat": 19.238835,
+   "lng": 73.015893,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412270",
+   "name_en": "Balkum Naka",
+   "name_mr": "",
+   "lat": 19.221508,
+   "lng": 72.989545,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412271",
+   "name_en": "Kasheli",
+   "name_mr": "",
+   "lat": 19.236265,
+   "lng": 73.014706,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412272",
+   "name_en": "Hanuman Complex",
+   "name_mr": "",
+   "lat": 19.24152,
+   "lng": 73.016549,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412273",
+   "name_en": "Durgesh Park",
+   "name_mr": "",
+   "lat": 19.244176,
+   "lng": 73.017242,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412274",
+   "name_en": "Kalher",
+   "name_mr": "",
+   "lat": 19.247031,
+   "lng": 73.017766,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412275",
+   "name_en": "Kalher Pipe Line",
+   "name_mr": "",
+   "lat": 19.25133,
+   "lng": 73.017998,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412276",
+   "name_en": "Holy Mary High School",
+   "name_mr": "",
+   "lat": 19.268737,
+   "lng": 73.036873,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412277",
+   "name_en": "Purna",
+   "name_mr": "",
+   "lat": 19.258322,
+   "lng": 73.026329,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412278",
+   "name_en": "Maratha Punjab, Madvi Chowk",
+   "name_mr": "",
+   "lat": 19.270458,
+   "lng": 73.038673,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412279",
+   "name_en": "Bhiwandi Bypass",
+   "name_mr": "",
+   "lat": 19.281052,
+   "lng": 73.047867,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412280",
+   "name_en": "Narpoli Police Station",
+   "name_mr": "",
+   "lat": 19.283707,
+   "lng": 73.050091,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412281",
+   "name_en": "Kopar",
+   "name_mr": "",
+   "lat": 19.252731,
+   "lng": 73.021147,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412282",
+   "name_en": "Khandagale Estate",
+   "name_mr": "",
+   "lat": 19.261166,
+   "lng": 73.028881,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412283",
+   "name_en": "Anjur Phata",
+   "name_mr": "",
+   "lat": 19.272819,
+   "lng": 73.041284,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412284",
+   "name_en": "Oswal Sagar Hall",
+   "name_mr": "",
+   "lat": 19.276404,
+   "lng": 73.044215,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412285",
+   "name_en": "Tukaram Niwas",
+   "name_mr": "",
+   "lat": 19.209883,
+   "lng": 73.037077,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412286",
+   "name_en": "Lodha",
+   "name_mr": "",
+   "lat": 19.214329,
+   "lng": 72.984149,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412287",
+   "name_en": "Vehele Panchayat",
+   "name_mr": "",
+   "lat": 19.234198,
+   "lng": 73.041598,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412288",
+   "name_en": "Hardas Nagar",
+   "name_mr": "",
+   "lat": 19.212926,
+   "lng": 72.977075,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412289",
+   "name_en": "Lodha / Saket",
+   "name_mr": "",
+   "lat": 19.210806,
+   "lng": 72.985709,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412290",
+   "name_en": "Surai Phata",
+   "name_mr": "",
+   "lat": 19.219997,
+   "lng": 73.042502,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412291",
+   "name_en": "Anjur",
+   "name_mr": "",
+   "lat": 19.215823,
+   "lng": 73.039064,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412292",
+   "name_en": "Lodha Complex",
+   "name_mr": "",
+   "lat": 19.213223,
+   "lng": 72.98424,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412293",
+   "name_en": "Diva 1 / Diva Gaon / Anjur",
+   "name_mr": "",
+   "lat": 19.230245,
+   "lng": 73.028036,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412294",
+   "name_en": "Mumbra Toll Naka",
+   "name_mr": "",
+   "lat": 19.212619,
+   "lng": 73.007399,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412295",
+   "name_en": "Diva 2 / Diva Phata / Petrol Pump",
+   "name_mr": "",
+   "lat": 19.233545,
+   "lng": 73.032818,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412296",
+   "name_en": "Aalimghar",
+   "name_mr": "",
+   "lat": 19.203762,
+   "lng": 73.036325,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412297",
+   "name_en": "Shree Ram Nagar",
+   "name_mr": "",
+   "lat": 19.229583,
+   "lng": 73.042432,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412298",
+   "name_en": "Kalyan Naka",
+   "name_mr": "",
+   "lat": 19.29614,
+   "lng": 73.063389,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412300",
+   "name_en": "Mankoli Naka",
+   "name_mr": "",
+   "lat": 19.241448,
+   "lng": 73.041862,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412301",
+   "name_en": "Bhoomi World",
+   "name_mr": "",
+   "lat": 19.263399,
+   "lng": 73.073938,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412303",
+   "name_en": "Jakat Naka",
+   "name_mr": "",
+   "lat": 19.29896,
+   "lng": 73.064999,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412305",
+   "name_en": "Mini Punjab",
+   "name_mr": "",
+   "lat": 19.250976,
+   "lng": 73.054755,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247412307",
+   "name_en": "Swayam Siddhi College",
+   "name_mr": "",
+   "lat": 19.276069,
+   "lng": 73.078226,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247435536",
+   "name_en": "Kasarvadavali",
+   "name_mr": "",
+   "lat": 19.275384,
+   "lng": 72.968892,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247435537",
+   "name_en": "Little Angel School",
+   "name_mr": "",
+   "lat": 19.272659,
+   "lng": 72.967753,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247435538",
+   "name_en": "Kasarvadavali / Sainik Shala",
+   "name_mr": "",
+   "lat": 19.271132,
+   "lng": 72.966686,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438109",
+   "name_en": "Pipeline Road",
+   "name_mr": "",
+   "lat": 19.281774,
+   "lng": 73.073877,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438111",
+   "name_en": "Kalyan Bypass",
+   "name_mr": "",
+   "lat": 19.269843,
+   "lng": 73.082832,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438112",
+   "name_en": "Saibaba Mandir",
+   "name_mr": "",
+   "lat": 19.274187,
+   "lng": 73.079588,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438121",
+   "name_en": "Kalsekar College / K.V.K.",
+   "name_mr": "",
+   "lat": 19.161668,
+   "lng": 73.029452,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438122",
+   "name_en": "Almos Colony",
+   "name_mr": "",
+   "lat": 19.16797,
+   "lng": 73.026065,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438124",
+   "name_en": "Millenium Hospital / Shimla Park",
+   "name_mr": "",
+   "lat": 19.163424,
+   "lng": 73.028717,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438125",
+   "name_en": "Kousa Jama Masjid",
+   "name_mr": "",
+   "lat": 19.164512,
+   "lng": 73.028587,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438126",
+   "name_en": "Kousa Gaon",
+   "name_mr": "",
+   "lat": 19.166587,
+   "lng": 73.027146,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438128",
+   "name_en": "Tanwar Nagar / Nashimat Colony",
+   "name_mr": "",
+   "lat": 19.170173,
+   "lng": 73.024647,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438129",
+   "name_en": "Mumbra Police Station",
+   "name_mr": "",
+   "lat": 19.183456,
+   "lng": 73.022569,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438130",
+   "name_en": "Amrut Nagar",
+   "name_mr": "",
+   "lat": 19.174464,
+   "lng": 73.023174,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438131",
+   "name_en": "Jalim Kura Mandir / Kismat Colony",
+   "name_mr": "",
+   "lat": 19.172022,
+   "lng": 73.023682,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438132",
+   "name_en": "Retibunder Number 2/Ranna Nagar",
+   "name_mr": "",
+   "lat": 19.203481,
+   "lng": 73.019986,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438133",
+   "name_en": "Retibunder Number 1",
+   "name_mr": "",
+   "lat": 19.200441,
+   "lng": 73.022464,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438134",
+   "name_en": "Amrut Angan",
+   "name_mr": "",
+   "lat": 19.208974,
+   "lng": 73.012819,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438135",
+   "name_en": "Lalit Clinic",
+   "name_mr": "",
+   "lat": 19.185816,
+   "lng": 73.021408,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438136",
+   "name_en": "Retibunder Number 3",
+   "name_mr": "",
+   "lat": 19.207092,
+   "lng": 73.017877,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438137",
+   "name_en": "Sanjay Nagar/Shiv Sena Office",
+   "name_mr": "",
+   "lat": 19.180227,
+   "lng": 73.02264,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438138",
+   "name_en": "Mumbra Railway Station",
+   "name_mr": "",
+   "lat": 19.187375,
+   "lng": 73.023652,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438139",
+   "name_en": "Mumbra Prabhat Office",
+   "name_mr": "",
+   "lat": 19.187405,
+   "lng": 73.021631,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438140",
+   "name_en": "Mumbra Shiv Mandir",
+   "name_mr": "",
+   "lat": 19.177417,
+   "lng": 73.022937,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438141",
+   "name_en": "Dattu Wadi Mumbra/Sainath Hospital",
+   "name_mr": "",
+   "lat": 19.193086,
+   "lng": 73.022964,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438142",
+   "name_en": "Reti Bunder Circle",
+   "name_mr": "",
+   "lat": 19.210358,
+   "lng": 73.016722,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438143",
+   "name_en": "Sai Nath Nagar",
+   "name_mr": "",
+   "lat": 19.209512,
+   "lng": 73.013844,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438144",
+   "name_en": "Kharegaon Fatak",
+   "name_mr": "",
+   "lat": 19.20053,
+   "lng": 73.003833,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438145",
+   "name_en": "Anand Vihar",
+   "name_mr": "",
+   "lat": 19.201897,
+   "lng": 73.005202,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438146",
+   "name_en": "Rameshwar Society",
+   "name_mr": "",
+   "lat": 19.204229,
+   "lng": 73.009562,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438147",
+   "name_en": "Kalwa Railway Station",
+   "name_mr": "",
+   "lat": 19.196128,
+   "lng": 72.998469,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438199",
+   "name_en": "Imperial Sqaure",
+   "name_mr": "",
+   "lat": 19.284178,
+   "lng": 72.947311,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438200",
+   "name_en": "Poshmata Mandir",
+   "name_mr": "",
+   "lat": 19.281041,
+   "lng": 72.954985,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438201",
+   "name_en": "Ovala Gaon",
+   "name_mr": "",
+   "lat": 19.274194,
+   "lng": 72.960319,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438202",
+   "name_en": "Gaimukh Mandir / Jagannath Mahadev Temple",
+   "name_mr": "",
+   "lat": 19.285089,
+   "lng": 72.941163,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438204",
+   "name_en": "Trimurti School",
+   "name_mr": "",
+   "lat": 19.277343,
+   "lng": 72.957501,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438205",
+   "name_en": "Bhaindar Pada",
+   "name_mr": "",
+   "lat": 19.28355,
+   "lng": 72.95189,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438206",
+   "name_en": "Shri Ram Hospital",
+   "name_mr": "",
+   "lat": 19.275725,
+   "lng": 72.958823,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438208",
+   "name_en": "Vedant Hospital / Garib Nagar",
+   "name_mr": "",
+   "lat": 19.272117,
+   "lng": 72.963059,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438209",
+   "name_en": "Atriya Society",
+   "name_mr": "",
+   "lat": 19.24552,
+   "lng": 72.982213,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438210",
+   "name_en": "Rutu Tower",
+   "name_mr": "",
+   "lat": 19.247889,
+   "lng": 72.978888,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438211",
+   "name_en": "Rutu Estate / Municipal Commissioner House",
+   "name_mr": "",
+   "lat": 19.2482,
+   "lng": 72.977783,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438212",
+   "name_en": "Shree Maa Bal Niketan",
+   "name_mr": "",
+   "lat": 19.249882,
+   "lng": 72.97933,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438213",
+   "name_en": "Forest Avenue / Arcadia",
+   "name_mr": "",
+   "lat": 19.254452,
+   "lng": 72.981703,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438214",
+   "name_en": "Hiranandani",
+   "name_mr": "",
+   "lat": 19.258284,
+   "lng": 72.984348,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438215",
+   "name_en": "Bhoomi Acres",
+   "name_mr": "",
+   "lat": 19.258737,
+   "lng": 72.975891,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10247438216",
+   "name_en": "Vasant Leela",
+   "name_mr": "",
+   "lat": 19.259149,
+   "lng": 72.976031,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10250420325",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.17353,
+   "lng": 72.956998,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10250420327",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.173894,
+   "lng": 72.955848,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10250420333",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.17367,
+   "lng": 72.957133,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10250420336",
+   "name_en": "Mulund Railway Station (W) Towards Mulund Colony",
+   "name_mr": "",
+   "lat": 19.173432,
+   "lng": 72.956356,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10250420341",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.173812,
+   "lng": 72.955961,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10250511730",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.177518,
+   "lng": 72.940168,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478016",
+   "name_en": "Hanuman Complex",
+   "name_mr": "",
+   "lat": 19.241385,
+   "lng": 73.017008,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478017",
+   "name_en": "Kalher",
+   "name_mr": "",
+   "lat": 19.248148,
+   "lng": 73.017986,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478018",
+   "name_en": "Pipe Line Kalher",
+   "name_mr": "",
+   "lat": 19.251059,
+   "lng": 73.018194,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478019",
+   "name_en": "Durgesh Complex",
+   "name_mr": "",
+   "lat": 19.238776,
+   "lng": 73.016322,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478020",
+   "name_en": "Durgesh Park",
+   "name_mr": "",
+   "lat": 19.24373,
+   "lng": 73.017514,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478021",
+   "name_en": "Khandagale Estate",
+   "name_mr": "",
+   "lat": 19.261105,
+   "lng": 73.02941,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478022",
+   "name_en": "Chamunda",
+   "name_mr": "",
+   "lat": 19.232198,
+   "lng": 73.008835,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478023",
+   "name_en": "KMS / N G Regency",
+   "name_mr": "",
+   "lat": 19.225509,
+   "lng": 72.997328,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478024",
+   "name_en": "Kasheli Gaon",
+   "name_mr": "",
+   "lat": 19.236172,
+   "lng": 73.015182,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478025",
+   "name_en": "Kasheli Toll Naka",
+   "name_mr": "",
+   "lat": 19.234425,
+   "lng": 73.012676,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478026",
+   "name_en": "Kopar",
+   "name_mr": "",
+   "lat": 19.252692,
+   "lng": 73.021817,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478027",
+   "name_en": "Purna",
+   "name_mr": "",
+   "lat": 19.258123,
+   "lng": 73.026678,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478028",
+   "name_en": "Holy Mary High School",
+   "name_mr": "",
+   "lat": 19.268607,
+   "lng": 73.037257,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478029",
+   "name_en": "Maratha Punjab / Madvi Chowk",
+   "name_mr": "",
+   "lat": 19.270228,
+   "lng": 73.038844,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478030",
+   "name_en": "Kalyan Naka",
+   "name_mr": "",
+   "lat": 19.296228,
+   "lng": 73.063559,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478031",
+   "name_en": "Power House",
+   "name_mr": "",
+   "lat": 19.288811,
+   "lng": 73.069253,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478032",
+   "name_en": "Babla Compound / Hanuman Mandir",
+   "name_mr": "",
+   "lat": 19.285282,
+   "lng": 73.071946,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478033",
+   "name_en": "Pipeline Road",
+   "name_mr": "",
+   "lat": 19.281288,
+   "lng": 73.074522,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478034",
+   "name_en": "Diva",
+   "name_mr": "",
+   "lat": 19.230012,
+   "lng": 73.028144,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478035",
+   "name_en": "Power House",
+   "name_mr": "",
+   "lat": 19.288919,
+   "lng": 73.06942,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478036",
+   "name_en": "Saibaba Mandir",
+   "name_mr": "",
+   "lat": 19.274329,
+   "lng": 73.079762,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478037",
+   "name_en": "Babla Compound / Hanuman Mandir",
+   "name_mr": "",
+   "lat": 19.285388,
+   "lng": 73.072125,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478038",
+   "name_en": "Mini Punjab",
+   "name_mr": "",
+   "lat": 19.250035,
+   "lng": 73.053602,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478039",
+   "name_en": "Bhoomi World",
+   "name_mr": "",
+   "lat": 19.263115,
+   "lng": 73.074144,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478040",
+   "name_en": "Kalyan Bypass",
+   "name_mr": "",
+   "lat": 19.269433,
+   "lng": 73.084047,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478041",
+   "name_en": "Pimplas",
+   "name_mr": "",
+   "lat": 19.260037,
+   "lng": 73.069463,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478043",
+   "name_en": "Mankoli Naka",
+   "name_mr": "",
+   "lat": 19.240344,
+   "lng": 73.041423,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478045",
+   "name_en": "Swayam Siddhi College",
+   "name_mr": "",
+   "lat": 19.276228,
+   "lng": 73.078349,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478046",
+   "name_en": "Jakat Naka",
+   "name_mr": "",
+   "lat": 19.297795,
+   "lng": 73.06434,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478047",
+   "name_en": "Diva 2 / Diva Phata / Petrol Pump",
+   "name_mr": "",
+   "lat": 19.233202,
+   "lng": 73.032843,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478048",
+   "name_en": "Gopal Nagar",
+   "name_mr": "",
+   "lat": 19.297608,
+   "lng": 73.064237,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478051",
+   "name_en": "Highway Darshan Society",
+   "name_mr": "",
+   "lat": 19.187638,
+   "lng": 72.964021,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478053",
+   "name_en": "Mithagar",
+   "name_mr": "",
+   "lat": 19.165471,
+   "lng": 72.964606,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478056",
+   "name_en": "Teen Hath Naka",
+   "name_mr": "",
+   "lat": 19.187977,
+   "lng": 72.963458,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478058",
+   "name_en": "Dnyansadhna College",
+   "name_mr": "",
+   "lat": 19.184269,
+   "lng": 72.965272,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478085",
+   "name_en": "R. T. O/ Central Jail",
+   "name_mr": "",
+   "lat": 19.199054,
+   "lng": 72.981319,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478086",
+   "name_en": "R. T. O/ Central Jail",
+   "name_mr": "",
+   "lat": 19.198911,
+   "lng": 72.981236,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478087",
+   "name_en": "Central Maidan",
+   "name_mr": "",
+   "lat": 19.19798,
+   "lng": 72.97978,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478088",
+   "name_en": "Kolbad",
+   "name_mr": "",
+   "lat": 19.204123,
+   "lng": 72.977309,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478089",
+   "name_en": "New Shakti Mill / Ambedkar Road",
+   "name_mr": "",
+   "lat": 19.200791,
+   "lng": 72.975484,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478090",
+   "name_en": "Siddhivinayak Tower",
+   "name_mr": "",
+   "lat": 19.209714,
+   "lng": 72.974592,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478091",
+   "name_en": "Bramhala Talav / Manorpada",
+   "name_mr": "",
+   "lat": 19.202602,
+   "lng": 72.976452,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478092",
+   "name_en": "Manorama Nagar",
+   "name_mr": "",
+   "lat": 19.232725,
+   "lng": 72.980843,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478093",
+   "name_en": "Aban Park",
+   "name_mr": "",
+   "lat": 19.22989,
+   "lng": 72.980156,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478094",
+   "name_en": "Gholai Nagar",
+   "name_mr": "",
+   "lat": 19.204125,
+   "lng": 73.011768,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478095",
+   "name_en": "Pipe Line",
+   "name_mr": "",
+   "lat": 19.214296,
+   "lng": 73.012382,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478096",
+   "name_en": "Mumbra Toll Naka",
+   "name_mr": "",
+   "lat": 19.212471,
+   "lng": 73.007752,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478097",
+   "name_en": "Lodha / Saket",
+   "name_mr": "",
+   "lat": 19.210081,
+   "lng": 72.98842,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478098",
+   "name_en": "Mumbra Police Station",
+   "name_mr": "",
+   "lat": 19.18338,
+   "lng": 73.022221,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478099",
+   "name_en": "Kousa Gaon",
+   "name_mr": "",
+   "lat": 19.16648,
+   "lng": 73.026919,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478101",
+   "name_en": "Retibunder Number 3",
+   "name_mr": "",
+   "lat": 19.206923,
+   "lng": 73.017692,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478102",
+   "name_en": "Sanjay Nagar/Shiv Sena Office",
+   "name_mr": "",
+   "lat": 19.181072,
+   "lng": 73.022332,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478103",
+   "name_en": "Sai Nath Nagar",
+   "name_mr": "",
+   "lat": 19.209273,
+   "lng": 73.013762,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478104",
+   "name_en": "Tanwar Nagar / Nashimat Colony",
+   "name_mr": "",
+   "lat": 19.170072,
+   "lng": 73.024444,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478105",
+   "name_en": "Retibunder Number 1",
+   "name_mr": "",
+   "lat": 19.200309,
+   "lng": 73.022208,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251478107",
+   "name_en": "Almos Colony",
+   "name_mr": "",
+   "lat": 19.16555,
+   "lng": 73.026852,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521009",
+   "name_en": "Mumbra Railway Station",
+   "name_mr": "",
+   "lat": 19.189947,
+   "lng": 73.022616,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521010",
+   "name_en": "Mumbra Shiv Mandir",
+   "name_mr": "",
+   "lat": 19.177459,
+   "lng": 73.022588,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521012",
+   "name_en": "Kalsekar College / K.V.K.",
+   "name_mr": "",
+   "lat": 19.161555,
+   "lng": 73.029127,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521013",
+   "name_en": "Lalit Clinic",
+   "name_mr": "",
+   "lat": 19.18567,
+   "lng": 73.021267,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521015",
+   "name_en": "Reti Bunder Circle",
+   "name_mr": "",
+   "lat": 19.210363,
+   "lng": 73.016176,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521016",
+   "name_en": "Kousa Jama Masjid",
+   "name_mr": "",
+   "lat": 19.16431,
+   "lng": 73.028333,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521017",
+   "name_en": "Retibunder Number 2/Ranna Nagar",
+   "name_mr": "",
+   "lat": 19.202564,
+   "lng": 73.020406,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521018",
+   "name_en": "Amrut Nagar",
+   "name_mr": "",
+   "lat": 19.174214,
+   "lng": 73.022939,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521021",
+   "name_en": "Jalim Kura Mandir / Kismat Colony",
+   "name_mr": "",
+   "lat": 19.171998,
+   "lng": 73.023405,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521024",
+   "name_en": "Millenium Hospital / Shimla Park",
+   "name_mr": "",
+   "lat": 19.163317,
+   "lng": 73.028485,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521025",
+   "name_en": "Dattu Wadi Mumbra/Sainath Hospital",
+   "name_mr": "",
+   "lat": 19.193261,
+   "lng": 73.022795,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521026",
+   "name_en": "Mumbra Prabhat Office",
+   "name_mr": "",
+   "lat": 19.187567,
+   "lng": 73.021464,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521029",
+   "name_en": "Thane Station (East) Kopri",
+   "name_mr": "",
+   "lat": 19.185077,
+   "lng": 72.97663,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521030",
+   "name_en": "Gaondevi Mandir Kopri",
+   "name_mr": "",
+   "lat": 19.184523,
+   "lng": 72.972409,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521031",
+   "name_en": "Swami Vivekanand Chowk",
+   "name_mr": "",
+   "lat": 19.181612,
+   "lng": 72.967771,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521032",
+   "name_en": "Twelve Bunglows",
+   "name_mr": "",
+   "lat": 19.18233,
+   "lng": 72.969466,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521033",
+   "name_en": "Siddharth Nagar Shashkiya Niwas",
+   "name_mr": "",
+   "lat": 19.182424,
+   "lng": 72.970746,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521034",
+   "name_en": "Gaondevi Mandir Kopri",
+   "name_mr": "",
+   "lat": 19.184631,
+   "lng": 72.97234,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521035",
+   "name_en": "Twelve Bunglows",
+   "name_mr": "",
+   "lat": 19.182495,
+   "lng": 72.969438,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521036",
+   "name_en": "Siddharth Nagar Shashkiya Niwas",
+   "name_mr": "",
+   "lat": 19.182555,
+   "lng": 72.970439,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521037",
+   "name_en": "Swami Vivekanand Chowk",
+   "name_mr": "",
+   "lat": 19.181751,
+   "lng": 72.967607,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521038",
+   "name_en": "Malhar Cinema",
+   "name_mr": "",
+   "lat": 19.187432,
+   "lng": 72.966944,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521039",
+   "name_en": "Gyan Sarita Sada",
+   "name_mr": "",
+   "lat": 19.178731,
+   "lng": 72.950632,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521040",
+   "name_en": "Santoshi Mata Temple",
+   "name_mr": "",
+   "lat": 19.183474,
+   "lng": 72.950241,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521041",
+   "name_en": "Ambaji Dham",
+   "name_mr": "",
+   "lat": 19.1783,
+   "lng": 72.949665,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521042",
+   "name_en": "Shiv Sena Shakha Mulund",
+   "name_mr": "",
+   "lat": 19.1739,
+   "lng": 72.954633,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521043",
+   "name_en": "Pach Rasta Devidayal Road",
+   "name_mr": "",
+   "lat": 19.175606,
+   "lng": 72.952703,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521044",
+   "name_en": "Kamagar Hospital Mulund",
+   "name_mr": "",
+   "lat": 19.179077,
+   "lng": 72.945482,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521045",
+   "name_en": "Ravi Fisheries / Road Number 27",
+   "name_mr": "",
+   "lat": 19.195238,
+   "lng": 72.945341,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521046",
+   "name_en": "Wagle Circle / Road No 22",
+   "name_mr": "",
+   "lat": 19.194766,
+   "lng": 72.949702,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521047",
+   "name_en": "Durdwani Kendra",
+   "name_mr": "",
+   "lat": 19.194455,
+   "lng": 72.951694,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521048",
+   "name_en": "ITI Circle",
+   "name_mr": "",
+   "lat": 19.195541,
+   "lng": 72.943109,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521049",
+   "name_en": "Indira Nagar",
+   "name_mr": "",
+   "lat": 19.205225,
+   "lng": 72.949932,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521050",
+   "name_en": "Aai Mata Mandir Chowk",
+   "name_mr": "",
+   "lat": 19.206955,
+   "lng": 72.95695,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521051",
+   "name_en": "Kores Nakshtra",
+   "name_mr": "",
+   "lat": 19.209174,
+   "lng": 72.961444,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521052",
+   "name_en": "Runwal Plaza",
+   "name_mr": "",
+   "lat": 19.207879,
+   "lng": 72.958537,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521053",
+   "name_en": "Chhabhaiya Park",
+   "name_mr": "",
+   "lat": 19.21765,
+   "lng": 72.98131,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521054",
+   "name_en": "Ashok Nagar",
+   "name_mr": "",
+   "lat": 19.222148,
+   "lng": 72.994404,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521055",
+   "name_en": "Dadlani Park",
+   "name_mr": "",
+   "lat": 19.222233,
+   "lng": 72.995933,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521056",
+   "name_en": "Balkum Pada No 1",
+   "name_mr": "",
+   "lat": 19.221711,
+   "lng": 72.991252,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521057",
+   "name_en": "Lodha Gate",
+   "name_mr": "",
+   "lat": 19.211618,
+   "lng": 72.984372,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521058",
+   "name_en": "Majiwada Gaon",
+   "name_mr": "",
+   "lat": 19.213925,
+   "lng": 72.981673,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521059",
+   "name_en": "Lodha Gate",
+   "name_mr": "",
+   "lat": 19.211576,
+   "lng": 72.984792,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521060",
+   "name_en": "Sachin Society",
+   "name_mr": "",
+   "lat": 19.214505,
+   "lng": 72.979775,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521061",
+   "name_en": "Lodha",
+   "name_mr": "",
+   "lat": 19.214334,
+   "lng": 72.98447,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521062",
+   "name_en": "Lodha Complex",
+   "name_mr": "",
+   "lat": 19.213243,
+   "lng": 72.984569,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521063",
+   "name_en": "Balkum Pada No 3",
+   "name_mr": "",
+   "lat": 19.215982,
+   "lng": 72.991388,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521064",
+   "name_en": "Saket Complex",
+   "name_mr": "",
+   "lat": 19.206471,
+   "lng": 72.992435,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521065",
+   "name_en": "Balkum Pada No 2",
+   "name_mr": "",
+   "lat": 19.22022,
+   "lng": 72.989861,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521066",
+   "name_en": "Vardhman Garden",
+   "name_mr": "",
+   "lat": 19.218915,
+   "lng": 72.985082,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521067",
+   "name_en": "Colour Chem",
+   "name_mr": "",
+   "lat": 19.219812,
+   "lng": 72.986786,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521068",
+   "name_en": "Balkum Naka",
+   "name_mr": "",
+   "lat": 19.221255,
+   "lng": 72.989834,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521069",
+   "name_en": "Azad Nagar",
+   "name_mr": "",
+   "lat": 19.239421,
+   "lng": 72.980688,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521070",
+   "name_en": "St. Xaviers School",
+   "name_mr": "",
+   "lat": 19.240369,
+   "lng": 72.977466,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521071",
+   "name_en": "Brahmand Phase 4",
+   "name_mr": "",
+   "lat": 19.241431,
+   "lng": 72.981971,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521072",
+   "name_en": "Brahmand Phase 6",
+   "name_mr": "",
+   "lat": 19.246478,
+   "lng": 72.984692,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521073",
+   "name_en": "Brahmand Phase 5",
+   "name_mr": "",
+   "lat": 19.244909,
+   "lng": 72.983568,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521074",
+   "name_en": "Atriya Society",
+   "name_mr": "",
+   "lat": 19.24553,
+   "lng": 72.982524,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521075",
+   "name_en": "Leonard",
+   "name_mr": "",
+   "lat": 19.250685,
+   "lng": 72.980013,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521076",
+   "name_en": "Shree Maa Bal Niketan",
+   "name_mr": "",
+   "lat": 19.24968,
+   "lng": 72.979509,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521077",
+   "name_en": "Forest Avenue",
+   "name_mr": "",
+   "lat": 19.254068,
+   "lng": 72.98183,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521078",
+   "name_en": "Rutu Tower",
+   "name_mr": "",
+   "lat": 19.248082,
+   "lng": 72.979046,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521079",
+   "name_en": "Hiranandani Garden",
+   "name_mr": "",
+   "lat": 19.257502,
+   "lng": 72.978219,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521080",
+   "name_en": "Swastik Regalia",
+   "name_mr": "",
+   "lat": 19.262335,
+   "lng": 72.977285,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521081",
+   "name_en": "Stanford Row",
+   "name_mr": "",
+   "lat": 19.256546,
+   "lng": 72.979621,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521084",
+   "name_en": "Shri Ram Hospital",
+   "name_mr": "",
+   "lat": 19.27594,
+   "lng": 72.959133,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521085",
+   "name_en": "Vedant Hospital / Garib Nagar",
+   "name_mr": "",
+   "lat": 19.272074,
+   "lng": 72.963776,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521086",
+   "name_en": "Ovala Gaon",
+   "name_mr": "",
+   "lat": 19.274405,
+   "lng": 72.960556,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521087",
+   "name_en": "Trimurti School",
+   "name_mr": "",
+   "lat": 19.277759,
+   "lng": 72.957735,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521089",
+   "name_en": "Gaimukh Mandir / Jagannath Mahadev Temple",
+   "name_mr": "",
+   "lat": 19.285646,
+   "lng": 72.940814,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521090",
+   "name_en": "Poshmata Mandir",
+   "name_mr": "",
+   "lat": 19.281004,
+   "lng": 72.955428,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521093",
+   "name_en": "Imperial Square",
+   "name_mr": "",
+   "lat": 19.284461,
+   "lng": 72.947642,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521094",
+   "name_en": "Kasarvadavali / Sainik Shala",
+   "name_mr": "",
+   "lat": 19.270863,
+   "lng": 72.966773,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10251521096",
+   "name_en": "Bhaindar Pada",
+   "name_mr": "",
+   "lat": 19.283749,
+   "lng": 72.952291,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10255674896",
+   "name_en": "Mahanagarpalika Udyan",
+   "name_mr": "",
+   "lat": 19.175767,
+   "lng": 72.949307,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10255674906",
+   "name_en": "Mulund Depot",
+   "name_mr": "",
+   "lat": 19.175816,
+   "lng": 72.946571,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10255674907",
+   "name_en": "Mulund Depot",
+   "name_mr": "",
+   "lat": 19.175816,
+   "lng": 72.946329,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10255680424",
+   "name_en": "Shivram Society",
+   "name_mr": "शिवराम सोसायटी",
+   "lat": 19.175622,
+   "lng": 72.944165,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10255680425",
+   "name_en": "Shivram Society",
+   "name_mr": "शिवराम सोसायटी",
+   "lat": 19.17573,
+   "lng": 72.944461,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259279459",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.172792,
+   "lng": 72.955847,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259279460",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.172923,
+   "lng": 72.956632,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259279461",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.173004,
+   "lng": 72.956706,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259362734",
+   "name_en": "Ralli Wolf",
+   "name_mr": "",
+   "lat": 19.170679,
+   "lng": 72.940181,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259362735",
+   "name_en": "Johnson & Johnson",
+   "name_mr": "",
+   "lat": 19.174794,
+   "lng": 72.94179,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259362739",
+   "name_en": "Johnson & Johnson",
+   "name_mr": "",
+   "lat": 19.174742,
+   "lng": 72.941783,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259382131",
+   "name_en": "RP Road",
+   "name_mr": "",
+   "lat": 19.174225,
+   "lng": 72.957089,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259382133",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.17375,
+   "lng": 72.957208,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259382134",
+   "name_en": "Maharishi Arvind Chowk",
+   "name_mr": "",
+   "lat": 19.175631,
+   "lng": 72.952683,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259382138",
+   "name_en": "RP Road",
+   "name_mr": "",
+   "lat": 19.17409,
+   "lng": 72.957219,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259480517",
+   "name_en": "P&T Colony",
+   "name_mr": "",
+   "lat": 19.169694,
+   "lng": 72.946077,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259480518",
+   "name_en": "Vidyaben Gardi School",
+   "name_mr": "",
+   "lat": 19.171444,
+   "lng": 72.947702,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10259480519",
+   "name_en": "P&T Colony",
+   "name_mr": "",
+   "lat": 19.16964,
+   "lng": 72.945879,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10264981396",
+   "name_en": "Konark Regency",
+   "name_mr": "",
+   "lat": 19.162743,
+   "lng": 72.941998,
+   "operators": "NMMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10264981398",
+   "name_en": "Fortis Hospital",
+   "name_mr": "",
+   "lat": 19.162789,
+   "lng": 72.94198,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10275807343",
+   "name_en": "Kadam Pada",
+   "name_mr": "",
+   "lat": 19.178485,
+   "lng": 72.946979,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10275807348",
+   "name_en": "Agarwal Municipal Hospital",
+   "name_mr": "",
+   "lat": 19.17847,
+   "lng": 72.946569,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10275948056",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.18397,
+   "lng": 72.942781,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10278496034",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.195441,
+   "lng": 72.970766,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10279838118",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.175847,
+   "lng": 72.951725,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10279838119",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.175865,
+   "lng": 72.948056,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10279838123",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.175744,
+   "lng": 72.947995,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126559",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.16182,
+   "lng": 72.945771,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126563",
+   "name_en": "Wadarpada",
+   "name_mr": "",
+   "lat": 19.1676,
+   "lng": 72.951173,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126569",
+   "name_en": "Kalidas Natyagruh",
+   "name_mr": "",
+   "lat": 19.17294,
+   "lng": 72.949353,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126571",
+   "name_en": "Kalidas Natyagruh",
+   "name_mr": "",
+   "lat": 19.173484,
+   "lng": 72.949696,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126577",
+   "name_en": "Ravi Kiran Nagrik Bank",
+   "name_mr": "",
+   "lat": 19.168523,
+   "lng": 72.952089,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126582",
+   "name_en": "Mehul Cinema",
+   "name_mr": "",
+   "lat": 19.165993,
+   "lng": 72.949386,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280126589",
+   "name_en": "Parshawnath Nagar",
+   "name_mr": "",
+   "lat": 19.164061,
+   "lng": 72.947396,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10280293719",
+   "name_en": "Merind Company",
+   "name_mr": "",
+   "lat": 19.161388,
+   "lng": 72.944508,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10285432367",
+   "name_en": "Gaondevi Bus Stop",
+   "name_mr": "",
+   "lat": 19.184433,
+   "lng": 72.971819,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10291367365",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.183174,
+   "lng": 72.949166,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10291367366",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.181952,
+   "lng": 72.947185,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10291367367",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.187216,
+   "lng": 72.962176,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10291367368",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.191735,
+   "lng": 72.968755,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10304034850",
+   "name_en": "St. Mary's High School",
+   "name_mr": "",
+   "lat": 19.166557,
+   "lng": 72.945022,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10304034855",
+   "name_en": "St. Mary's High School",
+   "name_mr": "",
+   "lat": 19.166446,
+   "lng": 72.945048,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10304034856",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.165096,
+   "lng": 72.946911,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10310414271",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.171013,
+   "lng": 72.947429,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10686103763",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.179422,
+   "lng": 72.94568,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10717772231",
+   "name_en": "Kharegaon",
+   "name_mr": "",
+   "lat": 19.20688,
+   "lng": 72.999335,
+   "operators": "Thane Municipal Corporation",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738653691",
+   "name_en": "Saket Phata",
+   "name_mr": "",
+   "lat": 19.209039,
+   "lng": 72.994548,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738653692",
+   "name_en": "Lodha Casa Viva",
+   "name_mr": "",
+   "lat": 19.21331,
+   "lng": 72.988151,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738653693",
+   "name_en": "Highland Haven",
+   "name_mr": "",
+   "lat": 19.217464,
+   "lng": 72.992982,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738688275",
+   "name_en": "Kisan Nagar",
+   "name_mr": "",
+   "lat": 19.189606,
+   "lng": 72.949804,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738688276",
+   "name_en": "Balsara",
+   "name_mr": "",
+   "lat": 19.191541,
+   "lng": 72.951762,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738688277",
+   "name_en": "Majiwada",
+   "name_mr": "",
+   "lat": 19.210894,
+   "lng": 72.982644,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10738688278",
+   "name_en": "Majiwada",
+   "name_mr": "",
+   "lat": 19.211284,
+   "lng": 72.982709,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10756686083",
+   "name_en": "Kausa Hospital",
+   "name_mr": "",
+   "lat": 19.170758,
+   "lng": 73.031048,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-10756686084",
+   "name_en": "Kausa Hospital",
+   "name_mr": "",
+   "lat": 19.170748,
+   "lng": 73.031321,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-11271579650",
+   "name_en": "Ravi Kiran Nagrik Bank",
+   "name_mr": "",
+   "lat": 19.168965,
+   "lng": 72.952332,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-11271579658",
+   "name_en": "Mulund Vidya Mandir",
+   "name_mr": "",
+   "lat": 19.17008,
+   "lng": 72.953585,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-11271579661",
+   "name_en": "Wadarpada",
+   "name_mr": "",
+   "lat": 19.167953,
+   "lng": 72.951364,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-11271586489",
+   "name_en": "Mulund Vidya Mandir",
+   "name_mr": "",
+   "lat": 19.170181,
+   "lng": 72.953544,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12306894574",
+   "name_en": "Ambaji Dham",
+   "name_mr": "",
+   "lat": 19.178196,
+   "lng": 72.949783,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12591896952",
+   "name_en": "Manpada",
+   "name_mr": "",
+   "lat": 19.235148,
+   "lng": 72.975871,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12593351264",
+   "name_en": "Dharamvir Nagar",
+   "name_mr": "",
+   "lat": 19.236099,
+   "lng": 72.974702,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12768025013",
+   "name_en": "Johnson & Johnson",
+   "name_mr": "",
+   "lat": 19.175262,
+   "lng": 72.942329,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12843576281",
+   "name_en": "Maharishi Arvind Chowk",
+   "name_mr": "",
+   "lat": 19.175543,
+   "lng": 72.951899,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12843595068",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.171165,
+   "lng": 72.950446,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12843975055",
+   "name_en": "Maharana Pratap Chowk",
+   "name_mr": "",
+   "lat": 19.184301,
+   "lng": 72.953781,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12843975062",
+   "name_en": "Veena Nagar",
+   "name_mr": "",
+   "lat": 19.182043,
+   "lng": 72.946915,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12846756025",
+   "name_en": "Jain Mandir",
+   "name_mr": "",
+   "lat": 19.1769,
+   "lng": 72.966498,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12846756047",
+   "name_en": "Jain Mandir",
+   "name_mr": "",
+   "lat": 19.176923,
+   "lng": 72.966355,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12852198168",
+   "name_en": "Agra Road",
+   "name_mr": "",
+   "lat": 19.177997,
+   "lng": 72.943391,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12860494334",
+   "name_en": "Gavan Pada",
+   "name_mr": "",
+   "lat": 19.173075,
+   "lng": 72.961668,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12878864397",
+   "name_en": "Mulund Station (East)",
+   "name_mr": "",
+   "lat": 19.171702,
+   "lng": 72.958137,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12880330782",
+   "name_en": "TMT Mulund Bus Station",
+   "name_mr": "",
+   "lat": 19.173512,
+   "lng": 72.95772,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12883297182",
+   "name_en": "Neelam Nagar Building No.3&4",
+   "name_mr": "",
+   "lat": 19.174517,
+   "lng": 72.962844,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-12974237856",
+   "name_en": "Marathon Chowk Teen Hath Naka",
+   "name_mr": "",
+   "lat": 19.187461,
+   "lng": 72.962439,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13431778553",
+   "name_en": "Cadbury Junction",
+   "name_mr": "",
+   "lat": 19.204523,
+   "lng": 72.96857,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13760696967",
+   "name_en": "Bus stop",
+   "name_mr": "",
+   "lat": 19.175876,
+   "lng": 72.948568,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13777995066",
+   "name_en": "Desai Bangla",
+   "name_mr": "",
+   "lat": 19.205721,
+   "lng": 72.978194,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13777995067",
+   "name_en": "Shreerang Society",
+   "name_mr": "",
+   "lat": 19.206129,
+   "lng": 72.980301,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13777995068",
+   "name_en": "Rabodi Police Station",
+   "name_mr": "",
+   "lat": 19.20603,
+   "lng": 72.982264,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208470",
+   "name_en": "Rabodi (Kureshi Chowk)",
+   "name_mr": "",
+   "lat": 19.203182,
+   "lng": 72.980794,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208471",
+   "name_en": "Rabodi",
+   "name_mr": "",
+   "lat": 19.202987,
+   "lng": 72.979965,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208472",
+   "name_en": "Passport Office",
+   "name_mr": "",
+   "lat": 19.192712,
+   "lng": 72.954557,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208473",
+   "name_en": "Bhawani Nagar",
+   "name_mr": "",
+   "lat": 19.202385,
+   "lng": 72.953654,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208474",
+   "name_en": "Kamgar Hospital",
+   "name_mr": "",
+   "lat": 19.203724,
+   "lng": 72.954054,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208475",
+   "name_en": "Kamgar Naka",
+   "name_mr": "",
+   "lat": 19.204044,
+   "lng": 72.954003,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208476",
+   "name_en": "Phulen Nagar",
+   "name_mr": "",
+   "lat": 19.205044,
+   "lng": 72.953938,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208477",
+   "name_en": "Yashodham Nagar",
+   "name_mr": "",
+   "lat": 19.208055,
+   "lng": 72.954728,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208479",
+   "name_en": "Thane Station (W)",
+   "name_mr": "",
+   "lat": 19.186763,
+   "lng": 72.975685,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208481",
+   "name_en": "Yashodham Nagar",
+   "name_mr": "",
+   "lat": 19.208316,
+   "lng": 72.954737,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208482",
+   "name_en": "Phulen Nagar",
+   "name_mr": "",
+   "lat": 19.205128,
+   "lng": 72.954088,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208483",
+   "name_en": "Kamgar Naka",
+   "name_mr": "",
+   "lat": 19.204221,
+   "lng": 72.954062,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208486",
+   "name_en": "M.I.D.C.",
+   "name_mr": "",
+   "lat": 19.191181,
+   "lng": 72.955479,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-node-13780208496",
+   "name_en": "Punjab National Bank",
+   "name_mr": "",
+   "lat": 19.189021,
+   "lng": 72.976094,
+   "operators": "Thane Muncipal Transport",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-31499695",
+   "name_en": "Vitthalwadi",
+   "name_mr": "",
+   "lat": 19.227107,
+   "lng": 73.148971,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-151866533",
+   "name_en": "Thane Station (W)",
+   "name_mr": "",
+   "lat": 19.186938,
+   "lng": 72.97565,
+   "operators": "TMT",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-151866565",
+   "name_en": "Thane Bus Depot",
+   "name_mr": "",
+   "lat": 19.187247,
+   "lng": 72.977403,
+   "operators": "MSRTC",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-235944246",
+   "name_en": "Mulund Check Naka",
+   "name_mr": "",
+   "lat": 19.183182,
+   "lng": 72.954087,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-319831104",
+   "name_en": "Lokmanya Nagar Bus Depot",
+   "name_mr": "",
+   "lat": 19.209302,
+   "lng": 72.952189,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-320659668",
+   "name_en": "MHADA Bus Station",
+   "name_mr": "",
+   "lat": 19.169272,
+   "lng": 72.968127,
+   "operators": "BEST",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-532665654",
+   "name_en": "ST Bus Stand - Khopat",
+   "name_mr": "",
+   "lat": 19.201246,
+   "lng": 72.97275,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-684571346",
+   "name_en": "Dombivali MSRTC Bus Terminal",
+   "name_mr": "",
+   "lat": 19.212804,
+   "lng": 73.099742,
+   "operators": "MSRTC",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-912422941",
+   "name_en": "Pawar Nagar",
+   "name_mr": "",
+   "lat": 19.228858,
+   "lng": 72.96597,
+   "operators": "",
+   "source_id": "osm"
+  },
+  {
+   "stop_id": "OSM-way-1122104214",
+   "name_en": "Mulund Railway Station (W)",
+   "name_mr": "",
+   "lat": 19.172805,
+   "lng": 72.95652,
+   "operators": "BEST",
+   "source_id": "osm"
+  }
+ ],
  "bus_routes": [],
  "fare_rules": [
   {

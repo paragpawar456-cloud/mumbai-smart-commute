@@ -1,5 +1,78 @@
 [
  {
+  "osm": "node/6413765596",
+  "lat": 19.2067241,
+  "lon": 73.0868406,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Suni Nagar Rikshaw Stand"
+  }
+ },
+ {
+  "osm": "node/6802059752",
+  "lat": 19.1721915,
+  "lon": 72.9560594,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Rickshaw Stand"
+  }
+ },
+ {
+  "osm": "node/10259279462",
+  "lat": 19.1729801,
+  "lon": 72.9571178,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Rickshaw Stand"
+  }
+ },
+ {
+  "osm": "node/11271586495",
+  "lat": 19.1718025,
+  "lon": 72.9551775,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Auto Stand"
+  }
+ },
+ {
+  "osm": "node/11271696469",
+  "lat": 19.1625115,
+  "lon": 72.9480365,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Nahur Gaon Auto Stand"
+  }
+ },
+ {
+  "osm": "node/11563437818",
+  "lat": 19.1717258,
+  "lon": 72.9570056,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Auto Stand"
+  }
+ },
+ {
+  "osm": "node/12855213091",
+  "lat": 19.1804965,
+  "lon": 72.966043,
+  "tags": {
+   "amenity": "taxi",
+   "name": "Rickshaw Stand"
+  }
+ },
+ {
+  "osm": "node/12880832885",
+  "lat": 19.1733913,
+  "lon": 72.9564892,
+  "tags": {
+   "amenity": "taxi",
+   "description": "Rs.20 per seat",
+   "name": "Share Rickshaw To Amar Nagar"
+  }
+ },
+ {
   "osm": "node/14098734284",
   "lat": 19.2532299,
   "lon": 73.1333845,
@@ -16,6 +89,34 @@
   "tags": {
    "amenity": "taxi",
    "taxi_vehicle": "auto_rickshaw"
+  }
+ },
+ {
+  "osm": "way/151866567",
+  "lat": 19.1869107,
+  "lon": 72.9759126,
+  "tags": {
+   "amenity": "taxi",
+   "layer": "0",
+   "name:en": "Thane Station (W) Auto Rickshaw Stand"
+  }
+ },
+ {
+  "osm": "way/1314173803",
+  "lat": 19.1943609,
+  "lon": 72.9947647,
+  "tags": {
+   "amenity": "taxi",
+   "level": "0",
+   "name": "Rickshaw Stand"
+  }
+ },
+ {
+  "osm": "way/1391181626",
+  "lat": 19.189675,
+  "lon": 73.0230131,
+  "tags": {
+   "amenity": "taxi"
   }
  }
 ]

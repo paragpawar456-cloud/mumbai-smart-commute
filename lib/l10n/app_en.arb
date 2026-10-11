@@ -547,7 +547,7 @@
   "whereIsMyAuto": "Where is my auto",
   "whereIsMyBus": "Where is my bus",
   "whereIsMyTrain": "Where is my train",
-  "whereShort": "Where",
+  "whereShort": "Track",
   "youBoardHere": "You board here",
   "youGetOffHere": "You get off here",
   "farePlusTicket": "≈ ₹{amount} + train ticket",
@@ -748,6 +748,62 @@
   "@timetableSourceNote": {
     "placeholders": {
       "date": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSubtitle": "Trains, autos, buses and cabs in one place",
+  "trackTitle": "Track your ride",
+  "whereIsMyCab": "Where is my cab",
+  "exploreTitle": "Explore",
+  "nextTrainsFrom": "Next trains from {station}",
+  "@nextTrainsFrom": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "change": "Change",
+  "allTrains": "All trains",
+  "checkStationDisplay": "Check the station display before you travel",
+  "buildLabel": "Build {number} · {sha}",
+  "@buildLabel": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "sha": {
+        "type": "String"
+      }
+    }
+  },
+  "buildLabelLocal": "Local build",
+  "whereIsMyCabTitle": "Where is my cab",
+  "liveCabsInApps": "Live cars and autos near you are shown only inside the Uber, Ola and Rapido apps. Tap one to see them there.",
+  "seeLiveInApp": "See live cars in the app",
+  "taxiStandsNear": "Taxi stands near {place}",
+  "@taxiStandsNear": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "nearestFarAway": "Nearest ones, a bit farther away",
+  "noTaxiStands": "No taxi stands mapped near here yet.",
+  "kmAway": "{km} km away",
+  "@kmAway": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "fromPlace": "from {place}",
+  "@fromPlace": {
+    "placeholders": {
+      "place": {
         "type": "String"
       }
     }

@@ -102,3 +102,15 @@ Tester feedback: the trip page looked basic; wanted 3 to 4 options, a train time
 - Train times: 872 Main Line trains from Central Railway's official timetable dated 5 Oct 2024 (302 run Kalyan to Thane). Each list says so and asks riders to check the station display, since some trains changed later (D30).
 
 Tests (2026-10-11): `flutter analyze` clean · `flutter test` 70 passed · `backend npm test` 31 passed.
+
+## Professional redesign and update fix — in review
+
+Tester said the timetable, "Where is my" buttons and auto/car locations weren't showing and the app looked basic.
+
+- Cause of the missing features: every CI build was signed with a new debug key, so the phone couldn't install updates and kept an old version. Fixed with a fixed test signing key and a rising build number shown on Home (D31). Testers must uninstall the old app once.
+- New look: Poppins font, gradient Home header with a map-style From/To card, four "Where is my" buttons (train, auto, bus, cab), next trains from your station with a countdown, redesigned train cards.
+- Where is my cab: taxi stands plus Uber, Ola and Rapido buttons, which is where live cars are shown (D32).
+- OpenStreetMap extract now covers Thane to Kalyan: 790 bus stops and 13 auto/taxi stands (stands are sparse in OSM).
+
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 72 passed.
+

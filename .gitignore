@@ -53,8 +53,11 @@ config/prod.json
 # Android signing
 android/key.properties
 *.jks
+!android/app/test-signing.jks
 *.keystore
 # Backend
 backend/node_modules/
 .clasp.json
 config/build.json
+# Design-review renders (tool/screenshots)
+tool/screenshots/out/

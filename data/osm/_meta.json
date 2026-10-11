@@ -3,23 +3,23 @@
  "licence": "ODbL 1.0",
  "attribution": "© OpenStreetMap contributors",
  "endpoint": "https://overpass-api.de/api/interpreter",
- "extracted_at": "2026-10-11T07:08:32.497Z",
+ "extracted_at": "2026-10-11T12:01:27.675Z",
  "files": {
   "rail_stations": {
    "count": 250,
-   "osm_base": "2026-10-11T07:06:34Z"
+   "osm_base": "2026-10-11T12:01:36Z"
   },
   "kalyan_bus_stops": {
-   "count": 0,
-   "osm_base": "2026-10-11T07:07:35Z"
+   "count": 790,
+   "osm_base": "2026-05-31T22:37:44Z"
   },
   "kalyan_pickup_points": {
-   "count": 2,
-   "osm_base": "2026-10-11T07:07:35Z"
+   "count": 13,
+   "osm_base": "2026-10-11T12:02:41Z"
   },
   "kalyan_places": {
-   "count": 9,
-   "osm_base": "2026-10-11T07:08:38Z"
+   "count": 173,
+   "osm_base": "2026-10-11T12:02:41Z"
   }
  }
 }

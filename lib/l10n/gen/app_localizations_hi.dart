@@ -947,7 +947,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get whereIsMyTrain => 'मेरी ट्रेन कहाँ';
 
   @override
-  String get whereShort => 'कहाँ';
+  String get whereShort => 'देखें';
 
   @override
   String get youBoardHere => 'यहाँ चढ़ें';
@@ -1075,5 +1075,70 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String timetableSourceNote(String date) {
     return 'समय मध्य रेलवे की आधिकारिक समय-सारणी से ($date से)। कुछ ट्रेनें बाद में बदली हैं, यात्रा से पहले स्टेशन का डिस्प्ले देखें।';
+  }
+
+  @override
+  String get homeSubtitle => 'ट्रेन, ऑटो, बस और कैब एक ही जगह';
+
+  @override
+  String get trackTitle => 'अपनी सवारी देखें';
+
+  @override
+  String get whereIsMyCab => 'मेरी कैब कहाँ है';
+
+  @override
+  String get exploreTitle => 'देखें';
+
+  @override
+  String nextTrainsFrom(String station) {
+    return '$station से अगली ट्रेनें';
+  }
+
+  @override
+  String get change => 'बदलें';
+
+  @override
+  String get allTrains => 'सभी ट्रेनें';
+
+  @override
+  String get checkStationDisplay => 'यात्रा से पहले स्टेशन का डिस्प्ले देखें';
+
+  @override
+  String buildLabel(String number, String sha) {
+    return 'बिल्ड $number · $sha';
+  }
+
+  @override
+  String get buildLabelLocal => 'लोकल बिल्ड';
+
+  @override
+  String get whereIsMyCabTitle => 'मेरी कैब कहाँ है';
+
+  @override
+  String get liveCabsInApps =>
+      'आपके पास की लाइव कारें और ऑटो सिर्फ़ Uber, Ola और Rapido ऐप में दिखते हैं। वहाँ देखने के लिए किसी पर टैप करें।';
+
+  @override
+  String get seeLiveInApp => 'ऐप में लाइव कारें देखें';
+
+  @override
+  String taxiStandsNear(String place) {
+    return '$place के पास टैक्सी स्टैंड';
+  }
+
+  @override
+  String get nearestFarAway => 'सबसे पास वाले, थोड़ी दूर';
+
+  @override
+  String get noTaxiStands => 'यहाँ पास अभी टैक्सी स्टैंड दर्ज नहीं हैं।';
+
+  @override
+  String kmAway(String km) {
+    return '$km किमी दूर';
+  }
+
+  @override
+  String fromPlace(String place) {
+    return '$place से';
   }
 }

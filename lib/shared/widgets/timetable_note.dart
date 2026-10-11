@@ -22,22 +22,22 @@ class TimetableNote extends StatelessWidget {
     }
     return Container(
       key: const Key('timetableNote'),
-      margin: const EdgeInsets.only(bottom: 8),
+      margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: scheme.tertiaryContainer,
+        color: scheme.primaryContainer.withValues(alpha: 0.45),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.info_outline, size: 18, color: scheme.onTertiaryContainer),
+          Icon(Icons.info_outline, size: 18, color: scheme.primary),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
               l.timetableSourceNote(date),
               style: Theme.of(context).textTheme.bodySmall
-                  ?.copyWith(color: scheme.onTertiaryContainer),
+                  ?.copyWith(color: scheme.primary),
             ),
           ),
         ],
