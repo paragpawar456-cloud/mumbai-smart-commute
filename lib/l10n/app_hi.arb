@@ -1,0 +1,80 @@
+{
+  "@@locale": "hi",
+  "appTitle": "मुंबई स्मार्ट कम्यूट",
+  "navHome": "होम",
+  "navRoutes": "रूट",
+  "navMap": "मैप",
+  "navSaved": "सेव्ड",
+  "navProfile": "प्रोफ़ाइल",
+  "homeGreeting": "आप कहाँ जा रहे हैं?",
+  "fromLabel": "कहाँ से",
+  "toLabel": "कहाँ तक",
+  "fromHint": "मौजूदा जगह या स्टेशन",
+  "toHint": "मंज़िल, जैसे योगीधाम, कल्याण पश्चिम",
+  "findRoutes": "रूट खोजें",
+  "nearbyTransport": "आस-पास का परिवहन",
+  "nearbyTransportBody": "आपके पास के स्टेशन, बस स्टॉप और ऑटो स्टैंड",
+  "savedJourneys": "सेव की गई यात्राएँ",
+  "noSavedJourneys": "अभी कोई यात्रा सेव नहीं है। रूट खोजें और सेव करने के लिए स्टार दबाएँ।",
+  "routesTitle": "यात्रा की योजना",
+  "routesComingSoon": "लोकल, मेट्रो और बस की समय-सारणी अगले अपडेट में आएगी।",
+  "mapTitle": "मैप",
+  "mapComingSoon": "मैप अगले अपडेट में आएगा। वाहन तभी लाइव दिखेंगे जब असली लाइव डेटा उपलब्ध हो।",
+  "savedTitle": "सेव्ड",
+  "profileTitle": "प्रोफ़ाइल",
+  "language": "भाषा",
+  "theme": "थीम",
+  "themeSystem": "सिस्टम",
+  "themeLight": "लाइट",
+  "themeDark": "डार्क",
+  "reducedMotion": "एनिमेशन कम करें",
+  "signIn": "साइन इन",
+  "signOut": "साइन आउट",
+  "register": "खाता बनाएँ",
+  "email": "ईमेल",
+  "password": "पासवर्ड",
+  "displayName": "नाम",
+  "forgotPassword": "पासवर्ड भूल गए?",
+  "resetEmailSent": "अगर उस ईमेल का खाता है, तो रीसेट लिंक भेज दिया गया है।",
+  "verifyEmailSent": "आपके ईमेल पर सत्यापन लिंक भेजा गया है।",
+  "continueWithGoogle": "Google से जारी रखें",
+  "continueAsGuest": "बिना खाते के जारी रखें",
+  "guestNote": "बिना खाते के भी समय-सारणी और मैप इस्तेमाल कर सकते हैं। रूट सेव करने और जानकारी भेजने के लिए साइन इन करें।",
+  "signedInAs": "{email} के रूप में साइन इन",
+  "@signedInAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "notSignedIn": "साइन इन नहीं किया",
+  "authUnavailable": "इस बिल्ड में साइन-इन चालू नहीं है।",
+  "deleteAccount": "खाता हटाएँ",
+  "deleteAccountConfirm": "इससे आपका खाता और सेव किया डेटा हमेशा के लिए हट जाएगा। जारी रखें?",
+  "cancel": "रद्द करें",
+  "confirm": "पुष्टि करें",
+  "retry": "फिर से कोशिश करें",
+  "offline": "आप ऑफ़लाइन हैं। सेव की गई जानकारी दिखा रहे हैं।",
+  "errorGeneric": "कुछ गलत हो गया। कृपया फिर से कोशिश करें।",
+  "errorNetwork": "सर्वर से संपर्क नहीं हो सका। अपना कनेक्शन जाँचें।",
+  "backendStatus": "सर्वर स्थिति",
+  "backendOk": "जुड़ा हुआ",
+  "backendNotConfigured": "इस बिल्ड में सर्वर सेट नहीं है",
+  "sourceLive": "लाइव",
+  "sourceScheduled": "समय-सारणी के अनुसार",
+  "sourceEstimate": "अनुमान",
+  "sourceOfficial": "आधिकारिक",
+  "sourceCommunity": "यात्रियों द्वारा बताया गया",
+  "sourceUnknown": "अज्ञात",
+  "updatedAt": "{time} पर अपडेट",
+  "@updatedAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "about": "जानकारी और डेटा स्रोत",
+  "aboutBody": "मैप डेटा © OpenStreetMap योगदानकर्ता। 'अनुमान' वाले किराए आधिकारिक दरों से निकाले गए हैं, ये लाइव दर नहीं हैं। यह ऐप आपातकालीन सेवा नहीं है।"
+}
