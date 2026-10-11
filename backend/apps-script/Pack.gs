@@ -7,10 +7,14 @@
  * tablesToPack_ and validatePack_ are pure (no Apps Script services) so the
  * Node CSV checker in tool/ can reuse them.
  */
-var PACK_TABLES = ['Stations', 'TrainRoutes', 'Interchanges', 'TrainTrips', 'TripStopTimes', 'DataSources'];
+var PACK_TABLES = ['Stations', 'TrainRoutes', 'Interchanges', 'TrainTrips', 'TripStopTimes', 'DataSources',
+                   'Places', 'PickupPoints', 'BusStops', 'BusRoutes', 'FareRules', 'TransportProviders'];
 var SERVICE_DAYS = ['DAILY', 'MON-SAT', 'MON-FRI', 'SAT', 'SUN', 'HOL'];
 
 function tablesToPack_(t, version, generatedAt) {
+  function rows(name) { return t[name] || []; }
+  function num(v) { return v === '' || v === null || v === undefined ? null : Number(v); }
+  function truthy(v) { return v === true || String(v).trim().toUpperCase() === 'TRUE'; }
   function str(v) { return v === null || v === undefined ? '' : String(v).trim(); }
   function pick(rows, cols) {
     return rows.map(function (r) {
@@ -44,6 +48,35 @@ function tablesToPack_(t, version, generatedAt) {
       }),
     stop_times: t.TripStopTimes.map(function (r) {
       return [str(r.trip_id), Number(r.seq), str(r.station_id), hhmm(r.arrival) || null, hhmm(r.departure), str(r.platform) || null];
+    }),
+    places: pick(rows('Places'), ['place_id', 'name_en', 'name_mr', 'name_hi', 'kind', 'lat', 'lng', 'near_station_id', 'source_id'])
+      .map(function (x) { x.lat = num(x.lat); x.lng = num(x.lng); return x; }),
+    pickup_points: pick(rows('PickupPoints'), ['pickup_id', 'kind', 'name_en', 'lat', 'lng', 'near_station_id', 'destinations',
+                                               'shared_fare_inr', 'fare_source', 'verification', 'verified_at', 'source_id'])
+      .map(function (x) { x.lat = num(x.lat); x.lng = num(x.lng); x.shared_fare_inr = num(x.shared_fare_inr); return x; }),
+    bus_stops: pick(rows('BusStops'), ['stop_id', 'name_en', 'name_mr', 'lat', 'lng', 'operators', 'source_id'])
+      .map(function (x) { x.lat = num(x.lat); x.lng = num(x.lng); return x; }),
+    bus_routes: pick(rows('BusRoutes'), ['bus_route_id', 'operator', 'route_number', 'name_en', 'stop_sequence',
+                                         'frequency_note', 'first_departure', 'last_departure', 'source_id'])
+      .map(function (x) {
+        x.route_number = str(x.route_number);
+        x.first_departure = hhmm(x.first_departure);
+        x.last_departure = hhmm(x.last_departure);
+        return x;
+      }),
+    fare_rules: pick(rows('FareRules'), ['fare_rule_id', 'mode', 'region', 'min_fare_inr', 'min_km', 'per_km_inr',
+                                         'night_multiplier', 'night_start', 'night_end', 'effective_from', 'source_id'])
+      .map(function (x) {
+        ['min_fare_inr', 'min_km', 'per_km_inr', 'night_multiplier'].forEach(function (k) { x[k] = num(x[k]); });
+        x.night_start = hhmm(x.night_start);
+        x.night_end = hhmm(x.night_end);
+        return x;
+      }),
+    providers: rows('TransportProviders').filter(function (r) { return truthy(r.active); }).map(function (r) {
+      return {
+        provider_id: str(r.provider_id), name: str(r.name), categories: str(r.categories),
+        integration: str(r.integration), android_package: str(r.android_package), link_template: str(r.link_template),
+      };
     }),
   };
 }
@@ -106,6 +139,7 @@ function validatePack_(p) {
   });
 
   function mins(s) { var a = s.split(':'); return Number(a[0]) * 60 + Number(a[1]); }
+  validateLastMile_(p, stations, err);
   Object.keys(trips).forEach(function (id) {
     var rows = (byTrip[id] || []).slice().sort(function (a, b) { return a[1] - b[1]; });
     if (rows.length < 2) { err('Trip ' + id + ' has fewer than 2 stops'); return; }
@@ -129,6 +163,79 @@ function validatePack_(p) {
     });
   });
   return errors;
+}
+
+function validateLastMile_(p, stations, err) {
+  var HHMM = /^([01]?\d|2[0-3]):[0-5]\d$/;
+  function inMmr(x) { return x.lat > 18.8 && x.lat < 19.9 && x.lng > 72.7 && x.lng < 73.5; }
+  function unique(list, key, label) {
+    var seen = {};
+    (list || []).forEach(function (x) {
+      if (!x[key]) err(label + ' with empty ' + key);
+      else if (seen[x[key]]) err('Duplicate ' + key + ' ' + x[key]);
+      seen[x[key]] = x;
+    });
+    return seen;
+  }
+
+  unique(p.places, 'place_id', 'Place');
+  (p.places || []).forEach(function (x) {
+    if (!x.name_en) err('Place ' + x.place_id + ' has no name_en');
+    if (!inMmr(x)) err('Place ' + x.place_id + ' is outside Mumbai region (' + x.lat + ', ' + x.lng + ')');
+    if (x.near_station_id && !stations[x.near_station_id]) err('Place ' + x.place_id + ' uses unknown station ' + x.near_station_id);
+    if (!x.source_id) err('Place ' + x.place_id + ' has no source_id');
+  });
+
+  unique(p.pickup_points, 'pickup_id', 'Pickup point');
+  (p.pickup_points || []).forEach(function (x) {
+    var id = 'Pickup ' + x.pickup_id;
+    if (['auto_stand', 'shared_auto', 'taxi_stand', 'ride_pickup'].indexOf(x.kind) === -1) err(id + ' has invalid kind ' + x.kind);
+    if (['admin_verified', 'osm', 'community'].indexOf(x.verification) === -1) err(id + ' has invalid verification');
+    if (!inMmr(x)) err(id + ' is outside Mumbai region');
+    if (x.near_station_id && !stations[x.near_station_id]) err(id + ' uses unknown station ' + x.near_station_id);
+    if (x.shared_fare_inr !== null && x.shared_fare_inr !== undefined) {
+      if (!(x.shared_fare_inr > 0 && x.shared_fare_inr < 500)) err(id + ' shared fare out of range');
+      if (!x.fare_source) err(id + ' has a shared fare but no fare_source');
+    }
+    if (!x.source_id) err(id + ' has no source_id');
+  });
+
+  var stops = unique(p.bus_stops, 'stop_id', 'Bus stop');
+  (p.bus_stops || []).forEach(function (x) {
+    if (!inMmr(x)) err('Bus stop ' + x.stop_id + ' is outside Mumbai region');
+  });
+  unique(p.bus_routes, 'bus_route_id', 'Bus route');
+  (p.bus_routes || []).forEach(function (r) {
+    var seq = String(r.stop_sequence || '').split(',').map(function (s) { return s.trim(); }).filter(String);
+    if (seq.length < 2) err('Bus route ' + r.bus_route_id + ' needs at least 2 stops');
+    seq.forEach(function (s) { if (!stops[s]) err('Bus route ' + r.bus_route_id + ' uses unknown stop ' + s); });
+    ['first_departure', 'last_departure'].forEach(function (k) {
+      if (r[k] && !HHMM.test(r[k])) err('Bus route ' + r.bus_route_id + ' has bad ' + k);
+    });
+    if (!r.source_id) err('Bus route ' + r.bus_route_id + ' has no source_id');
+  });
+
+  unique(p.fare_rules, 'fare_rule_id', 'Fare rule');
+  (p.fare_rules || []).forEach(function (f) {
+    var id = 'Fare rule ' + f.fare_rule_id;
+    if (['auto', 'taxi', 'suburban', 'metro', 'bus'].indexOf(f.mode) === -1) err(id + ' has invalid mode');
+    if (!(f.min_fare_inr > 0)) err(id + ' needs min_fare_inr');
+    if (!(f.min_km >= 0)) err(id + ' needs min_km');
+    if (f.per_km_inr !== null && !(f.per_km_inr > 0)) err(id + ' per_km_inr must be positive');
+    if (f.night_multiplier !== null) {
+      if (!(f.night_multiplier >= 1 && f.night_multiplier <= 2)) err(id + ' night_multiplier should be 1–2');
+      if (!HHMM.test(f.night_start || '') || !HHMM.test(f.night_end || '')) err(id + ' needs night_start and night_end');
+    }
+    if (!/^\d{4}-\d{2}-\d{2}/.test(String(f.effective_from))) err(id + ' needs effective_from (YYYY-MM-DD)');
+    if (!f.source_id) err(id + ' has no source_id (official notification)');
+  });
+
+  unique(p.providers, 'provider_id', 'Provider');
+  (p.providers || []).forEach(function (x) {
+    if (['deep_link', 'open_app', 'none'].indexOf(x.integration) === -1) err('Provider ' + x.provider_id + ' has invalid integration');
+    if (x.integration === 'deep_link' && !/^https:\/\//.test(x.link_template)) err('Provider ' + x.provider_id + ' deep link must be https');
+    if (x.integration === 'open_app' && !/^[a-z][\w.]+$/.test(x.android_package)) err('Provider ' + x.provider_id + ' needs android_package');
+  });
 }
 
 /* ---------- Apps Script side ---------- */

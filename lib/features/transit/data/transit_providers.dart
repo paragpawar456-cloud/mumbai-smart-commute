@@ -70,4 +70,7 @@ List<Station> searchStations(DataPack pack, String query, {int limit = 8}) {
   return scored.take(limit).map((e) => e.$2).toList();
 }
 
+/// Lower-cased, punctuation-free form used for name search.
+String normalizeSearch(String s) => _norm(s);
+
 String _norm(String s) => s.toLowerCase().replaceAll(RegExp(r'[^\p{L}\p{M}\p{N} ]', unicode: true), ' ').replaceAll(RegExp(r'\s+'), ' ').trim();

@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../features/auth/sign_in_screen.dart';
 import '../../features/home/home_screen.dart';
+import '../../features/lastmile/ui/lastmile_screen.dart';
 import '../../features/map/map_screen.dart';
 import '../../features/profile/profile_screen.dart';
 import '../../features/routes/routes_screen.dart';
@@ -52,6 +53,13 @@ GoRouter buildRouter() => GoRouter(
           path: '/station/:id',
           builder: (_, state) =>
               StationScreen(stationId: state.pathParameters['id']!),
+        ),
+        GoRoute(
+          path: '/last-mile',
+          builder: (_, state) => LastMileScreen(
+            fromStationId: state.uri.queryParameters['from'],
+            placeId: state.uri.queryParameters['place'],
+          ),
         ),
         GoRoute(
           path: '/sign-in',

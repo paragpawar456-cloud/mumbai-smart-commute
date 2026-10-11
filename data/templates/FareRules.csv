@@ -1,0 +1,3 @@
+fare_rule_id,mode,region,min_fare_inr,min_km,per_km_inr,night_multiplier,night_start,night_end,slab_json,effective_from,source_id
+AUTO-MMR-2026-09,auto,MMR,27,1.5,18.22,1.25,00:00,05:00,,2026-09-01,mmrta-2026-reported
+TAXI-MMR-2026-09,taxi,MMR,33,1.5,21.9,1.25,00:00,05:00,,2026-09-01,mmrta-2026-reported

@@ -1,0 +1,8 @@
+place_id,name_en,name_mr,name_hi,kind,lat,lng,near_station_id,source_id
+P-YOGIDHAM,Yogidham,योगीधाम,,housing,19.247338,73.153039,KYN,osm
+P-YOGIDHAM-3,Yogidham Phase 3,योगीधाम फेज ३,,housing,19.248076,73.152052,KYN,osm
+P-KALYAN-W,Kalyan West,कल्याण पश्चिम,,suburb,19.240353,73.125279,KYN,osm
+P-KALYAN-E,Kalyan East,कल्याण पूर्व,,suburb,19.227853,73.132295,KYN,osm
+P-AADHARWADI,Aadharwadi,आधारवाडी,,suburb,19.247445,73.122623,KYN,osm
+P-KHADAKPADA,Khadakpada,खडकपाडा,,suburb,19.252504,73.137376,KYN,osm
+P-VITTHALWADI,Vitthalwadi,विठ्ठलवाडी,,suburb,19.231469,73.151262,KYN,osm

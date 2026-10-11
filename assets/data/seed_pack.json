@@ -1,6 +1,6 @@
 {
- "version": 1,
- "generated_at": "2026-10-11T06:45:03Z",
+ "version": 2,
+ "generated_at": "2026-10-11T07:15:49Z",
  "sources": [
   {
    "source_id": "osm",
@@ -15,6 +15,20 @@
    "licence": "facts",
    "attribution": "",
    "url": ""
+  },
+  {
+   "source_id": "mmrta-2026-reported",
+   "name": "MMRTA auto/taxi fare revision (as reported)",
+   "licence": "facts",
+   "attribution": "Fares as reported by Time Out Mumbai and Mid-Day",
+   "url": "https://www.timeout.com/mumbai/news/mumbai-auto-and-taxi-fares-rise-from-september-1-check-the-new-rates-090126"
+  },
+  {
+   "source_id": "uber-universal-link",
+   "name": "Uber universal link format",
+   "licence": "link format only",
+   "attribution": "",
+   "url": "https://developer.uber.com/"
   }
  ],
  "stations": [
@@ -503,5 +517,170 @@
   }
  ],
  "trips": [],
- "stop_times": []
+ "stop_times": [],
+ "places": [
+  {
+   "place_id": "P-YOGIDHAM",
+   "name_en": "Yogidham",
+   "name_mr": "योगीधाम",
+   "name_hi": "",
+   "kind": "housing",
+   "lat": 19.247338,
+   "lng": 73.153039,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  },
+  {
+   "place_id": "P-YOGIDHAM-3",
+   "name_en": "Yogidham Phase 3",
+   "name_mr": "योगीधाम फेज ३",
+   "name_hi": "",
+   "kind": "housing",
+   "lat": 19.248076,
+   "lng": 73.152052,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  },
+  {
+   "place_id": "P-KALYAN-W",
+   "name_en": "Kalyan West",
+   "name_mr": "कल्याण पश्चिम",
+   "name_hi": "",
+   "kind": "suburb",
+   "lat": 19.240353,
+   "lng": 73.125279,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  },
+  {
+   "place_id": "P-KALYAN-E",
+   "name_en": "Kalyan East",
+   "name_mr": "कल्याण पूर्व",
+   "name_hi": "",
+   "kind": "suburb",
+   "lat": 19.227853,
+   "lng": 73.132295,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  },
+  {
+   "place_id": "P-AADHARWADI",
+   "name_en": "Aadharwadi",
+   "name_mr": "आधारवाडी",
+   "name_hi": "",
+   "kind": "suburb",
+   "lat": 19.247445,
+   "lng": 73.122623,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  },
+  {
+   "place_id": "P-KHADAKPADA",
+   "name_en": "Khadakpada",
+   "name_mr": "खडकपाडा",
+   "name_hi": "",
+   "kind": "suburb",
+   "lat": 19.252504,
+   "lng": 73.137376,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  },
+  {
+   "place_id": "P-VITTHALWADI",
+   "name_en": "Vitthalwadi",
+   "name_mr": "विठ्ठलवाडी",
+   "name_hi": "",
+   "kind": "suburb",
+   "lat": 19.231469,
+   "lng": 73.151262,
+   "near_station_id": "KYN",
+   "source_id": "osm"
+  }
+ ],
+ "pickup_points": [
+  {
+   "pickup_id": "OSM-node-14098734284",
+   "kind": "auto_stand",
+   "name_en": "Wayle Nagar Auto Stand",
+   "lat": 19.25323,
+   "lng": 73.133385,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  },
+  {
+   "pickup_id": "OSM-node-14108265297",
+   "kind": "auto_stand",
+   "name_en": "Auto stand",
+   "lat": 19.257876,
+   "lng": 73.133509,
+   "near_station_id": "",
+   "destinations": "",
+   "shared_fare_inr": null,
+   "fare_source": "",
+   "verification": "osm",
+   "verified_at": "",
+   "source_id": "osm"
+  }
+ ],
+ "bus_stops": [],
+ "bus_routes": [],
+ "fare_rules": [
+  {
+   "fare_rule_id": "AUTO-MMR-2026-09",
+   "mode": "auto",
+   "region": "MMR",
+   "min_fare_inr": 27,
+   "min_km": 1.5,
+   "per_km_inr": 18.22,
+   "night_multiplier": 1.25,
+   "night_start": "00:00",
+   "night_end": "05:00",
+   "effective_from": "2026-09-01",
+   "source_id": "mmrta-2026-reported"
+  },
+  {
+   "fare_rule_id": "TAXI-MMR-2026-09",
+   "mode": "taxi",
+   "region": "MMR",
+   "min_fare_inr": 33,
+   "min_km": 1.5,
+   "per_km_inr": 21.9,
+   "night_multiplier": 1.25,
+   "night_start": "00:00",
+   "night_end": "05:00",
+   "effective_from": "2026-09-01",
+   "source_id": "mmrta-2026-reported"
+  }
+ ],
+ "providers": [
+  {
+   "provider_id": "uber",
+   "name": "Uber",
+   "categories": "auto,bike,cab",
+   "integration": "deep_link",
+   "android_package": "com.ubercab",
+   "link_template": "https://m.uber.com/ul/?action=setPickup&pickup%5Blatitude%5D={plat}&pickup%5Blongitude%5D={plng}&dropoff%5Blatitude%5D={dlat}&dropoff%5Blongitude%5D={dlng}&dropoff%5Bnickname%5D={dname}"
+  },
+  {
+   "provider_id": "ola",
+   "name": "Ola",
+   "categories": "auto,bike,cab",
+   "integration": "open_app",
+   "android_package": "com.olacabs.customer",
+   "link_template": ""
+  },
+  {
+   "provider_id": "rapido",
+   "name": "Rapido",
+   "categories": "auto,bike,cab",
+   "integration": "open_app",
+   "android_package": "com.rapido.passenger",
+   "link_template": ""
+  }
+ ]
 }

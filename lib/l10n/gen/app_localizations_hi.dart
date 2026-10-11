@@ -361,4 +361,232 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get linesAtStation => 'लाइनें';
+
+  @override
+  String get lastMileTitle => 'स्टेशन से घर तक';
+
+  @override
+  String get lastMileHomeBody =>
+      'स्टेशन से आपकी मंज़िल तक पैदल, ऑटो, शेयर ऑटो, बस या कैब';
+
+  @override
+  String get lastMileFromStation => 'स्टेशन से';
+
+  @override
+  String get lastMileTo => 'कहाँ जाना है';
+
+  @override
+  String get lastMileToHint => 'जगह खोजें या नक्शे पर चुनें';
+
+  @override
+  String get lastMilePickOnMap => 'नक्शे पर चुनें';
+
+  @override
+  String get lastMileUseThisPoint => 'यह जगह चुनें';
+
+  @override
+  String get lastMileDroppedPin => 'नक्शे पर चुनी जगह';
+
+  @override
+  String get lastMileChooseDestination =>
+      'विकल्प देखने के लिए चुनें कि आप कहाँ जा रहे हैं।';
+
+  @override
+  String get lastMileFromHere => 'यहाँ से आगे का सफ़र';
+
+  @override
+  String get searchPlaces => 'जगह खोजें';
+
+  @override
+  String get noPlaceFound => 'ऐसी जगह अभी नहीं है। नक्शे पर जगह चुनकर देखें।';
+
+  @override
+  String get sortCheapest => 'सबसे सस्ता';
+
+  @override
+  String get sortFastest => 'सबसे तेज़';
+
+  @override
+  String get sortLeastWalking => 'कम पैदल';
+
+  @override
+  String distanceStraight(String km) {
+    return 'सीधी रेखा में $km किमी';
+  }
+
+  @override
+  String distanceRoadEstimate(String km) {
+    return 'सड़क से लगभग $km किमी (अनुमान)';
+  }
+
+  @override
+  String distanceRoad(String km) {
+    return 'सड़क से $km किमी';
+  }
+
+  @override
+  String get optWalk => 'पैदल';
+
+  @override
+  String get optAutoMeter => 'ऑटो (मीटर से)';
+
+  @override
+  String get optTaxiMeter => 'काली-पीली टैक्सी (मीटर से)';
+
+  @override
+  String get optSharedAuto => 'शेयर ऑटो';
+
+  @override
+  String optBus(String operator, String number) {
+    return '$operator बस $number';
+  }
+
+  @override
+  String fareFrom(int amount) {
+    return '₹$amount से';
+  }
+
+  @override
+  String fareAbout(int amount) {
+    return '≈ ₹$amount';
+  }
+
+  @override
+  String fareShared(int amount) {
+    return 'प्रति सीट ₹$amount';
+  }
+
+  @override
+  String get fareUnknown => 'किराया पता नहीं';
+
+  @override
+  String get fareInApp => 'कीमत उनके ऐप में';
+
+  @override
+  String minutesAbout(int minutes) {
+    return 'बिना ट्रैफ़िक लगभग $minutes मिनट';
+  }
+
+  @override
+  String walkMeters(int meters) {
+    return '$meters मी पैदल';
+  }
+
+  @override
+  String get nightFareApplied => 'रात का अतिरिक्त किराया शामिल';
+
+  @override
+  String nearestStand(String name, int meters) {
+    return 'नज़दीकी स्टैंड: $name, $meters मी';
+  }
+
+  @override
+  String get noStandKnown => 'स्टेशन के पास अभी कोई स्टैंड दर्ज नहीं';
+
+  @override
+  String busBoardAlight(String board, String alight) {
+    return '$board पर चढ़ें, $alight पर उतरें';
+  }
+
+  @override
+  String get availabilityUnknown => 'अभी वाहन है या नहीं, यह हमें नहीं दिखता।';
+
+  @override
+  String openApp(String name) {
+    return '$name खोलें';
+  }
+
+  @override
+  String get couldNotOpen => 'ऐप नहीं खुल सका।';
+
+  @override
+  String get howWeEstimate => 'ये आंकड़े कैसे निकाले गए';
+
+  @override
+  String get assumptionsBody =>
+      'सड़क मार्ग उपलब्ध न हो तो दूरी = सीधी रेखा × 1.3। समय: पैदल 4.5 किमी/घंटा, ऑटो 18 किमी/घंटा, टैक्सी 20 किमी/घंटा; ट्रैफ़िक या इंतज़ार शामिल नहीं। मीटर किराया प्रकाशित दर से है; असली किराया मीटर तय करता है।';
+
+  @override
+  String fareRuleSource(String mode, String source, String date) {
+    return '$mode: दरें $source, $date से लागू';
+  }
+
+  @override
+  String get noFareRules =>
+      'किराया दरें अभी दर्ज नहीं हैं, इसलिए मीटर किराए का अनुमान नहीं दे सकते।';
+
+  @override
+  String get nearbyPickups => 'स्टेशन के पास के स्टैंड';
+
+  @override
+  String get nearbyPickupsEmpty => 'इस स्टेशन के पास अभी कोई स्टैंड दर्ज नहीं।';
+
+  @override
+  String get verificationAdmin => 'हमने जाँचा';
+
+  @override
+  String get verificationOsm => 'OpenStreetMap से';
+
+  @override
+  String get verificationCommunity => 'यात्रियों ने बताया';
+
+  @override
+  String get communityReports => 'यात्रियों की रिपोर्ट';
+
+  @override
+  String get communityReportsEmpty => 'इस स्टेशन के पास अभी कोई रिपोर्ट नहीं।';
+
+  @override
+  String get communityReportsOffline =>
+      'रिपोर्ट के लिए सर्वर चाहिए, जो अभी सेट नहीं है।';
+
+  @override
+  String get reportSomething => 'रिपोर्ट करें';
+
+  @override
+  String get reportWhere => 'कहाँ';
+
+  @override
+  String get reportTypeQueue => 'लंबी कतार';
+
+  @override
+  String get reportTypeNoVehicles => 'ऑटो/टैक्सी नहीं';
+
+  @override
+  String get reportTypeStandMoved => 'स्टैंड हट गया है';
+
+  @override
+  String get reportTypeStopIssue => 'बस स्टॉप की समस्या';
+
+  @override
+  String get reportTypeClosure => 'सड़क बंद';
+
+  @override
+  String get reportTypeDisruption => 'बाधा';
+
+  @override
+  String get reportNoteHint => 'छोटा नोट (वैकल्पिक)';
+
+  @override
+  String get reportPrivacy =>
+      'दूसरों को रिपोर्ट और जगह दिखती है, आपका नाम या खाता कभी नहीं।';
+
+  @override
+  String get reportSubmit => 'रिपोर्ट भेजें';
+
+  @override
+  String get reportSent => 'धन्यवाद। रिपोर्ट समाप्त होने तक दूसरों को दिखेगी।';
+
+  @override
+  String get reportConfirm => 'अब भी सही';
+
+  @override
+  String reportConfirmed(int count) {
+    return '$count ने पुष्टि की';
+  }
+
+  @override
+  String reportAgo(int minutes) {
+    return '$minutes मिनट पहले';
+  }
 }

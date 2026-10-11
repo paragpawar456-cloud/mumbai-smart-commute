@@ -39,6 +39,12 @@ class StationScreen extends ConsumerWidget {
         title: Text(station.name(lang)),
         actions: [
           IconButton(
+            key: const Key('lastMileFromStation'),
+            tooltip: l.lastMileFromHere,
+            icon: const Icon(Icons.electric_rickshaw),
+            onPressed: () => context.push('/last-mile?from=$stationId'),
+          ),
+          IconButton(
             tooltip: l.showOnMap,
             icon: const Icon(Icons.map_outlined),
             onPressed: () => context.go('/map?station=$stationId'),

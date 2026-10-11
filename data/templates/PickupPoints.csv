@@ -1,0 +1,3 @@
+pickup_id,kind,name_en,lat,lng,near_station_id,destinations,shared_fare_inr,fare_source,verification,verified_at,source_id
+OSM-node-14098734284,auto_stand,Wayle Nagar Auto Stand,19.25323,73.133385,,,,,osm,,osm
+OSM-node-14108265297,auto_stand,Auto stand,19.257876,73.133509,,,,,osm,,osm

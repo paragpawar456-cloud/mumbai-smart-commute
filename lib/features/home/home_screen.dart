@@ -103,6 +103,20 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 16),
           Card(
             child: ListTile(
+              key: const Key('lastMileCard'),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              leading: const Icon(Icons.electric_rickshaw,
+                  size: 32, color: AppColors.auto),
+              title: Text(l.lastMileTitle, style: text.titleMedium),
+              subtitle: Text(l.lastMileHomeBody),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => context.push('/last-mile'),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Card(
+            child: ListTile(
               contentPadding:
                   const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               leading: const _ModeIcons(),

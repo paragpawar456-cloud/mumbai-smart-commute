@@ -361,4 +361,235 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get linesAtStation => 'Lines';
+
+  @override
+  String get lastMileTitle => 'Station to doorstep';
+
+  @override
+  String get lastMileHomeBody =>
+      'Walk, auto, shared auto, bus or cab from the station to where you are going';
+
+  @override
+  String get lastMileFromStation => 'From station';
+
+  @override
+  String get lastMileTo => 'Going to';
+
+  @override
+  String get lastMileToHint => 'Search a place or pick on the map';
+
+  @override
+  String get lastMilePickOnMap => 'Pick on the map';
+
+  @override
+  String get lastMileUseThisPoint => 'Use this point';
+
+  @override
+  String get lastMileDroppedPin => 'Point on the map';
+
+  @override
+  String get lastMileChooseDestination =>
+      'Choose where you are going to see your options.';
+
+  @override
+  String get lastMileFromHere => 'Last mile from here';
+
+  @override
+  String get searchPlaces => 'Search places';
+
+  @override
+  String get noPlaceFound =>
+      'No matching place yet. Try picking the point on the map.';
+
+  @override
+  String get sortCheapest => 'Cheapest';
+
+  @override
+  String get sortFastest => 'Fastest';
+
+  @override
+  String get sortLeastWalking => 'Least walking';
+
+  @override
+  String distanceStraight(String km) {
+    return '$km km in a straight line';
+  }
+
+  @override
+  String distanceRoadEstimate(String km) {
+    return 'About $km km by road (estimated)';
+  }
+
+  @override
+  String distanceRoad(String km) {
+    return '$km km by road';
+  }
+
+  @override
+  String get optWalk => 'Walk';
+
+  @override
+  String get optAutoMeter => 'Auto (by meter)';
+
+  @override
+  String get optTaxiMeter => 'Kaali-peeli taxi (by meter)';
+
+  @override
+  String get optSharedAuto => 'Shared auto';
+
+  @override
+  String optBus(String operator, String number) {
+    return '$operator bus $number';
+  }
+
+  @override
+  String fareFrom(int amount) {
+    return 'from ₹$amount';
+  }
+
+  @override
+  String fareAbout(int amount) {
+    return '≈ ₹$amount';
+  }
+
+  @override
+  String fareShared(int amount) {
+    return '₹$amount per seat';
+  }
+
+  @override
+  String get fareUnknown => 'Fare not known';
+
+  @override
+  String get fareInApp => 'Price in their app';
+
+  @override
+  String minutesAbout(int minutes) {
+    return 'About $minutes min without traffic';
+  }
+
+  @override
+  String walkMeters(int meters) {
+    return '$meters m walk';
+  }
+
+  @override
+  String get nightFareApplied => 'Includes the night charge';
+
+  @override
+  String nearestStand(String name, int meters) {
+    return 'Nearest stand: $name, $meters m';
+  }
+
+  @override
+  String get noStandKnown => 'No stand mapped near the station yet';
+
+  @override
+  String busBoardAlight(String board, String alight) {
+    return 'Board at $board, get off at $alight';
+  }
+
+  @override
+  String get availabilityUnknown =>
+      'We cannot see whether a vehicle is there right now.';
+
+  @override
+  String openApp(String name) {
+    return 'Open $name';
+  }
+
+  @override
+  String get couldNotOpen => 'Could not open the app.';
+
+  @override
+  String get howWeEstimate => 'How these numbers are worked out';
+
+  @override
+  String get assumptionsBody =>
+      'Road distance is the straight line × 1.3 unless a road route is available. Times assume walking at 4.5 km/h, autos at 18 km/h and taxis at 20 km/h, with no traffic or waiting. Meter fares use the published rate; the meter decides the real fare.';
+
+  @override
+  String fareRuleSource(String mode, String source, String date) {
+    return '$mode: rates from $source, effective $date';
+  }
+
+  @override
+  String get noFareRules =>
+      'No fare rates entered yet, so meter fares cannot be estimated.';
+
+  @override
+  String get nearbyPickups => 'Stands near the station';
+
+  @override
+  String get nearbyPickupsEmpty => 'No stands recorded near this station yet.';
+
+  @override
+  String get verificationAdmin => 'Checked by us';
+
+  @override
+  String get verificationOsm => 'From OpenStreetMap';
+
+  @override
+  String get verificationCommunity => 'Reported by commuters';
+
+  @override
+  String get communityReports => 'Commuter reports';
+
+  @override
+  String get communityReportsEmpty => 'No reports near this station right now.';
+
+  @override
+  String get communityReportsOffline =>
+      'Reports need the server, which is not set up yet.';
+
+  @override
+  String get reportSomething => 'Report';
+
+  @override
+  String get reportWhere => 'Where';
+
+  @override
+  String get reportTypeQueue => 'Long queue';
+
+  @override
+  String get reportTypeNoVehicles => 'No autos or taxis';
+
+  @override
+  String get reportTypeStandMoved => 'Stand has moved';
+
+  @override
+  String get reportTypeStopIssue => 'Bus stop problem';
+
+  @override
+  String get reportTypeClosure => 'Road closed';
+
+  @override
+  String get reportTypeDisruption => 'Disruption';
+
+  @override
+  String get reportNoteHint => 'Short note (optional)';
+
+  @override
+  String get reportPrivacy =>
+      'Others see the report and its place, never your name or account.';
+
+  @override
+  String get reportSubmit => 'Send report';
+
+  @override
+  String get reportSent =>
+      'Thanks. Others will see your report until it expires.';
+
+  @override
+  String get reportConfirm => 'Still true';
+
+  @override
+  String reportConfirmed(int count) {
+    return 'Confirmed by $count';
+  }
+
+  @override
+  String reportAgo(int minutes) {
+    return '$minutes min ago';
+  }
 }
