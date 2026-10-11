@@ -114,3 +114,7 @@ Tester said the timetable, "Where is my" buttons and auto/car locations weren't 
 
 Tests (2026-10-11): `flutter analyze` clean · `flutter test` 72 passed.
 
+
+## Map fix (2026-10-11, build after 23)
+
+Tester screenshot: the map showed "API KEY REQUIRED" because CARTO now needs a key. All maps are back on OpenStreetMap's standard tiles, which need no key (darkened in dark mode). D35.

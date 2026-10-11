@@ -12,6 +12,6 @@ Version 2026-10-v1. The same text is in the app (Profile → Privacy notice) in 
 
 **Your choices.** Delete account (Profile) removes your email, name and saved routes and closes your sign-in. Reports you sent stay for other commuters but are no longer linked to you. You can use the app without an account.
 
-**Services we rely on.** Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); CARTO's map tile servers (OpenStreetMap data) when the map loads; openrouteservice for road distances if enabled; Photon (komoot), which searches OpenStreetMap data, receiving only the words you type into place search; and Uber, Ola or Rapido only when you tap their button.
+**Services we rely on.** Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap's map tile servers when the map loads; openrouteservice for road distances if enabled; Photon (komoot), which searches OpenStreetMap data, receiving only the words you type into place search; and Uber, Ola or Rapido only when you tap their button.
 
 **Contact.** Add the owner's contact email here before publishing.
