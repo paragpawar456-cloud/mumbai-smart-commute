@@ -51,7 +51,7 @@ flutter build apk --release --split-per-abi --dart-define-from-file=config/prod.
 
 ### The free APK from GitHub
 
-Every push to `main` runs **Actions → CI** and attaches `mumbai-smart-commute-apk`. To bake your config into that APK, add a repository secret `APP_CONFIG_JSON` containing the whole `config/prod.json`.
+Every push to `main` runs **Actions → CI**, attaches `mumbai-smart-commute-apk`, and replaces the **Latest test build** release, so this link always gives the newest APK without a GitHub account: `https://github.com/paragpawar456-cloud/mumbai-smart-commute/releases/download/latest-build/app-arm64-v8a-release.apk` (older phones: `app-armeabi-v7a-release.apk`). To bake your config into that APK, add a repository secret `APP_CONFIG_JSON` containing the whole `config/prod.json`.
 
 ### Same signature for every build (so testers can update)
 
