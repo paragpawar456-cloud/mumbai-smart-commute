@@ -37,10 +37,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get toLabel => 'To';
 
   @override
-  String get fromHint => 'Current location or station';
+  String get fromHint => 'Your location, a station or an area';
 
   @override
-  String get toHint => 'Destination, e.g. Yogidham, Kalyan West';
+  String get toHint => 'Station, area or building, e.g. Yogidham';
 
   @override
   String get findRoutes => 'Find routes';
@@ -821,4 +821,57 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get privacyThirdPartyBody =>
       'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button.';
+
+  @override
+  String get searchAnyPlace => 'Search a station, area or building';
+
+  @override
+  String get stationLabel => 'Station';
+
+  @override
+  String get typeMoreToSearch =>
+      'Type at least 3 letters to search more places.';
+
+  @override
+  String get moreFromOsm => 'More places (OpenStreetMap)';
+
+  @override
+  String get onlineSearchFailed =>
+      'Couldn\'t search online. Check your internet, or pick the place on the map.';
+
+  @override
+  String get osmSearchCredit =>
+      'Place search uses OpenStreetMap data via Photon. Only the words you type are sent.';
+
+  @override
+  String get tripTitle => 'Your journey';
+
+  @override
+  String get tripRoadOnlyClose =>
+      'These places are close, so going by road is simplest.';
+
+  @override
+  String get tripNoStationNear =>
+      'No station in the app is near one of these places yet, so only road options are shown.';
+
+  @override
+  String get tripByRoad => 'Direct by road';
+
+  @override
+  String get tripByTrain => 'By train';
+
+  @override
+  String minutesShort(int minutes) {
+    return 'about $minutes min';
+  }
+
+  @override
+  String tripLegToStation(String station) {
+    return 'Get to $station station';
+  }
+
+  @override
+  String tripLegFromStation(String station, String place) {
+    return '$station station to $place';
+  }
 }

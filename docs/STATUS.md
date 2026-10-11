@@ -76,12 +76,18 @@ Tests (2026-10-11): `flutter analyze` clean · `flutter test` 42 passed · `back
 
 Sign-in, account, server status and commuter-report UI are hidden until both Firebase and the server are configured (D26).
 
-## Phase 7: Hardening — in review
+## Phase 7: Hardening — done (PR #6, merged)
 
 Failure-mode tests for the data pack and network; three bugs found and fixed (broken server pack, storage-full caching, Marathi/Hindi garbled when the server sends no charset). Load-test tool written and checked locally; capacity is calculated, not yet measured. Security checklist passed. Details: [HARDENING.md](HARDENING.md), [SECURITY.md](SECURITY.md).
 
-## Phase 8: Delivery — in review
+## Phase 8: Delivery — done (PR #6, merged)
 
 Direct APK download link, README, [TESTER_GUIDE.md](TESTER_GUIDE.md), [PRIVACY.md](PRIVACY.md) and [TERMS_DRAFT.md](TERMS_DRAFT.md) (drafts, need review before a public launch).
 
-Tests (2026-10-11): `flutter analyze` clean · `flutter test` 49 passed · `backend npm test` 31 passed.
+## Door-to-door search fix — in review
+
+Tester report: typing "yogidham" to "runwal" on Home found nothing, because Home only understood station names. Home's From and To now open one search across stations, the app's own places and OpenStreetMap (free Photon server, only the typed words are sent; D27), plus "My location" and "Pick on the map". Any two points get a trip page: the train with road legs at each end (nearest station), and direct road options with estimated fares. Station to station still opens the train planner.
+
+The tester's "map arrives in the next update" screen came from an old install; the map has been live since Phase 4. Builds without signing secrets used a new debug key each time, so a new APK wouldn't install over an old one. CI now keeps one debug key between builds (D28); this one more time, the old app has to be uninstalled first.
+
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 61 passed · `backend npm test` 31 passed.

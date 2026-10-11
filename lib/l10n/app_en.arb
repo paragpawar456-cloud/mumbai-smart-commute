@@ -9,8 +9,8 @@
   "homeGreeting": "Where are you going?",
   "fromLabel": "From",
   "toLabel": "To",
-  "fromHint": "Current location or station",
-  "toHint": "Destination, e.g. Yogidham, Kalyan West",
+  "fromHint": "Your location, a station or an area",
+  "toHint": "Station, area or building, e.g. Yogidham",
   "findRoutes": "Find routes",
   "nearbyTransport": "Nearby transport",
   "nearbyTransportBody": "Stations, bus stops and auto stands near you",
@@ -485,5 +485,43 @@
   "privacyRightsTitle": "Your choices",
   "privacyRightsBody": "Delete account (Profile) removes your email, name and saved routes and closes your sign-in. Reports you sent stay for other commuters but are no longer linked to you. You can use the app without an account.",
   "privacyThirdPartyTitle": "Services we rely on",
-  "privacyThirdPartyBody": "Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button."
+  "privacyThirdPartyBody": "Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button. Place search sends only the words you type to Photon (OpenStreetMap data).",
+  "searchAnyPlace": "Search a station, area or building",
+  "stationLabel": "Station",
+  "typeMoreToSearch": "Type at least 3 letters to search more places.",
+  "moreFromOsm": "More places (OpenStreetMap)",
+  "onlineSearchFailed": "Couldn't search online. Check your internet, or pick the place on the map.",
+  "osmSearchCredit": "Place search uses OpenStreetMap data via Photon. Only the words you type are sent.",
+  "tripTitle": "Your journey",
+  "tripRoadOnlyClose": "These places are close, so going by road is simplest.",
+  "tripNoStationNear": "No station in the app is near one of these places yet, so only road options are shown.",
+  "tripByRoad": "Direct by road",
+  "tripByTrain": "By train",
+  "minutesShort": "about {minutes} min",
+  "@minutesShort": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "tripLegToStation": "Get to {station} station",
+  "@tripLegToStation": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "tripLegFromStation": "{station} station to {place}",
+  "@tripLegFromStation": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "place": {
+        "type": "String"
+      }
+    }
+  }
 }

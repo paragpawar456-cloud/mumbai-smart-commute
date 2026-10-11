@@ -68,9 +68,18 @@ jobs:
             printf '%s' "$KEYSTORE_B64" | base64 -d > android/app/release.jks
             printf 'storeFile=release.jks\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n' \
               "$STORE_PW" "$KEY_ALIAS" "$KEY_PW" > android/key.properties
+            echo "HAS_SIGNING=true" >> "$GITHUB_ENV"
           else
             echo "No signing secrets; APK is debug-signed."
           fi
+      # Without signing secrets, reuse one debug key across builds (GitHub keeps
+      # an unused cache for 7 days) so a newer APK installs over the old one.
+      - name: Keep the debug signing key between builds
+        if: env.HAS_SIGNING != 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: android-debug-keystore-v1
       - run: flutter build apk --release --split-per-abi --dart-define-from-file=config/build.json
       - uses: actions/upload-artifact@v4
         with:

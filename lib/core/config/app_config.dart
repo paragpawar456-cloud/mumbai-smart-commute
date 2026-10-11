@@ -15,6 +15,7 @@ class AppConfig {
     required this.firebaseMessagingSenderId,
     required this.tileUrlTemplate,
     required this.userAgentPackage,
+    this.geocoderUrl = '',
   });
 
   factory AppConfig.fromEnvironment() => const AppConfig(
@@ -33,6 +34,10 @@ class AppConfig {
           'USER_AGENT_PACKAGE',
           defaultValue: 'com.mumbaismartcommute.mumbai_smart_commute',
         ),
+        geocoderUrl: String.fromEnvironment(
+          'GEOCODER_URL',
+          defaultValue: 'https://photon.komoot.io/api/',
+        ),
       );
 
   final String environment;
@@ -46,6 +51,11 @@ class AppConfig {
   /// (OSMF tile usage policy recommends this).
   final String tileUrlTemplate;
   final String userAgentPackage;
+
+  /// Photon-compatible place search on OpenStreetMap data. Empty turns
+  /// online search off; the app then searches only stations and its own
+  /// places.
+  final String geocoderUrl;
 
   bool get isProduction => environment == 'prod';
   bool get hasBackend => backendUrl.isNotEmpty;
