@@ -51,16 +51,16 @@ void main() {
     }
     expect(find.text('Train + auto'), findsOneWidget);
 
-    // The train option: steps, then the train list (no timetable yet).
+    // The train option: steps, then the train list from the timetable.
     await tester.tap(find.byKey(const Key('option-train')));
     await tester.pumpAndSettle();
     expect(find.text('Auto to Kalyan'), findsOneWidget);
     expect(find.text('Board at Kalyan'), findsOneWidget);
-    await tester.scrollUntilVisible(
-        find.textContaining("Train times aren't loaded yet"), 200,
+    await tester.scrollUntilVisible(find.byKey(const Key('timetableNote')), 200,
         scrollable: find.byType(Scrollable).first);
     expect(find.text('Trains Kalyan → Dombivli'), findsOneWidget);
-    expect(find.textContaining('Next train'), findsNothing);
+    expect(find.textContaining('check the station display'), findsOneWidget);
+    expect(find.textContaining("Train times aren't loaded yet"), findsNothing);
     await tester.pageBack();
     await tester.pumpAndSettle();
 

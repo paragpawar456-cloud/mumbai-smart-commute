@@ -6,6 +6,7 @@ import '../../../core/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import '../../../shared/widgets/source_badge.dart';
+import '../../../shared/widgets/timetable_note.dart';
 import '../../lastmile/data/lastmile_providers.dart';
 import '../../lastmile/domain/lastmile_engine.dart';
 import '../../lastmile/domain/lastmile_models.dart';
@@ -129,7 +130,8 @@ class _TrainOptionState extends ConsumerState<TrainOptionScreen> {
             _NoTimetable(board: board, alight: alight)
           else if (runs.isEmpty)
             Text(l.noMoreTrainsToday)
-          else
+          else ...[
+            TimetableNote(validFrom: runs.first.trip.validFrom),
             for (final r in runs)
               _RunTile(
                 run: r,
@@ -139,6 +141,7 @@ class _TrainOptionState extends ConsumerState<TrainOptionScreen> {
                   builder: (_) => WhereIsMyTrainScreen(run: r, pack: pack),
                 )),
               ),
+          ],
         ],
       ),
     );
@@ -308,8 +311,7 @@ class _RunTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    l.towards(pack.stationById[run.terminusId]?.name(lang) ??
-                        run.terminusId),
+                    l.towards(trainHeadsign(run.trip, pack, run.terminusId, lang)),
                     style: text.titleSmall,
                   ),
                   Text([

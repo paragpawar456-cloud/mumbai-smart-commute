@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/data/data_source_label.dart';
+import '../../../core/providers.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import '../../../shared/widgets/source_badge.dart';
 import '../data/transit_providers.dart';
@@ -22,7 +23,7 @@ class JourneyCard extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final tt = ref.watch(timetableProvider);
-    final now = DateTime.now();
+    final now = ref.watch(clockProvider)();
     final scheduled = (tt != null && pack.hasTimetable)
         ? tt.schedule(journey, now, now.hour * 60 + now.minute)
         : null;

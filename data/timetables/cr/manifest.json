@@ -1,0 +1,23 @@
+{
+ "source_id": "cr-ptt-ml-2024-10",
+ "name": "Central Railway Main Line suburban pocket timetable, w.e.f. 5 Oct 2024",
+ "licence": "Official public timetable (facts)",
+ "attribution": "Central Railway, Indian Railways",
+ "url": "https://cr.indianrailways.gov.in",
+ "files": [
+  {
+   "file": "cr-main-dn.pdf",
+   "direction": "down",
+   "valid_from": "2024-10-05",
+   "url": "https://cr.indianrailways.gov.in/cris//uploads/files/1728294831372-SUB%20PTT%20DN%20ML'24.pdf",
+   "sha256": "b5d8d8648af1c828b35d20920dc72ffb70f911b85585b9db711fd01a52b63c95"
+  },
+  {
+   "file": "cr-main-up.pdf",
+   "direction": "up",
+   "valid_from": "2024-10-05",
+   "url": "https://cr.indianrailways.gov.in/cris//uploads/files/1728294891897-SUB%20PTT%20UP%20ML'24.pdf",
+   "sha256": "68f5236a46352675c5f5067ac8c05614f982fa1c86b224eedb3af5e1c64ede2f"
+  }
+ ]
+}

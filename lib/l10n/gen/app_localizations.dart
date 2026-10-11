@@ -1881,6 +1881,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Get off at:'**
   String get getOffAtLabel;
+
+  /// No description provided for @trainComingFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming from {origin}; reaches {station} at {time}'**
+  String trainComingFrom(String origin, String station, String time);
+
+  /// No description provided for @timetableSourceNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Times from Central Railway\'s official timetable (from {date}). Some trains have changed since, so check the station display before you travel.'**
+  String timetableSourceNote(String date);
 }
 
 class _AppLocalizationsDelegate

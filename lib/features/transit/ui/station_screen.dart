@@ -3,10 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/data/data_source_label.dart';
+import '../../../core/providers.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import '../../alerts/alerts.dart';
 import '../../../shared/widgets/info_state.dart';
 import '../../../shared/widgets/source_badge.dart';
+import '../../../shared/widgets/timetable_note.dart';
 import '../data/transit_providers.dart';
 import '../../trip/ui/where_is_my_train_screen.dart';
 import '../domain/models.dart';
@@ -32,7 +34,7 @@ class StationScreen extends ConsumerWidget {
     }
     final lines = pack.lines.where((ln) => ln.stationIds.contains(stationId));
     final tt = ref.watch(timetableProvider);
-    final now = DateTime.now();
+    final now = ref.watch(clockProvider)();
     final departures = pack.hasTimetable && tt != null
         ? tt.departuresFrom(stationId, now, afterMinute: now.hour * 60 + now.minute)
         : const [];
@@ -76,7 +78,8 @@ class StationScreen extends ConsumerWidget {
             Text(l.timetableNotLoaded)
           else if (departures.isEmpty)
             Text(l.noMoreTrainsToday)
-          else
+          else ...[
+            TimetableNote(validFrom: departures.first.trip.validFrom),
             for (final d in departures)
               ListTile(
                 contentPadding: EdgeInsets.zero,
@@ -95,7 +98,7 @@ class StationScreen extends ConsumerWidget {
                 leading: Text(formatMinutes(d.departure),
                     style: Theme.of(context).textTheme.titleLarge),
                 title: Text(l.towards(
-                    pack.stationById[d.terminusId]?.name(lang) ?? d.terminusId)),
+                    trainHeadsign(d.trip, pack, d.terminusId, lang))),
                 subtitle: Text([
                   d.trip.trainType == 'fast' ? l.fastTrain : l.slowTrain,
                   if (d.trip.ac) l.acTrain,
@@ -103,6 +106,7 @@ class StationScreen extends ConsumerWidget {
                   if (d.platform != null) l.platformShort(d.platform!),
                 ].join(' · ')),
               ),
+          ],
         ],
       ),
     );

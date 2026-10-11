@@ -111,6 +111,8 @@ class Trip {
     required this.validFrom,
     this.validTo,
     required this.sourceId,
+    this.originName,
+    this.headsign,
   });
 
   factory Trip.fromJson(Map<String, dynamic> j) => Trip(
@@ -127,6 +129,8 @@ class Trip {
             ? null
             : DateTime.parse(j['valid_to'] as String),
         sourceId: j['source_id'] as String? ?? '',
+        originName: _str(j['origin_name']),
+        headsign: _str(j['headsign']),
       );
 
   final String id;
@@ -142,6 +146,11 @@ class Trip {
   final DateTime validFrom;
   final DateTime? validTo;
   final String sourceId;
+
+  /// Where the train starts and ends as printed in the timetable, which can
+  /// be beyond the stations in the app (e.g. "Kasara", "Karjat").
+  final String? originName;
+  final String? headsign;
 
   bool runsOn(DateTime date, {bool holiday = false}) {
     final d = DateTime(date.year, date.month, date.day);
@@ -276,4 +285,15 @@ int? _minutes(String? hhmm) {
 String formatMinutes(int m) {
   final h = (m ~/ 60) % 24;
   return '${h.toString().padLeft(2, '0')}:${(m % 60).toString().padLeft(2, '0')}';
+}
+
+/// Where a train is going: the station name in the user's language when the
+/// train ends at a station in the app, else as printed in the timetable.
+String trainHeadsign(Trip trip, DataPack pack, String terminusId, String lang) {
+  final end = pack.stationById[terminusId];
+  final h = trip.headsign;
+  if (h == null || end == null || end.nameEn.toLowerCase() == h.toLowerCase()) {
+    return end?.name(lang) ?? h ?? terminusId;
+  }
+  return h;
 }

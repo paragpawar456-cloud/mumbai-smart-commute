@@ -729,5 +729,27 @@
     }
   },
   "boardAtLabel": "Board at:",
-  "getOffAtLabel": "Get off at:"
+  "getOffAtLabel": "Get off at:",
+  "trainComingFrom": "Coming from {origin}; reaches {station} at {time}",
+  "@trainComingFrom": {
+    "placeholders": {
+      "origin": {
+        "type": "String"
+      },
+      "station": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "timetableSourceNote": "Times from Central Railway's official timetable (from {date}). Some trains have changed since, so check the station display before you travel.",
+  "@timetableSourceNote": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }
