@@ -23,6 +23,23 @@ void main() {
     for (final tab in ['Home', 'Routes', 'Live Map', 'Saved', 'Profile']) {
       expect(find.text(tab), findsWidgets);
     }
+    for (final k in ['whereTrain', 'whereAuto', 'whereBus', 'whereCab']) {
+      expect(find.byKey(Key(k)), findsOneWidget);
+    }
+  });
+
+  testWidgets('home shows the next trains from Kalyan, counting down',
+      (tester) async {
+    await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byKey(const Key('nextTrainsCard')));
+    expect(find.text('Next trains from Kalyan'), findsOneWidget);
+    // Monday 09:00 in tests: the first train leaves at 09:02.
+    expect(find.text('09:02'), findsWidgets);
+    expect(find.text('in 2 min'), findsWidgets);
+    expect(find.text('Check the station display before you travel'), findsOneWidget);
+    await tester.ensureVisible(find.byKey(const Key('buildLabel')));
+    expect(find.text('Local build'), findsOneWidget);
   });
 
   testWidgets('home search resolves stations and plans a journey',
