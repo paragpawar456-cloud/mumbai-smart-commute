@@ -37,10 +37,10 @@ class AppLocalizationsMr extends AppLocalizations {
   String get toLabel => 'कुठे';
 
   @override
-  String get fromHint => 'सध्याचे ठिकाण किंवा स्टेशन';
+  String get fromHint => 'तुमचे ठिकाण, स्टेशन किंवा परिसर';
 
   @override
-  String get toHint => 'गंतव्य, उदा. योगीधाम, कल्याण पश्चिम';
+  String get toHint => 'स्टेशन, परिसर किंवा इमारत, उदा. योगीधाम';
 
   @override
   String get findRoutes => 'मार्ग शोधा';
@@ -819,4 +819,57 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get privacyThirdPartyBody =>
       'Google Firebase (साइन-इन) आणि Google Apps Script व Sheets (आमचा सर्व्हर आणि साठवण); नकाशा लोड होताना OpenStreetMap टाइल सर्व्हर; सुरू असल्यास रस्त्याच्या अंतरासाठी openrouteservice; आणि तुम्ही बटण दाबल्यावरच Uber, Ola किंवा Rapido.';
+
+  @override
+  String get searchAnyPlace => 'स्टेशन, परिसर किंवा इमारत शोधा';
+
+  @override
+  String get stationLabel => 'स्टेशन';
+
+  @override
+  String get typeMoreToSearch =>
+      'आणखी ठिकाणे शोधण्यासाठी किमान 3 अक्षरे टाइप करा.';
+
+  @override
+  String get moreFromOsm => 'आणखी ठिकाणे (OpenStreetMap)';
+
+  @override
+  String get onlineSearchFailed =>
+      'ऑनलाइन शोधता आले नाही. इंटरनेट तपासा किंवा नकाशावर ठिकाण निवडा.';
+
+  @override
+  String get osmSearchCredit =>
+      'ठिकाण शोध Photon द्वारे OpenStreetMap डेटा वापरतो. फक्त तुम्ही टाइप केलेले शब्द पाठवले जातात.';
+
+  @override
+  String get tripTitle => 'तुमचा प्रवास';
+
+  @override
+  String get tripRoadOnlyClose =>
+      'ही ठिकाणे जवळ आहेत, त्यामुळे रस्त्याने जाणे सोपे आहे.';
+
+  @override
+  String get tripNoStationNear =>
+      'यापैकी एका ठिकाणाजवळ अॅपमध्ये अजून स्टेशन नाही, म्हणून फक्त रस्त्याचे पर्याय दाखवले आहेत.';
+
+  @override
+  String get tripByRoad => 'थेट रस्त्याने';
+
+  @override
+  String get tripByTrain => 'ट्रेनने';
+
+  @override
+  String minutesShort(int minutes) {
+    return 'सुमारे $minutes मिनिटे';
+  }
+
+  @override
+  String tripLegToStation(String station) {
+    return '$station स्टेशनला पोहोचा';
+  }
+
+  @override
+  String tripLegFromStation(String station, String place) {
+    return '$station स्टेशन ते $place';
+  }
 }

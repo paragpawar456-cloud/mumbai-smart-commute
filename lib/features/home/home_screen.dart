@@ -1,40 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_colors.dart';
 import '../../l10n/gen/app_localizations.dart';
 import '../alerts/alerts.dart';
 import '../saved/saved_journeys_list.dart';
+import '../trip/domain/trip_point.dart';
+import '../trip/ui/location_search.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  final _from = TextEditingController();
-  final _to = TextEditingController();
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  TripPoint? _from;
+  TripPoint? _to;
 
-  @override
-  void dispose() {
-    _from.dispose();
-    _to.dispose();
-    super.dispose();
+  void _swap() => setState(() {
+        final f = _from;
+        _from = _to;
+        _to = f;
+      });
+
+  Future<TripPoint?> _pick(bool isFrom) async {
+    final p = await pickTripPoint(context, ref, allowMyLocation: isFrom);
+    if (p != null) setState(() => isFrom ? _from = p : _to = p);
+    return p;
   }
 
-  void _swap() {
-    final f = _from.text;
-    _from.text = _to.text;
-    _to.text = f;
-  }
-
-  void _search() {
-    context.go(Uri(path: '/routes', queryParameters: {
-      if (_from.text.trim().isNotEmpty) 'from': _from.text.trim(),
-      if (_to.text.trim().isNotEmpty) 'to': _to.text.trim(),
-    }).toString());
+  Future<void> _search() async {
+    if (_from == null && await _pick(true) == null) return;
+    if (_to == null && await _pick(false) == null) return;
+    if (!mounted) return;
+    final from = _from!, to = _to!;
+    if (from.isStation && to.isStation) {
+      context.go(Uri(path: '/routes', queryParameters: {
+        'fromId': from.stationId!,
+        'toId': to.stationId!,
+      }).toString());
+    } else {
+      context.push(Uri(path: '/trip', queryParameters: {
+        ...from.toQuery('from'),
+        ...to.toQuery('to'),
+      }).toString());
+    }
   }
 
   @override
@@ -59,27 +72,22 @@ class _HomeScreenState extends State<HomeScreen> {
                       Expanded(
                         child: Column(
                           children: [
-                            TextField(
+                            _PointField(
                               key: const Key('fromField'),
-                              controller: _from,
-                              textInputAction: TextInputAction.next,
-                              decoration: InputDecoration(
-                                labelText: l.fromLabel,
-                                hintText: l.fromHint,
-                                prefixIcon: const Icon(Icons.my_location),
-                              ),
+                              label: l.fromLabel,
+                              hint: l.fromHint,
+                              icon: Icons.my_location,
+                              value: _from,
+                              onTap: () => _pick(true),
                             ),
                             const SizedBox(height: 12),
-                            TextField(
+                            _PointField(
                               key: const Key('toField'),
-                              controller: _to,
-                              textInputAction: TextInputAction.search,
-                              onSubmitted: (_) => _search(),
-                              decoration: InputDecoration(
-                                labelText: l.toLabel,
-                                hintText: l.toHint,
-                                prefixIcon: const Icon(Icons.place),
-                              ),
+                              label: l.toLabel,
+                              hint: l.toHint,
+                              icon: Icons.place,
+                              value: _to,
+                              onTap: () => _pick(false),
                             ),
                           ],
                         ),
@@ -136,6 +144,44 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+}
+
+/// Looks like a text box; tapping it opens the place search.
+class _PointField extends StatelessWidget {
+  const _PointField({
+    super.key,
+    required this.label,
+    required this.hint,
+    required this.icon,
+    required this.value,
+    required this.onTap,
+  });
+
+  final String label;
+  final String hint;
+  final IconData icon;
+  final TripPoint? value;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+        button: true,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(12),
+          child: InputDecorator(
+            isEmpty: value == null,
+            decoration: InputDecoration(
+              labelText: label,
+              hintText: hint,
+              prefixIcon: Icon(icon),
+            ),
+            child: value == null
+                ? null
+                : Text(value!.name, maxLines: 1, overflow: TextOverflow.ellipsis),
+          ),
+        ),
+      );
 }
 
 class _ModeIcons extends StatelessWidget {

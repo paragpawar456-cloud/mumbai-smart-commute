@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:mumbai_smart_commute/app.dart';
 import 'package:mumbai_smart_commute/core/config/app_config.dart';
 import 'package:mumbai_smart_commute/core/providers.dart';
@@ -22,7 +23,10 @@ const testConfig = AppConfig(
   userAgentPackage: 'test',
 );
 
-Future<Widget> buildTestApp({Map<String, Object> prefs = const {}}) async {
+Future<Widget> buildTestApp({
+  Map<String, Object> prefs = const {},
+  List<Override> overrides = const [],
+}) async {
   SharedPreferences.setMockInitialValues(prefs);
   final sp = await SharedPreferences.getInstance();
   return ProviderScope(
@@ -37,6 +41,7 @@ Future<Widget> buildTestApp({Map<String, Object> prefs = const {}}) async {
         loadBundled: () async =>
             File('assets/data/seed_pack.json').readAsStringSync(),
       )),
+      ...overrides,
     ],
     child: const MumbaiSmartCommuteApp(),
   );

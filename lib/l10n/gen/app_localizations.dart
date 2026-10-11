@@ -157,13 +157,13 @@ abstract class AppLocalizations {
   /// No description provided for @fromHint.
   ///
   /// In en, this message translates to:
-  /// **'Current location or station'**
+  /// **'Your location, a station or an area'**
   String get fromHint;
 
   /// No description provided for @toHint.
   ///
   /// In en, this message translates to:
-  /// **'Destination, e.g. Yogidham, Kalyan West'**
+  /// **'Station, area or building, e.g. Yogidham'**
   String get toHint;
 
   /// No description provided for @findRoutes.
@@ -1509,6 +1509,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button.'**
   String get privacyThirdPartyBody;
+
+  /// No description provided for @searchAnyPlace.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a station, area or building'**
+  String get searchAnyPlace;
+
+  /// No description provided for @stationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Station'**
+  String get stationLabel;
+
+  /// No description provided for @typeMoreToSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Type at least 3 letters to search more places.'**
+  String get typeMoreToSearch;
+
+  /// No description provided for @moreFromOsm.
+  ///
+  /// In en, this message translates to:
+  /// **'More places (OpenStreetMap)'**
+  String get moreFromOsm;
+
+  /// No description provided for @onlineSearchFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t search online. Check your internet, or pick the place on the map.'**
+  String get onlineSearchFailed;
+
+  /// No description provided for @osmSearchCredit.
+  ///
+  /// In en, this message translates to:
+  /// **'Place search uses OpenStreetMap data via Photon. Only the words you type are sent.'**
+  String get osmSearchCredit;
+
+  /// No description provided for @tripTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your journey'**
+  String get tripTitle;
+
+  /// No description provided for @tripRoadOnlyClose.
+  ///
+  /// In en, this message translates to:
+  /// **'These places are close, so going by road is simplest.'**
+  String get tripRoadOnlyClose;
+
+  /// No description provided for @tripNoStationNear.
+  ///
+  /// In en, this message translates to:
+  /// **'No station in the app is near one of these places yet, so only road options are shown.'**
+  String get tripNoStationNear;
+
+  /// No description provided for @tripByRoad.
+  ///
+  /// In en, this message translates to:
+  /// **'Direct by road'**
+  String get tripByRoad;
+
+  /// No description provided for @tripByTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'By train'**
+  String get tripByTrain;
+
+  /// No description provided for @minutesShort.
+  ///
+  /// In en, this message translates to:
+  /// **'about {minutes} min'**
+  String minutesShort(int minutes);
+
+  /// No description provided for @tripLegToStation.
+  ///
+  /// In en, this message translates to:
+  /// **'Get to {station} station'**
+  String tripLegToStation(String station);
+
+  /// No description provided for @tripLegFromStation.
+  ///
+  /// In en, this message translates to:
+  /// **'{station} station to {place}'**
+  String tripLegFromStation(String station, String place);
 }
 
 class _AppLocalizationsDelegate

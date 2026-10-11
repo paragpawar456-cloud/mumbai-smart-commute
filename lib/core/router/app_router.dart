@@ -7,6 +7,8 @@ import '../../features/auth/sign_in_screen.dart';
 import '../../features/home/home_screen.dart';
 import '../../features/lastmile/ui/lastmile_screen.dart';
 import '../../features/map/map_screen.dart';
+import '../../features/trip/domain/trip_point.dart';
+import '../../features/trip/ui/trip_screen.dart';
 import '../../features/profile/profile_screen.dart';
 import '../../features/routes/routes_screen.dart';
 import '../../features/saved/saved_screen.dart';
@@ -61,6 +63,18 @@ GoRouter buildRouter() => GoRouter(
           builder: (_, state) => LastMileScreen(
             fromStationId: state.uri.queryParameters['from'],
             placeId: state.uri.queryParameters['place'],
+          ),
+        ),
+        GoRoute(
+          path: '/trip',
+          redirect: (_, state) =>
+              TripPoint.fromQuery(state.uri.queryParameters, 'from') == null ||
+                      TripPoint.fromQuery(state.uri.queryParameters, 'to') == null
+                  ? '/'
+                  : null,
+          builder: (_, state) => TripScreen(
+            from: TripPoint.fromQuery(state.uri.queryParameters, 'from')!,
+            to: TripPoint.fromQuery(state.uri.queryParameters, 'to')!,
           ),
         ),
         GoRoute(path: '/admin', builder: (_, _) => const AdminScreen()),

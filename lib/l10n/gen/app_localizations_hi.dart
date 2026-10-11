@@ -37,10 +37,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get toLabel => 'कहाँ तक';
 
   @override
-  String get fromHint => 'मौजूदा जगह या स्टेशन';
+  String get fromHint => 'आपकी जगह, स्टेशन या इलाका';
 
   @override
-  String get toHint => 'मंज़िल, जैसे योगीधाम, कल्याण पश्चिम';
+  String get toHint => 'स्टेशन, इलाका या इमारत, जैसे योगीधाम';
 
   @override
   String get findRoutes => 'रूट खोजें';
@@ -818,4 +818,57 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get privacyThirdPartyBody =>
       'Google Firebase (साइन-इन) और Google Apps Script व Sheets (हमारा सर्वर और स्टोरेज); नक्शा लोड होने पर OpenStreetMap टाइल सर्वर; चालू हो तो सड़क दूरी के लिए openrouteservice; और बटन दबाने पर ही Uber, Ola या Rapido।';
+
+  @override
+  String get searchAnyPlace => 'स्टेशन, इलाका या इमारत खोजें';
+
+  @override
+  String get stationLabel => 'स्टेशन';
+
+  @override
+  String get typeMoreToSearch =>
+      'और जगहें खोजने के लिए कम से कम 3 अक्षर लिखें।';
+
+  @override
+  String get moreFromOsm => 'और जगहें (OpenStreetMap)';
+
+  @override
+  String get onlineSearchFailed =>
+      'ऑनलाइन खोज नहीं हो पाई। इंटरनेट जाँचें या नक्शे पर जगह चुनें।';
+
+  @override
+  String get osmSearchCredit =>
+      'जगह की खोज Photon के ज़रिए OpenStreetMap डेटा का इस्तेमाल करती है। सिर्फ़ आपके लिखे शब्द भेजे जाते हैं।';
+
+  @override
+  String get tripTitle => 'आपकी यात्रा';
+
+  @override
+  String get tripRoadOnlyClose =>
+      'ये जगहें पास-पास हैं, इसलिए सड़क से जाना सबसे आसान है।';
+
+  @override
+  String get tripNoStationNear =>
+      'इनमें से एक जगह के पास ऐप में अभी कोई स्टेशन नहीं है, इसलिए सिर्फ़ सड़क के विकल्प दिखाए गए हैं।';
+
+  @override
+  String get tripByRoad => 'सीधे सड़क से';
+
+  @override
+  String get tripByTrain => 'ट्रेन से';
+
+  @override
+  String minutesShort(int minutes) {
+    return 'लगभग $minutes मिनट';
+  }
+
+  @override
+  String tripLegToStation(String station) {
+    return '$station स्टेशन तक पहुँचें';
+  }
+
+  @override
+  String tripLegFromStation(String station, String place) {
+    return '$station स्टेशन से $place';
+  }
 }

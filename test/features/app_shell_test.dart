@@ -3,6 +3,17 @@ import 'package:flutter_test/flutter_test.dart';
 
 import '../helpers.dart';
 
+/// Opens a Home field's place search, types [query] and picks [name].
+Future<void> pickPlace(
+    WidgetTester tester, String field, String query, String name) async {
+  await tester.tap(find.byKey(Key(field)));
+  await tester.pumpAndSettle();
+  await tester.enterText(find.byType(TextField).last, query);
+  await tester.pumpAndSettle();
+  await tester.tap(find.widgetWithText(ListTile, name).first);
+  await tester.pumpAndSettle();
+}
+
 void main() {
   testWidgets('home shows search and all five tabs', (tester) async {
     await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
@@ -19,8 +30,8 @@ void main() {
     await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
     await tester.pumpAndSettle();
 
-    await tester.enterText(find.byKey(const Key('fromField')), 'Kalyan');
-    await tester.enterText(find.byKey(const Key('toField')), 'Thane');
+    await pickPlace(tester, 'fromField', 'Kalyan', 'Kalyan');
+    await pickPlace(tester, 'toField', 'Thane', 'Thane');
     await tester.tap(find.byKey(const Key('findRoutesButton')));
     await tester.pumpAndSettle();
 
@@ -36,8 +47,8 @@ void main() {
   testWidgets('saving a journey shows it on Home', (tester) async {
     await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
     await tester.pumpAndSettle();
-    await tester.enterText(find.byKey(const Key('fromField')), 'Kalyan');
-    await tester.enterText(find.byKey(const Key('toField')), 'Andheri');
+    await pickPlace(tester, 'fromField', 'Kalyan', 'Kalyan');
+    await pickPlace(tester, 'toField', 'Andheri', 'Andheri');
     await tester.tap(find.byKey(const Key('findRoutesButton')));
     await tester.pumpAndSettle();
 
