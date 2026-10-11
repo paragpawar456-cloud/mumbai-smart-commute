@@ -1,5 +1,224 @@
 [
  {
+  "osm": "node/245677112",
+  "lat": 19.1624658,
+  "lon": 72.9562251,
+  "tags": {
+   "name": "Tatanagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/245677126",
+  "lat": 19.1661238,
+  "lon": 72.9488873,
+  "tags": {
+   "AND_a_nosr_p": "10005570",
+   "name": "Vaithara Nagar",
+   "place": "neighbourhood",
+   "source": "AND"
+  }
+ },
+ {
+  "osm": "node/245677226",
+  "lat": 19.165823,
+  "lon": 72.9546392,
+  "tags": {
+   "AND_a_nosr_p": "10005563",
+   "name": "LIC Housing Colony",
+   "place": "neighbourhood",
+   "source": "AND"
+  }
+ },
+ {
+  "osm": "node/245677699",
+  "lat": 19.1672245,
+  "lon": 72.9676413,
+  "tags": {
+   "name": "MHADA Colony",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/245677851",
+  "lat": 19.1658979,
+  "lon": 72.9619708,
+  "tags": {
+   "name": "Mahakali Nagar",
+   "place": "neighbourhood",
+   "source": "AND"
+  }
+ },
+ {
+  "osm": "node/245677900",
+  "lat": 19.1717774,
+  "lon": 72.9463808,
+  "tags": {
+   "name": "Keshav Pada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/245678670",
+  "lat": 19.1827053,
+  "lon": 72.9451907,
+  "tags": {
+   "name": "Veena Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/619110874",
+  "lat": 19.1633186,
+  "lon": 72.9928877,
+  "tags": {
+   "name": "Airoli Gaon",
+   "name:en": "Airoli Village",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/619117090",
+  "lat": 19.1741818,
+  "lon": 73.0204924,
+  "tags": {
+   "addr:street": "Dargah Rd.",
+   "name": "Amrut Nagar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/619117091",
+  "lat": 19.188536,
+  "lon": 73.0215253,
+  "tags": {
+   "name": "Mumbra",
+   "name:hi": "मुंब्रा",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/619122241",
+  "lat": 19.1943294,
+  "lon": 72.9701779,
+  "tags": {
+   "alt_name:ar": "ثين",
+   "name": "Thane",
+   "name:ar": "تاني",
+   "name:bho": "ठाणे",
+   "name:bn": "থানে",
+   "name:cs": "Tháné",
+   "name:de": "Thane",
+   "name:fa": "تانه",
+   "name:fr": "Thane",
+   "name:gu": "ઠાણે",
+   "name:he": "טאנה",
+   "name:hi": "ठाणे",
+   "name:hr": "Thane",
+   "name:hy": "Թհանա",
+   "name:ja": "ターネー",
+   "name:kn": "ಠಾಣೆ",
+   "name:ko": "타네",
+   "name:ml": "താനെ",
+   "name:mr": "ठाणे",
+   "name:pa": "ਠਾਣੇ",
+   "name:pnb": "تہانہ",
+   "name:ps": "تانی",
+   "name:ru": "Тхане",
+   "name:sa": "ठाणे",
+   "name:sr": "Тане",
+   "name:ta": "தானே",
+   "name:te": "ఠాణే",
+   "name:uk": "Тхане",
+   "name:ur": "تھانے",
+   "name:zh": "塔那",
+   "old_name": "Thana",
+   "place": "city",
+   "population": "1841488",
+   "wikidata": "Q207749",
+   "wikipedia": "en:Thane"
+  }
+ },
+ {
+  "osm": "node/823469290",
+  "lat": 19.2653323,
+  "lon": 73.1715834,
+  "tags": {
+   "name": "Ambivali",
+   "name:mr": "आंबिवली",
+   "place": "town",
+   "wikidata": "Q24929925",
+   "wikipedia": "en:Ambivali"
+  }
+ },
+ {
+  "osm": "node/969754622",
+  "lat": 19.2236329,
+  "lon": 73.1671515,
+  "tags": {
+   "alt_name": "Sindhunagar",
+   "name": "Ulhasnagar",
+   "name:ar": "أولهاس نجر",
+   "name:bg": "Улхаснагар",
+   "name:bn": "উলহাসনগর",
+   "name:fa": "اولاس نگر",
+   "name:hi": "उल्हासनगर",
+   "name:ja": "ウルハースナガル",
+   "name:kn": "ಉಲ್ಲಾಸನಗರ್",
+   "name:ml": "ഉല്ലാസ്നഗർ",
+   "name:mr": "उल्हासनगर",
+   "name:pa": "ਉਲਹਾਸਨਗਰ",
+   "name:ru": "Улхаснагар",
+   "name:sat": "ᱩᱞᱦᱟᱥᱱᱚᱜᱚᱨ",
+   "name:sd": "الھاس نگر",
+   "place": "city",
+   "population": "506937",
+   "population:date": "2011",
+   "wikidata": "Q460222",
+   "wikipedia": "en:Ulhasnagar"
+  }
+ },
+ {
+  "osm": "node/1200128716",
+  "lat": 19.2093907,
+  "lon": 73.1074174,
+  "tags": {
+   "name": "Milap Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/1235720470",
+  "lat": 19.2493501,
+  "lon": 72.9760694,
+  "tags": {
+   "name": "Patlipada",
+   "place": "neighbourhood",
+   "wikidata": "Q7145084",
+   "wikipedia": "en:Patlipada"
+  }
+ },
+ {
+  "osm": "node/1235720588",
+  "lat": 19.2659668,
+  "lon": 72.9847705,
+  "tags": {
+   "name": "Waghbil",
+   "place": "suburb",
+   "wikidata": "Q7959556",
+   "wikipedia": "en:Waghbil"
+  }
+ },
+ {
+  "osm": "node/1369351426",
+  "lat": 19.161645,
+  "lon": 73.0787257,
+  "tags": {
+   "name": "Nilaje",
+   "place": "suburb"
+  }
+ },
+ {
   "osm": "node/1600720971",
   "lat": 19.2396742,
   "lon": 73.1366482,
@@ -36,11 +255,161 @@
   }
  },
  {
+  "osm": "node/1640273577",
+  "lat": 19.1618994,
+  "lon": 72.9478998,
+  "tags": {
+   "name": "Nahur Gaon",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/1643429082",
+  "lat": 19.1900398,
+  "lon": 72.9488523,
+  "tags": {
+   "name": "Kisan Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/1643429085",
+  "lat": 19.2130251,
+  "lon": 72.9784852,
+  "tags": {
+   "name": "Majiwada",
+   "place": "suburb",
+   "wikidata": "Q560805",
+   "wikipedia": "en:Maj"
+  }
+ },
+ {
+  "osm": "node/1643429091",
+  "lat": 19.2168021,
+  "lon": 72.9564294,
+  "tags": {
+   "name": "Shivai Nagar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/1643429092",
+  "lat": 19.2155371,
+  "lon": 72.9627101,
+  "tags": {
+   "name": "Vartak Nagar",
+   "place": "suburb",
+   "wikidata": "Q28174147",
+   "wikipedia": "en:Vartak Nagar, Thane"
+  }
+ },
+ {
+  "osm": "node/1643429093",
+  "lat": 19.1985175,
+  "lon": 72.9509778,
+  "tags": {
+   "name": "Wagle Industrial Estate",
+   "place": "suburb",
+   "wikidata": "Q16928151",
+   "wikipedia": "en:Wagle Estate"
+  }
+ },
+ {
+  "osm": "node/1645992776",
+  "lat": 19.2840605,
+  "lon": 72.952905,
+  "tags": {
+   "name": "Bhayander Pada",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/1645992804",
+  "lat": 19.2757727,
+  "lon": 72.9612408,
+  "tags": {
+   "name": "Owale",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/1646957809",
+  "lat": 19.2036132,
+  "lon": 73.0015402,
+  "tags": {
+   "name": "Kharegaon",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/1646957812",
+  "lat": 19.2082421,
+  "lon": 73.010126,
+  "tags": {
+   "name": "Parsik Nagar",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/1646957826",
+  "lat": 19.2016457,
+  "lon": 73.0198312,
+  "tags": {
+   "name": "Reti Bandar",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/1651962252",
+  "lat": 19.2469649,
+  "lon": 72.9818412,
+  "tags": {
+   "name": "Brahmand Nagar",
+   "place": "suburb"
+  }
+ },
+ {
   "osm": "node/1682314548",
   "lat": 19.231469,
   "lon": 73.1512624,
   "tags": {
    "name": "Vitthalwadi",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/1728627015",
+  "lat": 19.1759862,
+  "lon": 72.9712275,
+  "tags": {
+   "name": "Hari Om Nagar",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/2440334021",
+  "lat": 19.1638829,
+  "lon": 73.0801184,
+  "tags": {
+   "name": "Nilaje Gaon",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/2441346137",
+  "lat": 19.2125658,
+  "lon": 73.0771186,
+  "tags": {
+   "name": "Kopar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/2441346305",
+  "lat": 19.2222373,
+  "lon": 73.0960108,
+  "tags": {
+   "name": "Thakurli",
    "place": "suburb"
   }
  },
@@ -54,12 +423,965 @@
   }
  },
  {
+  "osm": "node/2629924560",
+  "lat": 19.2111814,
+  "lon": 73.091129,
+  "tags": {
+   "is_in": "Kalyan",
+   "name": "Dombivli East",
+   "name:ja": "ドーンビヴリー",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/2629924561",
+  "lat": 19.2221822,
+  "lon": 73.0809274,
+  "tags": {
+   "is_in": "Dombivli",
+   "name": "Dombivli West",
+   "name:ja": "ドーンビヴリー",
+   "place": "suburb"
+  }
+ },
+ {
   "osm": "node/2629924562",
   "lat": 19.2525044,
   "lon": 73.1373763,
   "tags": {
    "name": "Khadakpada",
    "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/2629924563",
+  "lat": 19.2483851,
+  "lon": 73.104778,
+  "tags": {
+   "name": "Kon",
+   "place": "suburb",
+   "wikidata": "Q601809",
+   "wikipedia": "en:Kon, India"
+  }
+ },
+ {
+  "osm": "node/2629924564",
+  "lat": 19.2458783,
+  "lon": 73.1573918,
+  "tags": {
+   "name": "Shahad",
+   "name:en": "Shahad",
+   "name:hi": "शहाड",
+   "name:mr": "शहाड",
+   "place": "suburb",
+   "wikidata": "Q7461420",
+   "wikipedia": "en:Shahad"
+  }
+ },
+ {
+  "osm": "node/3232946141",
+  "lat": 19.1635438,
+  "lon": 72.9463214,
+  "tags": {
+   "addr:city": "Mulund (West)",
+   "name": "Sarvodaya Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/3878627345",
+  "lat": 19.2045692,
+  "lon": 72.9688267,
+  "tags": {
+   "junction": "yes",
+   "name": "Cadbury Junction",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/4131027887",
+  "lat": 19.1657976,
+  "lon": 72.955893,
+  "tags": {
+   "name": "Azad Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/4200619402",
+  "lat": 19.2341381,
+  "lon": 72.9455652,
+  "tags": {
+   "name": "Yeoor",
+   "place": "suburb",
+   "wikidata": "Q8052481",
+   "wikimedia_commons": "Category:Yeoor",
+   "wikipedia": "en:Yeoor"
+  }
+ },
+ {
+  "osm": "node/4306945141",
+  "lat": 19.1704719,
+  "lon": 72.9610447,
+  "tags": {
+   "name": "Mulund East",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/4306945142",
+  "lat": 19.1719717,
+  "lon": 72.9511956,
+  "tags": {
+   "name": "Mulund West",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/4377352883",
+  "lat": 19.226684,
+  "lon": 72.9691923,
+  "tags": {
+   "name": "Lokpuram Housing Society",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/5076459628",
+  "lat": 19.2538894,
+  "lon": 72.957838,
+  "tags": {
+   "name": "Pachwad",
+   "name:en": "Pachwad",
+   "name:hi": "पाचवड",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5177728190",
+  "lat": 19.2244184,
+  "lon": 73.0924165,
+  "tags": {
+   "name": "Railway Colony",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5177728630",
+  "lat": 19.2909323,
+  "lon": 73.0636739,
+  "tags": {
+   "name": "Kaneri",
+   "name:en": "Kaneri",
+   "name:hi": "काणेरी",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5177728631",
+  "lat": 19.2823043,
+  "lon": 73.1023407,
+  "tags": {
+   "name": "Bhadvad",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5177728632",
+  "lat": 19.2787193,
+  "lon": 73.0779648,
+  "tags": {
+   "name": "Temghar",
+   "name:en": "Temghar",
+   "name:hi": "टेमघर",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5177728687",
+  "lat": 19.2797523,
+  "lon": 73.0664634,
+  "tags": {
+   "name": "Fene",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5177728688",
+  "lat": 19.2843297,
+  "lon": 73.0467653,
+  "tags": {
+   "name": "Narpoli",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5177728689",
+  "lat": 19.2791446,
+  "lon": 73.0515718,
+  "tags": {
+   "name": "Kamatghar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5178016248",
+  "lat": 19.22921,
+  "lon": 73.0305862,
+  "tags": {
+   "name": "Dive Anjur",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/5178026689",
+  "lat": 19.2470586,
+  "lon": 73.0162096,
+  "tags": {
+   "name": "Kalher",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/5178026690",
+  "lat": 19.2567418,
+  "lon": 73.0382251,
+  "tags": {
+   "name": "Val",
+   "place": "village",
+   "wikidata": "Q24928405",
+   "wikipedia": "en:Val, Bhiwandi"
+  }
+ },
+ {
+  "osm": "node/5178026691",
+  "lat": 19.2563367,
+  "lon": 73.0277538,
+  "tags": {
+   "name": "Purna",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/5178026692",
+  "lat": 19.2472207,
+  "lon": 73.038783,
+  "tags": {
+   "name": "Gundavli",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/5178026693",
+  "lat": 19.2557593,
+  "lon": 73.046819,
+  "tags": {
+   "name": "Dapode",
+   "place": "village",
+   "wikidata": "Q24928408",
+   "wikipedia": "en:Dapode"
+  }
+ },
+ {
+  "osm": "node/5178026694",
+  "lat": 19.2394109,
+  "lon": 73.0429351,
+  "tags": {
+   "name": "Mankoli",
+   "place": "village",
+   "wikidata": "Q24928658",
+   "wikipedia": "en:Mankoli"
+  }
+ },
+ {
+  "osm": "node/5178045375",
+  "lat": 19.190974,
+  "lon": 73.093028,
+  "tags": {
+   "name": "Sagaon",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5178045376",
+  "lat": 19.1800304,
+  "lon": 73.0833292,
+  "tags": {
+   "name": "Gharivali",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/5178045377",
+  "lat": 19.1697955,
+  "lon": 73.0787158,
+  "tags": {
+   "name": "Katai",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5178045378",
+  "lat": 19.1686909,
+  "lon": 73.0866337,
+  "tags": {
+   "name": "Kole",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5453475996",
+  "lat": 19.1734229,
+  "lon": 72.9980972,
+  "tags": {
+   "name": "Digha Gaon",
+   "name:en": "Digha Village",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5453475997",
+  "lat": 19.1846328,
+  "lon": 72.9902315,
+  "tags": {
+   "name": "Vitawa Koliwada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5705458089",
+  "lat": 19.1722019,
+  "lon": 72.9632085,
+  "tags": {
+   "name": "Gavan Pada Koliwada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5746301555",
+  "lat": 19.1841024,
+  "lon": 72.9437657,
+  "tags": {
+   "name": "Model Town",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5923862578",
+  "lat": 19.2664447,
+  "lon": 72.96808,
+  "tags": {
+   "name": "Anand Nagar",
+   "place": "suburb",
+   "wikidata": "Q6374043",
+   "wikipedia": "en:Kasarvadavali"
+  }
+ },
+ {
+  "osm": "node/5923862579",
+  "lat": 19.2212069,
+  "lon": 72.9853105,
+  "tags": {
+   "name": "Kapur Bawadi",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5923862581",
+  "lat": 19.1896853,
+  "lon": 72.9696845,
+  "tags": {
+   "name": "Naupada",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5923862582",
+  "lat": 19.2032745,
+  "lon": 72.9587728,
+  "tags": {
+   "name": "Dnyaneshwar Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5923862692",
+  "lat": 19.1816061,
+  "lon": 72.9745495,
+  "tags": {
+   "name": "Parshi Wadi",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5923862693",
+  "lat": 19.1825941,
+  "lon": 72.9732621,
+  "tags": {
+   "name": "Kopri",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5923862735",
+  "lat": 19.1864165,
+  "lon": 72.9805196,
+  "tags": {
+   "name": "Chendani Koliwada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5924611701",
+  "lat": 19.1904471,
+  "lon": 72.9458284,
+  "tags": {
+   "name": "Shree Nagar",
+   "name:hi": "श्री नगर",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5924611734",
+  "lat": 19.1652605,
+  "lon": 72.9452866,
+  "tags": {
+   "addr:city": "Mumbai",
+   "name": "Gavni Pada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5924793791",
+  "lat": 19.1788853,
+  "lon": 72.953285,
+  "tags": {
+   "name": "Babu Jagjivan Ram Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5928769732",
+  "lat": 19.296127,
+  "lon": 72.996136,
+  "tags": {
+   "name": "Kharbao",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/5934004275",
+  "lat": 19.179578,
+  "lon": 72.9964178,
+  "tags": {
+   "name": "Digha",
+   "name:en": "Digha",
+   "name:hi": "दिघा",
+   "name:mr": "दिघा",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/5968928052",
+  "lat": 19.1618156,
+  "lon": 72.9462889,
+  "tags": {
+   "name": "Hira Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5969724488",
+  "lat": 19.1649666,
+  "lon": 72.9505706,
+  "tags": {
+   "name": "Indira Nagar No.2",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/5969983550",
+  "lat": 19.1645131,
+  "lon": 72.9523516,
+  "tags": {
+   "name": "Nane Pada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6005555745",
+  "lat": 19.2018735,
+  "lon": 72.9843457,
+  "tags": {
+   "name": "Kranti Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6005555746",
+  "lat": 19.2039882,
+  "lon": 72.9842657,
+  "tags": {
+   "name": "Kamgar Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6005555747",
+  "lat": 19.2046962,
+  "lon": 72.9813068,
+  "tags": {
+   "name": "Kolse Wadi",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6017562072",
+  "lat": 19.2081529,
+  "lon": 72.9542828,
+  "tags": {
+   "name": "Yashodhan Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6017562113",
+  "lat": 19.2121802,
+  "lon": 72.951166,
+  "tags": {
+   "name": "Lokmanya Nagar",
+   "name:hi": "लोकमान्य नगर",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/6229353243",
+  "lat": 19.1692533,
+  "lon": 72.953006,
+  "tags": {
+   "name": "Vijay Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6230922018",
+  "lat": 19.1717817,
+  "lon": 72.944423,
+  "tags": {
+   "name": "P&T Colony",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6230922809",
+  "lat": 19.1695877,
+  "lon": 72.9477167,
+  "tags": {
+   "name": "Ramghad Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6230922820",
+  "lat": 19.1663448,
+  "lon": 72.9469871,
+  "tags": {
+   "name": "Saint Pius Colony",
+   "name:en": "Saint Pius Colony",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6235398866",
+  "lat": 19.1776845,
+  "lon": 72.9643357,
+  "tags": {
+   "name": "Gandhi Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6235398867",
+  "lat": 19.1785386,
+  "lon": 72.966224,
+  "tags": {
+   "name": "Anand Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6235398868",
+  "lat": 19.1745887,
+  "lon": 72.9651296,
+  "tags": {
+   "name": "Neelam Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6786447317",
+  "lat": 19.18266,
+  "lon": 72.9471534,
+  "tags": {
+   "name": "Govardhan Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/6802412635",
+  "lat": 19.1883779,
+  "lon": 72.9635894,
+  "tags": {
+   "junction": "yes",
+   "name": "Teen Hath Naka",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/6802852056",
+  "lat": 19.2133655,
+  "lon": 72.9830253,
+  "tags": {
+   "name": "Majiwada Gaon",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/8493428351",
+  "lat": 19.2224897,
+  "lon": 72.9663424,
+  "tags": {
+   "name": "Vasant Vihar",
+   "name:hi": "वसन्त विहार",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8493428352",
+  "lat": 19.2223841,
+  "lon": 72.9615698,
+  "tags": {
+   "name": "Pawar Nagar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8494298798",
+  "lat": 19.2314156,
+  "lon": 72.9738156,
+  "tags": {
+   "name": "Manpada",
+   "place": "suburb",
+   "wikidata": "Q24928758",
+   "wikipedia": "en:Manpada"
+  }
+ },
+ {
+  "osm": "node/8500103222",
+  "lat": 19.2331096,
+  "lon": 72.9661446,
+  "tags": {
+   "name": "Kokanipada",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993895",
+  "lat": 19.2378887,
+  "lon": 72.9777931,
+  "tags": {
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8639993896",
+  "lat": 19.2389025,
+  "lon": 72.9932692,
+  "tags": {
+   "name": "Kolshet",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993897",
+  "lat": 19.2303889,
+  "lon": 72.9947761,
+  "tags": {
+   "name": "Kolshet Industrial Estate",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8639993898",
+  "lat": 19.2387309,
+  "lon": 72.9867048,
+  "tags": {
+   "name": "Sandoz Baug",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8639993899",
+  "lat": 19.2255786,
+  "lon": 72.9845436,
+  "tags": {
+   "name": "Dhokali",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993900",
+  "lat": 19.1967007,
+  "lon": 72.9645022,
+  "tags": {
+   "name": "Panch Pakadi",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993902",
+  "lat": 19.1925842,
+  "lon": 72.9779552,
+  "tags": {
+   "name": "Jambli Naka",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993903",
+  "lat": 19.205705,
+  "lon": 72.9749628,
+  "tags": {
+   "name": "Uthalsar",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8639993904",
+  "lat": 19.2812529,
+  "lon": 72.9696945,
+  "tags": {
+   "name": "Mogharpada",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993905",
+  "lat": 19.2742372,
+  "lon": 72.97106,
+  "tags": {
+   "name": "Koliwada",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8639993906",
+  "lat": 19.2623339,
+  "lon": 72.9722476,
+  "tags": {
+   "name": "Kavesar",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8639993907",
+  "lat": 19.2512778,
+  "lon": 72.9709464,
+  "tags": {
+   "name": "Dongaripada",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/8639993908",
+  "lat": 19.271637,
+  "lon": 72.9554451,
+  "tags": {
+   "name": "Gowniwada",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/8729085716",
+  "lat": 19.1632846,
+  "lon": 73.1127059,
+  "tags": {
+   "name": "Palava Phase 2",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/8729122917",
+  "lat": 19.1634468,
+  "lon": 73.0748889,
+  "tags": {
+   "name": "Palava Phase 1",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/8828165919",
+  "lat": 19.1953526,
+  "lon": 72.9646974,
+  "tags": {
+   "name": "Panchpakhadi",
+   "place": "locality",
+   "wikidata": "Q7122067",
+   "wikipedia": "en:Panchpakhadi"
+  }
+ },
+ {
+  "osm": "node/8954375074",
+  "lat": 19.1757787,
+  "lon": 72.9728796,
+  "tags": {
+   "name": "Hariom Nagar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/9214906431",
+  "lat": 19.2189174,
+  "lon": 72.973482,
+  "tags": {
+   "name": "Nalpada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/9214918805",
+  "lat": 19.2224264,
+  "lon": 72.9734726,
+  "tags": {
+   "name": "Tulsidham Circle",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/9214918879",
+  "lat": 19.2228836,
+  "lon": 72.9772666,
+  "tags": {
+   "name": "Tatvagyan Vidyapeeth Circle",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/9215039107",
+  "lat": 19.2276651,
+  "lon": 72.9762599,
+  "tags": {
+   "name": "Varun Garden",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/9254510147",
+  "lat": 19.2209334,
+  "lon": 72.9605605,
+  "tags": {
+   "name": "Birsa Munda Chowk",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/9291061277",
+  "lat": 19.2089483,
+  "lon": 72.9763144,
+  "tags": {
+   "name": "Gokul Nagar",
+   "place": "locality"
+  }
+ },
+ {
+  "osm": "node/9816512076",
+  "lat": 19.2164958,
+  "lon": 73.0919081,
+  "tags": {
+   "name": "Tai Pingale Chauk",
+   "place": "square"
+  }
+ },
+ {
+  "osm": "node/9913164136",
+  "lat": 19.1869207,
+  "lon": 73.0418444,
+  "tags": {
+   "name": "Diva",
+   "name:hi": "दिवा",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/10244138456",
+  "lat": 19.185558,
+  "lon": 72.9470569,
+  "tags": {
+   "name": "Vaishali Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10246521909",
+  "lat": 19.2219161,
+  "lon": 73.0584168,
+  "tags": {
+   "name": "Surai",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/10246521910",
+  "lat": 19.205078,
+  "lon": 73.0365407,
+  "tags": {
+   "name": "Alimgarh",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/10246521911",
+  "lat": 19.2115419,
+  "lon": 73.0398559,
+  "tags": {
+   "name": "Kolyachapada",
+   "place": "hamlet"
+  }
+ },
+ {
+  "osm": "node/10246521912",
+  "lat": 19.2133858,
+  "lon": 73.0517649,
+  "tags": {
+   "name": "Bharodi",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/10246521913",
+  "lat": 19.2151081,
+  "lon": 73.0393624,
+  "tags": {
+   "name": "Anjur",
+   "place": "village"
+  }
+ },
+ {
+  "osm": "node/10246522251",
+  "lat": 19.2132744,
+  "lon": 73.0747247,
+  "tags": {
+   "name": "Kopar Gaon",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10246522252",
+  "lat": 19.2051185,
+  "lon": 73.0826104,
+  "tags": {
+   "name": "Aayre Gaon",
+   "place": "neighbourhood"
   }
  },
  {
@@ -78,6 +1400,280 @@
   "tags": {
    "name": "Kalyan West",
    "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/10247312860",
+  "lat": 19.2148599,
+  "lon": 73.0910271,
+  "tags": {
+   "name": "Dombivli",
+   "place": "borough",
+   "wikidata": "Q3034709",
+   "wikimedia_commons": "Category:Dombivli",
+   "wikipedia": "en:Dombivli"
+  }
+ },
+ {
+  "osm": "node/10259407203",
+  "lat": 19.1765053,
+  "lon": 72.9545564,
+  "tags": {
+   "name": "Narayan Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10274958074",
+  "lat": 19.1975702,
+  "lon": 72.9752791,
+  "tags": {
+   "name": "Charai",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10275450995",
+  "lat": 19.2012025,
+  "lon": 72.9759604,
+  "tags": {
+   "name": "Manorpada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10275450998",
+  "lat": 19.2021398,
+  "lon": 72.976234,
+  "tags": {
+   "name": "Uthalsar",
+   "place": "suburb"
+  }
+ },
+ {
+  "osm": "node/10275476344",
+  "lat": 19.1782824,
+  "lon": 72.9544008,
+  "tags": {
+   "name": "Gautam Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10301025767",
+  "lat": 19.163259,
+  "lon": 72.949546,
+  "tags": {
+   "name": "Vaithara Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10303031446",
+  "lat": 19.1702337,
+  "lon": 72.9490739,
+  "tags": {
+   "name": "Rohidas Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10310414274",
+  "lat": 19.1714739,
+  "lon": 72.9501116,
+  "tags": {
+   "name": "Mirani Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10773578912",
+  "lat": 19.1672806,
+  "lon": 72.9411246,
+  "tags": {
+   "name": "Salpadevipada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10800031305",
+  "lat": 19.162134,
+  "lon": 72.9963398,
+  "tags": {
+   "name": "Airoli Sector 2",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10800031307",
+  "lat": 19.1659648,
+  "lon": 72.9971605,
+  "tags": {
+   "name": "Samta Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10800031425",
+  "lat": 19.1675761,
+  "lon": 73.0056846,
+  "tags": {
+   "name": "Yadav Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10800031426",
+  "lat": 19.1663296,
+  "lon": 73.0028951,
+  "tags": {
+   "name": "Chinchpada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/10801454951",
+  "lat": 19.1654581,
+  "lon": 73.0556273,
+  "tags": {
+   "name": "Mothi Desai Gaon",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/11271567832",
+  "lat": 19.1671556,
+  "lon": 72.9516858,
+  "tags": {
+   "name": "Jai Ambika Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/11271609123",
+  "lat": 19.1666955,
+  "lon": 72.9510196,
+  "tags": {
+   "name": "Indira Nagar No.1",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/11271628176",
+  "lat": 19.1646267,
+  "lon": 72.9495787,
+  "tags": {
+   "name": "Indira Nagar No.3",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12387619754",
+  "lat": 19.1786705,
+  "lon": 72.9456335,
+  "tags": {
+   "name": "Kadampada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12387623882",
+  "lat": 19.1822836,
+  "lon": 72.9413072,
+  "tags": {
+   "name": "Swapna Nagari",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12769498116",
+  "lat": 19.1858626,
+  "lon": 72.9415365,
+  "tags": {
+   "name": "Ganesh Pada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12857300303",
+  "lat": 19.1781482,
+  "lon": 72.9646252,
+  "tags": {
+   "name": "K.L. Colony",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12870698227",
+  "lat": 19.2047335,
+  "lon": 72.9483712,
+  "tags": {
+   "name": "Hanuman Nagar",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12875122172",
+  "lat": 19.1762586,
+  "lon": 72.9614302,
+  "tags": {
+   "name": "Howchet Wadi",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/12888784807",
+  "lat": 19.196529,
+  "lon": 72.9424922,
+  "tags": {
+   "name": "Varkhande Chawl",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/13967274018",
+  "lat": 19.1800811,
+  "lon": 72.9692173,
+  "tags": {
+   "name": "Kopri Colony",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/13967274020",
+  "lat": 19.2206953,
+  "lon": 72.9900688,
+  "tags": {
+   "name": "Balkum Pada",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/13967298170",
+  "lat": 19.2549288,
+  "lon": 72.9820704,
+  "tags": {
+   "name": "Hiranandani Estate",
+   "place": "suburb",
+   "wikidata": "Q5769388"
+  }
+ },
+ {
+  "osm": "node/13974951391",
+  "lat": 19.1873188,
+  "lon": 72.9786799,
+  "tags": {
+   "name": "Hari Dada Chawl",
+   "place": "neighbourhood"
+  }
+ },
+ {
+  "osm": "node/13975171635",
+  "lat": 19.1920075,
+  "lon": 72.9904819,
+  "tags": {
+   "name": "Budhaji Nagar",
+   "place": "neighbourhood"
   }
  },
  {
