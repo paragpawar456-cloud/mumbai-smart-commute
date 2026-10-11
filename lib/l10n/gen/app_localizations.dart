@@ -1735,7 +1735,7 @@ abstract class AppLocalizations {
   /// No description provided for @whereShort.
   ///
   /// In en, this message translates to:
-  /// **'Where'**
+  /// **'Track'**
   String get whereShort;
 
   /// No description provided for @youBoardHere.
@@ -1893,6 +1893,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Times from Central Railway\'s official timetable (from {date}). Some trains have changed since, so check the station display before you travel.'**
   String timetableSourceNote(String date);
+
+  /// No description provided for @homeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Trains, autos, buses and cabs in one place'**
+  String get homeSubtitle;
+
+  /// No description provided for @trackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Track your ride'**
+  String get trackTitle;
+
+  /// No description provided for @whereIsMyCab.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is my cab'**
+  String get whereIsMyCab;
+
+  /// No description provided for @exploreTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore'**
+  String get exploreTitle;
+
+  /// No description provided for @nextTrainsFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Next trains from {station}'**
+  String nextTrainsFrom(String station);
+
+  /// No description provided for @change.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get change;
+
+  /// No description provided for @allTrains.
+  ///
+  /// In en, this message translates to:
+  /// **'All trains'**
+  String get allTrains;
+
+  /// No description provided for @checkStationDisplay.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the station display before you travel'**
+  String get checkStationDisplay;
+
+  /// No description provided for @buildLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Build {number} · {sha}'**
+  String buildLabel(String number, String sha);
+
+  /// No description provided for @buildLabelLocal.
+  ///
+  /// In en, this message translates to:
+  /// **'Local build'**
+  String get buildLabelLocal;
+
+  /// No description provided for @whereIsMyCabTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is my cab'**
+  String get whereIsMyCabTitle;
+
+  /// No description provided for @liveCabsInApps.
+  ///
+  /// In en, this message translates to:
+  /// **'Live cars and autos near you are shown only inside the Uber, Ola and Rapido apps. Tap one to see them there.'**
+  String get liveCabsInApps;
+
+  /// No description provided for @seeLiveInApp.
+  ///
+  /// In en, this message translates to:
+  /// **'See live cars in the app'**
+  String get seeLiveInApp;
+
+  /// No description provided for @taxiStandsNear.
+  ///
+  /// In en, this message translates to:
+  /// **'Taxi stands near {place}'**
+  String taxiStandsNear(String place);
+
+  /// No description provided for @nearestFarAway.
+  ///
+  /// In en, this message translates to:
+  /// **'Nearest ones, a bit farther away'**
+  String get nearestFarAway;
+
+  /// No description provided for @noTaxiStands.
+  ///
+  /// In en, this message translates to:
+  /// **'No taxi stands mapped near here yet.'**
+  String get noTaxiStands;
+
+  /// No description provided for @kmAway.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km away'**
+  String kmAway(String km);
+
+  /// No description provided for @fromPlace.
+  ///
+  /// In en, this message translates to:
+  /// **'from {place}'**
+  String fromPlace(String place);
 }
 
 class _AppLocalizationsDelegate

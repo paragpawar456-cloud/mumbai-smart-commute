@@ -7,6 +7,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import '../../../shared/widgets/source_badge.dart';
 import '../../../shared/widgets/timetable_note.dart';
+import '../../../shared/widgets/train_tag.dart';
 import '../../lastmile/data/lastmile_providers.dart';
 import '../../lastmile/domain/lastmile_engine.dart';
 import '../../lastmile/domain/lastmile_models.dart';
@@ -71,15 +72,40 @@ class _TrainOptionState extends ConsumerState<TrainOptionScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Row(children: [
-            ModeChain(option: option),
-            const Spacer(),
-            if (option.minutes != null)
-              Text(l.minutesBig(option.minutes!),
-                  style: text.headlineSmall?.copyWith(fontWeight: FontWeight.w700)),
-          ]),
-          const SizedBox(height: 4),
-          Text(optionFare(l, option), style: text.titleSmall),
+          Container(
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              gradient: AppColors.headerGradient,
+              borderRadius: BorderRadius.circular(22),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(children: [
+                  Container(
+                    padding: const EdgeInsets.all(6),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: ModeChain(option: option),
+                  ),
+                  const Spacer(),
+                  if (option.minutes != null)
+                    Text(l.minutesBig(option.minutes!),
+                        style: text.headlineMedium?.copyWith(color: Colors.white)),
+                ]),
+                const SizedBox(height: 12),
+                Text('${plan.from.name}  →  ${plan.to.name}',
+                    maxLines: 2,
+                    style: text.titleSmall?.copyWith(color: Colors.white)),
+                const SizedBox(height: 2),
+                Text(optionFare(l, option),
+                    style: text.bodyMedium
+                        ?.copyWith(color: Colors.white.withValues(alpha: 0.85))),
+              ],
+            ),
+          ),
           const SizedBox(height: 16),
           if (plan.firstMile?.result != null)
             _RoadStep(
@@ -172,21 +198,22 @@ class _StationChoice extends StatelessWidget {
   Widget build(BuildContext context) {
     final lang = Localizations.localeOf(context).languageCode;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(4, 0, 4, 8),
-      child: Wrap(
-        spacing: 6,
-        runSpacing: 4,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: [
+      padding: const EdgeInsets.fromLTRB(0, 2, 0, 12),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(children: [
           Text(label, style: Theme.of(context).textTheme.labelLarge),
           for (final s in choices)
-            ChoiceChip(
-              key: Key('station-${s.id}'),
-              label: Text(s.name(lang)),
-              selected: s.id == selectedId,
-              onSelected: (_) => onSelected(s.id),
+            Padding(
+              padding: const EdgeInsets.only(left: 8),
+              child: ChoiceChip(
+                key: Key('station-${s.id}'),
+                label: Text(s.name(lang)),
+                selected: s.id == selectedId,
+                onSelected: (_) => onSelected(s.id),
+              ),
             ),
-        ],
+        ]),
       ),
     );
   }
@@ -222,24 +249,43 @@ class _RoadStep extends StatelessWidget {
             ? l.fareFrom(auto.fare!.amount)
             : l.fareAbout(auto.fare!.amount),
     ].join(' · ');
+    final color = isWalk ? AppColors.walk : AppColors.auto;
     return Card(
+      margin: const EdgeInsets.only(bottom: 10),
       child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Row(children: [
-          Icon(isWalk ? Icons.directions_walk : Icons.electric_rickshaw,
-              color: isWalk ? AppColors.walk : AppColors.auto, size: 28),
+        padding: const EdgeInsets.all(14),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          CircleAvatar(
+            radius: 22,
+            backgroundColor: color.withValues(alpha: 0.12),
+            child: Icon(
+                isWalk ? Icons.directions_walk_rounded : Icons.electric_rickshaw_rounded,
+                color: color),
+          ),
           const SizedBox(width: 12),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(title, style: text.titleSmall),
-                Text(details, style: text.bodySmall),
+                const SizedBox(height: 2),
+                Text(details,
+                    style: text.bodySmall?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurfaceVariant)),
+                if (!isWalk) ...[
+                  const SizedBox(height: 8),
+                  FilledButton.tonalIcon(
+                    style: FilledButton.styleFrom(
+                        minimumSize: const Size(0, 40),
+                        padding: const EdgeInsets.symmetric(horizontal: 14)),
+                    onPressed: onWhere,
+                    icon: const Icon(Icons.near_me_rounded, size: 18),
+                    label: Text(l.whereIsMyAuto),
+                  ),
+                ],
               ],
             ),
           ),
-          if (!isWalk)
-            TextButton(onPressed: onWhere, child: Text(l.whereIsMyAuto)),
         ]),
       ),
     );
@@ -286,46 +332,93 @@ class _RunTile extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final lang = Localizations.localeOf(context).languageCode;
     final text = Theme.of(context).textTheme;
+    final scheme = Theme.of(context).colorScheme;
     final inMin = run.departure - (now.hour * 60 + now.minute);
     final fast = run.trip.trainType == 'fast';
+    final ride = run.arrival - run.departure;
     return Card(
-      margin: const EdgeInsets.only(bottom: 8),
+      key: const Key('runTile'),
+      margin: const EdgeInsets.only(bottom: 10),
+      clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
         child: Padding(
-          padding: const EdgeInsets.all(12),
-          child: Row(children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(formatMinutes(run.departure),
-                    style: text.headlineSmall?.copyWith(fontWeight: FontWeight.w700)),
-                Text(inMin <= 0 ? l.departingNow : l.inMinutes(inMin),
-                    style: text.labelMedium?.copyWith(
-                        color: inMin <= 5 ? AppColors.bus : null)),
-              ],
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    l.towards(trainHeadsign(run.trip, pack, run.terminusId, lang)),
-                    style: text.titleSmall,
-                  ),
-                  Text([
-                    fast ? l.fastTrain : l.slowTrain,
-                    if (run.trip.ac) l.acTrain,
-                    if (run.trip.ladiesSpecial) l.ladiesTrain,
-                    l.reachesAt(formatMinutes(run.arrival)),
-                  ].join(' · '), style: text.bodySmall),
-                ],
+          padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+          child: Column(children: [
+            Row(children: [
+              Expanded(
+                child: Text(
+                  l.towards(trainHeadsign(run.trip, pack, run.terminusId, lang)),
+                  style: text.titleSmall,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
-            ),
-            Column(children: [
-              const Icon(Icons.gps_fixed, color: AppColors.localTrain),
-              Text(l.whereShort, style: text.labelSmall),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: (inMin <= 5 ? AppColors.bus : scheme.primary)
+                      .withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(inMin <= 0 ? l.departingNow : l.inMinutes(inMin),
+                    style: text.labelMedium?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: inMin <= 5 ? AppColors.bus : scheme.primary)),
+              ),
+            ]),
+            const SizedBox(height: 10),
+            Row(children: [
+              Text(formatMinutes(run.departure),
+                  style: text.titleLarge?.copyWith(fontWeight: FontWeight.w700)),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Column(children: [
+                    Text(l.minutesShort(ride),
+                        style: text.labelSmall
+                            ?.copyWith(color: scheme.onSurfaceVariant)),
+                    Row(children: [
+                      const Icon(Icons.circle, size: 8, color: AppColors.localTrain),
+                      Expanded(
+                          child: Container(height: 2, color: AppColors.localTrain)),
+                      const Icon(Icons.train_rounded,
+                          size: 16, color: AppColors.localTrain),
+                      Expanded(
+                          child: Container(height: 2, color: AppColors.localTrain)),
+                      const Icon(Icons.circle, size: 8, color: AppColors.localTrain),
+                    ]),
+                  ]),
+                ),
+              ),
+              Text(formatMinutes(run.arrival),
+                  style: text.titleLarge?.copyWith(fontWeight: FontWeight.w700)),
+            ]),
+            const SizedBox(height: 10),
+            Row(children: [
+              Expanded(
+                child: Wrap(spacing: 6, runSpacing: 4, children: [
+                  if (trainOrigin(run.trip,
+                          pack.stationById[run.stops[run.boardIndex].stationId]
+                                  ?.nameEn ??
+                              '') case final origin?)
+                    Text(l.fromPlace(origin),
+                        style: text.labelSmall
+                            ?.copyWith(color: scheme.onSurfaceVariant)),
+                  TrainTag(
+                    label: fast ? l.fastTrain : l.slowTrain,
+                    color: fast ? AppColors.taxi : AppColors.localTrain,
+                  ),
+                  if (run.trip.ac) TrainTag(label: l.acTrain, color: AppColors.metro),
+                  if (run.trip.ladiesSpecial)
+                    TrainTag(label: l.ladiesTrain, color: AppColors.bus),
+                ]),
+              ),
+              TextButton.icon(
+                onPressed: onTap,
+                icon: const Icon(Icons.gps_fixed_rounded, size: 18),
+                label: Text(l.whereShort),
+              ),
             ]),
           ]),
         ),

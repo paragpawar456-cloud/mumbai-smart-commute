@@ -297,3 +297,11 @@ String trainHeadsign(Trip trip, DataPack pack, String terminusId, String lang) {
   }
   return h;
 }
+
+/// Where a train started, when that is not [boardingStationEn] itself
+/// (e.g. "Ambernath" for a train boarded at Kalyan); else null.
+String? trainOrigin(Trip trip, String boardingStationEn) {
+  final o = trip.originName;
+  if (o == null || o.toLowerCase() == boardingStationEn.toLowerCase()) return null;
+  return o;
+}

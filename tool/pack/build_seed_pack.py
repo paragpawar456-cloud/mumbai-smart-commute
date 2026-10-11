@@ -18,6 +18,7 @@ OSM = json.load(open(os.path.join(ROOT, 'data/osm/rail_stations.json')))
 OSM_META = json.load(open(os.path.join(ROOT, 'data/osm/_meta.json')))
 OSM_PLACES = {r['osm']: r for r in json.load(open(os.path.join(ROOT, 'data/osm/kalyan_places.json')))}
 OSM_PICKUPS = json.load(open(os.path.join(ROOT, 'data/osm/kalyan_pickup_points.json')))
+OSM_BUS_STOPS = json.load(open(os.path.join(ROOT, 'data/osm/kalyan_bus_stops.json')))
 
 # station_id -> OSM element id (picked by hand where a name has several nodes).
 CR_MAIN = [
@@ -165,6 +166,26 @@ for i, r in enumerate(OSM_PICKUPS, 1):
         'verified_at': '', 'source_id': 'osm',
     })
 
+# Bus stops and bus stations mapped in OpenStreetMap (Thane to Kalyan). Stops
+# only: no routes or times, since KDMT/TMT publish no open timetable.
+bus_stops = []
+_seen_stops = set()
+for r in OSM_BUS_STOPS:
+    sid = f'OSM-{r["osm"].replace("/", "-")}'
+    if sid in _seen_stops:
+        continue
+    _seen_stops.add(sid)
+    t = r['tags']
+    bus_stops.append({
+        'stop_id': sid,
+        'name_en': t.get('name:en') or t.get('name') or
+                   ('Bus station' if t.get('amenity') == 'bus_station' else 'Bus stop'),
+        'name_mr': t.get('name:mr', ''),
+        'lat': round(r['lat'], 6), 'lng': round(r['lon'], 6),
+        'operators': t.get('operator', '') or t.get('network', ''),
+        'source_id': 'osm',
+    })
+
 # Central Railway Main Line trains, made by tool/pack/import_cr_timetable.py
 # from the official pocket timetable PDFs in data/timetables/cr.
 _TT_PATH = os.path.join(ROOT, 'data/timetables/cr/cr_main_timetable.json')
@@ -185,7 +206,7 @@ pack = {
     'stop_times': TIMETABLE['stop_times'],
     'places': places,
     'pickup_points': pickups,
-    'bus_stops': [],
+    'bus_stops': bus_stops,
     'bus_routes': [],
     'fare_rules': FARE_RULES,
     'providers': [{k: v for k, v in p.items() if k not in ('active', 'source_id')} for p in PROVIDERS],
@@ -226,8 +247,9 @@ write_csv('FareRules.csv', ['fare_rule_id', 'mode', 'region', 'min_fare_inr', 'm
                                    'effective_from', 'source_id')] for f in FARE_RULES])
 write_csv('TransportProviders.csv', list(PROVIDERS[0].keys()),
           [['TRUE' if v is True else v for v in p.values()] for p in PROVIDERS])
-write_csv('BusStops.csv', ['stop_id', 'name_en', 'name_mr', 'lat', 'lng', 'operators', 'source_id'], [])
+write_csv('BusStops.csv', ['stop_id', 'name_en', 'name_mr', 'lat', 'lng', 'operators', 'source_id'],
+          [list(b.values()) for b in bus_stops])
 write_csv('BusRoutes.csv', ['bus_route_id', 'operator', 'route_number', 'name_en', 'stop_sequence',
                             'frequency_note', 'first_departure', 'last_departure', 'source_id'], [])
-print(f"{len(places)} places, {len(pickups)} pickup points, {len(FARE_RULES)} fare rules")
+print(f"{len(places)} places, {len(pickups)} pickup points, {len(bus_stops)} bus stops, {len(FARE_RULES)} fare rules")
 print(f"{len(stations)} stations, {len(lines)} lines -> assets/data/seed_pack.json")

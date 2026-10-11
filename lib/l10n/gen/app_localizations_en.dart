@@ -950,7 +950,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get whereIsMyTrain => 'Where is my train';
 
   @override
-  String get whereShort => 'Where';
+  String get whereShort => 'Track';
 
   @override
   String get youBoardHere => 'You board here';
@@ -1078,5 +1078,71 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String timetableSourceNote(String date) {
     return 'Times from Central Railway\'s official timetable (from $date). Some trains have changed since, so check the station display before you travel.';
+  }
+
+  @override
+  String get homeSubtitle => 'Trains, autos, buses and cabs in one place';
+
+  @override
+  String get trackTitle => 'Track your ride';
+
+  @override
+  String get whereIsMyCab => 'Where is my cab';
+
+  @override
+  String get exploreTitle => 'Explore';
+
+  @override
+  String nextTrainsFrom(String station) {
+    return 'Next trains from $station';
+  }
+
+  @override
+  String get change => 'Change';
+
+  @override
+  String get allTrains => 'All trains';
+
+  @override
+  String get checkStationDisplay =>
+      'Check the station display before you travel';
+
+  @override
+  String buildLabel(String number, String sha) {
+    return 'Build $number · $sha';
+  }
+
+  @override
+  String get buildLabelLocal => 'Local build';
+
+  @override
+  String get whereIsMyCabTitle => 'Where is my cab';
+
+  @override
+  String get liveCabsInApps =>
+      'Live cars and autos near you are shown only inside the Uber, Ola and Rapido apps. Tap one to see them there.';
+
+  @override
+  String get seeLiveInApp => 'See live cars in the app';
+
+  @override
+  String taxiStandsNear(String place) {
+    return 'Taxi stands near $place';
+  }
+
+  @override
+  String get nearestFarAway => 'Nearest ones, a bit farther away';
+
+  @override
+  String get noTaxiStands => 'No taxi stands mapped near here yet.';
+
+  @override
+  String kmAway(String km) {
+    return '$km km away';
+  }
+
+  @override
+  String fromPlace(String place) {
+    return 'from $place';
   }
 }
