@@ -1089,6 +1089,426 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{minutes} min ago'**
   String reportAgo(int minutes);
+
+  /// No description provided for @alertSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Official source'**
+  String get alertSource;
+
+  /// No description provided for @adminTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get adminTitle;
+
+  /// No description provided for @adminNoAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is for admins and moderators.'**
+  String get adminNoAccess;
+
+  /// No description provided for @adminOverview.
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get adminOverview;
+
+  /// No description provided for @adminReports.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get adminReports;
+
+  /// No description provided for @adminUsers.
+  ///
+  /// In en, this message translates to:
+  /// **'Users'**
+  String get adminUsers;
+
+  /// No description provided for @adminAlerts.
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts'**
+  String get adminAlerts;
+
+  /// No description provided for @adminAudit.
+  ///
+  /// In en, this message translates to:
+  /// **'Audit log'**
+  String get adminAudit;
+
+  /// No description provided for @adminSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get adminSaved;
+
+  /// No description provided for @adminUsersActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Active users'**
+  String get adminUsersActive;
+
+  /// No description provided for @adminUsersDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled'**
+  String get adminUsersDisabled;
+
+  /// No description provided for @adminUsersDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Deleted accounts'**
+  String get adminUsersDeleted;
+
+  /// No description provided for @adminAdmins.
+  ///
+  /// In en, this message translates to:
+  /// **'Admins'**
+  String get adminAdmins;
+
+  /// No description provided for @adminModerators.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderators'**
+  String get adminModerators;
+
+  /// No description provided for @adminReportsPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports waiting for review'**
+  String get adminReportsPending;
+
+  /// No description provided for @adminReportsLive.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports visible now'**
+  String get adminReportsLive;
+
+  /// No description provided for @adminAlertsActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts in force'**
+  String get adminAlertsActive;
+
+  /// No description provided for @adminDataPackVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Data pack version'**
+  String get adminDataPackVersion;
+
+  /// No description provided for @adminDataPackPublished.
+  ///
+  /// In en, this message translates to:
+  /// **'Last published'**
+  String get adminDataPackPublished;
+
+  /// No description provided for @adminRoadDistance.
+  ///
+  /// In en, this message translates to:
+  /// **'Road distances (openrouteservice)'**
+  String get adminRoadDistance;
+
+  /// No description provided for @adminOn.
+  ///
+  /// In en, this message translates to:
+  /// **'On'**
+  String get adminOn;
+
+  /// No description provided for @adminOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get adminOff;
+
+  /// No description provided for @adminDataHealth.
+  ///
+  /// In en, this message translates to:
+  /// **'Data sources'**
+  String get adminDataHealth;
+
+  /// No description provided for @adminNoSync.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing published from the Sheet yet.'**
+  String get adminNoSync;
+
+  /// No description provided for @adminLastSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Last success: {when}'**
+  String adminLastSuccess(String when);
+
+  /// No description provided for @adminAcceptedRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'{accepted} rows accepted, {rejected} rejected'**
+  String adminAcceptedRejected(int accepted, int rejected);
+
+  /// No description provided for @adminNoPending.
+  ///
+  /// In en, this message translates to:
+  /// **'No reports waiting for review.'**
+  String get adminNoPending;
+
+  /// No description provided for @adminReporter.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent by account {uid}'**
+  String adminReporter(String uid);
+
+  /// No description provided for @adminApprove.
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get adminApprove;
+
+  /// No description provided for @adminReject.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get adminReject;
+
+  /// No description provided for @adminSearchUsers.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by email or name'**
+  String get adminSearchUsers;
+
+  /// No description provided for @adminDisable.
+  ///
+  /// In en, this message translates to:
+  /// **'Disable account'**
+  String get adminDisable;
+
+  /// No description provided for @adminEnable.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable account'**
+  String get adminEnable;
+
+  /// No description provided for @adminMakeRole.
+  ///
+  /// In en, this message translates to:
+  /// **'Make {role}'**
+  String adminMakeRole(String role);
+
+  /// No description provided for @adminNewAlert.
+  ///
+  /// In en, this message translates to:
+  /// **'New alert'**
+  String get adminNewAlert;
+
+  /// No description provided for @adminNoAlerts.
+  ///
+  /// In en, this message translates to:
+  /// **'No alerts yet.'**
+  String get adminNoAlerts;
+
+  /// No description provided for @adminEndAlert.
+  ///
+  /// In en, this message translates to:
+  /// **'End now'**
+  String get adminEndAlert;
+
+  /// No description provided for @adminEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Ended'**
+  String get adminEnded;
+
+  /// No description provided for @adminRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get adminRequired;
+
+  /// No description provided for @adminAlertScope.
+  ///
+  /// In en, this message translates to:
+  /// **'Applies to'**
+  String get adminAlertScope;
+
+  /// No description provided for @adminAlertScopeHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'ALL, a line code (CR-MAIN) or a station code (KYN)'**
+  String get adminAlertScopeHelp;
+
+  /// No description provided for @adminAlertTitleEn.
+  ///
+  /// In en, this message translates to:
+  /// **'Title (English)'**
+  String get adminAlertTitleEn;
+
+  /// No description provided for @adminAlertTitleMr.
+  ///
+  /// In en, this message translates to:
+  /// **'Title (Marathi, optional)'**
+  String get adminAlertTitleMr;
+
+  /// No description provided for @adminAlertTitleHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Title (Hindi, optional)'**
+  String get adminAlertTitleHi;
+
+  /// No description provided for @adminAlertBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Details (optional)'**
+  String get adminAlertBody;
+
+  /// No description provided for @adminAlertSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Official announcement link'**
+  String get adminAlertSource;
+
+  /// No description provided for @adminAlertSourceHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Must start with https:// and point to the official notice'**
+  String get adminAlertSourceHelp;
+
+  /// No description provided for @adminAlertStarts.
+  ///
+  /// In en, this message translates to:
+  /// **'Starts'**
+  String get adminAlertStarts;
+
+  /// No description provided for @adminAlertEnds.
+  ///
+  /// In en, this message translates to:
+  /// **'Ends'**
+  String get adminAlertEnds;
+
+  /// No description provided for @adminAlertUntilEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Until ended'**
+  String get adminAlertUntilEnded;
+
+  /// No description provided for @adminPublishAlert.
+  ///
+  /// In en, this message translates to:
+  /// **'Publish alert'**
+  String get adminPublishAlert;
+
+  /// No description provided for @roleAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'You are an admin'**
+  String get roleAdmin;
+
+  /// No description provided for @roleModerator.
+  ///
+  /// In en, this message translates to:
+  /// **'You are a moderator'**
+  String get roleModerator;
+
+  /// No description provided for @consentPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'We have a privacy notice that explains what this app keeps about you. Please read it and accept.'**
+  String get consentPrompt;
+
+  /// No description provided for @consentRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Read'**
+  String get consentRead;
+
+  /// No description provided for @consentAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get consentAccept;
+
+  /// No description provided for @privacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy notice'**
+  String get privacyTitle;
+
+  /// No description provided for @privacyVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Version {version}'**
+  String privacyVersion(String version);
+
+  /// No description provided for @privacyCollectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What we keep'**
+  String get privacyCollectTitle;
+
+  /// No description provided for @privacyCollectBody.
+  ///
+  /// In en, this message translates to:
+  /// **'If you sign in: your email and name from your sign-in, your language, saved routes, the reports you send, when your account was created and the last day you used it. Without an account, nothing about you is kept on our server.'**
+  String get privacyCollectBody;
+
+  /// No description provided for @privacyNotCollectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What we never keep'**
+  String get privacyNotCollectTitle;
+
+  /// No description provided for @privacyNotCollectBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your password (Google Firebase handles sign-in), your location history, contacts or phone number. There are no ads, no tracking and we never sell data.'**
+  String get privacyNotCollectBody;
+
+  /// No description provided for @privacyLocationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get privacyLocationTitle;
+
+  /// No description provided for @privacyLocationBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone\'s location is read only when you tap \"My location\" and stays on the phone. When you choose a destination in the last-mile finder while signed in, the station and destination points are sent to our server to look up the road distance.'**
+  String get privacyLocationBody;
+
+  /// No description provided for @privacyReportsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports you send'**
+  String get privacyReportsTitle;
+
+  /// No description provided for @privacyReportsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Other people see the report, its place (to about 10 metres) and its time, never your name or account. Moderators can see which account sent a report, only to deal with abuse. Reports disappear when they expire.'**
+  String get privacyReportsBody;
+
+  /// No description provided for @privacyRightsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your choices'**
+  String get privacyRightsTitle;
+
+  /// No description provided for @privacyRightsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete account (Profile) removes your email, name and saved routes and closes your sign-in. Reports you sent stay for other commuters but are no longer linked to you. You can use the app without an account.'**
+  String get privacyRightsBody;
+
+  /// No description provided for @privacyThirdPartyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Services we rely on'**
+  String get privacyThirdPartyTitle;
+
+  /// No description provided for @privacyThirdPartyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button.'**
+  String get privacyThirdPartyBody;
 }
 
 class _AppLocalizationsDelegate

@@ -27,7 +27,7 @@ Tests (2026-10-11): `flutter analyze` clean · `flutter test` 26 passed · `back
 - OpenStreetMap has **0 bus stops** and **2 taxi/auto points** tagged within ~2.5 km of Kalyan station (extract of 2026-10-11). Last-mile data for Kalyan must come mainly from admin-verified entries and community reports, not OSM.
 - Correction: "Yogidham" **is** in OpenStreetMap (residential area, way/1413460408, plus "Yogidham Phase 3", way/1411150860). An earlier version of this file said it wasn't; that was wrong. Both are now seeded as places.
 
-## Phase 5: Last-mile finder — in review
+## Phase 5: Last-mile finder — done (PR #3, merged)
 
 | Item | Result |
 |---|---|
@@ -52,4 +52,21 @@ Tests (2026-10-11): `flutter analyze` clean · `flutter test` 35 passed · `back
 
 - [ ] Enter the official CR timetable for the pilot corridor (owner or helper, via DATA_ENTRY.md)
 - [ ] Check the seeded auto/taxi fares against the official MMRTA tariff card
-- [ ] Phase 6: admin dashboard (users, reports moderation, data status)
+- [ ] Phase 7: hardening (load test against Apps Script quotas, accessibility pass, offline checks)
+- [ ] Phase 8: delivery (signed APK, tester guide, handover)
+
+## Phase 6: Accounts and admin — in review
+
+| Item | Result |
+|---|---|
+| Admin section in the app (Profile → Admin), shown only when the server says you are admin or moderator | Done, widget-tested with a fake server |
+| Overview: users by status and role, reports waiting, alerts in force, data pack version and publish time, data source health, road distance on/off | Done, tested |
+| Reports moderation (approve/reject) for moderators and admins | Done, tested |
+| Users: search, disable/enable, change role (never your own) | Done, tested |
+| Service alerts: admins publish official announcements with an https source link; shown on Home and on affected stations, labelled Official | Done, tested |
+| Audit log viewer, newest first | Done, tested |
+| Privacy notice (en/mr/hi), consent recorded on the server per notice version | Done, tested |
+| Every admin action rejected for normal users and moderators on the server, and for signed-out calls | Done, tested for all 8 admin actions |
+| Fixed: two cache keys (report lists, alerts) could repeat within the same millisecond and serve a stale list for up to a minute | Fixed, tested |
+
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 42 passed · `backend npm test` 31 passed.

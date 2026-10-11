@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/data/data_source_label.dart';
 import '../../../l10n/gen/app_localizations.dart';
+import '../../alerts/alerts.dart';
 import '../../../shared/widgets/info_state.dart';
 import '../../../shared/widgets/source_badge.dart';
 import '../data/transit_providers.dart';
@@ -54,6 +55,7 @@ class StationScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          AlertBanners(where: (a) => a.appliesToStation(pack, stationId)),
           Text(l.linesAtStation, style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
           Wrap(spacing: 8, runSpacing: 8, children: [

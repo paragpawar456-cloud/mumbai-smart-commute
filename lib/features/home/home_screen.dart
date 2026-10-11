@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/theme/app_colors.dart';
 import '../../l10n/gen/app_localizations.dart';
+import '../alerts/alerts.dart';
 import '../saved/saved_journeys_list.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -45,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          const AlertBanners(),
           Text(l.homeGreeting, style: text.headlineSmall),
           const SizedBox(height: 12),
           Card(

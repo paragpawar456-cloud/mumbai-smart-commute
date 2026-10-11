@@ -36,6 +36,13 @@ function routes_() {
   moderateReport:  { auth: true,  roles: ['moderator', 'admin'], rate: [60, 60], write: true, handler: handleModerateReport },
   adminListUsers:  { auth: true,  roles: ['admin'], rate: [60, 60], handler: handleAdminListUsers },
   adminSetUserStatus: { auth: true, roles: ['admin'], rate: [30, 60], write: true, handler: handleAdminSetUserStatus },
+  adminSetUserRole: { auth: true, roles: ['admin'], rate: [30, 60], write: true, handler: handleAdminSetUserRole },
+  adminOverview:   { auth: true,  roles: ['admin'], rate: [60, 60], handler: handleAdminOverview },
+  adminListAudit:  { auth: true,  roles: ['admin'], rate: [60, 60], handler: handleAdminListAudit },
+  adminListAlerts: { auth: true,  roles: ['admin'], rate: [60, 60], handler: handleAdminListAlerts },
+  adminSaveAlert:  { auth: true,  roles: ['admin'], rate: [30, 60], write: true, handler: handleAdminSaveAlert },
+  adminEndAlert:   { auth: true,  roles: ['admin'], rate: [30, 60], write: true, handler: handleAdminEndAlert },
+  getAlerts:       { auth: false, rate: [600, 60], handler: handleGetAlerts },
   };
 }
 

@@ -590,4 +590,233 @@ class AppLocalizationsMr extends AppLocalizations {
   String reportAgo(int minutes) {
     return '$minutes मिनिटांपूर्वी';
   }
+
+  @override
+  String get alertSource => 'अधिकृत स्रोत';
+
+  @override
+  String get adminTitle => 'प्रशासन';
+
+  @override
+  String get adminNoAccess => 'हा विभाग प्रशासक आणि मॉडरेटरसाठी आहे.';
+
+  @override
+  String get adminOverview => 'आढावा';
+
+  @override
+  String get adminReports => 'सूचना';
+
+  @override
+  String get adminUsers => 'वापरकर्ते';
+
+  @override
+  String get adminAlerts => 'सूचना फलक';
+
+  @override
+  String get adminAudit => 'नोंदवही';
+
+  @override
+  String get adminSaved => 'जतन केले';
+
+  @override
+  String get adminUsersActive => 'सक्रिय वापरकर्ते';
+
+  @override
+  String get adminUsersDisabled => 'बंद केलेले';
+
+  @override
+  String get adminUsersDeleted => 'हटवलेली खाती';
+
+  @override
+  String get adminAdmins => 'प्रशासक';
+
+  @override
+  String get adminModerators => 'मॉडरेटर';
+
+  @override
+  String get adminReportsPending => 'तपासणीसाठी थांबलेल्या सूचना';
+
+  @override
+  String get adminReportsLive => 'सध्या दिसणाऱ्या सूचना';
+
+  @override
+  String get adminAlertsActive => 'लागू असलेले अलर्ट';
+
+  @override
+  String get adminDataPackVersion => 'डेटा पॅक आवृत्ती';
+
+  @override
+  String get adminDataPackPublished => 'शेवटचे प्रकाशन';
+
+  @override
+  String get adminRoadDistance => 'रस्त्याचे अंतर (openrouteservice)';
+
+  @override
+  String get adminOn => 'चालू';
+
+  @override
+  String get adminOff => 'बंद';
+
+  @override
+  String get adminDataHealth => 'डेटा स्रोत';
+
+  @override
+  String get adminNoSync => 'शीटमधून अजून काहीही प्रकाशित झालेले नाही.';
+
+  @override
+  String adminLastSuccess(String when) {
+    return 'शेवटचे यश: $when';
+  }
+
+  @override
+  String adminAcceptedRejected(int accepted, int rejected) {
+    return '$accepted ओळी स्वीकारल्या, $rejected नाकारल्या';
+  }
+
+  @override
+  String get adminNoPending => 'तपासणीसाठी कोणतीही सूचना नाही.';
+
+  @override
+  String adminReporter(String uid) {
+    return 'खाते $uid ने पाठवले';
+  }
+
+  @override
+  String get adminApprove => 'मंजूर';
+
+  @override
+  String get adminReject => 'नाकारा';
+
+  @override
+  String get adminSearchUsers => 'ईमेल किंवा नावाने शोधा';
+
+  @override
+  String get adminDisable => 'खाते बंद करा';
+
+  @override
+  String get adminEnable => 'खाते चालू करा';
+
+  @override
+  String adminMakeRole(String role) {
+    return '$role करा';
+  }
+
+  @override
+  String get adminNewAlert => 'नवीन अलर्ट';
+
+  @override
+  String get adminNoAlerts => 'अजून कोणतेही अलर्ट नाहीत.';
+
+  @override
+  String get adminEndAlert => 'आता संपवा';
+
+  @override
+  String get adminEnded => 'संपले';
+
+  @override
+  String get adminRequired => 'आवश्यक';
+
+  @override
+  String get adminAlertScope => 'कोणासाठी';
+
+  @override
+  String get adminAlertScopeHelp =>
+      'ALL, मार्ग कोड (CR-MAIN) किंवा स्टेशन कोड (KYN)';
+
+  @override
+  String get adminAlertTitleEn => 'शीर्षक (इंग्रजी)';
+
+  @override
+  String get adminAlertTitleMr => 'शीर्षक (मराठी, ऐच्छिक)';
+
+  @override
+  String get adminAlertTitleHi => 'शीर्षक (हिंदी, ऐच्छिक)';
+
+  @override
+  String get adminAlertBody => 'तपशील (ऐच्छिक)';
+
+  @override
+  String get adminAlertSource => 'अधिकृत घोषणेची लिंक';
+
+  @override
+  String get adminAlertSourceHelp =>
+      'https:// ने सुरू होणारी अधिकृत सूचनेची लिंक';
+
+  @override
+  String get adminAlertStarts => 'सुरुवात';
+
+  @override
+  String get adminAlertEnds => 'शेवट';
+
+  @override
+  String get adminAlertUntilEnded => 'संपवेपर्यंत';
+
+  @override
+  String get adminPublishAlert => 'अलर्ट प्रकाशित करा';
+
+  @override
+  String get roleAdmin => 'तुम्ही प्रशासक आहात';
+
+  @override
+  String get roleModerator => 'तुम्ही मॉडरेटर आहात';
+
+  @override
+  String get consentPrompt =>
+      'हे ॲप तुमच्याबद्दल काय ठेवते हे सांगणारी गोपनीयता सूचना आहे. कृपया ती वाचून स्वीकारा.';
+
+  @override
+  String get consentRead => 'वाचा';
+
+  @override
+  String get consentAccept => 'स्वीकारा';
+
+  @override
+  String get privacyTitle => 'गोपनीयता सूचना';
+
+  @override
+  String privacyVersion(String version) {
+    return 'आवृत्ती $version';
+  }
+
+  @override
+  String get privacyCollectTitle => 'आम्ही काय ठेवतो';
+
+  @override
+  String get privacyCollectBody =>
+      'तुम्ही साइन इन केल्यास: साइन-इनमधील ईमेल आणि नाव, भाषा, जतन केलेले मार्ग, तुम्ही पाठवलेल्या सूचना, खाते कधी बनले आणि शेवटचा वापर कोणत्या दिवशी केला. खात्याशिवाय तुमच्याबद्दल काहीही आमच्या सर्व्हरवर ठेवले जात नाही.';
+
+  @override
+  String get privacyNotCollectTitle => 'आम्ही काय कधीच ठेवत नाही';
+
+  @override
+  String get privacyNotCollectBody =>
+      'तुमचा पासवर्ड (साइन-इन Google Firebase हाताळते), स्थान इतिहास, संपर्क किंवा फोन नंबर. जाहिराती नाहीत, ट्रॅकिंग नाही आणि आम्ही डेटा कधीच विकत नाही.';
+
+  @override
+  String get privacyLocationTitle => 'स्थान';
+
+  @override
+  String get privacyLocationBody =>
+      'तुम्ही \"माझे स्थान\" दाबल्यावरच फोनचे स्थान वाचले जाते आणि ते फोनवरच राहते. साइन इन असताना शेवटच्या टप्प्यासाठी ठिकाण निवडल्यास, रस्त्याचे अंतर शोधण्यासाठी स्टेशन आणि ठिकाणाचे बिंदू आमच्या सर्व्हरला पाठवले जातात.';
+
+  @override
+  String get privacyReportsTitle => 'तुम्ही पाठवलेल्या सूचना';
+
+  @override
+  String get privacyReportsBody =>
+      'इतरांना सूचना, तिचे ठिकाण (सुमारे 10 मीटरपर्यंत) आणि वेळ दिसते, तुमचे नाव किंवा खाते कधीच नाही. गैरवापर हाताळण्यासाठीच मॉडरेटरना कोणत्या खात्याने सूचना पाठवली ते दिसते. सूचना कालबाह्य झाल्यावर दिसेनाशा होतात.';
+
+  @override
+  String get privacyRightsTitle => 'तुमचे पर्याय';
+
+  @override
+  String get privacyRightsBody =>
+      'खाते हटवा (प्रोफाइल) तुमचा ईमेल, नाव आणि जतन केलेले मार्ग काढून टाकते आणि साइन-इन बंद करते. तुम्ही पाठवलेल्या सूचना इतर प्रवाशांसाठी राहतात पण तुमच्याशी जोडलेल्या राहत नाहीत. खात्याशिवायही ॲप वापरता येते.';
+
+  @override
+  String get privacyThirdPartyTitle => 'आम्ही वापरत असलेल्या सेवा';
+
+  @override
+  String get privacyThirdPartyBody =>
+      'Google Firebase (साइन-इन) आणि Google Apps Script व Sheets (आमचा सर्व्हर आणि साठवण); नकाशा लोड होताना OpenStreetMap टाइल सर्व्हर; सुरू असल्यास रस्त्याच्या अंतरासाठी openrouteservice; आणि तुम्ही बटण दाबल्यावरच Uber, Ola किंवा Rapido.';
 }

@@ -377,5 +377,113 @@
         "type": "int"
       }
     }
-  }
+  },
+  "alertSource": "Official source",
+  "adminTitle": "Admin",
+  "adminNoAccess": "This section is for admins and moderators.",
+  "adminOverview": "Overview",
+  "adminReports": "Reports",
+  "adminUsers": "Users",
+  "adminAlerts": "Alerts",
+  "adminAudit": "Audit log",
+  "adminSaved": "Saved",
+  "adminUsersActive": "Active users",
+  "adminUsersDisabled": "Disabled",
+  "adminUsersDeleted": "Deleted accounts",
+  "adminAdmins": "Admins",
+  "adminModerators": "Moderators",
+  "adminReportsPending": "Reports waiting for review",
+  "adminReportsLive": "Reports visible now",
+  "adminAlertsActive": "Alerts in force",
+  "adminDataPackVersion": "Data pack version",
+  "adminDataPackPublished": "Last published",
+  "adminRoadDistance": "Road distances (openrouteservice)",
+  "adminOn": "On",
+  "adminOff": "Off",
+  "adminDataHealth": "Data sources",
+  "adminNoSync": "Nothing published from the Sheet yet.",
+  "adminLastSuccess": "Last success: {when}",
+  "@adminLastSuccess": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "adminAcceptedRejected": "{accepted} rows accepted, {rejected} rejected",
+  "@adminAcceptedRejected": {
+    "placeholders": {
+      "accepted": {
+        "type": "int"
+      },
+      "rejected": {
+        "type": "int"
+      }
+    }
+  },
+  "adminNoPending": "No reports waiting for review.",
+  "adminReporter": "Sent by account {uid}",
+  "@adminReporter": {
+    "placeholders": {
+      "uid": {
+        "type": "String"
+      }
+    }
+  },
+  "adminApprove": "Approve",
+  "adminReject": "Reject",
+  "adminSearchUsers": "Search by email or name",
+  "adminDisable": "Disable account",
+  "adminEnable": "Enable account",
+  "adminMakeRole": "Make {role}",
+  "@adminMakeRole": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "adminNewAlert": "New alert",
+  "adminNoAlerts": "No alerts yet.",
+  "adminEndAlert": "End now",
+  "adminEnded": "Ended",
+  "adminRequired": "Required",
+  "adminAlertScope": "Applies to",
+  "adminAlertScopeHelp": "ALL, a line code (CR-MAIN) or a station code (KYN)",
+  "adminAlertTitleEn": "Title (English)",
+  "adminAlertTitleMr": "Title (Marathi, optional)",
+  "adminAlertTitleHi": "Title (Hindi, optional)",
+  "adminAlertBody": "Details (optional)",
+  "adminAlertSource": "Official announcement link",
+  "adminAlertSourceHelp": "Must start with https:// and point to the official notice",
+  "adminAlertStarts": "Starts",
+  "adminAlertEnds": "Ends",
+  "adminAlertUntilEnded": "Until ended",
+  "adminPublishAlert": "Publish alert",
+  "roleAdmin": "You are an admin",
+  "roleModerator": "You are a moderator",
+  "consentPrompt": "We have a privacy notice that explains what this app keeps about you. Please read it and accept.",
+  "consentRead": "Read",
+  "consentAccept": "Accept",
+  "privacyTitle": "Privacy notice",
+  "privacyVersion": "Version {version}",
+  "@privacyVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "privacyCollectTitle": "What we keep",
+  "privacyCollectBody": "If you sign in: your email and name from your sign-in, your language, saved routes, the reports you send, when your account was created and the last day you used it. Without an account, nothing about you is kept on our server.",
+  "privacyNotCollectTitle": "What we never keep",
+  "privacyNotCollectBody": "Your password (Google Firebase handles sign-in), your location history, contacts or phone number. There are no ads, no tracking and we never sell data.",
+  "privacyLocationTitle": "Location",
+  "privacyLocationBody": "Your phone's location is read only when you tap \"My location\" and stays on the phone. When you choose a destination in the last-mile finder while signed in, the station and destination points are sent to our server to look up the road distance.",
+  "privacyReportsTitle": "Reports you send",
+  "privacyReportsBody": "Other people see the report, its place (to about 10 metres) and its time, never your name or account. Moderators can see which account sent a report, only to deal with abuse. Reports disappear when they expire.",
+  "privacyRightsTitle": "Your choices",
+  "privacyRightsBody": "Delete account (Profile) removes your email, name and saved routes and closes your sign-in. Reports you sent stay for other commuters but are no longer linked to you. You can use the app without an account.",
+  "privacyThirdPartyTitle": "Services we rely on",
+  "privacyThirdPartyBody": "Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button."
 }
