@@ -39,3 +39,6 @@ final backendStatusProvider = FutureProvider<BackendStatus>((ref) async {
     return BackendStatus.unreachable;
   }
 });
+
+/// Current time; overridden in tests so time-based screens are repeatable.
+final clockProvider = Provider<DateTime Function()>((ref) => DateTime.now);

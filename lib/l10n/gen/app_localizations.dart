@@ -1507,7 +1507,7 @@ abstract class AppLocalizations {
   /// No description provided for @privacyThirdPartyBody.
   ///
   /// In en, this message translates to:
-  /// **'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button.'**
+  /// **'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button. Place search sends only the words you type to Photon (OpenStreetMap data).'**
   String get privacyThirdPartyBody;
 
   /// No description provided for @searchAnyPlace.
@@ -1593,6 +1593,294 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{station} station to {place}'**
   String tripLegFromStation(String station, String place);
+
+  /// No description provided for @autoStand.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto stand'**
+  String get autoStand;
+
+  /// No description provided for @bookInApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Book a ride'**
+  String get bookInApp;
+
+  /// No description provided for @bookInAppNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Opens the app; the app shows the real price and whether a vehicle is free.'**
+  String get bookInAppNote;
+
+  /// No description provided for @departingNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaving now'**
+  String get departingNow;
+
+  /// No description provided for @fareTrainTicketOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Train ticket only'**
+  String get fareTrainTicketOnly;
+
+  /// No description provided for @noBusData.
+  ///
+  /// In en, this message translates to:
+  /// **'No bus stops for this area are in the app yet.'**
+  String get noBusData;
+
+  /// No description provided for @noLiveAutos.
+  ///
+  /// In en, this message translates to:
+  /// **'Autos have no live tracking anywhere, so the app shows the stands where autos usually wait, not moving vehicles.'**
+  String get noLiveAutos;
+
+  /// No description provided for @noLiveBuses.
+  ///
+  /// In en, this message translates to:
+  /// **'Local buses here share no live location, so the app shows the stops and how often buses come, not moving buses.'**
+  String get noLiveBuses;
+
+  /// No description provided for @optionAuto.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto all the way'**
+  String get optionAuto;
+
+  /// No description provided for @optionBus.
+  ///
+  /// In en, this message translates to:
+  /// **'Bus'**
+  String get optionBus;
+
+  /// No description provided for @optionCab.
+  ///
+  /// In en, this message translates to:
+  /// **'Taxi or cab'**
+  String get optionCab;
+
+  /// No description provided for @optionTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'Train'**
+  String get optionTrain;
+
+  /// No description provided for @optionTrainAuto.
+  ///
+  /// In en, this message translates to:
+  /// **'Train + auto'**
+  String get optionTrainAuto;
+
+  /// No description provided for @optionsTimeNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Times are estimates without traffic or waiting. Fares use the official meter rate; the meter decides the real fare.'**
+  String get optionsTimeNote;
+
+  /// No description provided for @scheduledNotLive.
+  ///
+  /// In en, this message translates to:
+  /// **'Position from the timetable, not live GPS. Trains can run late.'**
+  String get scheduledNotLive;
+
+  /// No description provided for @seeDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'See details'**
+  String get seeDetails;
+
+  /// No description provided for @tagCheapest.
+  ///
+  /// In en, this message translates to:
+  /// **'Cheapest'**
+  String get tagCheapest;
+
+  /// No description provided for @tagEstimate.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimate'**
+  String get tagEstimate;
+
+  /// No description provided for @tagFastest.
+  ///
+  /// In en, this message translates to:
+  /// **'Fastest'**
+  String get tagFastest;
+
+  /// No description provided for @tagScheduled.
+  ///
+  /// In en, this message translates to:
+  /// **'Timetable'**
+  String get tagScheduled;
+
+  /// No description provided for @whereIsMyAuto.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is my auto'**
+  String get whereIsMyAuto;
+
+  /// No description provided for @whereIsMyBus.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is my bus'**
+  String get whereIsMyBus;
+
+  /// No description provided for @whereIsMyTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'Where is my train'**
+  String get whereIsMyTrain;
+
+  /// No description provided for @whereShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Where'**
+  String get whereShort;
+
+  /// No description provided for @youBoardHere.
+  ///
+  /// In en, this message translates to:
+  /// **'You board here'**
+  String get youBoardHere;
+
+  /// No description provided for @youGetOffHere.
+  ///
+  /// In en, this message translates to:
+  /// **'You get off here'**
+  String get youGetOffHere;
+
+  /// No description provided for @farePlusTicket.
+  ///
+  /// In en, this message translates to:
+  /// **'≈ ₹{amount} + train ticket'**
+  String farePlusTicket(int amount);
+
+  /// No description provided for @inMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'in {minutes} min'**
+  String inMinutes(int minutes);
+
+  /// No description provided for @minutesBig.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} min'**
+  String minutesBig(int minutes);
+
+  /// No description provided for @reachesAt.
+  ///
+  /// In en, this message translates to:
+  /// **'reaches at {time}'**
+  String reachesAt(String time);
+
+  /// No description provided for @standsNear.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto stands near {place}'**
+  String standsNear(String place);
+
+  /// No description provided for @stopsNear.
+  ///
+  /// In en, this message translates to:
+  /// **'Bus stops near {place}'**
+  String stopsNear(String place);
+
+  /// No description provided for @stepAutoTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto to {place}'**
+  String stepAutoTo(String place);
+
+  /// No description provided for @stepWalkTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk to {place}'**
+  String stepWalkTo(String place);
+
+  /// No description provided for @timetableComingFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Train times aren\'t loaded yet. Once the official Central Railway timetable is added, trains from {from} to {to} appear here, each with \"Where is my train\".'**
+  String timetableComingFor(String from, String to);
+
+  /// No description provided for @trainArrivingNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Arriving at {station} now'**
+  String trainArrivingNow(String station);
+
+  /// No description provided for @trainAtNow.
+  ///
+  /// In en, this message translates to:
+  /// **'At {station} now'**
+  String trainAtNow(String station);
+
+  /// No description provided for @trainFinished.
+  ///
+  /// In en, this message translates to:
+  /// **'Reached {station}, journey over'**
+  String trainFinished(String station);
+
+  /// No description provided for @trainLeftAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Left {station} {minutes} min ago'**
+  String trainLeftAgo(String station, int minutes);
+
+  /// No description provided for @trainNowAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Now at {station}'**
+  String trainNowAt(String station);
+
+  /// No description provided for @trainNowBetween.
+  ///
+  /// In en, this message translates to:
+  /// **'Between {a} and {b}'**
+  String trainNowBetween(String a, String b);
+
+  /// No description provided for @trainReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Reached {station}'**
+  String trainReached(String station);
+
+  /// No description provided for @trainReachesIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Reaches {station} in {minutes} min'**
+  String trainReachesIn(String station, int minutes);
+
+  /// No description provided for @trainStartsAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Starts from {station} at {time}'**
+  String trainStartsAt(String station, String time);
+
+  /// No description provided for @trainsBetween.
+  ///
+  /// In en, this message translates to:
+  /// **'Trains {from} → {to}'**
+  String trainsBetween(String from, String to);
+
+  /// No description provided for @waysToGo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 way to go} other{{count} ways to go}}'**
+  String waysToGo(int count);
+
+  /// No description provided for @boardAtLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Board at:'**
+  String get boardAtLabel;
+
+  /// No description provided for @getOffAtLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Get off at:'**
+  String get getOffAtLabel;
 }
 
 class _AppLocalizationsDelegate

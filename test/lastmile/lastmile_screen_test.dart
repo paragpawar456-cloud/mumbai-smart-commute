@@ -32,6 +32,8 @@ void main() {
     await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
     await tester.pumpAndSettle();
 
+    await tester.ensureVisible(find.byKey(const Key('lastMileCard')));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('lastMileCard')));
     await tester.pumpAndSettle();
     expect(find.text('Kalyan'), findsOneWidget);

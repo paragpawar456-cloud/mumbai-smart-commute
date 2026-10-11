@@ -8,6 +8,9 @@ import '../alerts/alerts.dart';
 import '../saved/saved_journeys_list.dart';
 import '../trip/domain/trip_point.dart';
 import '../trip/ui/location_search.dart';
+import '../trip/ui/nearby_transport_screen.dart';
+import '../transit/data/transit_providers.dart';
+import '../transit/ui/station_picker.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -48,6 +51,22 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         ...to.toQuery('to'),
       }).toString());
     }
+  }
+
+  Future<void> _whereTrain() async {
+    final pack = ref.read(dataPackProvider).value?.pack;
+    if (pack == null) return;
+    final s = await pickStation(context, pack);
+    if (s != null && mounted) context.push('/station/${s.id}');
+  }
+
+  Future<void> _whereNearby(NearbyMode mode) async {
+    final p = await pickTripPoint(context, ref, allowMyLocation: true);
+    if (p == null || !mounted) return;
+    Navigator.of(context).push(MaterialPageRoute<void>(
+      builder: (_) =>
+          NearbyTransportScreen(mode: mode, point: p.point, placeName: p.name),
+    ));
   }
 
   @override
@@ -111,6 +130,38 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             ),
           ),
           const SizedBox(height: 16),
+          Row(children: [
+            Expanded(
+              child: _WhereTile(
+                key: const Key('whereTrain'),
+                icon: Icons.train,
+                color: AppColors.localTrain,
+                label: l.whereIsMyTrain,
+                onTap: _whereTrain,
+              ),
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: _WhereTile(
+                key: const Key('whereAuto'),
+                icon: Icons.electric_rickshaw,
+                color: AppColors.auto,
+                label: l.whereIsMyAuto,
+                onTap: () => _whereNearby(NearbyMode.auto),
+              ),
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: _WhereTile(
+                key: const Key('whereBus'),
+                icon: Icons.directions_bus,
+                color: AppColors.bus,
+                label: l.whereIsMyBus,
+                onTap: () => _whereNearby(NearbyMode.bus),
+              ),
+            ),
+          ]),
+          const SizedBox(height: 16),
           Card(
             child: ListTile(
               key: const Key('lastMileCard'),
@@ -144,6 +195,48 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       ),
     );
   }
+}
+
+class _WhereTile extends StatelessWidget {
+  const _WhereTile({
+    super.key,
+    required this.icon,
+    required this.color,
+    required this.label,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final Color color;
+  final String label;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+        color: color.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(16),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 6),
+            child: Column(children: [
+              CircleAvatar(
+                backgroundColor: color,
+                child: Icon(icon, color: Colors.white),
+              ),
+              const SizedBox(height: 8),
+              Text(label,
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  style: Theme.of(context)
+                      .textTheme
+                      .labelLarge
+                      ?.copyWith(fontWeight: FontWeight.w600)),
+            ]),
+          ),
+        ),
+      );
 }
 
 /// Looks like a text box; tapping it opens the place search.

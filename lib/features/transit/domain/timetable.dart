@@ -19,6 +19,23 @@ class ScheduledLeg {
   final int arrival;
 }
 
+/// One scheduled train between two stations it stops at, in order.
+class TrainRun {
+  const TrainRun(this.trip, this.stops, this.boardIndex, this.alightIndex);
+
+  final Trip trip;
+
+  /// Every stop of the train, in order.
+  final List<StopTime> stops;
+  final int boardIndex;
+  final int alightIndex;
+
+  int get departure => stops[boardIndex].departure;
+  int get arrival => stops[alightIndex].arrival ?? stops[alightIndex].departure;
+  String get originId => stops.first.stationId;
+  String get terminusId => stops.last.stationId;
+}
+
 /// Timetable look-ups over scheduled data. Results are always "Scheduled";
 /// there is no live running information behind them.
 class Timetable {
@@ -60,6 +77,33 @@ class Timetable {
       }
     });
     out.sort((a, b) => a.departure.compareTo(b.departure));
+    return out.take(limit).toList();
+  }
+
+  /// All stops of a trip in order (empty if unknown).
+  List<StopTime> stopsOf(String tripId) => _byTrip[tripId] ?? const [];
+
+  /// Trains that stop at [fromId] and later at [toId], leaving at or after
+  /// [afterMinute], earliest first.
+  List<TrainRun> runsBetween(
+    String fromId,
+    String toId,
+    DateTime date, {
+    int afterMinute = 0,
+    int limit = 20,
+    bool holiday = false,
+  }) {
+    final out = <TrainRun>[];
+    _byTrip.forEach((tripId, stops) {
+      final trip = _trip[tripId];
+      if (trip == null || !trip.runsOn(date, holiday: holiday)) return;
+      final a = stops.indexWhere((s) => s.stationId == fromId);
+      if (a == -1 || a == stops.length - 1) return;
+      final b = stops.indexWhere((s) => s.stationId == toId, a + 1);
+      if (b == -1 || stops[a].departure < afterMinute) return;
+      out.add(TrainRun(trip, stops, a, b));
+    });
+    out.sort((x, y) => x.departure.compareTo(y.departure));
     return out.take(limit).toList();
   }
 

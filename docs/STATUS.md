@@ -84,10 +84,20 @@ Failure-mode tests for the data pack and network; three bugs found and fixed (br
 
 Direct APK download link, README, [TESTER_GUIDE.md](TESTER_GUIDE.md), [PRIVACY.md](PRIVACY.md) and [TERMS_DRAFT.md](TERMS_DRAFT.md) (drafts, need review before a public launch).
 
-## Door-to-door search fix — in review
+## Door-to-door search fix — done (PR #7, merged)
 
 Tester report: typing "yogidham" to "runwal" on Home found nothing, because Home only understood station names. Home's From and To now open one search across stations, the app's own places and OpenStreetMap (free Photon server, only the typed words are sent; D27), plus "My location" and "Pick on the map". Any two points get a trip page: the train with road legs at each end (nearest station), and direct road options with estimated fares. Station to station still opens the train planner.
 
 The tester's "map arrives in the next update" screen came from an old install; the map has been live since Phase 4. Builds without signing secrets used a new debug key each time, so a new APK wouldn't install over an old one. CI now keeps one debug key between builds (D28); this one more time, the old app has to be uninstalled first.
 
-Tests (2026-10-11): `flutter analyze` clean · `flutter test` 61 passed · `backend npm test` 31 passed.
+## Journey options and "Where is my" — in review
+
+Tester feedback: the trip page looked basic; wanted 3 to 4 options, a train timetable, and animated "Where is my train / auto / bus".
+
+- Trip page lists every way to go (train + auto, auto all the way, taxi or cab, bus, walk) with estimated time, fare, and Fastest / Cheapest tags.
+- Train option: each step, a switch for nearby stations (e.g. Thane instead of Kalwa), and the trains between the two stations from the timetable.
+- "Where is my train": the train moving down its line by the timetable, with a countdown to your station. Labelled Scheduled, not live (D29).
+- "Where is my auto / bus": stands or stops on a map with pulsing markers, and cab-app buttons. No live positions exist, so no fake vehicles (D29). Also on Home and from station departures.
+- Blocker: no train times are loaded. Waiting on the owner for the official Central Railway timetable to enter Kalyan to Thane trains.
+
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 69 passed · `backend npm test` 31 passed.

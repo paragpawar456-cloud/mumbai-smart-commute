@@ -818,7 +818,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get privacyThirdPartyBody =>
-      'Google Firebase (साइन-इन) आणि Google Apps Script व Sheets (आमचा सर्व्हर आणि साठवण); नकाशा लोड होताना OpenStreetMap टाइल सर्व्हर; सुरू असल्यास रस्त्याच्या अंतरासाठी openrouteservice; आणि तुम्ही बटण दाबल्यावरच Uber, Ola किंवा Rapido.';
+      'Google Firebase (साइन-इन) आणि Google Apps Script व Sheets (आमचा सर्व्हर आणि साठवण); नकाशा लोड होताना OpenStreetMap टाइल सर्व्हर; सुरू असल्यास रस्त्याच्या अंतरासाठी openrouteservice; आणि तुम्ही बटण दाबल्यावरच Uber, Ola किंवा Rapido. ठिकाण शोधताना फक्त तुम्ही टाइप केलेले शब्द Photon (OpenStreetMap डेटा) कडे पाठवले जातात.';
 
   @override
   String get searchAnyPlace => 'स्टेशन, परिसर किंवा इमारत शोधा';
@@ -872,4 +872,199 @@ class AppLocalizationsMr extends AppLocalizations {
   String tripLegFromStation(String station, String place) {
     return '$station स्टेशन ते $place';
   }
+
+  @override
+  String get autoStand => 'रिक्षा स्टँड';
+
+  @override
+  String get bookInApp => 'राइड बुक करा';
+
+  @override
+  String get bookInAppNote =>
+      'अॅप उघडेल; खरी किंमत आणि वाहन उपलब्ध आहे का ते अॅपमध्ये दिसेल.';
+
+  @override
+  String get departingNow => 'आता सुटत आहे';
+
+  @override
+  String get fareTrainTicketOnly => 'फक्त ट्रेन तिकीट';
+
+  @override
+  String get noBusData => 'या भागातील बस स्टॉप अजून अॅपमध्ये नाहीत.';
+
+  @override
+  String get noLiveAutos =>
+      'रिक्षांचे लाइव्ह ट्रॅकिंग कुठेच उपलब्ध नाही, म्हणून अॅप रिक्षा सहसा थांबतात ते स्टँड दाखवते, चालती वाहने नाही.';
+
+  @override
+  String get noLiveBuses =>
+      'येथील बस लाइव्ह ठिकाण देत नाहीत, म्हणून अॅप स्टॉप आणि बस किती वेळाने येते ते दाखवते, चालत्या बस नाही.';
+
+  @override
+  String get optionAuto => 'पूर्ण रिक्षाने';
+
+  @override
+  String get optionBus => 'बस';
+
+  @override
+  String get optionCab => 'टॅक्सी किंवा कॅब';
+
+  @override
+  String get optionTrain => 'ट्रेन';
+
+  @override
+  String get optionTrainAuto => 'ट्रेन + रिक्षा';
+
+  @override
+  String get optionsTimeNote =>
+      'वेळ अंदाजे आहे, ट्रॅफिक व थांबणे धरलेले नाही. भाडे अधिकृत मीटर दराने; खरे भाडे मीटर ठरवतो.';
+
+  @override
+  String get scheduledNotLive =>
+      'स्थान वेळापत्रकावरून आहे, लाइव्ह GPS नाही. ट्रेन उशिरा धावू शकते.';
+
+  @override
+  String get seeDetails => 'तपशील पाहा';
+
+  @override
+  String get tagCheapest => 'सर्वात स्वस्त';
+
+  @override
+  String get tagEstimate => 'अंदाज';
+
+  @override
+  String get tagFastest => 'सर्वात जलद';
+
+  @override
+  String get tagScheduled => 'वेळापत्रक';
+
+  @override
+  String get whereIsMyAuto => 'माझी रिक्षा कुठे';
+
+  @override
+  String get whereIsMyBus => 'माझी बस कुठे';
+
+  @override
+  String get whereIsMyTrain => 'माझी ट्रेन कुठे';
+
+  @override
+  String get whereShort => 'कुठे';
+
+  @override
+  String get youBoardHere => 'येथे चढा';
+
+  @override
+  String get youGetOffHere => 'येथे उतरा';
+
+  @override
+  String farePlusTicket(int amount) {
+    return '≈ ₹$amount + ट्रेन तिकीट';
+  }
+
+  @override
+  String inMinutes(int minutes) {
+    return '$minutes मिनिटांत';
+  }
+
+  @override
+  String minutesBig(int minutes) {
+    return '$minutes मि.';
+  }
+
+  @override
+  String reachesAt(String time) {
+    return '$time ला पोहोचते';
+  }
+
+  @override
+  String standsNear(String place) {
+    return '$place जवळचे रिक्षा स्टँड';
+  }
+
+  @override
+  String stopsNear(String place) {
+    return '$place जवळचे बस स्टॉप';
+  }
+
+  @override
+  String stepAutoTo(String place) {
+    return '$place पर्यंत रिक्षा';
+  }
+
+  @override
+  String stepWalkTo(String place) {
+    return '$place पर्यंत चाला';
+  }
+
+  @override
+  String timetableComingFor(String from, String to) {
+    return 'ट्रेनच्या वेळा अजून आलेल्या नाहीत. मध्य रेल्वेचे अधिकृत वेळापत्रक जोडल्यावर $from ते $to ट्रेन येथे दिसतील, प्रत्येकीसाठी \"माझी ट्रेन कुठे\" सह.';
+  }
+
+  @override
+  String trainArrivingNow(String station) {
+    return '$station ला आता येत आहे';
+  }
+
+  @override
+  String trainAtNow(String station) {
+    return 'आता $station ला';
+  }
+
+  @override
+  String trainFinished(String station) {
+    return '$station ला पोहोचली, प्रवास संपला';
+  }
+
+  @override
+  String trainLeftAgo(String station, int minutes) {
+    return '$minutes मिनिटांपूर्वी $station सोडले';
+  }
+
+  @override
+  String trainNowAt(String station) {
+    return 'सध्या $station ला';
+  }
+
+  @override
+  String trainNowBetween(String a, String b) {
+    return '$a आणि $b दरम्यान';
+  }
+
+  @override
+  String trainReached(String station) {
+    return '$station ला पोहोचली';
+  }
+
+  @override
+  String trainReachesIn(String station, int minutes) {
+    return '$minutes मिनिटांत $station ला पोहोचेल';
+  }
+
+  @override
+  String trainStartsAt(String station, String time) {
+    return '$time ला $station हून सुटेल';
+  }
+
+  @override
+  String trainsBetween(String from, String to) {
+    return 'ट्रेन $from → $to';
+  }
+
+  @override
+  String waysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'जाण्याचे $count मार्ग',
+      one: 'जाण्याचा 1 मार्ग',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get boardAtLabel => 'येथून चढा:';
+
+  @override
+  String get getOffAtLabel => 'येथे उतरा:';
 }

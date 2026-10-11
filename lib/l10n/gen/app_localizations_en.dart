@@ -820,7 +820,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacyThirdPartyBody =>
-      'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button.';
+      'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button. Place search sends only the words you type to Photon (OpenStreetMap data).';
 
   @override
   String get searchAnyPlace => 'Search a station, area or building';
@@ -874,4 +874,199 @@ class AppLocalizationsEn extends AppLocalizations {
   String tripLegFromStation(String station, String place) {
     return '$station station to $place';
   }
+
+  @override
+  String get autoStand => 'Auto stand';
+
+  @override
+  String get bookInApp => 'Book a ride';
+
+  @override
+  String get bookInAppNote =>
+      'Opens the app; the app shows the real price and whether a vehicle is free.';
+
+  @override
+  String get departingNow => 'Leaving now';
+
+  @override
+  String get fareTrainTicketOnly => 'Train ticket only';
+
+  @override
+  String get noBusData => 'No bus stops for this area are in the app yet.';
+
+  @override
+  String get noLiveAutos =>
+      'Autos have no live tracking anywhere, so the app shows the stands where autos usually wait, not moving vehicles.';
+
+  @override
+  String get noLiveBuses =>
+      'Local buses here share no live location, so the app shows the stops and how often buses come, not moving buses.';
+
+  @override
+  String get optionAuto => 'Auto all the way';
+
+  @override
+  String get optionBus => 'Bus';
+
+  @override
+  String get optionCab => 'Taxi or cab';
+
+  @override
+  String get optionTrain => 'Train';
+
+  @override
+  String get optionTrainAuto => 'Train + auto';
+
+  @override
+  String get optionsTimeNote =>
+      'Times are estimates without traffic or waiting. Fares use the official meter rate; the meter decides the real fare.';
+
+  @override
+  String get scheduledNotLive =>
+      'Position from the timetable, not live GPS. Trains can run late.';
+
+  @override
+  String get seeDetails => 'See details';
+
+  @override
+  String get tagCheapest => 'Cheapest';
+
+  @override
+  String get tagEstimate => 'Estimate';
+
+  @override
+  String get tagFastest => 'Fastest';
+
+  @override
+  String get tagScheduled => 'Timetable';
+
+  @override
+  String get whereIsMyAuto => 'Where is my auto';
+
+  @override
+  String get whereIsMyBus => 'Where is my bus';
+
+  @override
+  String get whereIsMyTrain => 'Where is my train';
+
+  @override
+  String get whereShort => 'Where';
+
+  @override
+  String get youBoardHere => 'You board here';
+
+  @override
+  String get youGetOffHere => 'You get off here';
+
+  @override
+  String farePlusTicket(int amount) {
+    return '≈ ₹$amount + train ticket';
+  }
+
+  @override
+  String inMinutes(int minutes) {
+    return 'in $minutes min';
+  }
+
+  @override
+  String minutesBig(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String reachesAt(String time) {
+    return 'reaches at $time';
+  }
+
+  @override
+  String standsNear(String place) {
+    return 'Auto stands near $place';
+  }
+
+  @override
+  String stopsNear(String place) {
+    return 'Bus stops near $place';
+  }
+
+  @override
+  String stepAutoTo(String place) {
+    return 'Auto to $place';
+  }
+
+  @override
+  String stepWalkTo(String place) {
+    return 'Walk to $place';
+  }
+
+  @override
+  String timetableComingFor(String from, String to) {
+    return 'Train times aren\'t loaded yet. Once the official Central Railway timetable is added, trains from $from to $to appear here, each with \"Where is my train\".';
+  }
+
+  @override
+  String trainArrivingNow(String station) {
+    return 'Arriving at $station now';
+  }
+
+  @override
+  String trainAtNow(String station) {
+    return 'At $station now';
+  }
+
+  @override
+  String trainFinished(String station) {
+    return 'Reached $station, journey over';
+  }
+
+  @override
+  String trainLeftAgo(String station, int minutes) {
+    return 'Left $station $minutes min ago';
+  }
+
+  @override
+  String trainNowAt(String station) {
+    return 'Now at $station';
+  }
+
+  @override
+  String trainNowBetween(String a, String b) {
+    return 'Between $a and $b';
+  }
+
+  @override
+  String trainReached(String station) {
+    return 'Reached $station';
+  }
+
+  @override
+  String trainReachesIn(String station, int minutes) {
+    return 'Reaches $station in $minutes min';
+  }
+
+  @override
+  String trainStartsAt(String station, String time) {
+    return 'Starts from $station at $time';
+  }
+
+  @override
+  String trainsBetween(String from, String to) {
+    return 'Trains $from → $to';
+  }
+
+  @override
+  String waysToGo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ways to go',
+      one: '1 way to go',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get boardAtLabel => 'Board at:';
+
+  @override
+  String get getOffAtLabel => 'Get off at:';
 }

@@ -26,6 +26,8 @@ class TripPlan {
     this.rail,
     this.lastMile,
     this.noTrainReason,
+    this.boardChoices = const [],
+    this.alightChoices = const [],
   });
 
   final TripPoint from;
@@ -39,6 +41,10 @@ class TripPlan {
   final Journey? rail;
   final StationLeg? lastMile;
   final NoTrainReason? noTrainReason;
+
+  /// Stations near each end the user can switch to (nearest first).
+  final List<Station> boardChoices;
+  final List<Station> alightChoices;
 
   bool get hasTrain => rail != null;
 
@@ -77,6 +83,17 @@ class TripPlanner {
 
   Station? _station(String? id) => id == null ? null : pack.stationById[id];
 
+  /// Stations on at least one line, nearest first, within [maxStationKm].
+  List<(Station, double)> nearStations(GeoPoint p, {int limit = 3}) {
+    final onLines = {for (final ln in pack.lines) ...ln.stationIds};
+    final all = <(Station, double)>[
+      for (final s in pack.stations)
+        if (onLines.contains(s.id))
+          (s, distanceMeters(p, GeoPoint(s.lat, s.lng))),
+    ]..sort((a, b) => a.$2.compareTo(b.$2));
+    return all.where((e) => e.$2 <= maxStationKm * 1000).take(limit).toList();
+  }
+
   /// Nearest station that is on at least one line.
   (Station, double)? nearestStation(GeoPoint p) {
     final onLines = {for (final ln in pack.lines) ...ln.stationIds};
@@ -89,7 +106,10 @@ class TripPlanner {
     return best;
   }
 
-  TripPlan plan(TripPoint from, TripPoint to, DateTime now) {
+  /// [boardId] and [alightId] override the nearest stations, e.g. when the
+  /// user prefers Thane over Kalwa.
+  TripPlan plan(TripPoint from, TripPoint to, DateTime now,
+      {String? boardId, String? alightId}) {
     final straightKm = distanceMeters(from.point, to.point) / 1000;
     final direct = road.plan(from.point, to.point, now,
         fromName: from.name, toName: to.name);
@@ -107,12 +127,15 @@ class TripPlanner {
       return roadOnly(NoTrainReason.close);
     }
 
-    (Station, double)? resolve(TripPoint t) {
+    (Station, double)? resolve(TripPoint t, String? override) {
       final s = _station(t.stationId);
-      return s != null ? (s, 0) : nearestStation(t.point);
+      if (s != null) return (s, 0);
+      final o = _station(override);
+      if (o != null) return (o, distanceMeters(t.point, GeoPoint(o.lat, o.lng)));
+      return nearestStation(t.point);
     }
 
-    final a = resolve(from), b = resolve(to);
+    final a = resolve(from, boardId), b = resolve(to, alightId);
     if (a == null ||
         b == null ||
         a.$2 > maxStationKm * 1000 ||
@@ -143,6 +166,12 @@ class TripPlanner {
       firstMile: leg(a.$1, a.$2, from.point, true),
       rail: journey,
       lastMile: leg(b.$1, b.$2, to.point, false),
+      boardChoices: from.isStation
+          ? const []
+          : [for (final e in nearStations(from.point)) e.$1],
+      alightChoices: to.isStation
+          ? const []
+          : [for (final e in nearStations(to.point)) e.$1],
     );
   }
 }
