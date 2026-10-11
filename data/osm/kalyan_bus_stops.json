@@ -174,13 +174,15 @@
   "lon": 73.1303624,
   "tags": {
    "amenity": "bus_station",
-   "name": "Kalyan"
+   "bus": "yes",
+   "name": "Kalyan Bus Stand",
+   "public_transport": "station"
   }
  },
  {
   "osm": "node/1027917064",
-  "lat": 19.2637737,
-  "lon": 72.9777787,
+  "lat": 19.2637699,
+  "lon": 72.9777881,
   "tags": {
    "alt_name": "Gondhalewadi",
    "bus": "yes",
@@ -423,7 +425,8 @@
   "tags": {
    "bus": "yes",
    "highway": "bus_stop",
-   "name": "Municipal School",
+   "name": "Pawar Nagar",
+   "name:mr": "पवार नगर",
    "network": "Thane Muncipal Transport",
    "operator": "Thane Muncipal Transport",
    "public_transport": "platform"
@@ -955,8 +958,8 @@
  },
  {
   "osm": "node/2440266920",
-  "lat": 19.1879291,
-  "lon": 72.9797476,
+  "lat": 19.1878333,
+  "lon": 72.9799101,
   "tags": {
    "addr:street": "Chendani Bunder Road",
    "amenity": "bus_station",
@@ -1684,8 +1687,8 @@
  },
  {
   "osm": "node/4644026842",
-  "lat": 19.160049,
-  "lon": 72.9468406,
+  "lat": 19.1600743,
+  "lon": 72.9467628,
   "tags": {
    "bus": "yes",
    "highway": "bus_stop",
@@ -1695,8 +1698,8 @@
  },
  {
   "osm": "node/4644026843",
-  "lat": 19.1600435,
-  "lon": 72.9468205,
+  "lat": 19.1601522,
+  "lon": 72.9466701,
   "tags": {
    "bus": "yes",
    "highway": "bus_stop",
@@ -1734,6 +1737,7 @@
   "lon": 72.9929694,
   "tags": {
    "bench": "yes",
+   "bin": "yes",
    "bus": "yes",
    "highway": "bus_stop",
    "name:en": "Ganesh Pada",
@@ -2638,7 +2642,8 @@
   "tags": {
    "bus": "yes",
    "highway": "bus_stop",
-   "name": "Municipal School",
+   "name": "Pawar Nagar",
+   "name:mr": "पवार नगर",
    "network": "Thane Muncipal Transport",
    "operator": "Thane Muncipal Transport",
    "public_transport": "platform"
@@ -4447,7 +4452,8 @@
    "network": "Thane Muncipal Transport",
    "network:wikidata": "Q7710243",
    "operator": "Thane Muncipal Transport",
-   "public_transport": "platform"
+   "public_transport": "platform",
+   "shelter": "yes"
   }
  },
  {
@@ -4470,12 +4476,14 @@
   "lon": 72.9590272,
   "tags": {
    "bus": "yes",
+   "departures_board": "no",
    "highway": "bus_stop",
    "name": "S.T. Juna Thamba",
    "network": "Thane Muncipal Transport",
    "network:wikidata": "Q7710243",
    "operator": "Thane Muncipal Transport",
-   "public_transport": "platform"
+   "public_transport": "platform",
+   "shelter": "yes"
   }
  },
  {
@@ -5886,7 +5894,8 @@
    "bus": "yes",
    "highway": "bus_stop",
    "name": "Ralli Wolf",
-   "public_transport": "platform"
+   "public_transport": "platform",
+   "ref": "37421"
   }
  },
  {
@@ -5897,7 +5906,8 @@
    "bus": "yes",
    "highway": "bus_stop",
    "name": "Ralli Wolf",
-   "public_transport": "platform"
+   "public_transport": "platform",
+   "ref": "37422"
   }
  },
  {
@@ -6207,11 +6217,19 @@
   "lon": 72.9602577,
   "tags": {
    "bus": "yes",
+   "departures_board": "no",
+   "description": "Bustop for route no. 8 of TMT (Thane Municipal Transport)",
    "highway": "bus_stop",
-   "name": "Shastri Nagar Naka",
+   "name": "Building No. 3",
+   "network": "Thane Municipal Transport",
+   "network:en": "Thane Municipal Transport",
+   "network:hi": "ठाणे नगरपालिका परिवहन",
+   "network:wikidata": "Q7710243",
+   "operator": "TMT (Thane Municipal Transport)",
    "public_transport": "platform",
    "ref": "202,",
-   "route_ref": "8,"
+   "route_ref": "8,",
+   "shelter": "no"
   }
  },
  {
@@ -10319,12 +10337,12 @@
  },
  {
   "osm": "node/10259382131",
-  "lat": 19.1742247,
-  "lon": 72.9570889,
+  "lat": 19.1742973,
+  "lon": 72.9570092,
   "tags": {
    "bus": "yes",
    "highway": "bus_stop",
-   "name": "RP Road",
+   "name": "RP Road (Only Alighting)",
    "public_transport": "platform",
    "ref": "37407",
    "shelter": "no"
@@ -10652,6 +10670,18 @@
    "highway": "bus_stop",
    "public_transport": "platform",
    "shelter": "no"
+  }
+ },
+ {
+  "osm": "node/10291367369",
+  "lat": 19.184213,
+  "lon": 72.9544284,
+  "tags": {
+   "bus": "yes",
+   "highway": "bus_stop",
+   "name": "Maharana Pratap Chowk",
+   "public_transport": "platform",
+   "shelter": "yes"
   }
  },
  {
@@ -11386,9 +11416,32 @@
   }
  },
  {
+  "osm": "node/13970084040",
+  "lat": 19.17419,
+  "lon": 72.9571085,
+  "tags": {
+   "bus": "yes",
+   "highway": "bus_stop",
+   "name": "RP Road (Only Alighting)",
+   "public_transport": "platform",
+   "ref": "37409",
+   "shelter": "no"
+  }
+ },
+ {
+  "osm": "node/14098734283",
+  "lat": 19.2602834,
+  "lon": 73.1379534,
+  "tags": {
+   "bus": "yes",
+   "highway": "bus_stop",
+   "public_transport": "platform"
+  }
+ },
+ {
   "osm": "way/31499695",
-  "lat": 19.2271068,
-  "lon": 73.1489709,
+  "lat": 19.2271229,
+  "lon": 73.1489562,
   "tags": {
    "amenity": "bus_station",
    "name": "Vitthalwadi"
@@ -11435,8 +11488,8 @@
  },
  {
   "osm": "way/319831104",
-  "lat": 19.2093018,
-  "lon": 72.9521893,
+  "lat": 19.2093285,
+  "lon": 72.9521625,
   "tags": {
    "amenity": "bus_station",
    "name": "Lokmanya Nagar Bus Depot"
