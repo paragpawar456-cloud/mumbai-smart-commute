@@ -52,10 +52,11 @@ Tests (2026-10-11): `flutter analyze` clean · `flutter test` 35 passed · `back
 
 - [ ] Enter the official CR timetable for the pilot corridor (owner or helper, via DATA_ENTRY.md)
 - [ ] Check the seeded auto/taxi fares against the official MMRTA tariff card
-- [ ] Phase 7: hardening (load test against Apps Script quotas, accessibility pass, offline checks)
-- [ ] Phase 8: delivery (signed APK, tester guide, handover)
+- [ ] Owner: set up Firebase and the Sheet (docs/SETUP.md); sign-in, reports, alerts and admin then appear by themselves
+- [ ] Owner: run `backend/tool/loadtest.js` after deploying and record the numbers in HARDENING.md
+- [ ] Owner (optional): add signing secrets so testers can update without uninstalling
 
-## Phase 6: Accounts and admin — in review
+## Phase 6: Accounts and admin — done (PR #4, merged)
 
 | Item | Result |
 |---|---|
@@ -70,3 +71,17 @@ Tests (2026-10-11): `flutter analyze` clean · `flutter test` 35 passed · `back
 | Fixed: two cache keys (report lists, alerts) could repeat within the same millisecond and serve a stale list for up to a minute | Fixed, tested |
 
 Tests (2026-10-11): `flutter analyze` clean · `flutter test` 42 passed · `backend npm test` 31 passed.
+
+## Guest-only build — done (PR #5)
+
+Sign-in, account, server status and commuter-report UI are hidden until both Firebase and the server are configured (D26).
+
+## Phase 7: Hardening — in review
+
+Failure-mode tests for the data pack and network; three bugs found and fixed (broken server pack, storage-full caching, Marathi/Hindi garbled when the server sends no charset). Load-test tool written and checked locally; capacity is calculated, not yet measured. Security checklist passed. Details: [HARDENING.md](HARDENING.md), [SECURITY.md](SECURITY.md).
+
+## Phase 8: Delivery — in review
+
+Direct APK download link, README, [TESTER_GUIDE.md](TESTER_GUIDE.md), [PRIVACY.md](PRIVACY.md) and [TERMS_DRAFT.md](TERMS_DRAFT.md) (drafts, need review before a public launch).
+
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 49 passed · `backend npm test` 31 passed.

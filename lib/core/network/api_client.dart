@@ -79,7 +79,9 @@ class ApiClient {
 
     final Map<String, dynamic> decoded;
     try {
-      decoded = jsonDecode(res.body) as Map<String, dynamic>;
+      // Decode as UTF-8 ourselves: without a charset header `res.body` would
+      // be read as Latin-1 and garble Marathi and Hindi names.
+      decoded = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     } on FormatException {
       throw ApiException('bad_response', 'Server returned non-JSON',
           statusCode: res.statusCode);
