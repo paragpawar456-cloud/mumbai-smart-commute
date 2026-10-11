@@ -409,5 +409,14 @@
   "nearestFarAway": "सर्वात जवळचे, थोडे दूर",
   "noTaxiStands": "इथे जवळ अजून टॅक्सी स्टँड नोंदलेले नाहीत.",
   "kmAway": "{km} किमी दूर",
-  "fromPlace": "{place} हून"
+  "fromPlace": "{place} हून",
+  "addedByYou": "तुम्ही जोडले",
+  "remove": "काढा",
+  "save": "जतन करा",
+  "addAutoStand": "तुम्हाला माहीत असलेला रिक्षा स्टँड जोडा",
+  "addTaxiStand": "तुम्हाला माहीत असलेला टॅक्सी स्टँड जोडा",
+  "addStandNote": "या फोनवर जतन होते, पुढच्या वेळी इथेच दिसेल.",
+  "standNameLabel": "नाव, उदा. स्टेशन रोड स्टँड",
+  "taxiStand": "टॅक्सी स्टँड",
+  "openShort": "उघडा"
 }

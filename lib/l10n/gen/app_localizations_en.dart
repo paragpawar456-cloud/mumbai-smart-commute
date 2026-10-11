@@ -1145,4 +1145,32 @@ class AppLocalizationsEn extends AppLocalizations {
   String fromPlace(String place) {
     return 'from $place';
   }
+
+  @override
+  String get addedByYou => 'Added by you';
+
+  @override
+  String get remove => 'Remove';
+
+  @override
+  String get save => 'Save';
+
+  @override
+  String get addAutoStand => 'Add an auto stand you know';
+
+  @override
+  String get addTaxiStand => 'Add a taxi stand you know';
+
+  @override
+  String get addStandNote =>
+      'Saved on this phone, so next time it shows right here.';
+
+  @override
+  String get standNameLabel => 'Name, e.g. Station Road stand';
+
+  @override
+  String get taxiStand => 'Taxi stand';
+
+  @override
+  String get openShort => 'Open';
 }

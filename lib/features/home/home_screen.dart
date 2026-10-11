@@ -115,14 +115,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(children: [
-                    Container(
-                      padding: const EdgeInsets.all(8),
+                    DecoratedBox(
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.16),
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(11),
+                        border: Border.all(
+                            color: Colors.white.withValues(alpha: 0.5), width: 1.5),
                       ),
-                      child: const Icon(Icons.directions_transit_rounded,
-                          color: Colors.white, size: 22),
+                      child: Image.asset('assets/brand/logo.png',
+                          width: 38, height: 38, semanticLabel: l.appTitle),
                     ),
                     const SizedBox(width: 10),
                     Text(l.appTitle,

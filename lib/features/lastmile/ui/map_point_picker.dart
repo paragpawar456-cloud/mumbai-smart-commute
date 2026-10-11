@@ -3,7 +3,8 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
 
-import '../../../core/providers.dart';
+import '../../../shared/widgets/app_map_tiles.dart';
+
 import '../../../l10n/gen/app_localizations.dart';
 import '../domain/lastmile_models.dart';
 
@@ -28,7 +29,6 @@ class _MapPointPickerState extends ConsumerState<_MapPointPicker> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final config = ref.watch(appConfigProvider);
     return Scaffold(
       appBar: AppBar(title: Text(l.lastMilePickOnMap)),
       body: Stack(
@@ -42,14 +42,8 @@ class _MapPointPickerState extends ConsumerState<_MapPointPicker> {
               maxZoom: 18,
             ),
             children: [
-              TileLayer(
-                urlTemplate: config.tileUrlTemplate,
-                userAgentPackageName: config.userAgentPackage,
-              ),
-              const RichAttributionWidget(
-                alignment: AttributionAlignment.bottomLeft,
-                attributions: [TextSourceAttribution('OpenStreetMap contributors')],
-              ),
+              const AppMapTiles(),
+              const AppMapAttribution(),
             ],
           ),
           const IgnorePointer(

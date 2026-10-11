@@ -1141,4 +1141,31 @@ class AppLocalizationsHi extends AppLocalizations {
   String fromPlace(String place) {
     return '$place से';
   }
+
+  @override
+  String get addedByYou => 'आपने जोड़ा';
+
+  @override
+  String get remove => 'हटाएँ';
+
+  @override
+  String get save => 'सेव करें';
+
+  @override
+  String get addAutoStand => 'अपना जाना-पहचाना ऑटो स्टैंड जोड़ें';
+
+  @override
+  String get addTaxiStand => 'अपना जाना-पहचाना टैक्सी स्टैंड जोड़ें';
+
+  @override
+  String get addStandNote => 'इस फ़ोन पर सेव होता है, अगली बार यहीं दिखेगा।';
+
+  @override
+  String get standNameLabel => 'नाम, जैसे स्टेशन रोड स्टैंड';
+
+  @override
+  String get taxiStand => 'टैक्सी स्टैंड';
+
+  @override
+  String get openShort => 'खोलें';
 }

@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
+
+import '../../../shared/widgets/app_map_tiles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../core/providers.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../l10n/gen/app_localizations.dart';
+import '../../lastmile/data/my_stands.dart';
 import '../../lastmile/domain/lastmile_engine.dart';
+import '../../lastmile/ui/map_point_picker.dart';
 import '../../lastmile/domain/lastmile_models.dart';
 import '../../settings/settings_controller.dart';
 import '../../transit/data/transit_providers.dart';
@@ -57,6 +60,39 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
     super.dispose();
   }
 
+  /// Lets the user mark a stand they know: pick the spot, then name it.
+  Future<void> _addStand(bool taxi) async {
+    final l = AppLocalizations.of(context);
+    final point = await pickPointOnMap(context, widget.point);
+    if (point == null || !mounted) return;
+    final controller =
+        TextEditingController(text: taxi ? l.taxiStand : l.autoStand);
+    final name = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(taxi ? l.addTaxiStand : l.addAutoStand),
+        content: TextField(
+          key: const Key('standName'),
+          controller: controller,
+          autofocus: true,
+          decoration: InputDecoration(labelText: l.standNameLabel),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(context), child: Text(l.cancel)),
+          FilledButton(
+            style: FilledButton.styleFrom(minimumSize: const Size(88, 44)),
+            onPressed: () => Navigator.pop(context, controller.text.trim()),
+            child: Text(l.save),
+          ),
+        ],
+      ),
+    );
+    if (name == null || name.isEmpty) return;
+    await ref.read(myStandsProvider.notifier).add(MyStand(
+        name: name, point: point, taxi: taxi, addedAt: DateTime.now()));
+  }
+
   Future<void> _open(Uri uri) async {
     final l = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
@@ -70,7 +106,6 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
     final text = Theme.of(context).textTheme;
     final scheme = Theme.of(context).colorScheme;
     final pack = ref.watch(dataPackProvider).value!.pack;
-    final config = ref.watch(appConfigProvider);
     final data = pack.lastMile;
     final mode = widget.mode;
     final (color, icon, title) = switch (mode) {
@@ -124,6 +159,13 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
         ));
       }
     }
+    if (mode != NearbyMode.bus) {
+      for (final m in ref.watch(myStandsProvider)) {
+        if (m.taxi != (mode == NearbyMode.cab)) continue;
+        all.add(_Spot(m.name, m.point, distanceMeters(here, m.point),
+            l.addedByYou, mine: m));
+      }
+    }
     all.sort((a, b) => a.meters.compareTo(b.meters));
     final near = mode == NearbyMode.bus ? 1000.0 : 2000.0;
     var spots = all.where((s) => s.meters <= near).toList();
@@ -167,10 +209,7 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
                 maxZoom: 18,
               ),
               children: [
-                TileLayer(
-                  urlTemplate: config.tileUrlTemplate,
-                  userAgentPackageName: config.userAgentPackage,
-                ),
+                const AppMapTiles(),
                 MarkerLayer(markers: [
                   for (final s in spots)
                     Marker(
@@ -195,10 +234,7 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
                     ),
                   ),
                 ]),
-                const RichAttributionWidget(
-                  alignment: AttributionAlignment.bottomLeft,
-                  attributions: [TextSourceAttribution('OpenStreetMap contributors')],
-                ),
+                const AppMapAttribution(),
               ],
             ),
           ),
@@ -208,44 +244,59 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 if (providers.isNotEmpty) ...[
-                  Card(
+                  Container(
                     key: const Key('liveInAppsCard'),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(children: [
-                            Icon(Icons.bolt_rounded, color: color),
-                            const SizedBox(width: 8),
-                            Expanded(
-                                child: Text(l.seeLiveInApp, style: text.titleMedium)),
-                          ]),
-                          const SizedBox(height: 6),
-                          Text(l.liveCabsInApps,
-                              style: text.bodySmall
-                                  ?.copyWith(color: scheme.onSurfaceVariant)),
-                          const SizedBox(height: 12),
-                          Row(children: [
-                            for (final (i, pr) in providers.indexed) ...[
-                              if (i > 0) const SizedBox(width: 8),
-                              Expanded(
-                                child: FilledButton.tonal(
-                                  style: FilledButton.styleFrom(
-                                      minimumSize: const Size.fromHeight(46)),
-                                  onPressed: () => _open(pr.bookingUri(here, dest,
-                                      fromName: widget.placeName,
-                                      toName: widget.destinationName)!),
-                                  child: Text(pr.name),
-                                ),
-                              ),
-                            ],
-                          ]),
-                        ],
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [Color(0xFF111827), Color(0xFF1F2937)],
                       ),
+                      borderRadius: BorderRadius.circular(22),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(children: [
+                          Container(
+                            padding: const EdgeInsets.all(6),
+                            decoration: BoxDecoration(
+                              color: AppColors.accent.withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Icon(Icons.bolt_rounded,
+                                color: AppColors.accent, size: 20),
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(l.seeLiveInApp,
+                                style: text.titleMedium
+                                    ?.copyWith(color: Colors.white)),
+                          ),
+                        ]),
+                        const SizedBox(height: 8),
+                        Text(l.liveCabsInApps,
+                            style: text.bodySmall
+                                ?.copyWith(color: Colors.white70, height: 1.4)),
+                        const SizedBox(height: 14),
+                        Row(children: [
+                          for (final (i, pr) in providers.indexed) ...[
+                            if (i > 0) const SizedBox(width: 10),
+                            Expanded(
+                              child: _ProviderButton(
+                                name: pr.name,
+                                onTap: () => _open(pr.bookingUri(here, dest,
+                                    fromName: widget.placeName,
+                                    toName: widget.destinationName)!),
+                              ),
+                            ),
+                          ],
+                        ]),
+                      ],
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 20),
                 ],
                 Text(
                   switch (mode) {
@@ -284,6 +335,15 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
                             child: Icon(icon, color: color),
                           ),
                           title: Text(s.name),
+                          trailing: s.mine == null
+                              ? null
+                              : IconButton(
+                                  tooltip: l.remove,
+                                  icon: const Icon(Icons.delete_outline),
+                                  onPressed: () => ref
+                                      .read(myStandsProvider.notifier)
+                                      .remove(s.mine!),
+                                ),
                           subtitle: Text([
                             s.meters < 1000
                                 ? l.walkMeters(s.meters.round())
@@ -294,6 +354,24 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
                       ],
                     ]),
                   ),
+                if (mode != NearbyMode.bus) ...[
+                  const SizedBox(height: 12),
+                  OutlinedButton.icon(
+                    key: const Key('addStand'),
+                    style: OutlinedButton.styleFrom(
+                        minimumSize: const Size.fromHeight(50)),
+                    onPressed: () => _addStand(mode == NearbyMode.cab),
+                    icon: const Icon(Icons.add_location_alt_outlined),
+                    label: Text(mode == NearbyMode.cab
+                        ? l.addTaxiStand
+                        : l.addAutoStand),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(l.addStandNote,
+                      textAlign: TextAlign.center,
+                      style: text.labelSmall
+                          ?.copyWith(color: scheme.onSurfaceVariant)),
+                ],
                 const SizedBox(height: 16),
                 Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   Icon(Icons.info_outline, size: 18, color: scheme.onSurfaceVariant),
@@ -314,13 +392,67 @@ class _NearbyState extends ConsumerState<NearbyTransportScreen>
   }
 }
 
+/// A ride app's button in its own brand colours, with the name never wrapped.
+class _ProviderButton extends StatelessWidget {
+  const _ProviderButton({required this.name, required this.onTap});
+
+  final String name;
+  final VoidCallback onTap;
+
+  static (Color, Color) _colors(String name) => switch (name.toLowerCase()) {
+        'uber' => (Colors.white, Colors.black),
+        'ola' => (const Color(0xFFCDDC39), Colors.black),
+        'rapido' => (const Color(0xFFF9C933), Colors.black),
+        _ => (Colors.white, Colors.black),
+      };
+
+  @override
+  Widget build(BuildContext context) {
+    final (bg, fg) = _colors(name);
+    return Material(
+      color: bg,
+      borderRadius: BorderRadius.circular(14),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(14),
+        onTap: onTap,
+        child: SizedBox(
+          height: 64,
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            FittedBox(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Text(name,
+                    maxLines: 1,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        color: fg, fontWeight: FontWeight.w700)),
+              ),
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Icon(Icons.open_in_new_rounded, size: 12, color: fg.withValues(alpha: 0.6)),
+              const SizedBox(width: 3),
+              Text(AppLocalizations.of(context).openShort,
+                  style: Theme.of(context)
+                      .textTheme
+                      .labelSmall
+                      ?.copyWith(color: fg.withValues(alpha: 0.6))),
+            ]),
+          ]),
+        ),
+      ),
+    );
+  }
+}
+
 class _Spot {
-  const _Spot(this.name, this.point, this.meters, this.detail);
+  const _Spot(this.name, this.point, this.meters, this.detail, {this.mine});
 
   final String name;
   final GeoPoint point;
   final double meters;
   final String? detail;
+
+  /// Set when the user added this stand on this phone.
+  final MyStand? mine;
 }
 
 class _PulsingSpot extends StatelessWidget {
