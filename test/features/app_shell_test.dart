@@ -71,11 +71,12 @@ void main() {
     await tester.tap(find.text('Profile').last);
     await tester.pumpAndSettle();
 
-    expect(find.text('Not signed in'), findsOneWidget);
-    expect(find.text('Server not configured in this build'), findsOneWidget);
-
-    await tester.tap(find.widgetWithText(FilledButton, 'Sign in'));
-    await tester.pumpAndSettle();
-    expect(find.text('Sign-in is not configured in this build.'), findsOneWidget);
+    // Accounts aren't set up in this build, so no sign-in appears anywhere.
+    expect(find.text('Sign in'), findsNothing);
+    expect(find.text('Not signed in'), findsNothing);
+    expect(find.text('Delete account'), findsNothing);
+    expect(find.text('Server not configured in this build'), findsNothing);
+    expect(find.text('Language'), findsOneWidget);
+    expect(find.text('Privacy notice'), findsOneWidget);
   });
 }

@@ -20,6 +20,13 @@ final apiClientProvider = Provider<ApiClient>((ref) {
   return ApiClient(baseUrl: config.backendUrl, idTokenProvider: auth.idToken);
 });
 
+/// Accounts (sign-in, reports, admin) appear only when the build has both a
+/// Firebase config and a backend URL. Until the owner sets those up, the app
+/// shows no sign-in anywhere and works fully as a guest.
+final accountsEnabledProvider = Provider<bool>((ref) =>
+    ref.watch(authRepositoryProvider).isAvailable &&
+    ref.watch(apiClientProvider).isConfigured);
+
 enum BackendStatus { ok, notConfigured, unreachable }
 
 final backendStatusProvider = FutureProvider<BackendStatus>((ref) async {

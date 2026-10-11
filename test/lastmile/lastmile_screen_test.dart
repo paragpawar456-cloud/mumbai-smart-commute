@@ -52,10 +52,10 @@ void main() {
     await tester.scrollUntilVisible(find.text('Uber'), 300);
     expect(find.text('Uber'), findsOneWidget);
     expect(find.text('Price in their app'), findsWidgets);
-    // Backend not configured in tests: reports explain why they're missing.
-    await tester.scrollUntilVisible(
-        find.text('Reports need the server, which is not set up yet.'), 300);
-    expect(find.text('Reports need the server, which is not set up yet.'),
-        findsOneWidget);
+    // No server in this build: the reports section and its sign-in prompts
+    // are left out entirely.
+    await tester.scrollUntilVisible(find.text('Stands near the station'), 300);
+    expect(find.text('Commuter reports'), findsNothing);
+    expect(find.byKey(const Key('reportButton')), findsNothing);
   });
 }

@@ -55,13 +55,14 @@ class ProfileScreen extends ConsumerWidget {
     final user = ref.watch(authStateProvider).value;
     final backend = ref.watch(backendStatusProvider);
     final serverProfile = ref.watch(serverProfileProvider).value;
+    final accounts = ref.watch(accountsEnabledProvider);
 
     return Scaffold(
       appBar: AppBar(title: Text(l.profileTitle)),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 8),
         children: [
-          _AccountTile(user: user),
+          if (accounts) _AccountTile(user: user),
           if (serverProfile != null && serverProfile.needsConsent)
             _ConsentCard(onAccept: () => acceptPrivacyNotice(ref)),
           if (serverProfile != null && serverProfile.canModerate)
@@ -73,7 +74,7 @@ class ProfileScreen extends ConsumerWidget {
               trailing: const Icon(Icons.chevron_right),
               onTap: () => context.push('/admin'),
             ),
-          if (user != null) ...[
+          if (accounts && user != null) ...[
             ListTile(
               leading: const Icon(Icons.logout),
               title: Text(l.signOut),
@@ -86,7 +87,7 @@ class ProfileScreen extends ConsumerWidget {
               onTap: () => _confirmDelete(context, ref),
             ),
           ],
-          const Divider(),
+          if (accounts) const Divider(),
           ListTile(
             leading: const Icon(Icons.translate),
             title: Text(l.language),
@@ -124,21 +125,22 @@ class ProfileScreen extends ConsumerWidget {
             onChanged: controller.setReducedMotion,
           ),
           const Divider(),
-          ListTile(
-            leading: const Icon(Icons.cloud_outlined),
-            title: Text(l.backendStatus),
-            subtitle: Text(switch (backend.value) {
-              BackendStatus.ok => l.backendOk,
-              BackendStatus.notConfigured => l.backendNotConfigured,
-              BackendStatus.unreachable => l.errorNetwork,
-              null => '…',
-            }),
-            trailing: backend.value == BackendStatus.unreachable
-                ? TextButton(
-                    onPressed: () => ref.invalidate(backendStatusProvider),
-                    child: Text(l.retry))
-                : null,
-          ),
+          if (backend.value != BackendStatus.notConfigured)
+            ListTile(
+              leading: const Icon(Icons.cloud_outlined),
+              title: Text(l.backendStatus),
+              subtitle: Text(switch (backend.value) {
+                BackendStatus.ok => l.backendOk,
+                BackendStatus.notConfigured => l.backendNotConfigured,
+                BackendStatus.unreachable => l.errorNetwork,
+                null => '…',
+              }),
+              trailing: backend.value == BackendStatus.unreachable
+                  ? TextButton(
+                      onPressed: () => ref.invalidate(backendStatusProvider),
+                      child: Text(l.retry))
+                  : null,
+            ),
           ListTile(
             leading: const Icon(Icons.privacy_tip_outlined),
             title: Text(l.privacyTitle),
