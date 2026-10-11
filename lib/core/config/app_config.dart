@@ -29,7 +29,7 @@ class AppConfig {
         tileUrlTemplate: String.fromEnvironment(
           'TILE_URL_TEMPLATE',
           defaultValue:
-              'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+              'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
         ),
         userAgentPackage: String.fromEnvironment(
           'USER_AGENT_PACKAGE',
