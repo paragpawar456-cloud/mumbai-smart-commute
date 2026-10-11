@@ -45,7 +45,7 @@ void main() {
     expect(train.firstLeg, LegMode.auto);
     expect(train.lastLeg, LegMode.auto);
     expect(train.plusTicket, isTrue);
-    expect(train.trainFromTimetable, isFalse, reason: 'no timetable loaded');
+    expect(train.trainFromTimetable, isTrue);
     // Kalyan to Thane is about 20 km of track: tens of minutes, not hours.
     final rail = estimateRailMinutes(plan.rail!, pack);
     expect(rail, inInclusiveRange(25, 60));

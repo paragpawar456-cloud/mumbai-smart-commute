@@ -1067,4 +1067,14 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get getOffAtLabel => 'येथे उतरा:';
+
+  @override
+  String trainComingFrom(String origin, String station, String time) {
+    return '$origin हून येत आहे; $time ला $station ला पोहोचेल';
+  }
+
+  @override
+  String timetableSourceNote(String date) {
+    return 'वेळा मध्य रेल्वेच्या अधिकृत वेळापत्रकातून ($date पासून). काही ट्रेन नंतर बदलल्या आहेत, प्रवासापूर्वी स्टेशनवरील फलक पाहा.';
+  }
 }

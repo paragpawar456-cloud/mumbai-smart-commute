@@ -389,5 +389,7 @@
   "trainsBetween": "ट्रेन {from} → {to}",
   "waysToGo": "{count, plural, =1{जाण्याचा 1 मार्ग} other{जाण्याचे {count} मार्ग}}",
   "boardAtLabel": "येथून चढा:",
-  "getOffAtLabel": "येथे उतरा:"
+  "getOffAtLabel": "येथे उतरा:",
+  "trainComingFrom": "{origin} हून येत आहे; {time} ला {station} ला पोहोचेल",
+  "timetableSourceNote": "वेळा मध्य रेल्वेच्या अधिकृत वेळापत्रकातून ({date} पासून). काही ट्रेन नंतर बदलल्या आहेत, प्रवासापूर्वी स्टेशनवरील फलक पाहा."
 }

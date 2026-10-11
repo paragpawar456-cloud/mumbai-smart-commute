@@ -14,7 +14,7 @@ App shell, en/mr/hi, sign-in code, Apps Script backend, Sheet schema, CI APK. Se
 | Data pack: bundled in app → cached on phone → refreshed from server when version is newer | Done, tested |
 | Station search (English, Marathi, Hindi, station code) | Done, tested |
 | Route planner with changes and walking interchange (Ghatkopar) | Done, tested |
-| Timetable engine: departures, service days, Sunday-on-holiday, chained connections | Done, tested on test fixtures; **no real timetable loaded yet** |
+| Timetable engine: departures, service days, Sunday-on-holiday, chained connections | Done; 872 Central Railway Main Line trains loaded from the official timetable (D30) |
 | Routes screen, Station screen with departures, saved and recent journeys | Done, widget-tested |
 | Map: OSM tiles + attribution, station markers, lines, layers, "My location" on tap only | Done; not exercised in automated tests (needs network tiles) |
 | Server: getDataPack, validation, Publish menu, sync status, chunked cache | Done, tested with stubs |
@@ -50,7 +50,8 @@ Tests (2026-10-11): `flutter analyze` clean · `flutter test` 35 passed · `back
 
 ## Next
 
-- [ ] Enter the official CR timetable for the pilot corridor (owner or helper, via DATA_ENTRY.md)
+- [x] Load the official CR Main Line timetable (from CR's pocket timetable PDFs, D30)
+- [ ] Replace it when CR publishes a newer Main Line timetable (rerun `tool/pack/import_cr_timetable.py`)
 - [ ] Check the seeded auto/taxi fares against the official MMRTA tariff card
 - [ ] Owner: set up Firebase and the Sheet (docs/SETUP.md); sign-in, reports, alerts and admin then appear by themselves
 - [ ] Owner: run `backend/tool/loadtest.js` after deploying and record the numbers in HARDENING.md
@@ -98,6 +99,6 @@ Tester feedback: the trip page looked basic; wanted 3 to 4 options, a train time
 - Train option: each step, a switch for nearby stations (e.g. Thane instead of Kalwa), and the trains between the two stations from the timetable.
 - "Where is my train": the train moving down its line by the timetable, with a countdown to your station. Labelled Scheduled, not live (D29).
 - "Where is my auto / bus": stands or stops on a map with pulsing markers, and cab-app buttons. No live positions exist, so no fake vehicles (D29). Also on Home and from station departures.
-- Blocker: no train times are loaded. Waiting on the owner for the official Central Railway timetable to enter Kalyan to Thane trains.
+- Train times: 872 Main Line trains from Central Railway's official timetable dated 5 Oct 2024 (302 run Kalyan to Thane). Each list says so and asks riders to check the station display, since some trains changed later (D30).
 
-Tests (2026-10-11): `flutter analyze` clean · `flutter test` 69 passed · `backend npm test` 31 passed.
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 70 passed · `backend npm test` 31 passed.

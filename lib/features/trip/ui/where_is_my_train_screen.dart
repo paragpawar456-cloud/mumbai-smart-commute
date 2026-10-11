@@ -64,6 +64,16 @@ class _WhereIsMyTrainState extends ConsumerState<WhereIsMyTrainScreen>
   String _name(String id, String lang) =>
       widget.pack.stationById[id]?.name(lang) ?? id;
 
+  /// True when the timetable says the train starts before the first station
+  /// the app knows about (e.g. a Kasara train seen from Kalyan).
+  bool _startsBeyondPack(TrainRun run) {
+    final origin = run.trip.originName;
+    final first = widget.pack.stationById[run.originId]?.nameEn;
+    return origin != null &&
+        first != null &&
+        origin.toLowerCase() != first.toLowerCase();
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -84,8 +94,11 @@ class _WhereIsMyTrainState extends ConsumerState<WhereIsMyTrainScreen>
       _ when pos.progress < run.boardIndex => (
           toBoard < 1 ? l.trainArrivingNow(board) : l.trainReachesIn(board, toBoard.ceil()),
           pos.phase == TrainPhase.notStarted
-              ? l.trainStartsAt(_name(run.originId, lang),
-                  formatMinutes(stops.first.departure))
+              ? _startsBeyondPack(run)
+                  ? l.trainComingFrom(run.trip.originName!,
+                      _name(run.originId, lang), formatMinutes(stops.first.departure))
+                  : l.trainStartsAt(_name(run.originId, lang),
+                      formatMinutes(stops.first.departure))
               : pos.phase == TrainPhase.atStation
                   ? l.trainNowAt(_name(stops[pos.index].stationId, lang))
                   : l.trainNowBetween(_name(stops[pos.index].stationId, lang),
@@ -129,7 +142,7 @@ class _WhereIsMyTrainState extends ConsumerState<WhereIsMyTrainScreen>
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '${formatMinutes(run.departure)} · ${l.towards(_name(run.terminusId, lang))} · '
+                '${formatMinutes(run.departure)} · ${l.towards(trainHeadsign(run.trip, widget.pack, run.terminusId, lang))} · '
                 '${run.trip.trainType == 'fast' ? l.fastTrain : l.slowTrain}',
                 style: text.labelLarge?.copyWith(color: Colors.white70),
               ),

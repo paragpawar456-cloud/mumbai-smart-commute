@@ -39,9 +39,9 @@ void main() {
     expect(find.text('Direct · 7 stops'), findsOneWidget);
     expect(find.text('Board at Kalyan'), findsOneWidget);
     expect(find.text('Get off at Thane'), findsOneWidget);
-    // No timetable in the seed pack, so no times are shown, only the notice.
-    expect(find.textContaining('Timetable not loaded yet'), findsOneWidget);
-    expect(find.textContaining('Next train'), findsNothing);
+    // Times come from the official timetable in the seed pack.
+    expect(find.textContaining('Timetable not loaded yet'), findsNothing);
+    expect(find.textContaining('Next train'), findsWidgets);
   });
 
   testWidgets('saving a journey shows it on Home', (tester) async {

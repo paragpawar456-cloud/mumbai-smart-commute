@@ -23,9 +23,13 @@ const testConfig = AppConfig(
   userAgentPackage: 'test',
 );
 
+/// A Monday morning, so tests see the same trains whenever they run.
+final testNow = DateTime(2026, 10, 12, 9, 0);
+
 Future<Widget> buildTestApp({
   Map<String, Object> prefs = const {},
   List<Override> overrides = const [],
+  DateTime? now,
 }) async {
   SharedPreferences.setMockInitialValues(prefs);
   final sp = await SharedPreferences.getInstance();
@@ -41,6 +45,7 @@ Future<Widget> buildTestApp({
         loadBundled: () async =>
             File('assets/data/seed_pack.json').readAsStringSync(),
       )),
+      clockProvider.overrideWithValue(() => now ?? testNow),
       ...overrides,
     ],
     child: const MumbaiSmartCommuteApp(),

@@ -1069,4 +1069,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get getOffAtLabel => 'Get off at:';
+
+  @override
+  String trainComingFrom(String origin, String station, String time) {
+    return 'Coming from $origin; reaches $station at $time';
+  }
+
+  @override
+  String timetableSourceNote(String date) {
+    return 'Times from Central Railway\'s official timetable (from $date). Some trains have changed since, so check the station display before you travel.';
+  }
 }

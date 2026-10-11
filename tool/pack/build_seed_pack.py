@@ -3,8 +3,8 @@
 
 Station coordinates and Marathi/Hindi names come from the OpenStreetMap
 extract in data/osm (ODbL). Line order is the public station sequence of each
-line. No timetable rows are generated here: trips and stop times must come
-from an official timetable entered via the CSV templates.
+line. Trips and stop times come only from an official timetable: the Central
+Railway Main Line PDFs converted by tool/pack/import_cr_timetable.py.
 
 Usage: python3 tool/pack/build_seed_pack.py
 """
@@ -165,15 +165,24 @@ for i, r in enumerate(OSM_PICKUPS, 1):
         'verified_at': '', 'source_id': 'osm',
     })
 
+# Central Railway Main Line trains, made by tool/pack/import_cr_timetable.py
+# from the official pocket timetable PDFs in data/timetables/cr.
+_TT_PATH = os.path.join(ROOT, 'data/timetables/cr/cr_main_timetable.json')
+TIMETABLE = json.load(open(_TT_PATH)) if os.path.exists(_TT_PATH) else {'trips': [], 'stop_times': []}
+if TIMETABLE['trips']:
+    _m = json.load(open(os.path.join(ROOT, 'data/timetables/cr/manifest.json')))
+    sources.append({'source_id': _m['source_id'], 'name': _m['name'], 'licence': _m['licence'],
+                    'attribution': _m['attribution'], 'url': _m['url']})
+
 pack = {
-    'version': 2,
+    'version': 3,
     'generated_at': now,
     'sources': [{k: s[k] for k in ('source_id', 'name', 'licence', 'attribution', 'url')} for s in sources],
     'stations': [{k: v for k, v in s.items() if not k.startswith('_')} for s in stations],
     'lines': lines,
     'interchanges': [{'from_station_id': a, 'to_station_id': b, 'walk_minutes': m} for a, b, m in INTERCHANGES],
-    'trips': [],
-    'stop_times': [],
+    'trips': TIMETABLE['trips'],
+    'stop_times': TIMETABLE['stop_times'],
     'places': places,
     'pickup_points': pickups,
     'bus_stops': [],
