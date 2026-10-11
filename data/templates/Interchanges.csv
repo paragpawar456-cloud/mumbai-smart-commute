@@ -1,0 +1,2 @@
+from_station_id,to_station_id,walk_minutes,source_id
+GC,M1-GKP,5,curated-network

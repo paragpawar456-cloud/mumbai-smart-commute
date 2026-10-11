@@ -14,18 +14,40 @@ void main() {
     }
   });
 
-  testWidgets('searching opens Routes with the query', (tester) async {
+  testWidgets('home search resolves stations and plans a journey',
+      (tester) async {
     await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
     await tester.pumpAndSettle();
 
     await tester.enterText(find.byKey(const Key('fromField')), 'Kalyan');
-    await tester.enterText(
-        find.byKey(const Key('toField')), 'Yogidham, Kalyan West');
+    await tester.enterText(find.byKey(const Key('toField')), 'Thane');
     await tester.tap(find.byKey(const Key('findRoutesButton')));
     await tester.pumpAndSettle();
 
     expect(find.text('Plan a journey'), findsOneWidget);
-    expect(find.text('Kalyan  →  Yogidham, Kalyan West'), findsOneWidget);
+    expect(find.text('Direct · 7 stops'), findsOneWidget);
+    expect(find.text('Board at Kalyan'), findsOneWidget);
+    expect(find.text('Get off at Thane'), findsOneWidget);
+    // No timetable in the seed pack, so no times are shown, only the notice.
+    expect(find.textContaining('Timetable not loaded yet'), findsOneWidget);
+    expect(find.textContaining('Next train'), findsNothing);
+  });
+
+  testWidgets('saving a journey shows it on Home', (tester) async {
+    await tester.pumpWidget(await buildTestApp(prefs: {'settings.locale': 'en'}));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const Key('fromField')), 'Kalyan');
+    await tester.enterText(find.byKey(const Key('toField')), 'Andheri');
+    await tester.tap(find.byKey(const Key('findRoutesButton')));
+    await tester.pumpAndSettle();
+
+    expect(find.text('1 change · 21 stops'), findsOneWidget);
+    await tester.tap(find.byKey(const Key('saveJourney')));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('Home').last);
+    await tester.pumpAndSettle();
+    expect(find.text('Kalyan → Andheri'), findsOneWidget);
   });
 
   testWidgets('saved language is applied (Marathi)', (tester) async {

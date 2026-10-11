@@ -210,4 +210,155 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get aboutBody =>
       'Map data © OpenStreetMap contributors. Fares marked Estimate are calculated from official tariffs and are not live quotes. This app is not an emergency service.';
+
+  @override
+  String get selectStation => 'Select station';
+
+  @override
+  String get searchStations => 'Search stations';
+
+  @override
+  String get noStationFound => 'No station found. Try another spelling.';
+
+  @override
+  String get planJourney => 'Plan journey';
+
+  @override
+  String get noRouteFound => 'No route found between these stations.';
+
+  @override
+  String get chooseBothStations => 'Choose a start and destination station.';
+
+  @override
+  String rideLeg(String line) {
+    return '$line';
+  }
+
+  @override
+  String boardAt(String station) {
+    return 'Board at $station';
+  }
+
+  @override
+  String alightAt(String station) {
+    return 'Get off at $station';
+  }
+
+  @override
+  String stopsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stops',
+      one: '1 stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String changesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count changes',
+      one: '1 change',
+      zero: 'Direct',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String walkTo(String station, int minutes) {
+    return 'Walk to $station (about $minutes min)';
+  }
+
+  @override
+  String get timetableNotLoaded =>
+      'Timetable not loaded yet. Train times will appear once the official timetable is added. We never guess train times.';
+
+  @override
+  String nextTrain(String dep, String arr) {
+    return 'Next train $dep → arrives $arr';
+  }
+
+  @override
+  String get noMoreTrainsToday =>
+      'No more scheduled trains today for this journey.';
+
+  @override
+  String get departures => 'Departures';
+
+  @override
+  String towards(String station) {
+    return 'to $station';
+  }
+
+  @override
+  String platformShort(String platform) {
+    return 'PF $platform';
+  }
+
+  @override
+  String get fastTrain => 'Fast';
+
+  @override
+  String get slowTrain => 'Slow';
+
+  @override
+  String get acTrain => 'AC';
+
+  @override
+  String get ladiesTrain => 'Ladies';
+
+  @override
+  String get saveJourney => 'Save journey';
+
+  @override
+  String get removeJourney => 'Remove from saved';
+
+  @override
+  String get recentSearches => 'Recent searches';
+
+  @override
+  String dataVersion(int version, String origin) {
+    return 'Data version $version · $origin';
+  }
+
+  @override
+  String get originBundled => 'built into the app';
+
+  @override
+  String get originCached => 'downloaded earlier';
+
+  @override
+  String get originServer => 'just updated';
+
+  @override
+  String get showOnMap => 'Show on map';
+
+  @override
+  String get myLocation => 'My location';
+
+  @override
+  String get layers => 'Layers';
+
+  @override
+  String get layerSuburban => 'Local trains';
+
+  @override
+  String get layerMetro => 'Metro';
+
+  @override
+  String get locationDenied =>
+      'Location permission is off. The map still works; turn it on in settings to see where you are.';
+
+  @override
+  String get locationServiceOff => 'Location is switched off on this phone.';
+
+  @override
+  String get lineGeometryNote =>
+      'Lines are drawn straight between stations, not along the exact track.';
+
+  @override
+  String get linesAtStation => 'Lines';
 }

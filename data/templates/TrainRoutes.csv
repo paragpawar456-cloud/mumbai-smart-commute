@@ -1,0 +1,3 @@
+route_id,operator,mode,name_en,color,station_sequence,source_id
+CR-MAIN,CR,suburban,Central Line (CSMT – Kalyan),#1565C0,"CSMT,MSD,SNRD,BY,CHG,CRD,PR,DR,MTN,SIN,CLA,VVH,GC,VK,KJRD,BND,NHU,MLND,TNA,KLVA,MBQ,DIVA,KOPR,DI,THK,KYN",curated-network
+MML1,MMOPL,metro,Metro Line 1 (Versova – Ghatkopar),#6A1B9A,"M1-VER,M1-DNN,M1-AZN,M1-AND,M1-WEH,M1-CHK,M1-APR,M1-MRL,M1-SKN,M1-ASL,M1-JGN,M1-GKP",curated-network

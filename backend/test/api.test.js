@@ -34,7 +34,7 @@ test('setupSheets creates every tab with headers and is re-runnable', () => {
   for (const n of names) assert.ok(g._ss.getSheetByName(n), n);
   assert.deepStrictEqual(g._ss.getSheetByName('Users')._rows[0].slice(0, 2), ['uid', 'email']);
   vm.runInContext('setupSheets()', ctx);
-  assert.strictEqual(g._ss.getSheetByName('AppConfiguration')._rows.length, 5); // header + 4 seeds
+  assert.strictEqual(g._ss.getSheetByName('AppConfiguration')._rows.length, 6); // header + 5 seeds
 });
 
 test('health is public and reports data pack version', () => {

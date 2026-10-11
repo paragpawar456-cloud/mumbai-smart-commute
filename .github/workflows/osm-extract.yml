@@ -1,0 +1,29 @@
+name: OSM data extract
+
+# Refreshes data/osm/*.json from OpenStreetMap and commits the result to the
+# branch that triggered it. Manual, or on changes to the extract script.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tool/osm/**
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tool/osm/extract.mjs
+      - name: Commit if changed
+        run: |
+          git add data/osm
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git -c user.name="osm-extract[bot]" -c user.email="actions@users.noreply.github.com" \
+            commit -m "Refresh OSM extract (© OpenStreetMap contributors, ODbL)"
+          git push

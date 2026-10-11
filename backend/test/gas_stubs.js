@@ -39,7 +39,13 @@ function makeSpreadsheet() {
 
 function makeCache() {
   const m = new Map();
-  return { get: (k) => (m.has(k) ? m.get(k) : null), put: (k, v) => m.set(k, v), _m: m };
+  return {
+    get: (k) => (m.has(k) ? m.get(k) : null),
+    put: (k, v) => m.set(k, v),
+    getAll: (keys) => Object.fromEntries(keys.filter((k) => m.has(k)).map((k) => [k, m.get(k)])),
+    putAll: (obj) => Object.entries(obj).forEach(([k, v]) => m.set(k, v)),
+    _m: m,
+  };
 }
 
 function makeGlobals({ lookup } = {}) {

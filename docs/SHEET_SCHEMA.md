@@ -84,6 +84,17 @@ Access: public read; admin write. Primary key: `trip_id`.
 | departure | string | yes | HH:MM |
 | platform | string |  | only when verified |
 
+## Interchanges
+
+Access: public read; admin write. Primary key: `from_station_id`.
+
+| Column | Type | Required | Notes |
+|---|---|---|---|
+| from_station_id | id | yes | FK Stations |
+| to_station_id | id | yes | FK Stations; walking transfer between different stations |
+| walk_minutes | int | yes | 1-30 |
+| source_id | id | yes |  |
+
 ## BusRoutes
 
 Access: public read; admin write. Primary key: `bus_route_id`.

@@ -76,6 +76,15 @@ var SCHEMA = {
       ['platform', 'string', false, 'only when verified'],
     ],
   },
+  Interchanges: {
+    access: 'public read; admin write',
+    columns: [
+      ['from_station_id', 'id', true, 'FK Stations'],
+      ['to_station_id', 'id', true, 'FK Stations; walking transfer between different stations'],
+      ['walk_minutes', 'int', true, '1-30'],
+      ['source_id', 'id', true, ''],
+    ],
+  },
   BusRoutes: {
     access: 'public read; admin write',
     columns: [
@@ -268,6 +277,7 @@ function seedConfig_() {
     ['min_app_version', '1.0.0', true, now],
     ['report_expiry_minutes_queue', '30', true, now],
     ['report_expiry_minutes_stand_moved', '10080', true, now],
+    ['data_pack_generated_at', '', true, now],
   ];
   rows.forEach(function (r) {
     if (!Db.findOne('AppConfiguration', 'key', r[0])) Db.append('AppConfiguration', r);

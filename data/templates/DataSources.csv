@@ -1,0 +1,3 @@
+source_id,name,url,licence,attribution,update_frequency,notes
+osm,OpenStreetMap,https://www.openstreetmap.org/copyright,ODbL 1.0,© OpenStreetMap contributors,manual extract,extracted 2026-10-11T06:41:59.808Z
+curated-network,Station order per line (public route maps),,facts,,on change,Sequence only; no timetable

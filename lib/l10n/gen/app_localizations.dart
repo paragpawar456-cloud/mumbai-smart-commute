@@ -477,6 +477,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Map data © OpenStreetMap contributors. Fares marked Estimate are calculated from official tariffs and are not live quotes. This app is not an emergency service.'**
   String get aboutBody;
+
+  /// No description provided for @selectStation.
+  ///
+  /// In en, this message translates to:
+  /// **'Select station'**
+  String get selectStation;
+
+  /// No description provided for @searchStations.
+  ///
+  /// In en, this message translates to:
+  /// **'Search stations'**
+  String get searchStations;
+
+  /// No description provided for @noStationFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No station found. Try another spelling.'**
+  String get noStationFound;
+
+  /// No description provided for @planJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan journey'**
+  String get planJourney;
+
+  /// No description provided for @noRouteFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No route found between these stations.'**
+  String get noRouteFound;
+
+  /// No description provided for @chooseBothStations.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a start and destination station.'**
+  String get chooseBothStations;
+
+  /// No description provided for @rideLeg.
+  ///
+  /// In en, this message translates to:
+  /// **'{line}'**
+  String rideLeg(String line);
+
+  /// No description provided for @boardAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Board at {station}'**
+  String boardAt(String station);
+
+  /// No description provided for @alightAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Get off at {station}'**
+  String alightAt(String station);
+
+  /// No description provided for @stopsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 stop} other{{count} stops}}'**
+  String stopsCount(int count);
+
+  /// No description provided for @changesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Direct} =1{1 change} other{{count} changes}}'**
+  String changesCount(int count);
+
+  /// No description provided for @walkTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk to {station} (about {minutes} min)'**
+  String walkTo(String station, int minutes);
+
+  /// No description provided for @timetableNotLoaded.
+  ///
+  /// In en, this message translates to:
+  /// **'Timetable not loaded yet. Train times will appear once the official timetable is added. We never guess train times.'**
+  String get timetableNotLoaded;
+
+  /// No description provided for @nextTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'Next train {dep} → arrives {arr}'**
+  String nextTrain(String dep, String arr);
+
+  /// No description provided for @noMoreTrainsToday.
+  ///
+  /// In en, this message translates to:
+  /// **'No more scheduled trains today for this journey.'**
+  String get noMoreTrainsToday;
+
+  /// No description provided for @departures.
+  ///
+  /// In en, this message translates to:
+  /// **'Departures'**
+  String get departures;
+
+  /// No description provided for @towards.
+  ///
+  /// In en, this message translates to:
+  /// **'to {station}'**
+  String towards(String station);
+
+  /// No description provided for @platformShort.
+  ///
+  /// In en, this message translates to:
+  /// **'PF {platform}'**
+  String platformShort(String platform);
+
+  /// No description provided for @fastTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'Fast'**
+  String get fastTrain;
+
+  /// No description provided for @slowTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'Slow'**
+  String get slowTrain;
+
+  /// No description provided for @acTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'AC'**
+  String get acTrain;
+
+  /// No description provided for @ladiesTrain.
+  ///
+  /// In en, this message translates to:
+  /// **'Ladies'**
+  String get ladiesTrain;
+
+  /// No description provided for @saveJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'Save journey'**
+  String get saveJourney;
+
+  /// No description provided for @removeJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from saved'**
+  String get removeJourney;
+
+  /// No description provided for @recentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent searches'**
+  String get recentSearches;
+
+  /// No description provided for @dataVersion.
+  ///
+  /// In en, this message translates to:
+  /// **'Data version {version} · {origin}'**
+  String dataVersion(int version, String origin);
+
+  /// No description provided for @originBundled.
+  ///
+  /// In en, this message translates to:
+  /// **'built into the app'**
+  String get originBundled;
+
+  /// No description provided for @originCached.
+  ///
+  /// In en, this message translates to:
+  /// **'downloaded earlier'**
+  String get originCached;
+
+  /// No description provided for @originServer.
+  ///
+  /// In en, this message translates to:
+  /// **'just updated'**
+  String get originServer;
+
+  /// No description provided for @showOnMap.
+  ///
+  /// In en, this message translates to:
+  /// **'Show on map'**
+  String get showOnMap;
+
+  /// No description provided for @myLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'My location'**
+  String get myLocation;
+
+  /// No description provided for @layers.
+  ///
+  /// In en, this message translates to:
+  /// **'Layers'**
+  String get layers;
+
+  /// No description provided for @layerSuburban.
+  ///
+  /// In en, this message translates to:
+  /// **'Local trains'**
+  String get layerSuburban;
+
+  /// No description provided for @layerMetro.
+  ///
+  /// In en, this message translates to:
+  /// **'Metro'**
+  String get layerMetro;
+
+  /// No description provided for @locationDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission is off. The map still works; turn it on in settings to see where you are.'**
+  String get locationDenied;
+
+  /// No description provided for @locationServiceOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Location is switched off on this phone.'**
+  String get locationServiceOff;
+
+  /// No description provided for @lineGeometryNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Lines are drawn straight between stations, not along the exact track.'**
+  String get lineGeometryNote;
+
+  /// No description provided for @linesAtStation.
+  ///
+  /// In en, this message translates to:
+  /// **'Lines'**
+  String get linesAtStation;
 }
 
 class _AppLocalizationsDelegate

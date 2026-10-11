@@ -2,35 +2,32 @@
 
 Updated: 2026-10-11
 
-## Phase 3: Foundation — done
+## Phase 3: Foundation — done (PR #1, merged)
+
+App shell, en/mr/hi, sign-in code, Apps Script backend, Sheet schema, CI APK. See git history.
+
+## Phase 4: Core commuter functions — in review
 
 | Item | Result |
 |---|---|
-| Flutter project (Android), Material 3 theme, light/dark, large touch targets | Done |
-| 5-tab navigation: Home, Routes, Live Map, Saved, Profile | Done |
-| English, Marathi, Hindi (selectable, saved) | Done. Marathi/Hindi need a native-speaker review |
-| Dev/prod config via `--dart-define-from-file` | Done |
-| Firebase Auth: register, verify email, sign in, Google, reset, sign out, delete | Code done; **not tested against a real Firebase project yet** (needs your Firebase setup) |
-| Guest mode when Firebase/backend not configured | Done, tested |
-| ApiClient with structured errors, request IDs, timeouts | Done, tested |
-| Apps Script backend: router, token check, roles from Sheet, rate limit, duplicate-request replay, validation, formula-injection guard, audit log | Done, tested locally with stubs; **not yet deployed** |
-| Sheet schema (17 tabs) + `setupSheets()` | Done; doc generated in SHEET_SCHEMA.md |
-| CI: analyze, tests, release APK artifact | Workflow added; first run happens on push |
+| Pilot stations: Central main line CSMT–Kalyan (26) + Metro Line 1 (12), coordinates and Marathi/Hindi names from OpenStreetMap | Done |
+| Data pack: bundled in app → cached on phone → refreshed from server when version is newer | Done, tested |
+| Station search (English, Marathi, Hindi, station code) | Done, tested |
+| Route planner with changes and walking interchange (Ghatkopar) | Done, tested |
+| Timetable engine: departures, service days, Sunday-on-holiday, chained connections | Done, tested on test fixtures; **no real timetable loaded yet** |
+| Routes screen, Station screen with departures, saved and recent journeys | Done, widget-tested |
+| Map: OSM tiles + attribution, station markers, lines, layers, "My location" on tap only | Done; not exercised in automated tests (needs network tiles) |
+| Server: getDataPack, validation, Publish menu, sync status, chunked cache | Done, tested with stubs |
+| CSV templates + `check_csv.js` | Done |
 
-Tests (run 2026-10-11): `flutter analyze` no issues · `flutter test` 12 passed · `backend npm test` 14 passed.
+Tests (2026-10-11): `flutter analyze` clean · `flutter test` 26 passed · `backend npm test` 18 passed.
 
-Not verified here: an actual APK build (the build container can't download the Android SDK; GitHub Actions builds it), and a live Apps Script deployment.
+## Findings that affect Phase 5
 
-## Next: Phase 4, core commuter functions
+- OpenStreetMap has **0 bus stops** and **2 taxi/auto points** tagged within ~2.5 km of Kalyan station (extract of 2026-10-11). Last-mile data for Kalyan must come mainly from admin-verified entries and community reports, not OSM.
+- "Yogidham" is not tagged in OSM near Kalyan; destination search will need a geocoder or curated places.
 
-- [ ] Pilot data CSV templates + import (Stations, TrainRoutes, TrainTrips, TripStopTimes, FareRules)
-- [ ] Data pack endpoint (versioned JSON) + on-device cache with source/timestamp
-- [ ] Station search, timetable view (Scheduled labels)
-- [ ] Station-to-station routing with interchanges (on device)
-- [ ] Map: flutter_map, OSM attribution, user and destination markers, layers
-- [ ] Favourites and recent searches
-- [ ] Service alerts (admin-entered) display
+## Next
 
-## Waiting on owner
-
-- Firebase project + Apps Script deployment (steps in SETUP.md) to test sign-in end to end.
+- [ ] Enter the official CR timetable for the pilot corridor (owner or helper, via DATA_ENTRY.md)
+- [ ] Phase 5: last-mile finder, fare estimates, ride-hailing links, community reports

@@ -20,8 +20,11 @@ function ApiError(code, message) {
  */
 function routes_() {
   return {
-  health:          { auth: false, rate: [120, 60], handler: handleHealth },
-  getConfig:       { auth: false, rate: [120, 60], handler: handleGetConfig },
+  // Anonymous limits are shared by all users of that action, so they are set
+  // for the whole pilot (~1,000 users), not per person.
+  health:          { auth: false, rate: [600, 60], handler: handleHealth },
+  getConfig:       { auth: false, rate: [600, 60], handler: handleGetConfig },
+  getDataPack:     { auth: false, rate: [600, 60], handler: handleGetDataPack },
   getProfile:      { auth: true,  rate: [30, 60],  handler: handleGetProfile },
   updateProfile:   { auth: true,  rate: [10, 60],  write: true, handler: handleUpdateProfile },
   deleteMyData:    { auth: true,  rate: [3, 3600], write: true, handler: handleDeleteMyData },
