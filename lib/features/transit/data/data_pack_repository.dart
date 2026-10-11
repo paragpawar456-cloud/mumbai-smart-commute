@@ -63,10 +63,22 @@ class DataPackRepository {
       final data = await api.call('getDataPack',
           payload: {'haveVersion': current.pack.version});
       if (data['unchanged'] == true) return current;
-      final json = (data['pack'] as Map).cast<String, dynamic>();
-      final pack = DataPack.fromJson(json);
+      final DataPack pack;
+      final Map<String, dynamic> json;
+      try {
+        json = (data['pack'] as Map).cast<String, dynamic>();
+        pack = DataPack.fromJson(json);
+      } on Object {
+        // A broken pack from the server must never replace a working one.
+        return LoadedPack(current.pack, current.origin,
+            refreshError: const ApiException('bad_response', 'Invalid data pack'));
+      }
       if (pack.version <= current.pack.version) return current;
-      await (await _file()).writeAsString(jsonEncode(json), flush: true);
+      try {
+        await (await _file()).writeAsString(jsonEncode(json), flush: true);
+      } on Object {
+        // Can't cache (disk full, no storage): still use it for this session.
+      }
       return LoadedPack(pack, PackOrigin.server);
     } on ApiException catch (e) {
       return LoadedPack(current.pack, current.origin, refreshError: e);
