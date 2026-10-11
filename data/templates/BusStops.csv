@@ -1,1 +1,791 @@
 stop_id,name_en,name_mr,lat,lng,operators,source_id
+OSM-node-317914119,Talao Pali,,19.194384,72.976962,Thane Muncipal Transport,osm
+OSM-node-340363221,Thane Station (W),,19.187007,72.976997,Thane Muncipal Transport,osm
+OSM-node-414595018,Shishu Gyan Mandir,,19.1998,72.977309,Thane Muncipal Transport,osm
+OSM-node-414595059,Vandana Cinema,,19.194415,72.970497,Thane Muncipal Transport,osm
+OSM-node-414603281,Vaitiwadi,,19.20168,72.958832,Thane Muncipal Transport,osm
+OSM-node-414604709,Parmarth Niketan,,19.19474,72.966738,Thane Muncipal Transport,osm
+OSM-node-414727658,Holy Cross,,19.203056,72.978803,Thane Muncipal Transport,osm
+OSM-node-414729200,Oswal Park,,19.214908,72.976195,Thane Muncipal Transport,osm
+OSM-node-414730041,Khewra Circle,,19.232703,72.969943,Thane Muncipal Transport,osm
+OSM-node-414730701,Patlipada,,19.246689,72.975616,,osm
+OSM-node-443526121,Neelkanth Heights,,19.22107,72.960688,Thane Muncipal Transport,osm
+OSM-node-630755945,Kalyan,,19.236388,73.130362,,osm
+OSM-node-1027917064,Goodluck Company,,19.263774,72.977779,Thane Municipal Transport,osm
+OSM-node-1078664390,Pradeep Society,,19.193495,72.967287,Thane Muncipal Transport,osm
+OSM-node-1078664593,Aradhana Cinema,,19.192717,72.968354,Thane Muncipal Transport,osm
+OSM-node-1182363540,Dhokali Naka,,19.227162,72.980267,Thane Muncipal Transport,osm
+OSM-node-1182363565,Kolshet Bus Depot,,19.24406,72.996399,Thane Muncipal Transport,osm
+OSM-node-1182363597,Air Force,,19.240626,72.992142,Thane Muncipal Transport,osm
+OSM-node-1184122848,Makhamali Talaav,,19.198423,72.971747,Thane Muncipal Transport,osm
+OSM-node-1184122902,Khopat S.T. Terminus,,19.200734,72.973309,Thane Muncipal Transport,osm
+OSM-node-1184124335,Gaondevi,,19.188889,72.974828,Thane Muncipal Transport,osm
+OSM-node-1235720534,Dongaripada,,19.250734,72.973229,Thane Muncipal Transport,osm
+OSM-node-1235720619,Waghbil Naka,,19.252939,72.972162,Thane Muncipal Transport,osm
+OSM-node-1235755695,"Brahmand Phase 1,2",,19.241299,72.981373,Thane Muncipal Transport,osm
+OSM-node-1235755737,Azad Nagar,,19.239474,72.980498,Thane Muncipal Transport,osm
+OSM-node-1235755846,Brahmand Nagar,,19.24755,72.986019,Thane Muncipal Transport,osm
+OSM-node-1582079842,Rutu Estate / Municipal Commissioner House,,19.248087,72.977988,Thane Muncipal Transport,osm
+OSM-node-1643351700,Mulund Depot,,19.175698,72.946488,,osm
+OSM-node-1643413992,Municipal School,,19.228627,72.96736,Thane Muncipal Transport,osm
+OSM-node-1647049234,Civil Court,,19.196521,72.977291,Thane Muncipal Transport,osm
+OSM-node-1647049257,Court Naka,,19.197028,72.978584,Thane Muncipal Transport,osm
+OSM-node-1665625974,Civil Hospital,,19.199013,72.977455,Thane Muncipal Transport,osm
+OSM-node-1855291431,Vartak Nagar Naka,,19.209972,72.961764,Thane Muncipal Transport,osm
+OSM-node-1855295815,Devdaya Nagar,,19.2147,72.958209,Thane Muncipal Transport,osm
+OSM-node-1960733138,Vandana Cinema,,19.194368,72.970594,Thane Muncipal Transport,osm
+OSM-node-1960733402,Louis Wadi,,19.196296,72.962322,Thane Muncipal Transport,osm
+OSM-node-1960733505,Makhamali Talaav,,19.198344,72.971827,Thane Muncipal Transport,osm
+OSM-node-1960733532,Nitin Junction,,19.199055,72.963526,Thane Muncipal Transport,osm
+OSM-node-1960733585,Nitin Company,,19.199131,72.96315,Thane Muncipal Transport,osm
+OSM-node-1960733587,Civil Hospital,,19.199128,72.97839,Thane Muncipal Transport,osm
+OSM-node-1960733671,Khopat S.T. Terminus,,19.200377,72.973078,Thane Muncipal Transport,osm
+OSM-node-1960733860,Khopat,,19.203426,72.971869,Thane Muncipal Transport,osm
+OSM-node-1960734049,Abhiruchi,,19.204833,72.978054,,osm
+OSM-node-1960734104,Desai Bangla,,19.205611,72.978271,Thane Muncipal Transport,osm
+OSM-node-1960734126,Rabodi Police Station,,19.205964,72.982236,Thane Muncipal Transport,osm
+OSM-node-1960734581,Majiwada Naka,,19.214624,72.977454,Thane Muncipal Transport,osm
+OSM-node-1960734585,Majiwada Naka,,19.215159,72.978125,Thane Muncipal Transport,osm
+OSM-node-1960734604,Devdaya Nagar,,19.214904,72.958394,Thane Muncipal Transport,osm
+OSM-node-1960734730,Subhash Nagar,,19.216431,72.974004,Thane Muncipal Transport,osm
+OSM-node-1960734932,Bethany Hospital,,19.220364,72.961816,Thane Muncipal Transport,osm
+OSM-node-1960734936,Jawahar Nagar,,19.220475,72.97021,Thane Muncipal Transport,osm
+OSM-node-1960734940,Jawahar Nagar,,19.220409,72.970422,Thane Muncipal Transport,osm
+OSM-node-1960735180,Yeoor Gaon,,19.22527,72.949747,Thane Muncipal Transport,osm
+OSM-node-1960735183,Lok Puram,,19.225755,72.970134,Thane Muncipal Transport,osm
+OSM-node-1960735560,Patli Pada,,19.246448,72.975999,Thane Muncipal Transport,osm
+OSM-node-2224887211,Mavis,,19.22919,72.948353,Thane Muncipal Transport,osm
+OSM-node-2227587632,Runwal Garden City,,19.223024,72.988194,Thane Muncipal Transport,osm
+OSM-node-2227589015,Yeoor,,19.240191,72.943296,Thane Muncipal Transport,osm
+OSM-node-2228292225,Shreerang Society,,19.206069,72.980297,Thane Muncipal Transport,osm
+OSM-node-2228292530,Gokul Nagar,,19.208513,72.977173,Thane Muncipal Transport,osm
+OSM-node-2228293285,Oswal Park,,19.214738,72.976076,Thane Muncipal Transport,osm
+OSM-node-2228429124,Ramchandra Nagar 1,,19.20001,72.962388,Thane Muncipal Transport,osm
+OSM-node-2230881380,Namdev Wadi,,19.198332,72.966508,Thane Muncipal Transport,osm
+OSM-node-2299204467,Kalwa Depot,,19.191292,72.987798,"TMT, NMMT",osm
+OSM-node-2440235101,Mulund West Check Naka,,19.183008,72.953629,,osm
+OSM-node-2440266920,Cidco Bus Depot (Thane),,19.187929,72.979748,,osm
+OSM-node-2898961177,Hiranandani Meadows,,19.227784,72.969703,Thane Muncipal Transport,osm
+OSM-node-2902100495,Muchhala College,,19.262859,72.968328,Thane Muncipal Transport,osm
+OSM-node-2902101571,Muchhala College,,19.262898,72.968454,Thane Muncipal Transport,osm
+OSM-node-3229537290,Gavan Pada,,19.172879,72.961446,,osm
+OSM-node-3229537297,Mulund Station (East),,19.171392,72.958214,,osm
+OSM-node-3263024864,Sawarkar Nagar,,19.205913,72.954296,Thane Muncipal Transport,osm
+OSM-node-3263030022,Yashodham Nagar,,19.20826,72.954638,Thane Muncipal Transport,osm
+OSM-node-3263043839,Road Number 16,,19.193517,72.953557,Thane Muncipal Transport,osm
+OSM-node-3263043840,Road Number 16,,19.193718,72.953751,Thane Muncipal Transport,osm
+OSM-node-3930284458,Tilak Nagar Junction,,19.196005,72.954956,Thane Muncipal Transport,osm
+OSM-node-3930284459,Bradma Company,,19.196005,72.955049,Thane Muncipal Transport,osm
+OSM-node-3930284460,Ambika Nagar,,19.197693,72.955784,Thane Muncipal Transport,osm
+OSM-node-3930284461,Ambika Nagar,,19.197547,72.95575,Thane Muncipal Transport,osm
+OSM-node-3930284465,Kamgar Hospital,,19.20375,72.954154,Thane Muncipal Transport,osm
+OSM-node-3931917826,Sawarkar Nagar,,19.205937,72.954159,Thane Muncipal Transport,osm
+OSM-node-3931917833,Vaishali Nagar,,19.187297,72.94553,,osm
+OSM-node-3931917834,Vaishali Nagar,,19.187069,72.945873,,osm
+OSM-node-3931942705,Agriculture,,19.200062,72.95389,Thane Muncipal Transport,osm
+OSM-node-3931942706,Agriculture,,19.200168,72.954017,Thane Muncipal Transport,osm
+OSM-node-3954998295,Passport Office / M.I.D.C.,,19.192209,72.955267,Thane Muncipal Transport,osm
+OSM-node-4077092893,Bus stop,,19.163093,73.073893,,osm
+OSM-node-4077092894,Bus stop,,19.163598,73.074064,,osm
+OSM-node-4113603393,PANCH RASTA,,19.176391,72.952554,,osm
+OSM-node-4158101551,Manpada,,19.235319,72.97595,Thane Muncipal Transport,osm
+OSM-node-4211019628,Teen Hath Naka,,19.188803,72.963314,Thane Muncipal Transport,osm
+OSM-node-4211040735,Municipal Hospital,,19.172009,72.959937,,osm
+OSM-node-4211040736,Municipal Hospital,,19.171924,72.960003,,osm
+OSM-node-4211040737,Mulund Station (East),,19.171651,72.958123,,osm
+OSM-node-4211040739,Bus stop,,19.170203,72.959067,,osm
+OSM-node-4211040740,Bus stop,,19.170156,72.959117,,osm
+OSM-node-4211040742,Bus stop,,19.169479,72.959176,,osm
+OSM-node-4211040743,Bus stop,,19.169507,72.95922,,osm
+OSM-node-4211040744,Bus stop,,19.168895,72.960101,,osm
+OSM-node-4211040745,Bus stop,,19.168873,72.959981,,osm
+OSM-node-4233541816,Brahmand Phase 6,,19.246671,72.984761,Thane Muncipal Transport,osm
+OSM-node-4233856092,Bhawani Nagar,,19.202132,72.953769,Thane Muncipal Transport,osm
+OSM-node-4270149192,Manpada,,19.235356,72.976298,Thane Muncipal Transport,osm
+OSM-node-4270329891,Kasarvadavali Naka,,19.269546,72.965202,Thane Muncipal Transport,osm
+OSM-node-4367331982,Neelkanth Heights,,19.220517,72.960515,Thane Muncipal Transport,osm
+OSM-node-4367377476,Kavyadhara,,19.2284,72.982328,Thane Muncipal Transport,osm
+OSM-node-4367380311,Runwal Garden City,,19.22294,72.988239,Thane Muncipal Transport,osm
+OSM-node-4367741661,Sainath Nagar,,19.266889,72.966957,Thane Muncipal Transport,osm
+OSM-node-4367741685,Hawre City / Boriwade Gaon,,19.259958,72.957668,Thane Muncipal Transport,osm
+OSM-node-4583566290,Agra Road,,19.177843,72.94342,BEST,osm
+OSM-node-4583566389,Agra Road Naka,,19.1779,72.944054,BEST,osm
+OSM-node-4585359396,RAMCHANDRA NAGAR VAITIVADI 3,,19.200698,72.961186,Thane Muncipal Transport,osm
+OSM-node-4585364193,Ramchandra Nagar 1,,19.20007,72.962506,Thane Muncipal Transport,osm
+OSM-node-4585364196,Aanand Bajar,,19.174235,72.958485,BEST,osm
+OSM-node-4585386589,Sarvodaya Nagar,,19.162664,72.946345,,osm
+OSM-node-4585386592,Teen Petrol Pump,,19.19285,72.970061,Thane Muncipal Transport,osm
+OSM-node-4585386789,Mehul Talkies,,19.165664,72.948718,,osm
+OSM-node-4624037619,Mulund-Goregaon Link Road,,19.160075,72.946973,,osm
+OSM-node-4625570690,Mulund-Goregaon Link Road,,19.160068,72.946938,,osm
+OSM-node-4631842068,Bus stop,,19.209027,72.973183,,osm
+OSM-node-4644026842,Mulund-Goregaon Link Road,,19.160049,72.946841,,osm
+OSM-node-4644026843,Mulund-Goregaon Link Road,,19.160044,72.946821,,osm
+OSM-node-4647492104,Airoli Naka,,19.166492,72.999386,NMMT,osm
+OSM-node-4647623791,MSEB,,19.168517,72.999336,NMMT,osm
+OSM-node-4647623792,Ganesh Pada,,19.184728,72.992969,NMMT,osm
+OSM-node-4647685691,Maharashtra Vidyut Mandal,,19.171902,72.999247,NMMT,osm
+OSM-node-4647685693,Vitava Naka,,19.188658,72.98876,NMMT,osm
+OSM-node-4647685694,Kalwa Depot,,19.191425,72.988302,TMT,osm
+OSM-node-4647685992,Sathe Nagar,,19.180085,72.996195,NMMT,osm
+OSM-node-4647685993,Mukund Company,,19.182381,72.995209,NMMT,osm
+OSM-node-4647713090,Sathe Nagar,,19.180095,72.996423,NMMT,osm
+OSM-node-4647714590,Dighe Gaon,,19.17488,72.998322,NMMT,osm
+OSM-node-4647714594,Chendani Koliwada,,19.18949,72.979805,Thane Muncipal Transport,osm
+OSM-node-4647734289,Hindustan Times Bus Stop,,19.173924,72.998758,NMMT,osm
+OSM-node-4647734294,Sha. Damodar Vitavkar Marg,,19.186861,72.990669,NMMT,osm
+OSM-node-4647734295,Kalwa Naka,,19.196324,72.987412,Thane Muncipal Transport,osm
+OSM-node-4647734296,Kanhaji Agrh Chowk,,19.197394,72.983356,Thane Muncipal Transport,osm
+OSM-node-4647739091,Ganesh Pada,,19.185159,72.99287,NMMT,osm
+OSM-node-4647739096,Mahagiri Koliwada,,19.195146,72.983178,Thane Muncipal Transport,osm
+OSM-node-4647739097,Dadoji Konddev Stadium,,19.191701,72.980803,Thane Muncipal Transport,osm
+OSM-node-4647739098,Dadoji Konddev Stadium,,19.191761,72.980661,Thane Muncipal Transport,osm
+OSM-node-4647775090,Kanhaji Agrh Chowk,,19.197168,72.98334,Thane Muncipal Transport,osm
+OSM-node-4647829789,Sha. Damodar Vitavkar Marg,,19.187261,72.990369,NMMT,osm
+OSM-node-4647829790,Kalwa Naka,,19.195442,72.987205,Thane Muncipal Transport,osm
+OSM-node-4647829791,Mahagiri Koliwada,,19.19501,72.982976,Thane Muncipal Transport,osm
+OSM-node-4647870489,Chendani Koliwada,,19.189371,72.979642,Thane Muncipal Transport,osm
+OSM-node-4663246193,Patni Computers,,19.179111,72.991074,NMMT,osm
+OSM-node-4663250421,Modi Hospital,,19.160854,72.998635,NMMT,osm
+OSM-node-4663250623,Power House,,19.168591,72.991033,NMMT,osm
+OSM-node-4663250706,Airoli Sector 20,,19.161124,72.990424,NMMT,osm
+OSM-node-4663250818,Tulshiram Narayan Joshi Chowk,,19.160946,72.993157,NMMT,osm
+OSM-node-4663250819,Datta Meghe College,,19.160666,72.994951,NMMT,osm
+OSM-node-4663251003,Ojas Apartment,,19.161105,72.991905,NMMT,osm
+OSM-node-4663251405,Airoli Smashan Bhoomi,,19.164909,72.989133,NMMT,osm
+OSM-node-4663251406,Airoli Village,,19.160881,72.993385,NMMT,osm
+OSM-node-4663251493,Patni Computers,,19.179148,72.991308,NMMT,osm
+OSM-node-4784894721,Agarwal Municipal Hospital,,19.178568,72.94582,BEST,osm
+OSM-node-4929295225,Mulund Depot,,19.175675,72.94655,BEST,osm
+OSM-node-4929295227,Gavan Pada,,19.1733,72.961941,BEST,osm
+OSM-node-4929295323,Mahanagarpalika Udyan,,19.175889,72.948871,BEST,osm
+OSM-node-4929307122,Bal Rajeshwar,,19.18327,72.948246,BEST,osm
+OSM-node-4929307123,Big Bazaar,,19.183785,72.952076,BEST,osm
+OSM-node-4929307124,Mulund Check Naka,,19.183957,72.953914,,osm
+OSM-node-4929307126,Kelker College,,19.162966,72.95685,TMT,osm
+OSM-node-5355360576,Ashapura Mandir,,19.216299,72.977814,Thane Muncipal Transport,osm
+OSM-node-5707923421,Mulund court,,19.174609,72.95811,,osm
+OSM-node-5707923621,Palm Acres Society,,19.172992,72.961493,,osm
+OSM-node-5746301541,Veena Nagar,,19.181717,72.946725,,osm
+OSM-node-5940610989,Marind Company,,19.161685,72.943968,,osm
+OSM-node-5940610991,Hira Nagar,,19.161824,72.945662,,osm
+OSM-node-5940644285,Fortis Hospital,,19.16229,72.942339,,osm
+OSM-node-6017561678,Annabhau Sathe Chowk,,19.200866,72.949085,Thane Muncipal Transport,osm
+OSM-node-6017561979,Namdev Wadi,,19.198219,72.966495,Thane Muncipal Transport,osm
+OSM-node-6017562392,Gyaneshwar Nagar,,19.201983,72.957611,Thane Muncipal Transport,osm
+OSM-node-6017562405,Gyaneshwar Nagar,,19.201912,72.957593,Thane Muncipal Transport,osm
+OSM-node-6038133186,Teen Hath Naka,,19.187765,72.962961,Thane Muncipal Transport,osm
+OSM-node-6038134585,Muktai Nagar,,19.210947,72.977114,Thane Muncipal Transport,osm
+OSM-node-6038146487,Flower Valley,,19.207727,72.972403,,osm
+OSM-node-6038146489,Johnson Company,,19.186794,72.961457,Thane Muncipal Transport,osm
+OSM-node-6038146490,Kashish Park,,19.185698,72.958038,Thane Muncipal Transport,osm
+OSM-node-6038148685,Louis Wadi,,19.195821,72.962624,Thane Muncipal Transport,osm
+OSM-node-6038148785,Maharana Pratap Chowk,,19.183581,72.952533,BEST,osm
+OSM-node-6038148786,Ralli Wolf,,19.170963,72.940527,,osm
+OSM-node-6116158099,R-Mall,,19.229899,72.976548,Thane Muncipal Transport,osm
+OSM-node-6352848506,Manpada NMMT Bus Stop,,19.186823,73.091957,,osm
+OSM-node-6618393200,Sainath Nagar,,19.266809,72.966616,Thane Muncipal Transport,osm
+OSM-node-6792582785,Mulund Railway Station (W),,19.17362,72.956149,,osm
+OSM-node-6798701385,Maharishi Aravind Chowk,,19.174806,72.951056,,osm
+OSM-node-6802893015,Shahu Market,,19.188845,72.967729,Thane Muncipal Transport,osm
+OSM-node-6802893027,Shahu Market,,19.188656,72.96757,Thane Muncipal Transport,osm
+OSM-node-7090098985,Chatrapati Shivaji Maharaj Chowk,,19.23997,73.129239,,osm
+OSM-node-7108673660,Police Line,,19.201152,72.979584,Thane Muncipal Transport,osm
+OSM-node-7280128605,Municipal School,,19.228525,72.96732,Thane Muncipal Transport,osm
+OSM-node-7280128656,Vasant Vihar,,19.222378,72.969976,Thane Muncipal Transport,osm
+OSM-node-7280128657,Vasant Vihar,,19.222424,72.969813,,osm
+OSM-node-7331361903,Air Force,,19.240319,72.991994,Thane Muncipal Transport,osm
+OSM-node-7331361906,Kolshet,,19.238743,72.990696,Thane Muncipal Transport,osm
+OSM-node-7334214572,Boringer,,19.236435,72.989555,Thane Muncipal Transport,osm
+OSM-node-7366182530,"Brahmand Phase 1,2",,19.241073,72.981493,Thane Muncipal Transport,osm
+OSM-node-7366287329,Sandoz Baug,,19.233577,72.987984,Thane Muncipal Transport,osm
+OSM-node-7366287341,Dhokali Naka,,19.226939,72.9804,Thane Muncipal Transport,osm
+OSM-node-7366380224,Yashaswi Nagar,,19.218273,72.983627,Thane Muncipal Transport,osm
+OSM-node-7366380225,Yashaswi Nagar,,19.218499,72.983362,Thane Muncipal Transport,osm
+OSM-node-7366380235,Shruti Park,,19.225552,72.980941,Thane Muncipal Transport,osm
+OSM-node-7375128770,Gawand Baug,,19.221345,72.95916,Thane Muncipal Transport,osm
+OSM-node-7398051783,Subhash Nagar,,19.216272,72.973879,Thane Muncipal Transport,osm
+OSM-node-7401301586,Tattvagyan Vidyapeeth,,19.223195,72.977661,Thane Muncipal Transport,osm
+OSM-node-7944371745,Upvan lake Voltas,,19.223151,72.95755,Thane Muncipal Transport,osm
+OSM-node-8442026647,"Air Force Base, Kanherl Hills",,19.224498,72.949602,,osm
+OSM-node-8450022933,Khewra Circle,,19.232641,72.969792,Thane Muncipal Transport,osm
+OSM-node-8458629663,Maharashtra Nagar (Thane),,19.229891,72.969964,,osm
+OSM-node-8458629665,Maharashtra Nagar (Thane),,19.22963,72.970235,,osm
+OSM-node-8460008418,Pawar Nagar,,19.228971,72.96638,Thane Muncipal Transport,osm
+OSM-node-8489502612,Kokanipada,,19.233574,72.965514,Thane Muncipal Transport,osm
+OSM-node-8493462496,R-Mall,,19.229919,72.976864,Thane Muncipal Transport,osm
+OSM-node-8530844752,Panchavati Society,,19.22147,72.966343,Thane Muncipal Transport,osm
+OSM-node-8531002108,Pawar Nagar,,19.229004,72.965952,Thane Muncipal Transport,osm
+OSM-node-8551670545,Ravi Estate,,19.218091,72.959296,Thane Muncipal Transport,osm
+OSM-node-8552003572,Hiranandani Meadows,,19.228375,72.96953,Thane Muncipal Transport,osm
+OSM-node-8592017248,Anunagar,,19.258218,72.975027,Thane Municipal Transport,osm
+OSM-node-8592367903,Voltas Gate,,19.217012,72.971653,Thane Muncipal Transport,osm
+OSM-node-8592800211,Goodluck Company,,19.263692,72.977446,Thane Municipal Transport,osm
+OSM-node-8592846825,Waghbil Village,,19.266467,72.98351,Thane Municipal Transport,osm
+OSM-node-8596222911,Parkwoods Society,,19.259463,72.965846,Thane Muncipal Transport,osm
+OSM-node-8614581204,Hawre City / Boriwade Gaon,,19.259723,72.957414,Thane Muncipal Transport,osm
+OSM-node-8788678314,Tikujini Wadi,,19.236989,72.966156,Thane Muncipal Transport,osm
+OSM-node-8788678315,Hill Garden,,19.234755,72.966173,Thane Muncipal Transport,osm
+OSM-node-8788678316,Garden Estate,,19.233298,72.967069,Thane Muncipal Transport,osm
+OSM-node-8788708017,Happy Valley Circle,,19.236609,72.970589,Thane Muncipal Transport,osm
+OSM-node-8788708019,Central Maidan,,19.19794,72.979967,Thane Muncipal Transport,osm
+OSM-node-8788708020,Ambika Yoga Kutir,,19.207231,72.977535,Thane Muncipal Transport,osm
+OSM-node-8788708021,Muktai Nagar,,19.210787,72.977275,Thane Muncipal Transport,osm
+OSM-node-8788708022,Ashapura Mandir,,19.21603,72.978291,Thane Muncipal Transport,osm
+OSM-node-8788708023,Kapurbawadi,,19.221354,72.977857,Thane Muncipal Transport,osm
+OSM-node-8788708026,Sahyog Society,,19.236483,72.972406,Thane Muncipal Transport,osm
+OSM-node-8789746256,Thane Station (W),,19.18685,72.975735,Thane Muncipal Transport,osm
+OSM-node-8789746257,Talao Pali,,19.194171,72.976778,Thane Muncipal Transport,osm
+OSM-node-8789746258,Tembhi Naka,,19.197019,72.977232,Thane Muncipal Transport,osm
+OSM-node-8789863200,Municipal School,,19.201853,72.97775,Thane Muncipal Transport,osm
+OSM-node-8789863201,Uthalsar Naka,,19.202984,72.978035,Thane Muncipal Transport,osm
+OSM-node-8789863202,Ambika Yoga Kutir,,19.207079,72.977336,Thane Muncipal Transport,osm
+OSM-node-8789863204,Kapurbawadi,,19.221592,72.977548,Thane Muncipal Transport,osm
+OSM-node-8789863205,Tattvagyan Vidyapeeth,,19.22342,72.977323,Thane Muncipal Transport,osm
+OSM-node-8789863207,Happy Valley Circle,,19.23643,72.97063,Thane Muncipal Transport,osm
+OSM-node-8790099250,Hiranandani Meadows,,19.227873,72.969912,Thane Muncipal Transport,osm
+OSM-node-8790099251,Vivekananda Nagar,,19.222912,72.969964,Thane Muncipal Transport,osm
+OSM-node-8790099253,Gandhi Nagar,,19.218298,72.970202,Thane Muncipal Transport,osm
+OSM-node-8790099254,Voltas Gate,,19.217206,72.971639,Thane Muncipal Transport,osm
+OSM-node-8790154387,Lok Puram,,19.225939,72.969993,Thane Muncipal Transport,osm
+OSM-node-8790154388,Gandhi Nagar,,19.218184,72.970133,Thane Muncipal Transport,osm
+OSM-node-8791338032,Hyde Park,,19.226564,72.973975,Thane Muncipal Transport,osm
+OSM-node-8791338033,Tulsidham,,19.222457,72.973364,Thane Muncipal Transport,osm
+OSM-node-8792348019,Mulla Bagh,,19.239554,72.975801,Thane Muncipal Transport,osm
+OSM-node-8792348020,Azad Nagar Naka,,19.240763,72.975542,Thane Muncipal Transport,osm
+OSM-node-8792348021,Azad Nagar Naka,,19.240591,72.975825,Thane Muncipal Transport,osm
+OSM-node-8792348022,Vijay Garden / D-Mart,,19.259676,72.969855,Thane Muncipal Transport,osm
+OSM-node-8792348023,Vijay Garden / D-Mart,,19.257824,72.96875,Thane Muncipal Transport,osm
+OSM-node-8792348024,Panchamrit,,19.257257,72.970834,Thane Muncipal Transport,osm
+OSM-node-8792348025,Panchamrit,,19.257155,72.970477,Thane Muncipal Transport,osm
+OSM-node-8792348026,Waghbil Naka,,19.253008,72.972486,Thane Muncipal Transport,osm
+OSM-node-8792348027,Dongaripada,,19.250883,72.973479,Thane Muncipal Transport,osm
+OSM-node-8792348029,Brahmand Phase 5,,19.245096,72.98376,Thane Muncipal Transport,osm
+OSM-node-8792348030,Swastik Park,,19.243544,72.982813,Thane Muncipal Transport,osm
+OSM-node-8792348031,St Xaviers High School,,19.240715,72.977283,Thane Muncipal Transport,osm
+OSM-node-8792348032,Mulla Bagh,,19.239234,72.975517,Thane Muncipal Transport,osm
+OSM-node-8792348033,Police Line,,19.20109,72.979416,Thane Muncipal Transport,osm
+OSM-node-8794902854,Ice Factory,,19.187167,72.968864,Thane Muncipal Transport;Thane Municipal Transport,osm
+OSM-node-8794902855,A.K. Joshi Vidyalaya,,19.187448,72.971584,Thane Muncipal Transport;Thane Municipal Transport,osm
+OSM-node-8794902856,Kapurbawadi,,19.217819,72.979929,Thane Muncipal Transport,osm
+OSM-node-8794902857,Kapurbawadi,,19.217551,72.979962,Thane Muncipal Transport,osm
+OSM-node-8794902858,Shruti Park,,19.225476,72.980716,Thane Muncipal Transport,osm
+OSM-node-8794902862,Wellman Company,,19.229675,72.984361,Thane Muncipal Transport,osm
+OSM-node-8794902863,Kavyadhara,,19.228182,72.982415,Thane Muncipal Transport,osm
+OSM-node-8794902864,Highland Park,,19.222276,72.982253,Thane Muncipal Transport,osm
+OSM-node-8794902865,Highland Park,,19.222257,72.982464,Thane Muncipal Transport,osm
+OSM-node-8794902866,Wellman Company,,19.229499,72.984404,Thane Muncipal Transport,osm
+OSM-node-8794902867,Bayer,,19.230922,72.986066,Thane Muncipal Transport,osm
+OSM-node-8794902868,Swastik Park,,19.24356,72.982914,Thane Muncipal Transport,osm
+OSM-node-8795208235,Hari Niwas,,19.191139,72.96795,Thane Muncipal Transport,osm
+OSM-node-8795208236,Nitin Company,,19.199084,72.96492,Thane Muncipal Transport,osm
+OSM-node-8795208237,Kamgar Hospital,,19.203348,72.955568,Thane Muncipal Transport,osm
+OSM-node-8795208239,Wagle Bus Depot,,19.201451,72.945616,Thane Muncipal Transport,osm
+OSM-node-8795208241,Ravi Fisheries,,19.197391,72.945555,Thane Muncipal Transport,osm
+OSM-node-8795208242,Tata Motors,,19.197593,72.949179,Thane Muncipal Transport,osm
+OSM-node-8795208243,Tata Motors,,19.197598,72.949257,Thane Muncipal Transport,osm
+OSM-node-8795208244,Annabhau Sathe Chowk,,19.200828,72.949171,Thane Muncipal Transport,osm
+OSM-node-8795208245,Kamgar Hospital,,19.203298,72.955479,Thane Muncipal Transport,osm
+OSM-node-8795208246,Rajeshri Shahu Maharaj,,19.202897,72.956077,Thane Muncipal Transport,osm
+OSM-node-8795208247,Nitin Company,,19.198972,72.964882,Thane Muncipal Transport,osm
+OSM-node-8795208249,Mahapalika Bhavan,,19.197143,72.967457,Thane Muncipal Transport,osm
+OSM-node-8795208250,Hari Niwas,,19.191827,72.968618,Thane Muncipal Transport,osm
+OSM-node-8795208251,Hari Niwas,,19.190476,72.967734,Thane Muncipal Transport;Thane Municipal Transport,osm
+OSM-node-8795776769,Khopat,,19.202824,72.972195,Thane Muncipal Transport,osm
+OSM-node-8795776770,Pujani Estate,,19.204035,72.969761,Thane Muncipal Transport,osm
+OSM-node-8795776771,Pujani Estate,,19.204296,72.969703,Thane Muncipal Transport,osm
+OSM-node-8795776772,Shivai Nagar,,19.215691,72.956278,Thane Muncipal Transport,osm
+OSM-node-8795776773,Khandelwal Estate,,19.217619,72.954002,Thane Muncipal Transport,osm
+OSM-node-8795776774,Khandelwal Estate,,19.217526,72.953842,Thane Muncipal Transport,osm
+OSM-node-8795776775,Bhu Kendra,,19.218677,72.952895,Thane Muncipal Transport,osm
+OSM-node-8795776776,Bhu Kendra,,19.21846,72.952977,Thane Muncipal Transport,osm
+OSM-node-8795776777,Upvan,,19.220426,72.953649,Thane Muncipal Transport,osm
+OSM-node-8795776778,Upvan,,19.220481,72.953585,Thane Muncipal Transport,osm
+OSM-node-8795776779,Gawand Baug,,19.221297,72.959159,Thane Muncipal Transport,osm
+OSM-node-8795776780,Siddhachal Society,,19.224703,72.964943,Thane Muncipal Transport,osm
+OSM-node-8795776781,Sambhaji Nagar,,19.200579,72.964377,Thane Muncipal Transport,osm
+OSM-node-8795776782,Forest Office,,19.188931,72.964652,Thane Muncipal Transport,osm
+OSM-node-8795776783,Forest Office,,19.189031,72.964525,Thane Muncipal Transport,osm
+OSM-node-8795776784,Thane RTO,,19.192157,72.962853,Thane Muncipal Transport,osm
+OSM-node-8795776785,Thane RTO,,19.192933,72.963007,Thane Muncipal Transport,osm
+OSM-node-8795776790,Sambhaji Nagar,,19.200351,72.964765,Thane Muncipal Transport,osm
+OSM-node-8795776791,Siddheshwar Lake,,19.202567,72.967078,Thane Muncipal Transport,osm
+OSM-node-8795776792,Cadbury Junction,,19.204024,72.968593,Thane Muncipal Transport,osm
+OSM-node-8795776793,Cadbury Junction,,19.204116,72.968092,Thane Muncipal Transport,osm
+OSM-node-8795776794,Cadbury Company,,19.205467,72.966967,Thane Muncipal Transport,osm
+OSM-node-8795776795,Cadbury Company,,19.205638,72.96711,Thane Muncipal Transport,osm
+OSM-node-8795776796,Raymond / J.K. Gram,,19.208084,72.963905,Thane Muncipal Transport,osm
+OSM-node-8795776797,Raymond / J.K. Gram,,19.207362,72.965169,Thane Muncipal Transport,osm
+OSM-node-8795776808,Vartak Nagar Naka,,19.210616,72.961634,Thane Muncipal Transport,osm
+OSM-node-8795776809,MRR Childrens Hospital / Building Number 3,,19.212111,72.960137,Thane Muncipal Transport,osm
+OSM-node-8795776810,MRR Childrens Hospital / Building Number 3,,19.212212,72.960331,Thane Muncipal Transport,osm
+OSM-node-8795776811,S.T. Juna Thamba,,19.21347,72.959027,Thane Muncipal Transport,osm
+OSM-node-8795776812,S.T. Juna Thamba,,19.213801,72.959115,Thane Muncipal Transport,osm
+OSM-node-8795776815,Lakshminarayan Residency,,19.219422,72.959775,Thane Muncipal Transport,osm
+OSM-node-8795776816,Bethany Hospital,,19.220413,72.961844,Thane Muncipal Transport,osm
+OSM-node-8795838217,Asian Cable,,19.219821,72.963685,Thane Muncipal Transport,osm
+OSM-node-8795838218,Asian Cable,,19.21989,72.963723,Thane Muncipal Transport,osm
+OSM-node-8795838219,Jidh School,,19.222694,72.964791,Thane Muncipal Transport,osm
+OSM-node-8795838220,Jidh School,,19.222727,72.964796,Thane Muncipal Transport,osm
+OSM-node-8795838221,Siddhachal Society,,19.224701,72.964992,Thane Muncipal Transport,osm
+OSM-node-8795838222,Upvan lake Voltas,,19.223233,72.957523,Thane Muncipal Transport,osm
+OSM-node-8796069248,Kalwa Naka,,19.195865,72.987408,Thane Muncipal Transport,osm
+OSM-node-8796504392,Kasarvadavali Naka,,19.269563,72.965635,Thane Muncipal Transport,osm
+OSM-node-8796504393,Anand Nagar,,19.264754,72.967815,Thane Muncipal Transport,osm
+OSM-node-8796504394,Anand Nagar,,19.264417,72.967576,Thane Muncipal Transport,osm
+OSM-node-8796504395,Vijay Nagari,,19.25615,72.973603,Thane Municipal Transport,osm
+OSM-node-8796504396,Vijay Nagari,,19.256214,72.973856,Thane Municipal Transport,osm
+OSM-node-8796504403,Anunagar,,19.258173,72.974595,Thane Municipal Transport,osm
+OSM-node-8796526607,Novartis,,19.234861,72.988533,Thane Muncipal Transport,osm
+OSM-node-8796526608,Novartis,,19.234963,72.988741,Thane Muncipal Transport,osm
+OSM-node-8796526609,Boringer,,19.237097,72.989812,Thane Muncipal Transport,osm
+OSM-node-8796526610,Kolshet,,19.239073,72.990848,Thane Muncipal Transport,osm
+OSM-node-8797486809,Gawand Baug (Upvan),,19.224884,72.958687,Thane Muncipal Transport,osm
+OSM-node-8802032176,New Shakti Mill / Ambedkar Road,,19.200673,72.975563,Thane Muncipal Transport,osm
+OSM-node-8802032177,Parmarth Niketan,,19.234097,72.9459,Thane Muncipal Transport,osm
+OSM-node-8802032178,Parsik Shiv Mandir,,19.236454,72.944748,Thane Muncipal Transport,osm
+OSM-node-8929296348,Amrut Angan,,19.208879,73.013101,Thane Muncipal Transport,osm
+OSM-node-8989602086,Vimal Nagar,,19.205668,73.008475,Thane Muncipal Transport,osm
+OSM-node-8989602087,Vimal Nagar,,19.205876,73.008434,Thane Muncipal Transport,osm
+OSM-node-9925315050,Sahyog Society,,19.236291,72.97242,Thane Muncipal Transport,osm
+OSM-node-10054380631,Rabodi,,19.203068,72.979962,Thane Muncipal Transport,osm
+OSM-node-10054380632,Holy Cross,,19.203053,72.979005,Thane Muncipal Transport,osm
+OSM-node-10054380633,Jambhali Naka,,19.195495,72.979213,Thane Muncipal Transport,osm
+OSM-node-10054380636,Prabhat Cinema,,19.190559,72.976999,Thane Muncipal Transport,osm
+OSM-node-10054380644,Shashtri Nagar,,19.214125,72.961328,Thane Muncipal Transport,osm
+OSM-node-10054380665,Teen Hath Naka,,19.18903,72.963748,Thane Muncipal Transport,osm
+OSM-node-10054380666,Income Tax Office,,19.188009,72.964689,Thane Muncipal Transport,osm
+OSM-node-10054380667,Income Tax Office,,19.188004,72.965051,Thane Muncipal Transport,osm
+OSM-node-10054380668,Malhar Cinema,,19.187543,72.967014,Thane Muncipal Transport,osm
+OSM-node-10054380669,Ice Factory,,19.187335,72.968785,Thane Muncipal Transport;Thane Municipal Transport,osm
+OSM-node-10054380670,A.K. Joshi Vidyalaya,,19.187616,72.971537,Thane Muncipal Transport,osm
+OSM-node-10054429281,Shivai Nagar,,19.215893,72.956382,Thane Muncipal Transport,osm
+OSM-node-10057041035,Majiwada Gaon,,19.213958,72.981561,Thane Municipal Transport,osm
+OSM-node-10057041036,Sachin Society,,19.214718,72.979624,Thane Municipal Transport,osm
+OSM-node-10057041037,Court Naka,,19.197197,72.978234,Thane Muncipal Transport,osm
+OSM-node-10057041038,Teen Hath Naka,,19.188063,72.962697,Thane Muncipal Transport,osm
+OSM-node-10057041039,Johnson Company,,19.187037,72.961267,Thane Muncipal Transport,osm
+OSM-node-10057041040,Kashish Park,,19.185898,72.958,Thane Muncipal Transport,osm
+OSM-node-10057041041,Mulund Check Naka,,19.185745,72.955978,Thane Muncipal Transport,osm
+OSM-node-10057041042,Automatic Company,,19.187676,72.955474,Thane Muncipal Transport,osm
+OSM-node-10057041043,Kamgar Hospital,,19.204262,72.954299,Thane Muncipal Transport,osm
+OSM-node-10057041044,Lokmanya Nagar,,19.209372,72.952276,Thane Muncipal Transport,osm
+OSM-node-10057041045,Passport Office / M.I.D.C.,,19.191123,72.955258,Thane Muncipal Transport,osm
+OSM-node-10057041046,Automatic Company,,19.187559,72.955159,Thane Muncipal Transport,osm
+OSM-node-10057041047,Mulund Check Naka,,19.185453,72.956277,Thane Muncipal Transport,osm
+OSM-node-10057041049,Gurukul Society,,19.195665,72.964652,Thane Muncipal Transport,osm
+OSM-node-10057041050,Kajuwadi,,19.197481,72.960389,Thane Muncipal Transport,osm
+OSM-node-10059370035,Raghukul Society,,19.206962,73.006269,Thane Muncipal Transport,osm
+OSM-node-10059370036,Nadanawan Homes,,19.209333,73.009799,Thane Muncipal Transport,osm
+OSM-node-10059370037,Subhash Tower,,19.207824,73.011247,Thane Muncipal Transport,osm
+OSM-node-10059370038,Vastu Anand,,19.20677,73.009633,Thane Muncipal Transport,osm
+OSM-node-10059370039,Raj Park,,19.205037,73.007026,Thane Muncipal Transport,osm
+OSM-node-10059370040,Prem Nagar,,19.203771,73.006028,Thane Muncipal Transport,osm
+OSM-node-10059370041,Raghukul Society,,19.207033,73.005888,Thane Muncipal Transport,osm
+OSM-node-10059370042,Nadanawan Homes,,19.209516,73.009847,Thane Muncipal Transport,osm
+OSM-node-10059370043,Reliance Market,,19.207641,73.0115,Thane Muncipal Transport,osm
+OSM-node-10059370044,Vastu Anand,,19.206446,73.00974,Thane Muncipal Transport,osm
+OSM-node-10059370045,Vilas Park,,19.204744,73.007122,Thane Muncipal Transport,osm
+OSM-node-10059370046,Prem Nagar,,19.202986,73.004596,Thane Muncipal Transport,osm
+OSM-node-10059370047,Datta Wadi,,19.200154,72.998689,Thane Muncipal Transport,osm
+OSM-node-10059370048,Kharegaon Naka,,19.201927,73.00149,Thane Muncipal Transport,osm
+OSM-node-10059370049,Datta Wadi,,19.200498,72.998545,Thane Muncipal Transport,osm
+OSM-node-10059370050,Sukur Park,,19.198994,72.995471,Thane Muncipal Transport,osm
+OSM-node-10059370051,Sahyadri Society,,19.198168,72.993937,Thane Muncipal Transport,osm
+OSM-node-10059370052,Manisha Nagar,,19.196947,72.990847,Thane Muncipal Transport,osm
+OSM-node-10059370053,Teen Petrol Pump,,19.192778,72.970188,Thane Muncipal Transport,osm
+OSM-node-10059370054,Indira Nagar,,19.205098,72.950184,Thane Muncipal Transport,osm
+OSM-node-10059370055,Sawarkar Nagar,,19.206436,72.950581,Thane Muncipal Transport,osm
+OSM-node-10059370056,Kharegaon,,19.205129,72.999666,Thane Muncipal Transport,osm
+OSM-node-10059370057,Parsik Nagar,,19.203578,73.001296,Thane Muncipal Transport,osm
+OSM-node-10059370058,Kharegaon Naka,,19.201653,73.001618,Thane Muncipal Transport,osm
+OSM-node-10059370059,Sukur Park,,19.198695,72.995589,Thane Muncipal Transport,osm
+OSM-node-10059370060,Sahyadri Society,,19.197732,72.993615,Thane Muncipal Transport,osm
+OSM-node-10059370061,Manisha Nagar,,19.196983,72.991769,Thane Muncipal Transport,osm
+OSM-node-10059370062,Kalwa Naka,,19.196096,72.988011,Thane Muncipal Transport,osm
+OSM-node-10059370063,Mahapalika Bhavan,,19.19757,72.968123,Thane Muncipal Transport,osm
+OSM-node-10151918348,Vrindavan Society,,19.208336,72.982707,BEST,osm
+OSM-node-10151918349,Vrindavan Society Thane,,19.208239,72.98277,BEST,osm
+OSM-node-10152063577,Vrindavan Society,,19.208419,72.982752,Thane Municipal Transport,osm
+OSM-node-10245111411,P&T Colony,,19.171261,72.943603,,osm
+OSM-node-10245111417,Nahur Depot,,19.170664,72.944002,,osm
+OSM-node-10245111422,Ralli Wolf,,19.17106,72.940569,,osm
+OSM-node-10245111427,P&T Colony,,19.171283,72.943466,,osm
+OSM-node-10245111429,Ralli Wolf,,19.170707,72.940159,,osm
+OSM-node-10245111438,Ralli Wolf,,19.170808,72.940205,,osm
+OSM-node-10245111439,Nahur Depot,,19.170726,72.944111,,osm
+OSM-node-10245111441,Kavi Kokil Vidyapati Thakur Chowk,,19.165628,72.94374,,osm
+OSM-node-10245111442,Kavi Kokil Vidyapati Thakur Chowk,,19.165722,72.943641,,osm
+OSM-node-10246302361,Kelker College,,19.16305,72.956707,TMT,osm
+OSM-node-10247406098,Mulund Station (W),,19.172836,72.956552,TMT,osm
+OSM-node-10247406099,Dnyan Sarita College,,19.178649,72.95052,,osm
+OSM-node-10247406100,Dhanvantri Hospital,,19.176125,72.953347,,osm
+OSM-node-10247406101,Dhanvantari Hospital,,19.175862,72.953632,,osm
+OSM-node-10247406102,Santoshi Mata Mandir,,19.183477,72.949313,,osm
+OSM-node-10247406103,Kamagar Hospital / ESIS Mulund,,19.179103,72.945228,,osm
+OSM-node-10247412210,Laxmi Nagar,,19.20639,72.970424,,osm
+OSM-node-10247412211,Siddhivinayak Tower,,19.210141,72.974255,,osm
+OSM-node-10247412212,Flower Valley,,19.208037,72.972231,,osm
+OSM-node-10247412213,Bramhala Talav / Manorpada,,19.202573,72.97601,,osm
+OSM-node-10247412214,Kolbad,,19.204064,72.977163,,osm
+OSM-node-10247412215,Castle Mill Naka,,19.205202,72.977452,,osm
+OSM-node-10247412216,Parkwood Society,,19.262168,72.965552,,osm
+OSM-node-10247412217,Sambhaji Hotel,,19.260412,72.971465,,osm
+OSM-node-10247412218,Anand Nagar Depot,,19.264982,72.969842,,osm
+OSM-node-10247412219,Damyanti Smruti,,19.264834,72.979616,,osm
+OSM-node-10247412220,Swastik Regalia,,19.26254,72.977037,,osm
+OSM-node-10247412221,Hiranandani Garden,,19.257377,72.97811,,osm
+OSM-node-10247412222,Stanford Society,,19.256365,72.97946,,osm
+OSM-node-10247412223,Shastri Nagar Naka,,19.212723,72.960258,,osm
+OSM-node-10247412224,Ram Mandir,,19.235151,72.945169,,osm
+OSM-node-10247412225,Exotica,,19.231545,72.948033,,osm
+OSM-node-10247412226,Bhendi Pada,,19.238129,72.943917,,osm
+OSM-node-10247412227,Saket Complex,,19.206208,72.992035,,osm
+OSM-node-10247412228,Kores Nakshtra,,19.209327,72.961294,Thane Muncipal Transport,osm
+OSM-node-10247412229,Runwal Plaza,,19.208024,72.958247,,osm
+OSM-node-10247412230,Aai Mata Mandir / Chowk,,19.207176,72.956968,,osm
+OSM-node-10247412231,Dadlani Park,,19.222428,72.995942,,osm
+OSM-node-10247412232,Ashok Nagar,,19.222378,72.994248,Thane Muncipal Transport,osm
+OSM-node-10247412233,Balkum Pada No 1,,19.221874,72.991214,Thane Muncipal Transport,osm
+OSM-node-10247412234,Balkum Pada No 2,,19.220038,72.989836,Thane Muncipal Transport,osm
+OSM-node-10247412235,Balkum Pada No 3,,19.215719,72.99127,Thane Muncipal Transport,osm
+OSM-node-10247412236,Ravi Fisheries / Road Number 27,,19.195087,72.945261,Thane Muncipal Transport,osm
+OSM-node-10247412237,Wagle Circle / Road No 22,,19.19453,72.94973,Thane Muncipal Transport,osm
+OSM-node-10247412238,Durdwani Kendra,,19.194306,72.951652,Thane Muncipal Transport,osm
+OSM-node-10247412240,ITI Circle,,19.195369,72.943134,Thane Muncipal Transport,osm
+OSM-node-10247412241,Dnyansadhna College,,19.184487,72.964738,Thane Muncipal Transport,osm
+OSM-node-10247412246,Mithagar,,19.165515,72.964016,Thane Muncipal Transport,osm
+OSM-node-10247412257,Everest World Park,,19.231656,72.983084,Thane Muncipal Transport,osm
+OSM-node-10247412258,Sandoz Baug,,19.233413,72.987705,Thane Muncipal Transport,osm
+OSM-node-10247412259,Bayer Main Gate,,19.231143,72.98606,Thane Muncipal Transport,osm
+OSM-node-10247412260,Manorama Nagar,,19.23195,72.98026,Thane Muncipal Transport,osm
+OSM-node-10247412261,Aban Park,,19.22922,72.9801,Thane Muncipal Transport,osm
+OSM-node-10247412262,Yashaswi Nagar Pipeline,,19.219522,72.983826,Thane Muncipal Transport,osm
+OSM-node-10247412263,Vardhman Garden,,19.219157,72.984488,Thane Muncipal Transport,osm
+OSM-node-10247412264,Chhabhaiya Park,,19.218105,72.981358,Thane Muncipal Transport,osm
+OSM-node-10247412265,Kasheli Toll Naka,,19.234786,73.012445,Thane Muncipal Transport,osm
+OSM-node-10247412266,Colour Chem,,19.220075,72.986508,Thane Muncipal Transport,osm
+OSM-node-10247412267,KMS / N G Regency,,19.226664,72.998082,Thane Muncipal Transport,osm
+OSM-node-10247412268,Chamunda,,19.232065,73.008052,Thane Muncipal Transport,osm
+OSM-node-10247412269,Durgesh Complex,,19.238835,73.015893,Thane Muncipal Transport,osm
+OSM-node-10247412270,Balkum Naka,,19.221508,72.989545,Thane Muncipal Transport,osm
+OSM-node-10247412271,Kasheli,,19.236265,73.014706,Thane Muncipal Transport,osm
+OSM-node-10247412272,Hanuman Complex,,19.24152,73.016549,Thane Muncipal Transport,osm
+OSM-node-10247412273,Durgesh Park,,19.244176,73.017242,Thane Muncipal Transport,osm
+OSM-node-10247412274,Kalher,,19.247031,73.017766,Thane Muncipal Transport,osm
+OSM-node-10247412275,Kalher Pipe Line,,19.25133,73.017998,Thane Muncipal Transport,osm
+OSM-node-10247412276,Holy Mary High School,,19.268737,73.036873,Thane Muncipal Transport,osm
+OSM-node-10247412277,Purna,,19.258322,73.026329,Thane Muncipal Transport,osm
+OSM-node-10247412278,"Maratha Punjab, Madvi Chowk",,19.270458,73.038673,Thane Muncipal Transport,osm
+OSM-node-10247412279,Bhiwandi Bypass,,19.281052,73.047867,Thane Muncipal Transport,osm
+OSM-node-10247412280,Narpoli Police Station,,19.283707,73.050091,Thane Muncipal Transport,osm
+OSM-node-10247412281,Kopar,,19.252731,73.021147,Thane Muncipal Transport,osm
+OSM-node-10247412282,Khandagale Estate,,19.261166,73.028881,Thane Muncipal Transport,osm
+OSM-node-10247412283,Anjur Phata,,19.272819,73.041284,Thane Muncipal Transport,osm
+OSM-node-10247412284,Oswal Sagar Hall,,19.276404,73.044215,Thane Muncipal Transport,osm
+OSM-node-10247412285,Tukaram Niwas,,19.209883,73.037077,Thane Muncipal Transport,osm
+OSM-node-10247412286,Lodha,,19.214329,72.984149,Thane Muncipal Transport,osm
+OSM-node-10247412287,Vehele Panchayat,,19.234198,73.041598,Thane Muncipal Transport,osm
+OSM-node-10247412288,Hardas Nagar,,19.212926,72.977075,Thane Muncipal Transport,osm
+OSM-node-10247412289,Lodha / Saket,,19.210806,72.985709,Thane Muncipal Transport,osm
+OSM-node-10247412290,Surai Phata,,19.219997,73.042502,Thane Muncipal Transport,osm
+OSM-node-10247412291,Anjur,,19.215823,73.039064,Thane Muncipal Transport,osm
+OSM-node-10247412292,Lodha Complex,,19.213223,72.98424,Thane Muncipal Transport,osm
+OSM-node-10247412293,Diva 1 / Diva Gaon / Anjur,,19.230245,73.028036,Thane Muncipal Transport,osm
+OSM-node-10247412294,Mumbra Toll Naka,,19.212619,73.007399,Thane Muncipal Transport,osm
+OSM-node-10247412295,Diva 2 / Diva Phata / Petrol Pump,,19.233545,73.032818,Thane Muncipal Transport,osm
+OSM-node-10247412296,Aalimghar,,19.203762,73.036325,Thane Muncipal Transport,osm
+OSM-node-10247412297,Shree Ram Nagar,,19.229583,73.042432,Thane Muncipal Transport,osm
+OSM-node-10247412298,Kalyan Naka,,19.29614,73.063389,Thane Muncipal Transport,osm
+OSM-node-10247412300,Mankoli Naka,,19.241448,73.041862,Thane Muncipal Transport,osm
+OSM-node-10247412301,Bhoomi World,,19.263399,73.073938,Thane Muncipal Transport,osm
+OSM-node-10247412303,Jakat Naka,,19.29896,73.064999,Thane Muncipal Transport,osm
+OSM-node-10247412305,Mini Punjab,,19.250976,73.054755,Thane Muncipal Transport,osm
+OSM-node-10247412307,Swayam Siddhi College,,19.276069,73.078226,Thane Muncipal Transport,osm
+OSM-node-10247435536,Kasarvadavali,,19.275384,72.968892,Thane Muncipal Transport,osm
+OSM-node-10247435537,Little Angel School,,19.272659,72.967753,Thane Muncipal Transport,osm
+OSM-node-10247435538,Kasarvadavali / Sainik Shala,,19.271132,72.966686,Thane Muncipal Transport,osm
+OSM-node-10247438109,Pipeline Road,,19.281774,73.073877,Thane Muncipal Transport,osm
+OSM-node-10247438111,Kalyan Bypass,,19.269843,73.082832,Thane Muncipal Transport,osm
+OSM-node-10247438112,Saibaba Mandir,,19.274187,73.079588,Thane Muncipal Transport,osm
+OSM-node-10247438121,Kalsekar College / K.V.K.,,19.161668,73.029452,Thane Muncipal Transport,osm
+OSM-node-10247438122,Almos Colony,,19.16797,73.026065,Thane Muncipal Transport,osm
+OSM-node-10247438124,Millenium Hospital / Shimla Park,,19.163424,73.028717,Thane Muncipal Transport,osm
+OSM-node-10247438125,Kousa Jama Masjid,,19.164512,73.028587,Thane Muncipal Transport,osm
+OSM-node-10247438126,Kousa Gaon,,19.166587,73.027146,Thane Muncipal Transport,osm
+OSM-node-10247438128,Tanwar Nagar / Nashimat Colony,,19.170173,73.024647,Thane Muncipal Transport,osm
+OSM-node-10247438129,Mumbra Police Station,,19.183456,73.022569,Thane Muncipal Transport,osm
+OSM-node-10247438130,Amrut Nagar,,19.174464,73.023174,Thane Muncipal Transport,osm
+OSM-node-10247438131,Jalim Kura Mandir / Kismat Colony,,19.172022,73.023682,Thane Muncipal Transport,osm
+OSM-node-10247438132,Retibunder Number 2/Ranna Nagar,,19.203481,73.019986,Thane Muncipal Transport,osm
+OSM-node-10247438133,Retibunder Number 1,,19.200441,73.022464,Thane Muncipal Transport,osm
+OSM-node-10247438134,Amrut Angan,,19.208974,73.012819,Thane Muncipal Transport,osm
+OSM-node-10247438135,Lalit Clinic,,19.185816,73.021408,Thane Muncipal Transport,osm
+OSM-node-10247438136,Retibunder Number 3,,19.207092,73.017877,Thane Muncipal Transport,osm
+OSM-node-10247438137,Sanjay Nagar/Shiv Sena Office,,19.180227,73.02264,Thane Muncipal Transport,osm
+OSM-node-10247438138,Mumbra Railway Station,,19.187375,73.023652,Thane Muncipal Transport,osm
+OSM-node-10247438139,Mumbra Prabhat Office,,19.187405,73.021631,Thane Muncipal Transport,osm
+OSM-node-10247438140,Mumbra Shiv Mandir,,19.177417,73.022937,Thane Muncipal Transport,osm
+OSM-node-10247438141,Dattu Wadi Mumbra/Sainath Hospital,,19.193086,73.022964,Thane Muncipal Transport,osm
+OSM-node-10247438142,Reti Bunder Circle,,19.210358,73.016722,Thane Muncipal Transport,osm
+OSM-node-10247438143,Sai Nath Nagar,,19.209512,73.013844,Thane Muncipal Transport,osm
+OSM-node-10247438144,Kharegaon Fatak,,19.20053,73.003833,Thane Muncipal Transport,osm
+OSM-node-10247438145,Anand Vihar,,19.201897,73.005202,Thane Muncipal Transport,osm
+OSM-node-10247438146,Rameshwar Society,,19.204229,73.009562,Thane Muncipal Transport,osm
+OSM-node-10247438147,Kalwa Railway Station,,19.196128,72.998469,Thane Muncipal Transport,osm
+OSM-node-10247438199,Imperial Sqaure,,19.284178,72.947311,Thane Muncipal Transport,osm
+OSM-node-10247438200,Poshmata Mandir,,19.281041,72.954985,Thane Muncipal Transport,osm
+OSM-node-10247438201,Ovala Gaon,,19.274194,72.960319,Thane Muncipal Transport,osm
+OSM-node-10247438202,Gaimukh Mandir / Jagannath Mahadev Temple,,19.285089,72.941163,Thane Muncipal Transport,osm
+OSM-node-10247438204,Trimurti School,,19.277343,72.957501,Thane Muncipal Transport,osm
+OSM-node-10247438205,Bhaindar Pada,,19.28355,72.95189,Thane Muncipal Transport,osm
+OSM-node-10247438206,Shri Ram Hospital,,19.275725,72.958823,Thane Muncipal Transport,osm
+OSM-node-10247438208,Vedant Hospital / Garib Nagar,,19.272117,72.963059,Thane Muncipal Transport,osm
+OSM-node-10247438209,Atriya Society,,19.24552,72.982213,Thane Muncipal Transport,osm
+OSM-node-10247438210,Rutu Tower,,19.247889,72.978888,Thane Muncipal Transport,osm
+OSM-node-10247438211,Rutu Estate / Municipal Commissioner House,,19.2482,72.977783,Thane Muncipal Transport,osm
+OSM-node-10247438212,Shree Maa Bal Niketan,,19.249882,72.97933,Thane Muncipal Transport,osm
+OSM-node-10247438213,Forest Avenue / Arcadia,,19.254452,72.981703,Thane Muncipal Transport,osm
+OSM-node-10247438214,Hiranandani,,19.258284,72.984348,Thane Muncipal Transport,osm
+OSM-node-10247438215,Bhoomi Acres,,19.258737,72.975891,Thane Muncipal Transport,osm
+OSM-node-10247438216,Vasant Leela,,19.259149,72.976031,Thane Muncipal Transport,osm
+OSM-node-10250420325,Bus stop,,19.17353,72.956998,,osm
+OSM-node-10250420327,Mulund Railway Station (W),,19.173894,72.955848,,osm
+OSM-node-10250420333,Mulund Railway Station (W),,19.17367,72.957133,,osm
+OSM-node-10250420336,Mulund Railway Station (W) Towards Mulund Colony,,19.173432,72.956356,,osm
+OSM-node-10250420341,Mulund Railway Station (W),,19.173812,72.955961,,osm
+OSM-node-10250511730,Bus stop,,19.177518,72.940168,,osm
+OSM-node-10251478016,Hanuman Complex,,19.241385,73.017008,Thane Muncipal Transport,osm
+OSM-node-10251478017,Kalher,,19.248148,73.017986,Thane Muncipal Transport,osm
+OSM-node-10251478018,Pipe Line Kalher,,19.251059,73.018194,Thane Muncipal Transport,osm
+OSM-node-10251478019,Durgesh Complex,,19.238776,73.016322,Thane Muncipal Transport,osm
+OSM-node-10251478020,Durgesh Park,,19.24373,73.017514,Thane Muncipal Transport,osm
+OSM-node-10251478021,Khandagale Estate,,19.261105,73.02941,Thane Muncipal Transport,osm
+OSM-node-10251478022,Chamunda,,19.232198,73.008835,Thane Muncipal Transport,osm
+OSM-node-10251478023,KMS / N G Regency,,19.225509,72.997328,Thane Muncipal Transport,osm
+OSM-node-10251478024,Kasheli Gaon,,19.236172,73.015182,Thane Muncipal Transport,osm
+OSM-node-10251478025,Kasheli Toll Naka,,19.234425,73.012676,Thane Muncipal Transport,osm
+OSM-node-10251478026,Kopar,,19.252692,73.021817,Thane Muncipal Transport,osm
+OSM-node-10251478027,Purna,,19.258123,73.026678,Thane Muncipal Transport,osm
+OSM-node-10251478028,Holy Mary High School,,19.268607,73.037257,Thane Muncipal Transport,osm
+OSM-node-10251478029,Maratha Punjab / Madvi Chowk,,19.270228,73.038844,Thane Muncipal Transport,osm
+OSM-node-10251478030,Kalyan Naka,,19.296228,73.063559,Thane Muncipal Transport,osm
+OSM-node-10251478031,Power House,,19.288811,73.069253,Thane Muncipal Transport,osm
+OSM-node-10251478032,Babla Compound / Hanuman Mandir,,19.285282,73.071946,Thane Muncipal Transport,osm
+OSM-node-10251478033,Pipeline Road,,19.281288,73.074522,Thane Muncipal Transport,osm
+OSM-node-10251478034,Diva,,19.230012,73.028144,Thane Muncipal Transport,osm
+OSM-node-10251478035,Power House,,19.288919,73.06942,Thane Muncipal Transport,osm
+OSM-node-10251478036,Saibaba Mandir,,19.274329,73.079762,Thane Muncipal Transport,osm
+OSM-node-10251478037,Babla Compound / Hanuman Mandir,,19.285388,73.072125,Thane Muncipal Transport,osm
+OSM-node-10251478038,Mini Punjab,,19.250035,73.053602,Thane Muncipal Transport,osm
+OSM-node-10251478039,Bhoomi World,,19.263115,73.074144,Thane Muncipal Transport,osm
+OSM-node-10251478040,Kalyan Bypass,,19.269433,73.084047,Thane Muncipal Transport,osm
+OSM-node-10251478041,Pimplas,,19.260037,73.069463,Thane Muncipal Transport,osm
+OSM-node-10251478043,Mankoli Naka,,19.240344,73.041423,Thane Muncipal Transport,osm
+OSM-node-10251478045,Swayam Siddhi College,,19.276228,73.078349,Thane Muncipal Transport,osm
+OSM-node-10251478046,Jakat Naka,,19.297795,73.06434,Thane Muncipal Transport,osm
+OSM-node-10251478047,Diva 2 / Diva Phata / Petrol Pump,,19.233202,73.032843,Thane Muncipal Transport,osm
+OSM-node-10251478048,Gopal Nagar,,19.297608,73.064237,Thane Muncipal Transport,osm
+OSM-node-10251478051,Highway Darshan Society,,19.187638,72.964021,Thane Muncipal Transport,osm
+OSM-node-10251478053,Mithagar,,19.165471,72.964606,Thane Muncipal Transport,osm
+OSM-node-10251478056,Teen Hath Naka,,19.187977,72.963458,Thane Muncipal Transport,osm
+OSM-node-10251478058,Dnyansadhna College,,19.184269,72.965272,Thane Muncipal Transport,osm
+OSM-node-10251478085,R. T. O/ Central Jail,,19.199054,72.981319,Thane Muncipal Transport,osm
+OSM-node-10251478086,R. T. O/ Central Jail,,19.198911,72.981236,Thane Muncipal Transport,osm
+OSM-node-10251478087,Central Maidan,,19.19798,72.97978,Thane Muncipal Transport,osm
+OSM-node-10251478088,Kolbad,,19.204123,72.977309,Thane Muncipal Transport,osm
+OSM-node-10251478089,New Shakti Mill / Ambedkar Road,,19.200791,72.975484,Thane Muncipal Transport,osm
+OSM-node-10251478090,Siddhivinayak Tower,,19.209714,72.974592,Thane Muncipal Transport,osm
+OSM-node-10251478091,Bramhala Talav / Manorpada,,19.202602,72.976452,Thane Muncipal Transport,osm
+OSM-node-10251478092,Manorama Nagar,,19.232725,72.980843,Thane Muncipal Transport,osm
+OSM-node-10251478093,Aban Park,,19.22989,72.980156,Thane Muncipal Transport,osm
+OSM-node-10251478094,Gholai Nagar,,19.204125,73.011768,Thane Muncipal Transport,osm
+OSM-node-10251478095,Pipe Line,,19.214296,73.012382,Thane Muncipal Transport,osm
+OSM-node-10251478096,Mumbra Toll Naka,,19.212471,73.007752,Thane Muncipal Transport,osm
+OSM-node-10251478097,Lodha / Saket,,19.210081,72.98842,Thane Muncipal Transport,osm
+OSM-node-10251478098,Mumbra Police Station,,19.18338,73.022221,Thane Muncipal Transport,osm
+OSM-node-10251478099,Kousa Gaon,,19.16648,73.026919,Thane Muncipal Transport,osm
+OSM-node-10251478101,Retibunder Number 3,,19.206923,73.017692,Thane Muncipal Transport,osm
+OSM-node-10251478102,Sanjay Nagar/Shiv Sena Office,,19.181072,73.022332,Thane Muncipal Transport,osm
+OSM-node-10251478103,Sai Nath Nagar,,19.209273,73.013762,Thane Muncipal Transport,osm
+OSM-node-10251478104,Tanwar Nagar / Nashimat Colony,,19.170072,73.024444,Thane Muncipal Transport,osm
+OSM-node-10251478105,Retibunder Number 1,,19.200309,73.022208,Thane Muncipal Transport,osm
+OSM-node-10251478107,Almos Colony,,19.16555,73.026852,Thane Muncipal Transport,osm
+OSM-node-10251521009,Mumbra Railway Station,,19.189947,73.022616,Thane Muncipal Transport,osm
+OSM-node-10251521010,Mumbra Shiv Mandir,,19.177459,73.022588,Thane Muncipal Transport,osm
+OSM-node-10251521012,Kalsekar College / K.V.K.,,19.161555,73.029127,Thane Muncipal Transport,osm
+OSM-node-10251521013,Lalit Clinic,,19.18567,73.021267,Thane Muncipal Transport,osm
+OSM-node-10251521015,Reti Bunder Circle,,19.210363,73.016176,Thane Muncipal Transport,osm
+OSM-node-10251521016,Kousa Jama Masjid,,19.16431,73.028333,Thane Muncipal Transport,osm
+OSM-node-10251521017,Retibunder Number 2/Ranna Nagar,,19.202564,73.020406,Thane Muncipal Transport,osm
+OSM-node-10251521018,Amrut Nagar,,19.174214,73.022939,Thane Muncipal Transport,osm
+OSM-node-10251521021,Jalim Kura Mandir / Kismat Colony,,19.171998,73.023405,Thane Muncipal Transport,osm
+OSM-node-10251521024,Millenium Hospital / Shimla Park,,19.163317,73.028485,Thane Muncipal Transport,osm
+OSM-node-10251521025,Dattu Wadi Mumbra/Sainath Hospital,,19.193261,73.022795,Thane Muncipal Transport,osm
+OSM-node-10251521026,Mumbra Prabhat Office,,19.187567,73.021464,Thane Muncipal Transport,osm
+OSM-node-10251521029,Thane Station (East) Kopri,,19.185077,72.97663,Thane Muncipal Transport,osm
+OSM-node-10251521030,Gaondevi Mandir Kopri,,19.184523,72.972409,Thane Muncipal Transport,osm
+OSM-node-10251521031,Swami Vivekanand Chowk,,19.181612,72.967771,Thane Muncipal Transport,osm
+OSM-node-10251521032,Twelve Bunglows,,19.18233,72.969466,Thane Muncipal Transport,osm
+OSM-node-10251521033,Siddharth Nagar Shashkiya Niwas,,19.182424,72.970746,Thane Muncipal Transport,osm
+OSM-node-10251521034,Gaondevi Mandir Kopri,,19.184631,72.97234,Thane Muncipal Transport,osm
+OSM-node-10251521035,Twelve Bunglows,,19.182495,72.969438,Thane Muncipal Transport,osm
+OSM-node-10251521036,Siddharth Nagar Shashkiya Niwas,,19.182555,72.970439,Thane Muncipal Transport,osm
+OSM-node-10251521037,Swami Vivekanand Chowk,,19.181751,72.967607,Thane Muncipal Transport,osm
+OSM-node-10251521038,Malhar Cinema,,19.187432,72.966944,Thane Muncipal Transport,osm
+OSM-node-10251521039,Gyan Sarita Sada,,19.178731,72.950632,Thane Muncipal Transport,osm
+OSM-node-10251521040,Santoshi Mata Temple,,19.183474,72.950241,Thane Muncipal Transport,osm
+OSM-node-10251521041,Ambaji Dham,,19.1783,72.949665,Thane Muncipal Transport,osm
+OSM-node-10251521042,Shiv Sena Shakha Mulund,,19.1739,72.954633,Thane Muncipal Transport,osm
+OSM-node-10251521043,Pach Rasta Devidayal Road,,19.175606,72.952703,Thane Muncipal Transport,osm
+OSM-node-10251521044,Kamagar Hospital Mulund,,19.179077,72.945482,Thane Muncipal Transport,osm
+OSM-node-10251521045,Ravi Fisheries / Road Number 27,,19.195238,72.945341,Thane Muncipal Transport,osm
+OSM-node-10251521046,Wagle Circle / Road No 22,,19.194766,72.949702,Thane Muncipal Transport,osm
+OSM-node-10251521047,Durdwani Kendra,,19.194455,72.951694,Thane Muncipal Transport,osm
+OSM-node-10251521048,ITI Circle,,19.195541,72.943109,Thane Muncipal Transport,osm
+OSM-node-10251521049,Indira Nagar,,19.205225,72.949932,Thane Muncipal Transport,osm
+OSM-node-10251521050,Aai Mata Mandir Chowk,,19.206955,72.95695,Thane Muncipal Transport,osm
+OSM-node-10251521051,Kores Nakshtra,,19.209174,72.961444,Thane Muncipal Transport,osm
+OSM-node-10251521052,Runwal Plaza,,19.207879,72.958537,Thane Muncipal Transport,osm
+OSM-node-10251521053,Chhabhaiya Park,,19.21765,72.98131,Thane Muncipal Transport,osm
+OSM-node-10251521054,Ashok Nagar,,19.222148,72.994404,Thane Muncipal Transport,osm
+OSM-node-10251521055,Dadlani Park,,19.222233,72.995933,Thane Muncipal Transport,osm
+OSM-node-10251521056,Balkum Pada No 1,,19.221711,72.991252,Thane Muncipal Transport,osm
+OSM-node-10251521057,Lodha Gate,,19.211618,72.984372,Thane Muncipal Transport,osm
+OSM-node-10251521058,Majiwada Gaon,,19.213925,72.981673,Thane Muncipal Transport,osm
+OSM-node-10251521059,Lodha Gate,,19.211576,72.984792,Thane Muncipal Transport,osm
+OSM-node-10251521060,Sachin Society,,19.214505,72.979775,Thane Muncipal Transport,osm
+OSM-node-10251521061,Lodha,,19.214334,72.98447,Thane Muncipal Transport,osm
+OSM-node-10251521062,Lodha Complex,,19.213243,72.984569,Thane Muncipal Transport,osm
+OSM-node-10251521063,Balkum Pada No 3,,19.215982,72.991388,Thane Muncipal Transport,osm
+OSM-node-10251521064,Saket Complex,,19.206471,72.992435,Thane Muncipal Transport,osm
+OSM-node-10251521065,Balkum Pada No 2,,19.22022,72.989861,Thane Muncipal Transport,osm
+OSM-node-10251521066,Vardhman Garden,,19.218915,72.985082,Thane Muncipal Transport,osm
+OSM-node-10251521067,Colour Chem,,19.219812,72.986786,Thane Muncipal Transport,osm
+OSM-node-10251521068,Balkum Naka,,19.221255,72.989834,Thane Muncipal Transport,osm
+OSM-node-10251521069,Azad Nagar,,19.239421,72.980688,Thane Muncipal Transport,osm
+OSM-node-10251521070,St. Xaviers School,,19.240369,72.977466,Thane Muncipal Transport,osm
+OSM-node-10251521071,Brahmand Phase 4,,19.241431,72.981971,Thane Muncipal Transport,osm
+OSM-node-10251521072,Brahmand Phase 6,,19.246478,72.984692,Thane Muncipal Transport,osm
+OSM-node-10251521073,Brahmand Phase 5,,19.244909,72.983568,Thane Muncipal Transport,osm
+OSM-node-10251521074,Atriya Society,,19.24553,72.982524,Thane Muncipal Transport,osm
+OSM-node-10251521075,Leonard,,19.250685,72.980013,Thane Muncipal Transport,osm
+OSM-node-10251521076,Shree Maa Bal Niketan,,19.24968,72.979509,Thane Muncipal Transport,osm
+OSM-node-10251521077,Forest Avenue,,19.254068,72.98183,Thane Muncipal Transport,osm
+OSM-node-10251521078,Rutu Tower,,19.248082,72.979046,Thane Muncipal Transport,osm
+OSM-node-10251521079,Hiranandani Garden,,19.257502,72.978219,Thane Muncipal Transport,osm
+OSM-node-10251521080,Swastik Regalia,,19.262335,72.977285,Thane Muncipal Transport,osm
+OSM-node-10251521081,Stanford Row,,19.256546,72.979621,Thane Muncipal Transport,osm
+OSM-node-10251521084,Shri Ram Hospital,,19.27594,72.959133,Thane Muncipal Transport,osm
+OSM-node-10251521085,Vedant Hospital / Garib Nagar,,19.272074,72.963776,Thane Muncipal Transport,osm
+OSM-node-10251521086,Ovala Gaon,,19.274405,72.960556,Thane Muncipal Transport,osm
+OSM-node-10251521087,Trimurti School,,19.277759,72.957735,Thane Muncipal Transport,osm
+OSM-node-10251521089,Gaimukh Mandir / Jagannath Mahadev Temple,,19.285646,72.940814,Thane Muncipal Transport,osm
+OSM-node-10251521090,Poshmata Mandir,,19.281004,72.955428,Thane Muncipal Transport,osm
+OSM-node-10251521093,Imperial Square,,19.284461,72.947642,Thane Muncipal Transport,osm
+OSM-node-10251521094,Kasarvadavali / Sainik Shala,,19.270863,72.966773,Thane Muncipal Transport,osm
+OSM-node-10251521096,Bhaindar Pada,,19.283749,72.952291,Thane Muncipal Transport,osm
+OSM-node-10255674896,Mahanagarpalika Udyan,,19.175767,72.949307,BEST,osm
+OSM-node-10255674906,Mulund Depot,,19.175816,72.946571,BEST,osm
+OSM-node-10255674907,Mulund Depot,,19.175816,72.946329,,osm
+OSM-node-10255680424,Shivram Society,शिवराम सोसायटी,19.175622,72.944165,,osm
+OSM-node-10255680425,Shivram Society,शिवराम सोसायटी,19.17573,72.944461,,osm
+OSM-node-10259279459,Mulund Railway Station (W),,19.172792,72.955847,,osm
+OSM-node-10259279460,Mulund Railway Station (W),,19.172923,72.956632,,osm
+OSM-node-10259279461,Mulund Railway Station (W),,19.173004,72.956706,,osm
+OSM-node-10259362734,Ralli Wolf,,19.170679,72.940181,NMMT,osm
+OSM-node-10259362735,Johnson & Johnson,,19.174794,72.94179,,osm
+OSM-node-10259362739,Johnson & Johnson,,19.174742,72.941783,NMMT,osm
+OSM-node-10259382131,RP Road,,19.174225,72.957089,,osm
+OSM-node-10259382133,Mulund Railway Station (W),,19.17375,72.957208,,osm
+OSM-node-10259382134,Maharishi Arvind Chowk,,19.175631,72.952683,,osm
+OSM-node-10259382138,RP Road,,19.17409,72.957219,,osm
+OSM-node-10259480517,P&T Colony,,19.169694,72.946077,,osm
+OSM-node-10259480518,Vidyaben Gardi School,,19.171444,72.947702,,osm
+OSM-node-10259480519,P&T Colony,,19.16964,72.945879,,osm
+OSM-node-10264981396,Konark Regency,,19.162743,72.941998,NMMT,osm
+OSM-node-10264981398,Fortis Hospital,,19.162789,72.94198,,osm
+OSM-node-10275807343,Kadam Pada,,19.178485,72.946979,BEST,osm
+OSM-node-10275807348,Agarwal Municipal Hospital,,19.17847,72.946569,BEST,osm
+OSM-node-10275948056,Bus stop,,19.18397,72.942781,,osm
+OSM-node-10278496034,Bus stop,,19.195441,72.970766,,osm
+OSM-node-10279838118,Bus stop,,19.175847,72.951725,,osm
+OSM-node-10279838119,Bus stop,,19.175865,72.948056,,osm
+OSM-node-10279838123,Bus stop,,19.175744,72.947995,,osm
+OSM-node-10280126559,Bus stop,,19.16182,72.945771,,osm
+OSM-node-10280126563,Wadarpada,,19.1676,72.951173,,osm
+OSM-node-10280126569,Kalidas Natyagruh,,19.17294,72.949353,,osm
+OSM-node-10280126571,Kalidas Natyagruh,,19.173484,72.949696,,osm
+OSM-node-10280126577,Ravi Kiran Nagrik Bank,,19.168523,72.952089,,osm
+OSM-node-10280126582,Mehul Cinema,,19.165993,72.949386,,osm
+OSM-node-10280126589,Parshawnath Nagar,,19.164061,72.947396,,osm
+OSM-node-10280293719,Merind Company,,19.161388,72.944508,,osm
+OSM-node-10285432367,Gaondevi Bus Stop,,19.184433,72.971819,,osm
+OSM-node-10291367365,Bus stop,,19.183174,72.949166,,osm
+OSM-node-10291367366,Bus stop,,19.181952,72.947185,,osm
+OSM-node-10291367367,Bus stop,,19.187216,72.962176,,osm
+OSM-node-10291367368,Bus stop,,19.191735,72.968755,,osm
+OSM-node-10304034850,St. Mary's High School,,19.166557,72.945022,,osm
+OSM-node-10304034855,St. Mary's High School,,19.166446,72.945048,,osm
+OSM-node-10304034856,Bus stop,,19.165096,72.946911,,osm
+OSM-node-10310414271,Bus stop,,19.171013,72.947429,,osm
+OSM-node-10686103763,Bus stop,,19.179422,72.94568,,osm
+OSM-node-10717772231,Kharegaon,,19.20688,72.999335,Thane Municipal Corporation,osm
+OSM-node-10738653691,Saket Phata,,19.209039,72.994548,Thane Muncipal Transport,osm
+OSM-node-10738653692,Lodha Casa Viva,,19.21331,72.988151,Thane Muncipal Transport,osm
+OSM-node-10738653693,Highland Haven,,19.217464,72.992982,Thane Muncipal Transport,osm
+OSM-node-10738688275,Kisan Nagar,,19.189606,72.949804,Thane Muncipal Transport,osm
+OSM-node-10738688276,Balsara,,19.191541,72.951762,Thane Muncipal Transport,osm
+OSM-node-10738688277,Majiwada,,19.210894,72.982644,Thane Muncipal Transport,osm
+OSM-node-10738688278,Majiwada,,19.211284,72.982709,Thane Muncipal Transport,osm
+OSM-node-10756686083,Kausa Hospital,,19.170758,73.031048,Thane Muncipal Transport,osm
+OSM-node-10756686084,Kausa Hospital,,19.170748,73.031321,Thane Muncipal Transport,osm
+OSM-node-11271579650,Ravi Kiran Nagrik Bank,,19.168965,72.952332,,osm
+OSM-node-11271579658,Mulund Vidya Mandir,,19.17008,72.953585,,osm
+OSM-node-11271579661,Wadarpada,,19.167953,72.951364,,osm
+OSM-node-11271586489,Mulund Vidya Mandir,,19.170181,72.953544,,osm
+OSM-node-12306894574,Ambaji Dham,,19.178196,72.949783,,osm
+OSM-node-12591896952,Manpada,,19.235148,72.975871,,osm
+OSM-node-12593351264,Dharamvir Nagar,,19.236099,72.974702,,osm
+OSM-node-12768025013,Johnson & Johnson,,19.175262,72.942329,,osm
+OSM-node-12843576281,Maharishi Arvind Chowk,,19.175543,72.951899,,osm
+OSM-node-12843595068,Bus stop,,19.171165,72.950446,,osm
+OSM-node-12843975055,Maharana Pratap Chowk,,19.184301,72.953781,,osm
+OSM-node-12843975062,Veena Nagar,,19.182043,72.946915,,osm
+OSM-node-12846756025,Jain Mandir,,19.1769,72.966498,,osm
+OSM-node-12846756047,Jain Mandir,,19.176923,72.966355,,osm
+OSM-node-12852198168,Agra Road,,19.177997,72.943391,BEST,osm
+OSM-node-12860494334,Gavan Pada,,19.173075,72.961668,,osm
+OSM-node-12878864397,Mulund Station (East),,19.171702,72.958137,,osm
+OSM-node-12880330782,TMT Mulund Bus Station,,19.173512,72.95772,,osm
+OSM-node-12883297182,Neelam Nagar Building No.3&4,,19.174517,72.962844,,osm
+OSM-node-12974237856,Marathon Chowk Teen Hath Naka,,19.187461,72.962439,,osm
+OSM-node-13431778553,Cadbury Junction,,19.204523,72.96857,,osm
+OSM-node-13760696967,Bus stop,,19.175876,72.948568,,osm
+OSM-node-13777995066,Desai Bangla,,19.205721,72.978194,Thane Muncipal Transport,osm
+OSM-node-13777995067,Shreerang Society,,19.206129,72.980301,Thane Muncipal Transport,osm
+OSM-node-13777995068,Rabodi Police Station,,19.20603,72.982264,Thane Muncipal Transport,osm
+OSM-node-13780208470,Rabodi (Kureshi Chowk),,19.203182,72.980794,Thane Muncipal Transport,osm
+OSM-node-13780208471,Rabodi,,19.202987,72.979965,Thane Muncipal Transport,osm
+OSM-node-13780208472,Passport Office,,19.192712,72.954557,Thane Muncipal Transport,osm
+OSM-node-13780208473,Bhawani Nagar,,19.202385,72.953654,Thane Muncipal Transport,osm
+OSM-node-13780208474,Kamgar Hospital,,19.203724,72.954054,Thane Muncipal Transport,osm
+OSM-node-13780208475,Kamgar Naka,,19.204044,72.954003,Thane Muncipal Transport,osm
+OSM-node-13780208476,Phulen Nagar,,19.205044,72.953938,Thane Muncipal Transport,osm
+OSM-node-13780208477,Yashodham Nagar,,19.208055,72.954728,Thane Muncipal Transport,osm
+OSM-node-13780208479,Thane Station (W),,19.186763,72.975685,Thane Muncipal Transport,osm
+OSM-node-13780208481,Yashodham Nagar,,19.208316,72.954737,Thane Muncipal Transport,osm
+OSM-node-13780208482,Phulen Nagar,,19.205128,72.954088,Thane Muncipal Transport,osm
+OSM-node-13780208483,Kamgar Naka,,19.204221,72.954062,Thane Muncipal Transport,osm
+OSM-node-13780208486,M.I.D.C.,,19.191181,72.955479,Thane Muncipal Transport,osm
+OSM-node-13780208496,Punjab National Bank,,19.189021,72.976094,Thane Muncipal Transport,osm
+OSM-way-31499695,Vitthalwadi,,19.227107,73.148971,,osm
+OSM-way-151866533,Thane Station (W),,19.186938,72.97565,TMT,osm
+OSM-way-151866565,Thane Bus Depot,,19.187247,72.977403,MSRTC,osm
+OSM-way-235944246,Mulund Check Naka,,19.183182,72.954087,,osm
+OSM-way-319831104,Lokmanya Nagar Bus Depot,,19.209302,72.952189,,osm
+OSM-way-320659668,MHADA Bus Station,,19.169272,72.968127,BEST,osm
+OSM-way-532665654,ST Bus Stand - Khopat,,19.201246,72.97275,,osm
+OSM-way-684571346,Dombivali MSRTC Bus Terminal,,19.212804,73.099742,MSRTC,osm
+OSM-way-912422941,Pawar Nagar,,19.228858,72.96597,,osm
+OSM-way-1122104214,Mulund Railway Station (W),,19.172805,72.95652,BEST,osm
