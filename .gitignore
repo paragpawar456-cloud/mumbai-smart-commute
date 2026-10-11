@@ -53,6 +53,7 @@ config/prod.json
 # Android signing
 android/key.properties
 *.jks
+!android/app/test-signing.jks
 *.keystore
 # Backend
 backend/node_modules/

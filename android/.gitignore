@@ -12,3 +12,5 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+# Public key for test APKs only (see .github/workflows/ci.yml).
+!app/test-signing.jks

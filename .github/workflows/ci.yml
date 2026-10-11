@@ -72,15 +72,21 @@ jobs:
           else
             echo "No signing secrets; APK is debug-signed."
           fi
-      # Without signing secrets, reuse one debug key across builds (GitHub keeps
-      # an unused cache for 7 days) so a newer APK installs over the old one.
-      - name: Keep the debug signing key between builds
+      # Without signing secrets, sign with the public test key in the repo, so
+      # every test APK has the same signature and installs over the last one.
+      # Test builds only: add the secrets above before any store release.
+      - name: Test signing key (no secrets)
         if: env.HAS_SIGNING != 'true'
-        uses: actions/cache@v4
-        with:
-          path: ~/.android/debug.keystore
-          key: android-debug-keystore-v1
-      - run: flutter build apk --release --split-per-abi --dart-define-from-file=config/build.json
+        run: |
+          printf 'storeFile=test-signing.jks\nstorePassword=testbuild\nkeyAlias=test\nkeyPassword=testbuild\n' > android/key.properties
+      # A rising build number lets Android treat each APK as an update, and
+      # shows testers which build they have (Profile, at the bottom).
+      - run: >-
+          flutter build apk --release --split-per-abi
+          --build-number=${{ github.run_number }}
+          --dart-define=BUILD_NUMBER=${{ github.run_number }}
+          --dart-define=BUILD_SHA=${{ github.sha }}
+          --dart-define-from-file=config/build.json
       - uses: actions/upload-artifact@v4
         with:
           name: mumbai-smart-commute-apk

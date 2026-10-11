@@ -11,8 +11,9 @@ const UA = 'mumbai-smart-commute-data-extract/1.0 (+https://github.com/paragpawa
 
 // Mumbai Metropolitan Region rail corridor, south Mumbai to Kalyan/Badlapur.
 const RAIL_BBOX = '18.89,72.79,19.30,73.25';
-// ~2.5 km around Kalyan station for the last-mile pilot.
-const KALYAN_BBOX = '19.215,73.105,19.265,73.155';
+// Last-mile area: Thane to Kalyan and Dombivli, including Manpada and Yogidham.
+// (The files keep their kalyan_* names so older tools still find them.)
+const KALYAN_BBOX = '19.16,72.94,19.30,73.18';
 
 const QUERIES = {
   rail_stations: `
@@ -31,8 +32,10 @@ const QUERIES = {
     (
       node["highway"="bus_stop"](${KALYAN_BBOX});
       node["public_transport"="platform"]["bus"="yes"](${KALYAN_BBOX});
+      node["amenity"="bus_station"](${KALYAN_BBOX});
+      way["amenity"="bus_station"](${KALYAN_BBOX});
     );
-    out tags;`,
+    out tags center;`,
   kalyan_pickup_points: `
     [out:json][timeout:120];
     (
