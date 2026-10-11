@@ -29,7 +29,7 @@ function uidTag_(uid) {
 
 /** Bumped on every change so cached lists never hide a new report. */
 function reportsGen_() { return CacheService.getScriptCache().get('rep:gen') || '0'; }
-function bumpReportsGen_() { CacheService.getScriptCache().put('rep:gen', String(Date.now()), 21600); }
+function bumpReportsGen_() { CacheService.getScriptCache().put('rep:gen', Date.now() + '.' + Math.random(), 21600); }
 
 function isLive_(r, nowIso) {
   return (r.status === 'pending' || r.status === 'approved') && String(r.expires_at) > nowIso;

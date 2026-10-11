@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/account/privacy_screen.dart';
+import '../../features/admin/admin_screen.dart';
 import '../../features/auth/sign_in_screen.dart';
 import '../../features/home/home_screen.dart';
 import '../../features/lastmile/ui/lastmile_screen.dart';
@@ -61,6 +63,8 @@ GoRouter buildRouter() => GoRouter(
             placeId: state.uri.queryParameters['place'],
           ),
         ),
+        GoRoute(path: '/admin', builder: (_, _) => const AdminScreen()),
+        GoRoute(path: '/privacy', builder: (_, _) => const PrivacyScreen()),
         GoRoute(
           path: '/sign-in',
           pageBuilder: (_, _) =>

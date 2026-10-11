@@ -24,3 +24,6 @@
 | D20 | Uber via its universal link (trip prefilled); Ola and Rapido open their Play Store page | No documented public deep link for Ola/Rapido; no prices from any provider | 2026-10-11 |
 | D21 | Community reports: signed-in only, 5 live per user, location rounded to ~11 m, uid never public, one "still true" per user (hashed), expiry per type | Useful, abuse-resistant, and keeps reporters private | 2026-10-11 |
 | D22 | A pickup point is a place where vehicles are usually found; the app always says it can't see vehicles there now | No live vehicle data exists; avoids implied availability | 2026-10-11 |
+| D23 | Admin dashboard lives inside the app (Profile → Admin), not an Apps Script web page; replaces D5 | Reuses the app's sign-in and role checks; Firebase sign-in inside Apps Script's sandboxed page is unreliable; one codebase. The Sheet stays the owner's bulk-editing tool | 2026-10-11 |
+| D24 | Service alerts must link to the official announcement (https) and are shown as Official | Never publish disruptions without a checkable source | 2026-10-11 |
+| D25 | Privacy consent is recorded per notice version; the app asks again when the notice changes. Not enforced on the server | Honest record without locking people out of public data | 2026-10-11 |

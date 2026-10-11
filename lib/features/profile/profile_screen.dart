@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/providers.dart';
 import '../../l10n/gen/app_localizations.dart';
+import '../account/account_providers.dart';
 import '../auth/auth_repository.dart';
 import '../settings/settings_controller.dart';
 
@@ -53,6 +54,7 @@ class ProfileScreen extends ConsumerWidget {
     final controller = ref.read(settingsProvider.notifier);
     final user = ref.watch(authStateProvider).value;
     final backend = ref.watch(backendStatusProvider);
+    final serverProfile = ref.watch(serverProfileProvider).value;
 
     return Scaffold(
       appBar: AppBar(title: Text(l.profileTitle)),
@@ -60,6 +62,17 @@ class ProfileScreen extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(vertical: 8),
         children: [
           _AccountTile(user: user),
+          if (serverProfile != null && serverProfile.needsConsent)
+            _ConsentCard(onAccept: () => acceptPrivacyNotice(ref)),
+          if (serverProfile != null && serverProfile.canModerate)
+            ListTile(
+              key: const Key('adminTile'),
+              leading: const Icon(Icons.admin_panel_settings_outlined),
+              title: Text(l.adminTitle),
+              subtitle: Text(serverProfile.isAdmin ? l.roleAdmin : l.roleModerator),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => context.push('/admin'),
+            ),
           if (user != null) ...[
             ListTile(
               leading: const Icon(Icons.logout),
@@ -127,6 +140,12 @@ class ProfileScreen extends ConsumerWidget {
                 : null,
           ),
           ListTile(
+            leading: const Icon(Icons.privacy_tip_outlined),
+            title: Text(l.privacyTitle),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => context.push('/privacy'),
+          ),
+          ListTile(
             leading: const Icon(Icons.info_outline),
             title: Text(l.about),
             subtitle: Text(l.aboutBody),
@@ -161,6 +180,65 @@ class _AccountTile extends StatelessWidget {
       leading: const CircleAvatar(child: Icon(Icons.person)),
       title: Text(user!.displayName ?? user!.email ?? ''),
       subtitle: Text(l.signedInAs(user!.email ?? '')),
+    );
+  }
+}
+
+class _ConsentCard extends StatefulWidget {
+  const _ConsentCard({required this.onAccept});
+  final Future<void> Function() onAccept;
+
+  @override
+  State<_ConsentCard> createState() => _ConsentCardState();
+}
+
+class _ConsentCardState extends State<_ConsentCard> {
+  bool _busy = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(l.consentPrompt),
+            const SizedBox(height: 8),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () => context.push('/privacy'),
+                  child: Text(l.consentRead),
+                ),
+                const SizedBox(width: 8),
+                FilledButton(
+                  key: const Key('acceptPrivacy'),
+                  style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
+                  onPressed: _busy
+                      ? null
+                      : () async {
+                          final messenger = ScaffoldMessenger.of(context);
+                          setState(() => _busy = true);
+                          try {
+                            await widget.onAccept();
+                          } on Exception {
+                            messenger.showSnackBar(
+                                SnackBar(content: Text(l.errorGeneric)));
+                          } finally {
+                            if (mounted) setState(() => _busy = false);
+                          }
+                        },
+                  child: Text(l.consentAccept),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

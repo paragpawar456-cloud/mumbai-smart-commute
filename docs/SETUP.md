@@ -27,7 +27,7 @@ Everything here is free. No credit card is needed at any step.
 ## 3. Google Sheet + Apps Script backend
 
 1. Create a new Google Sheet named `Mumbai Smart Commute DB`. Keep it private: never share it or publish it.
-2. **Extensions → Apps Script**. Create one script file per `.gs` file in `backend/apps-script/` with the same names (`Code`, `Auth`, `Db`, `Guard`, `Validate`, `Handlers`, `Pack`, `Reports`, `Road`, `Schema`) and paste the contents. Open **Project Settings → Show "appsscript.json"**, then paste `backend/apps-script/appsscript.json`.
+2. **Extensions → Apps Script**. Create one script file per `.gs` file in `backend/apps-script/` with the same names (`Code`, `Auth`, `Db`, `Guard`, `Validate`, `Handlers`, `Pack`, `Reports`, `Road`, `Admin`, `Schema`) and paste the contents. Open **Project Settings → Show "appsscript.json"**, then paste `backend/apps-script/appsscript.json`.
    (Alternatively, use [clasp](https://github.com/google/clasp): `clasp clone <scriptId>` into `backend/apps-script`, then `clasp push`.)
 3. **Project Settings → Script properties → Add**: `FIREBASE_WEB_API_KEY` = the Web API Key from step 2.5.
    Optional: `ORS_API_KEY` = a free [openrouteservice](https://openrouteservice.org/dev/#/signup) key (no card needed) to show road distances in the last-mile finder. Without it the app uses a labelled straight-line estimate.
@@ -36,7 +36,7 @@ Everything here is free. No credit card is needed at any step.
 6. Each time you change the code: **Deploy → Manage deployments → Edit → Version: New version** (keeps the same URL).
 7. Load the pilot data: in each tab (`Stations`, `TrainRoutes`, `Interchanges`, `DataSources`, `Places`, `PickupPoints`, `FareRules`, `TransportProviders`) use **File → Import → Upload** with the matching CSV from `data/templates/`, choosing *Replace data at selected cell* with cell A1 selected. Then reload the Sheet and use **Mumbai Smart Commute → Publish data pack to the app**. See [DATA_ENTRY.md](DATA_ENTRY.md) for timetables.
 8. Optional: **Triggers → Add trigger** → `expireReports`, time-driven, every hour. It tidies old community reports; the app already hides expired ones without it.
-9. Make yourself an admin: sign in to the app once, then in the `Users` tab change your row's `role` to `admin`. The server only trusts this column, never the app.
+9. Make yourself an admin: sign in to the app once, then in the `Users` tab change your row's `role` to `admin`. The server only trusts this column, never the app. After that, **Profile → Admin** in the app lets you make other people moderators (they can approve or reject reports) or admins.
 
 Check it works: open the app, go to **Profile**, and **Server status** should say *Connected*.
 
@@ -51,7 +51,7 @@ flutter build apk --release --split-per-abi --dart-define-from-file=config/prod.
 
 ### The free APK from GitHub
 
-Every push to `main` runs **Actions → CI** and attaches `mumbai-smart-commute-apk`. To bake your config into that APK, add a repository secret `APP_CONFIG_JSON` containing the whole `config/prod.json`.
+Every push to `main` runs **Actions → CI**, attaches `mumbai-smart-commute-apk`, and replaces the **Latest test build** release, so this link always gives the newest APK without a GitHub account: `https://github.com/paragpawar456-cloud/mumbai-smart-commute/releases/download/latest-build/app-arm64-v8a-release.apk` (older phones: `app-armeabi-v7a-release.apk`). To bake your config into that APK, add a repository secret `APP_CONFIG_JSON` containing the whole `config/prod.json`.
 
 ### Same signature for every build (so testers can update)
 

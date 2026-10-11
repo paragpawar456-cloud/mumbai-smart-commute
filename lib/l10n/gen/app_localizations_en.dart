@@ -592,4 +592,233 @@ class AppLocalizationsEn extends AppLocalizations {
   String reportAgo(int minutes) {
     return '$minutes min ago';
   }
+
+  @override
+  String get alertSource => 'Official source';
+
+  @override
+  String get adminTitle => 'Admin';
+
+  @override
+  String get adminNoAccess => 'This section is for admins and moderators.';
+
+  @override
+  String get adminOverview => 'Overview';
+
+  @override
+  String get adminReports => 'Reports';
+
+  @override
+  String get adminUsers => 'Users';
+
+  @override
+  String get adminAlerts => 'Alerts';
+
+  @override
+  String get adminAudit => 'Audit log';
+
+  @override
+  String get adminSaved => 'Saved';
+
+  @override
+  String get adminUsersActive => 'Active users';
+
+  @override
+  String get adminUsersDisabled => 'Disabled';
+
+  @override
+  String get adminUsersDeleted => 'Deleted accounts';
+
+  @override
+  String get adminAdmins => 'Admins';
+
+  @override
+  String get adminModerators => 'Moderators';
+
+  @override
+  String get adminReportsPending => 'Reports waiting for review';
+
+  @override
+  String get adminReportsLive => 'Reports visible now';
+
+  @override
+  String get adminAlertsActive => 'Alerts in force';
+
+  @override
+  String get adminDataPackVersion => 'Data pack version';
+
+  @override
+  String get adminDataPackPublished => 'Last published';
+
+  @override
+  String get adminRoadDistance => 'Road distances (openrouteservice)';
+
+  @override
+  String get adminOn => 'On';
+
+  @override
+  String get adminOff => 'Off';
+
+  @override
+  String get adminDataHealth => 'Data sources';
+
+  @override
+  String get adminNoSync => 'Nothing published from the Sheet yet.';
+
+  @override
+  String adminLastSuccess(String when) {
+    return 'Last success: $when';
+  }
+
+  @override
+  String adminAcceptedRejected(int accepted, int rejected) {
+    return '$accepted rows accepted, $rejected rejected';
+  }
+
+  @override
+  String get adminNoPending => 'No reports waiting for review.';
+
+  @override
+  String adminReporter(String uid) {
+    return 'Sent by account $uid';
+  }
+
+  @override
+  String get adminApprove => 'Approve';
+
+  @override
+  String get adminReject => 'Reject';
+
+  @override
+  String get adminSearchUsers => 'Search by email or name';
+
+  @override
+  String get adminDisable => 'Disable account';
+
+  @override
+  String get adminEnable => 'Enable account';
+
+  @override
+  String adminMakeRole(String role) {
+    return 'Make $role';
+  }
+
+  @override
+  String get adminNewAlert => 'New alert';
+
+  @override
+  String get adminNoAlerts => 'No alerts yet.';
+
+  @override
+  String get adminEndAlert => 'End now';
+
+  @override
+  String get adminEnded => 'Ended';
+
+  @override
+  String get adminRequired => 'Required';
+
+  @override
+  String get adminAlertScope => 'Applies to';
+
+  @override
+  String get adminAlertScopeHelp =>
+      'ALL, a line code (CR-MAIN) or a station code (KYN)';
+
+  @override
+  String get adminAlertTitleEn => 'Title (English)';
+
+  @override
+  String get adminAlertTitleMr => 'Title (Marathi, optional)';
+
+  @override
+  String get adminAlertTitleHi => 'Title (Hindi, optional)';
+
+  @override
+  String get adminAlertBody => 'Details (optional)';
+
+  @override
+  String get adminAlertSource => 'Official announcement link';
+
+  @override
+  String get adminAlertSourceHelp =>
+      'Must start with https:// and point to the official notice';
+
+  @override
+  String get adminAlertStarts => 'Starts';
+
+  @override
+  String get adminAlertEnds => 'Ends';
+
+  @override
+  String get adminAlertUntilEnded => 'Until ended';
+
+  @override
+  String get adminPublishAlert => 'Publish alert';
+
+  @override
+  String get roleAdmin => 'You are an admin';
+
+  @override
+  String get roleModerator => 'You are a moderator';
+
+  @override
+  String get consentPrompt =>
+      'We have a privacy notice that explains what this app keeps about you. Please read it and accept.';
+
+  @override
+  String get consentRead => 'Read';
+
+  @override
+  String get consentAccept => 'Accept';
+
+  @override
+  String get privacyTitle => 'Privacy notice';
+
+  @override
+  String privacyVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get privacyCollectTitle => 'What we keep';
+
+  @override
+  String get privacyCollectBody =>
+      'If you sign in: your email and name from your sign-in, your language, saved routes, the reports you send, when your account was created and the last day you used it. Without an account, nothing about you is kept on our server.';
+
+  @override
+  String get privacyNotCollectTitle => 'What we never keep';
+
+  @override
+  String get privacyNotCollectBody =>
+      'Your password (Google Firebase handles sign-in), your location history, contacts or phone number. There are no ads, no tracking and we never sell data.';
+
+  @override
+  String get privacyLocationTitle => 'Location';
+
+  @override
+  String get privacyLocationBody =>
+      'Your phone\'s location is read only when you tap \"My location\" and stays on the phone. When you choose a destination in the last-mile finder while signed in, the station and destination points are sent to our server to look up the road distance.';
+
+  @override
+  String get privacyReportsTitle => 'Reports you send';
+
+  @override
+  String get privacyReportsBody =>
+      'Other people see the report, its place (to about 10 metres) and its time, never your name or account. Moderators can see which account sent a report, only to deal with abuse. Reports disappear when they expire.';
+
+  @override
+  String get privacyRightsTitle => 'Your choices';
+
+  @override
+  String get privacyRightsBody =>
+      'Delete account (Profile) removes your email, name and saved routes and closes your sign-in. Reports you sent stay for other commuters but are no longer linked to you. You can use the app without an account.';
+
+  @override
+  String get privacyThirdPartyTitle => 'Services we rely on';
+
+  @override
+  String get privacyThirdPartyBody =>
+      'Google Firebase (sign-in) and Google Apps Script and Sheets (our server and storage); OpenStreetMap tile servers when the map loads; openrouteservice for road distances if enabled; and Uber, Ola or Rapido only when you tap their button.';
 }
